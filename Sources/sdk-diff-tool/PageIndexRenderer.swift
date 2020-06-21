@@ -2,7 +2,7 @@ import Foundation
 
 extension Array where Element == ChangeSet {
     func renderIndex() throws -> String {
-        return try ###"""
+        return ###"""
             <!doctype html>
             <html lang="en">
               <head>
@@ -41,9 +41,13 @@ extension Array where Element == ChangeSet {
                 </nav>
 
                 <main role="main" class="container">
-                    \###(map(\.title).sorted().map({
-                        return "<h1><a href=\"\($0.sanitizeForFilename()).html\">\($0)</a></h1>"
+                  <h1>SDK News</h1>
+                  <p>What’s new in Xcode: a structured list of API changes from the developer documentation.</p>
+                  <ul>
+                    \###(sorted(by: { $0.timestamp > $1.timestamp }).map(\.title).map({
+                        return "<li><a href=\"\($0.sanitizeForFilename()).html\">\($0)</a></li>"
                     }).joined(separator: "\n"))
+                  </ul>
                 </main>
 
                 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

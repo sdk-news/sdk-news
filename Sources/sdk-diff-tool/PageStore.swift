@@ -10,8 +10,6 @@ class PageStore {
     }
 
     func update(_ changeSets: [ChangeSet]) throws {
-        let allTitles = changeSets.map(\.title).sorted()
-
         let indexURL = rootURL
             .appendingPathComponent("index")
             .appendingPathExtension("html")
@@ -26,7 +24,7 @@ class PageStore {
                 .appendingPathExtension("html")
 
             try changeSet
-                .renderHtml(allTitles: allTitles)
+                .renderHtml(allChangesets: changeSets)
                 .write(to: fileURL, atomically: true, encoding: .utf8)
         }
     }

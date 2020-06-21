@@ -8,6 +8,7 @@ struct Change: Codable {
 struct ChangeSet: Codable {
     var root: String
     var title: String
+    var timestamp: Date
     var changes: [String: Change]
     var links: [String: [String]]
 }

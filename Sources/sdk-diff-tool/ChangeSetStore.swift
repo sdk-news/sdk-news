@@ -16,6 +16,7 @@ class ChangeSetStore {
 
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+        encoder.dateEncodingStrategy = .iso8601
         try encoder.encode(changeSet).write(to: fileURL)
     }
 
@@ -28,6 +29,10 @@ class ChangeSetStore {
 
         return fileURLs
             .filter { $0.pathExtension == "json" }
-            .compactMap { try? JSONDecoder().decode(ChangeSet.self, from: Data(contentsOf: $0)) }
+            .compactMap {
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                return try? decoder.decode(ChangeSet.self, from: Data(contentsOf: $0))
+            }
     }
 }
