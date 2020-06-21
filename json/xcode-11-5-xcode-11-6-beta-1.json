@@ -1801,9 +1801,9 @@
       "https:\/\/developer.apple.com\/documentation\/avfoundation\/avassetexportsession?changes=latest_minor"
     ],
     "https:\/\/developer.apple.com\/documentation\/devicemanagement?changes=latest_minor" : [
-      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/wifimanagedsettings?changes=latest_minor",
       "https:\/\/developer.apple.com\/documentation\/devicemanagement\/profile-specific_payload_keys?changes=latest_minor",
-      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/commands_and_queries?changes=latest_minor"
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/commands_and_queries?changes=latest_minor",
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/wifimanagedsettings?changes=latest_minor"
     ],
     "https:\/\/developer.apple.com\/documentation\/devicemanagement\/commands_and_queries?changes=latest_minor" : [
       "https:\/\/developer.apple.com\/documentation\/devicemanagement\/list_the_installed_provisioning_profiles?changes=latest_minor",

@@ -24,19 +24,30 @@ extension ChangeSet {
               </head>
               <body>
                 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-                  <a class="navbar-brand" href="index.html">SDK News</a>
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown active">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        \###(title)
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        \###(allTitles.map({
-                          return "<a class=\"dropdown-item\" href=\"\($0.sanitizeForFilename()).html\">\($0)</a>"
-                        }).joined(separator: "\n"))
-                      </div>
-                    </li>
-                  </ul>
+                  <a class="navbar-brand" href="#">\###(title)</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link" href="https://github.com/victor-pavlychko/sdk-news/" role="button">
+                          GitHub
+                        </a>
+                      </li>
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select version
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          \###(allTitles.sorted().map({
+                            return "<a class=\"dropdown-item\" href=\"\($0.sanitizeForFilename()).html\">\($0)</a>"
+                          }).joined(separator: "\n"))
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </nav>
 
                 <main role="main" class="container">

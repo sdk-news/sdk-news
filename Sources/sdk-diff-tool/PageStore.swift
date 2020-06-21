@@ -12,6 +12,14 @@ class PageStore {
     func update(_ changeSets: [ChangeSet]) throws {
         let allTitles = changeSets.map(\.title).sorted()
 
+        let indexURL = rootURL
+            .appendingPathComponent("index")
+            .appendingPathExtension("html")
+
+        try changeSets
+            .renderIndex()
+            .write(to: indexURL, atomically: true, encoding: .utf8)
+
         for changeSet in changeSets {
             let fileURL = rootURL
                 .appendingPathComponent(changeSet.title.sanitizeForFilename())
