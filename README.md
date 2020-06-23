@@ -1,3 +1,3 @@
 # SDK News
 
-http://sdk.news/
+https://sdk.news/

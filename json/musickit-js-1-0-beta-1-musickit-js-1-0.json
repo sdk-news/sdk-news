@@ -6,441 +6,438 @@
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<\/span><\/code>"
+      "name" : "MusicKit"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992810-configure?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>configure<\/span><\/code>"
+      "name" : "configure"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992811-formattedmilliseconds?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>formatted<wbr\/>Milliseconds<\/span><\/code>"
+      "name" : "formattedMilliseconds"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992812-formattedseconds?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>formatted<wbr\/>Seconds<\/span><\/code>"
+      "name" : "formattedSeconds"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992813-generateembedcode?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>generate<wbr\/>Embed<wbr\/>Code<\/span><\/code>"
+      "name" : "generateEmbedCode"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992814-getinstance?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>get<wbr\/>Instance<\/span><\/code>"
+      "name" : "getInstance"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/3030797-errors?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>errors<\/span><\/code>"
+      "name" : "errors"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/3030798-formatmediatime?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>format<wbr\/>Media<wbr\/>Time<\/span><\/code>"
+      "name" : "formatMediaTime"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/api?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.API<\/span><\/code>"
+      "name" : "MusicKit.API"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/api\/3001448-library?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>library<\/span><\/code>"
+      "name" : "library"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Configuration<\/span><\/code>"
+      "name" : "MusicKit.Configuration"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration\/2992640-app?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>app<\/span><\/code>"
+      "name" : "app"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration\/2992641-bitrate?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>bitrate<\/span><\/code>"
+      "name" : "bitrate"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Events<\/span><\/code>"
+      "name" : "MusicKit.Events"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001469-authorizationstatusdidchange?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>authorization<wbr\/>Status<wbr\/>Did<wbr\/>Change<\/span><\/code>"
+      "name" : "authorizationStatusDidChange"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001470-authorizationstatuswillchange?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>authorization<wbr\/>Status<wbr\/>Will<wbr\/>Change<\/span><\/code>"
+      "name" : "authorizationStatusWillChange"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001471-eligibleforsubscribeview?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>eligible<wbr\/>For<wbr\/>Subscribe<wbr\/>View<\/span><\/code>"
+      "name" : "eligibleForSubscribeView"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001488-storefrontcountrycodedidchange?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>storefront<wbr\/>Country<wbr\/>Code<wbr\/>Did<wbr\/>Change<\/span><\/code>"
+      "name" : "storefrontCountryCodeDidChange"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001489-storefrontidentifierdidchange?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>storefront<wbr\/>Identifier<wbr\/>Did<wbr\/>Change<\/span><\/code>"
+      "name" : "storefrontIdentifierDidChange"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001490-usertokendidchange?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>user<wbr\/>Token<wbr\/>Did<wbr\/>Change<\/span><\/code>"
+      "name" : "userTokenDidChange"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Media<wbr\/>Item<\/span><\/code>"
+      "name" : "MusicKit.MediaItem"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992671-musickit_mediaitem?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Media<wbr\/>Item<\/span><\/code>"
+      "name" : "MusicKit.MediaItem"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992673-albumname?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>album<wbr\/>Name<\/span><\/code>"
+      "name" : "albumName"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992674-artistname?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>artist<wbr\/>Name<\/span><\/code>"
+      "name" : "artistName"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992675-artworkurl?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>artwork<wbr\/>URL<\/span><\/code>"
+      "name" : "artworkURL"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992678-contentrating?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>content<wbr\/>Rating<\/span><\/code>"
+      "name" : "contentRating"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992682-isplayable?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>is<wbr\/>Playable<\/span><\/code>"
+      "name" : "isPlayable"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992685-playbackduration?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>playback<wbr\/>Duration<\/span><\/code>"
+      "name" : "playbackDuration"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992686-previewurl?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>preview<wbr\/>URL<\/span><\/code>"
+      "name" : "previewURL"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992687-title?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>title<\/span><\/code>"
+      "name" : "title"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001685-discnumber?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>disc<wbr\/>Number<\/span><\/code>"
+      "name" : "discNumber"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001686-isrc?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>isrc<\/span><\/code>"
+      "name" : "isrc"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001688-tracknumber?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>track<wbr\/>Number<\/span><\/code>"
+      "name" : "trackNumber"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3030791-playlistartworkurl?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>playlist<wbr\/>Artwork<wbr\/>URL<\/span><\/code>"
+      "name" : "playlistArtworkURL"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3030792-playlistname?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>playlist<wbr\/>Name<\/span><\/code>"
+      "name" : "playlistName"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.MKError<\/span><\/code>"
+      "name" : "MusicKit.MKError"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992649-access_denied?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>ACCESS<wbr\/>_DENIED<\/span><\/code>"
+      "name" : "ACCESS_DENIED"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992650-authorization_error?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>AUTHORIZATION<wbr\/>_ERROR<\/span><\/code>"
+      "name" : "AUTHORIZATION_ERROR"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992651-configuration_error?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>CONFIGURATION<wbr\/>_ERROR<\/span><\/code>"
+      "name" : "CONFIGURATION_ERROR"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992652-content_restricted?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>CONTENT<wbr\/>_RESTRICTED<\/span><\/code>"
+      "name" : "CONTENT_RESTRICTED"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992654-invalid_arguments?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>INVALID<wbr\/>_ARGUMENTS<\/span><\/code>"
+      "name" : "INVALID_ARGUMENTS"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992655-media_certificate?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>MEDIA<wbr\/>_CERTIFICATE<\/span><\/code>"
+      "name" : "MEDIA_CERTIFICATE"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992656-media_descriptor?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>MEDIA<wbr\/>_DESCRIPTOR<\/span><\/code>"
+      "name" : "MEDIA_DESCRIPTOR"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992657-media_key?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>MEDIA<wbr\/>_KEY<\/span><\/code>"
+      "name" : "MEDIA_KEY"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992658-media_license?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>MEDIA<wbr\/>_LICENSE<\/span><\/code>"
+      "name" : "MEDIA_LICENSE"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992659-media_playback?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>MEDIA<wbr\/>_PLAYBACK<\/span><\/code>"
+      "name" : "MEDIA_PLAYBACK"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992660-media_session?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>MEDIA<wbr\/>_SESSION<\/span><\/code>"
+      "name" : "MEDIA_SESSION"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992661-network_error?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>NETWORK<wbr\/>_ERROR<\/span><\/code>"
+      "name" : "NETWORK_ERROR"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992662-not_found?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>NOT<wbr\/>_FOUND<\/span><\/code>"
+      "name" : "NOT_FOUND"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992663-quota_exceeded?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>QUOTA<wbr\/>_EXCEEDED<\/span><\/code>"
+      "name" : "QUOTA_EXCEEDED"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992664-service_unavailable?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>SERVICE<wbr\/>_UNAVAILABLE<\/span><\/code>"
+      "name" : "SERVICE_UNAVAILABLE"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992665-unknown_error?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>UNKNOWN<wbr\/>_ERROR<\/span><\/code>"
+      "name" : "UNKNOWN_ERROR"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992666-unsupported_error?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>UNSUPPORTED<wbr\/>_ERROR<\/span><\/code>"
+      "name" : "UNSUPPORTED_ERROR"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/3001507-subscription_error?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>SUBSCRIPTION<wbr\/>_ERROR<\/span><\/code>"
+      "name" : "SUBSCRIPTION_ERROR"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/3030790-server_error?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>SERVER<wbr\/>_ERROR<\/span><\/code>"
+      "name" : "SERVER_ERROR"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Music<wbr\/>Kit<wbr\/>Instance<\/span><\/code>"
+      "name" : "MusicKit.MusicKitInstance"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992700-api?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>api<\/span><\/code>"
+      "name" : "api"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992702-bitrate?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>bitrate<\/span><\/code>"
+      "name" : "bitrate"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992710-playbackstate?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>playback<wbr\/>State<\/span><\/code>"
+      "name" : "playbackState"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992712-player?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>player<\/span><\/code>"
+      "name" : "player"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992716-setqueue?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>set<wbr\/>Queue<\/span><\/code>"
+      "name" : "setQueue"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992723-unauthorize?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>unauthorize<\/span><\/code>"
+      "name" : "unauthorize"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030793-addtolibrary?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>add<wbr\/>To<wbr\/>Library<\/span><\/code>"
+      "name" : "addToLibrary"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030794-playlater?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>play<wbr\/>Later<\/span><\/code>"
+      "name" : "playLater"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030795-playnext?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>play<wbr\/>Next<\/span><\/code>"
+      "name" : "playNext"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>Bitrate<\/span><\/code>"
+      "name" : "MusicKit.PlaybackBitrate"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate\/high?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>Bitrate<wbr\/>.HIGH<\/span><\/code>"
+      "name" : "MusicKit.PlaybackBitrate.HIGH"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate\/standard?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>Bitrate<wbr\/>.STANDARD<\/span><\/code>"
+      "name" : "MusicKit.PlaybackBitrate.STANDARD"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/completed?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.completed<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.completed"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/ended?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.ended<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.ended"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/loading?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.loading<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.loading"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/none?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.none<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.none"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/paused?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.paused<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.paused"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/playing?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.playing<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.playing"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/seeking?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.seeking<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.seeking"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/stalled?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.stalled<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.stalled"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/stopped?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.stopped<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.stopped"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/waiting?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Playback<wbr\/>States<wbr\/>.waiting<\/span><\/code>"
+      "name" : "MusicKit.PlaybackStates.waiting"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Player<\/span><\/code>"
+      "name" : "MusicKit.Player"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992744-bitrate?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>bitrate<\/span><\/code>"
+      "name" : "bitrate"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992747-changetomediaitem?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>change<wbr\/>To<wbr\/>Media<wbr\/>Item<\/span><\/code>"
+      "name" : "changeToMediaItem"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992749-currentplaybackduration?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>current<wbr\/>Playback<wbr\/>Duration<\/span><\/code>"
+      "name" : "currentPlaybackDuration"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992751-currentplaybacktime?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>current<wbr\/>Playback<wbr\/>Time<\/span><\/code>"
+      "name" : "currentPlaybackTime"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992756-nowplayingitem?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>now<wbr\/>Playing<wbr\/>Item<\/span><\/code>"
+      "name" : "nowPlayingItem"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992761-playbackstate?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>playback<wbr\/>State<\/span><\/code>"
+      "name" : "playbackState"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992763-preparetoplay?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>prepare<wbr\/>To<wbr\/>Play<\/span><\/code>"
+      "name" : "prepareToPlay"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992765-queue?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>queue<\/span><\/code>"
+      "name" : "queue"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992767-repeatmode?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>repeat<wbr\/>Mode<\/span><\/code>"
+      "name" : "repeatMode"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992770-shufflemode?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>shuffle<wbr\/>Mode<\/span><\/code>"
+      "name" : "shuffleMode"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/3030796-currentplaybacktimeremaining?changes=latest_beta" : {
       "kind" : "added",
-      "name" : "<code><span>current<wbr\/>Playback<wbr\/>Time<wbr\/>Remaining<\/span><\/code>"
+      "name" : "currentPlaybackTimeRemaining"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Player<wbr\/>Repeat<wbr\/>Mode<\/span><\/code>"
+      "name" : "MusicKit.PlayerRepeatMode"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/all?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Player<wbr\/>Repeat<wbr\/>Mode<wbr\/>.all<\/span><\/code>"
+      "name" : "MusicKit.PlayerRepeatMode.all"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/none?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Player<wbr\/>Repeat<wbr\/>Mode<wbr\/>.none<\/span><\/code>"
+      "name" : "MusicKit.PlayerRepeatMode.none"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/one?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Player<wbr\/>Repeat<wbr\/>Mode<wbr\/>.one<\/span><\/code>"
+      "name" : "MusicKit.PlayerRepeatMode.one"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Player<wbr\/>Shuffle<wbr\/>Mode<\/span><\/code>"
+      "name" : "MusicKit.PlayerShuffleMode"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode\/off?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Player<wbr\/>Shuffle<wbr\/>Mode<wbr\/>.off<\/span><\/code>"
+      "name" : "MusicKit.PlayerShuffleMode.off"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode\/songs?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Player<wbr\/>Shuffle<wbr\/>Mode<wbr\/>.songs<\/span><\/code>"
+      "name" : "MusicKit.PlayerShuffleMode.songs"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Queue<\/span><\/code>"
+      "name" : "MusicKit.Queue"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992786-append?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>append<\/span><\/code>"
+      "name" : "append"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992787-indexforitem?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>index<wbr\/>For<wbr\/>Item<\/span><\/code>"
+      "name" : "indexForItem"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992790-item?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>item<\/span><\/code>"
+      "name" : "item"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992791-items?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>items<\/span><\/code>"
+      "name" : "items"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992792-length?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>length<\/span><\/code>"
+      "name" : "length"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992795-prepend?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>prepend<\/span><\/code>"
+      "name" : "prepend"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>Music<wbr\/>Kit<wbr\/>.Set<wbr\/>Queue<wbr\/>Options<\/span><\/code>"
+      "name" : "MusicKit.SetQueueOptions"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions\/2992801-items?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>items<\/span><\/code>"
+      "name" : "items"
     },
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions\/2992806-songs?changes=latest_beta" : {
       "kind" : "modified",
-      "name" : "<code><span>songs<\/span><\/code>"
+      "name" : "songs"
     }
   },
   "links" : {
-    "https:\/\/developer.apple.com\/documentation?changes=latest_beta" : [
-      "https:\/\/developer.apple.com\/documentation\/musickitjs?changes=latest_beta"
-    ],
     "https:\/\/developer.apple.com\/documentation\/musickitjs?changes=latest_beta" : [
       "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit?changes=latest_beta"
     ],
@@ -578,9 +575,16 @@
     "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions?changes=latest_beta" : [
       "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions\/2992801-items?changes=latest_beta",
       "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions\/2992806-songs?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/technologies?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs?changes=latest_beta"
     ]
   },
-  "root" : "https:\/\/developer.apple.com\/documentation?changes=latest_beta",
+  "platform" : "MusicKit JS",
+  "root" : "https:\/\/developer.apple.com\/documentation\/technologies?changes=latest_beta",
   "timestamp" : "2020-06-21T22:17:10Z",
-  "title" : "MusicKit JS 1.0 beta 1 – MusicKit JS 1.0"
+  "versions" : [
+    "1.0 beta 1",
+    "1.0"
+  ]
 }
