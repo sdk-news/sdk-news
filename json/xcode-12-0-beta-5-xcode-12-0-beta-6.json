@@ -1,0 +1,1420 @@
+{
+  "changes" : {
+    "https:\/\/developer.apple.com\/documentation\/accelerate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Accelerate"
+    },
+    "https:\/\/developer.apple.com\/documentation\/accelerate\/dspdoublesplitcomplex?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "DSPDoubleSplitComplex"
+    },
+    "https:\/\/developer.apple.com\/documentation\/accelerate\/dspsplitcomplex?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "DSPSplitComplex"
+    },
+    "https:\/\/developer.apple.com\/documentation\/accelerate\/vdsp?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "vDSP"
+    },
+    "https:\/\/developer.apple.com\/documentation\/authenticationservices?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Authentication Services"
+    },
+    "https:\/\/developer.apple.com\/documentation\/bundleresources\/applinks?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "applinks"
+    },
+    "https:\/\/developer.apple.com\/documentation\/bundleresources\/applinks\/details?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "applinks.Details"
+    },
+    "https:\/\/developer.apple.com\/documentation\/bundleresources\/applinks\/details\/components?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "applinks.Details.Components"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CarPlay"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplistimagerowitem?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CPListImageRowItem"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplistitem?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CPListItem"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CPListSection"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection\/2977575-init?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "init(items:)"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection\/2977576-init?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "init(items:header:sectionIndexTitle:)"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection\/2977577-items?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "items"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplisttemplate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CPListTemplate"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinterest?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CPPointOfInterest"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinterest\/3678728-userinfo?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "userInfo"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinteresttemplate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CPPointOfInterestTemplate"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinteresttemplatedelegate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CPPointOfInterestTemplateDelegate"
+    },
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinteresttemplatedelegate\/3678729-pointofinteresttemplate?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "pointOfInterestTemplate(_:didSelectPointOfInterest:)"
+    },
+    "https:\/\/developer.apple.com\/documentation\/coregraphics?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Core Graphics"
+    },
+    "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgfloat?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CGFloat"
+    },
+    "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgpoint?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CGPoint"
+    },
+    "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgrect?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CGRect"
+    },
+    "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgsize?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CGSize"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Create ML"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlactivityclassifier?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLActivityClassifier"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mldatatable?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLDataTable"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mldatavalue?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLDataValue"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlgazetteer?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLGazetteer"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlimageclassifier?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLImageClassifier"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlobjectdetector?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLObjectDetector"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlobjectdetectormetrics?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLObjectDetectorMetrics"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlrecommender?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLRecommender"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlsoundclassifier?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLSoundClassifier"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlstyletransfer?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLStyleTransfer"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mltextclassifier?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLTextClassifier"
+    },
+    "https:\/\/developer.apple.com\/documentation\/createml\/mlwordembedding?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MLWordEmbedding"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Device Management"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/commands_and_queries?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Commands and Queries"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/extensiblesinglesignonkerberos?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ExtensibleSingleSignOnKerberos"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/extensiblesinglesignonkerberos\/extensiondata?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ExtensibleSingleSignOnKerberos.ExtensionData"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/installedapplicationlistcommand?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "InstalledApplicationListCommand"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/installedapplicationlistcommand\/command?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "InstalledApplicationListCommand.Command"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/list_the_installed_apps?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "List the Installed Apps"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/profile-specific_payload_keys?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Profile-Specific Payload Keys"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/restrictions?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Restrictions"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/security_information?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Security Information"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/securityinforesponse?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "SecurityInfoResponse"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/securityinforesponse\/securityinfo?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "SecurityInfoResponse.SecurityInfo"
+    },
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/webclip?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "WebClip"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Exposure Notification"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/encalibrationconfidence?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENCalibrationConfidence"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/endayssinceonsetofsymptomsunknown?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENDaysSinceOnsetOfSymptomsUnknown"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/endiagnosisreporttype?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENDiagnosisReportType"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENExposureConfiguration"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644386-dayssincelastexposurethreshold?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "daysSinceLastExposureThreshold"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644388-immediatedurationweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "immediateDurationWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644389-infectiousnessfordayssinceonseto?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "infectiousnessForDaysSinceOnsetOfSymptoms"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644390-infectiousnesshighweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "infectiousnessHighWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644391-infectiousnessstandardweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "infectiousnessStandardWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644392-mediumdurationweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "mediumDurationWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644393-neardurationweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "nearDurationWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644394-otherdurationweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "otherDurationWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644395-reporttypeconfirmedclinicaldiagn?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "reportTypeConfirmedClinicalDiagnosisWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644396-reporttypeconfirmedtestweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "reportTypeConfirmedTestWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644397-reporttypenonemap?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "reportTypeNoneMap"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644398-reporttyperecursiveweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "reportTypeRecursiveWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644399-reporttypeselfreportedweight?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "reportTypeSelfReportedWeight"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuredaysummary?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENExposureDaySummary"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuredetectionsummary?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENExposureDetectionSummary"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuredetectionsummary\/3644407-daysummaries?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "daySummaries"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureinfo?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENExposureInfo"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureinfo\/3644412-dayssinceonsetofsymptoms?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "daysSinceOnsetOfSymptoms"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureinfo\/3644413-diagnosisreporttype?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "diagnosisReportType"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuresummaryitem?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENExposureSummaryItem"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposurewindow?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENExposureWindow"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/engetexposurewindowshandler?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENGetExposureWindowsHandler"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/engetusertraveledhandler?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENGetUserTraveledHandler"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/eninfectiousness?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENInfectiousness"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENManager"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager\/3644438-getexposurewindows?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "getExposureWindows(summary:completionHandler:)"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager\/3644439-getusertraveled?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "getUserTraveled(completionHandler:)"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager\/3650384-detectexposures?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "detectExposures(configuration:completionHandler:)"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enscaninstance?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ENScanInstance"
+    },
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/exposure_parameter_limits?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Exposure Parameter Limits"
+    },
+    "https:\/\/developer.apple.com\/documentation\/foundation?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Foundation"
+    },
+    "https:\/\/developer.apple.com\/documentation\/foundation\/collections?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Collections"
+    },
+    "https:\/\/developer.apple.com\/documentation\/foundation\/numbers_data_and_basic_values?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Numbers, Data, and Basic Values"
+    },
+    "https:\/\/developer.apple.com\/documentation\/gamekit?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "GameKit"
+    },
+    "https:\/\/developer.apple.com\/documentation\/gamekit\/gkmatchrequest?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "GKMatchRequest"
+    },
+    "https:\/\/developer.apple.com\/documentation\/gamekit\/gkmatchrequest\/3074557-restricttoautomatch?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "restrictToAutomatch"
+    },
+    "https:\/\/developer.apple.com\/documentation\/multipeerconnectivity?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Multipeer Connectivity"
+    },
+    "https:\/\/developer.apple.com\/documentation\/multipeerconnectivity\/mcpeerid?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MCPeerID"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit JS"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992810-configure?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "configure"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992811-formattedmilliseconds?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "formattedMilliseconds"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992812-formattedseconds?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "formattedSeconds"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992813-generateembedcode?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "generateEmbedCode"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992814-getinstance?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "getInstance"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/3030797-errors?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "errors"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/3030798-formatmediatime?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "formatMediaTime"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/api?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.API"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/api\/3001448-library?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "library"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.Configuration"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration\/2992640-app?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "app"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration\/2992641-bitrate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "bitrate"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.Events"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001469-authorizationstatusdidchange?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "authorizationStatusDidChange"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001470-authorizationstatuswillchange?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "authorizationStatusWillChange"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001471-eligibleforsubscribeview?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "eligibleForSubscribeView"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001488-storefrontcountrycodedidchange?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "storefrontCountryCodeDidChange"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001489-storefrontidentifierdidchange?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "storefrontIdentifierDidChange"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001490-usertokendidchange?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "userTokenDidChange"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.MediaItem"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992671-musickit_mediaitem?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.MediaItem"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992673-albumname?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "albumName"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992674-artistname?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "artistName"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992675-artworkurl?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "artworkURL"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992678-contentrating?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "contentRating"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992682-isplayable?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "isPlayable"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992685-playbackduration?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "playbackDuration"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992686-previewurl?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "previewURL"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992687-title?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "title"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001685-discnumber?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "discNumber"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001686-isrc?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "isrc"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001688-tracknumber?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "trackNumber"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3030791-playlistartworkurl?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "playlistArtworkURL"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3030792-playlistname?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "playlistName"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.MKError"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992649-access_denied?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ACCESS_DENIED"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992650-authorization_error?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "AUTHORIZATION_ERROR"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992651-configuration_error?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CONFIGURATION_ERROR"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992652-content_restricted?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "CONTENT_RESTRICTED"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992654-invalid_arguments?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "INVALID_ARGUMENTS"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992655-media_certificate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MEDIA_CERTIFICATE"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992656-media_descriptor?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MEDIA_DESCRIPTOR"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992657-media_key?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MEDIA_KEY"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992658-media_license?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MEDIA_LICENSE"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992659-media_playback?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MEDIA_PLAYBACK"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992660-media_session?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MEDIA_SESSION"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992661-network_error?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "NETWORK_ERROR"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992662-not_found?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "NOT_FOUND"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992663-quota_exceeded?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "QUOTA_EXCEEDED"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992664-service_unavailable?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "SERVICE_UNAVAILABLE"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992665-unknown_error?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UNKNOWN_ERROR"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992666-unsupported_error?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UNSUPPORTED_ERROR"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/3001507-subscription_error?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "SUBSCRIPTION_ERROR"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/3030790-server_error?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "SERVER_ERROR"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.MusicKitInstance"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992700-api?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "api"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992702-bitrate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "bitrate"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992710-playbackstate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "playbackState"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992712-player?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "player"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992716-setqueue?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "setQueue"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992723-unauthorize?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "unauthorize"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030793-addtolibrary?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "addToLibrary"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030794-playlater?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "playLater"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030795-playnext?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "playNext"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackBitrate"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate\/high?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackBitrate.HIGH"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate\/standard?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackBitrate.STANDARD"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/completed?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.completed"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/ended?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.ended"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/loading?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.loading"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/none?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.none"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/paused?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.paused"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/playing?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.playing"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/seeking?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.seeking"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/stalled?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.stalled"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/stopped?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.stopped"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/waiting?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlaybackStates.waiting"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.Player"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992744-bitrate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "bitrate"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992747-changetomediaitem?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "changeToMediaItem"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992749-currentplaybackduration?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "currentPlaybackDuration"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992751-currentplaybacktime?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "currentPlaybackTime"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992756-nowplayingitem?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "nowPlayingItem"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992761-playbackstate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "playbackState"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992763-preparetoplay?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "prepareToPlay"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992765-queue?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "queue"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992767-repeatmode?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "repeatMode"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992770-shufflemode?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "shuffleMode"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/3030796-currentplaybacktimeremaining?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "currentPlaybackTimeRemaining"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlayerRepeatMode"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/all?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlayerRepeatMode.all"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/none?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlayerRepeatMode.none"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/one?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlayerRepeatMode.one"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlayerShuffleMode"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode\/off?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlayerShuffleMode.off"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode\/songs?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.PlayerShuffleMode.songs"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.Queue"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992786-append?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "append"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992787-indexforitem?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "indexForItem"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992790-item?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "item"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992791-items?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "items"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992792-length?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "length"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992795-prepend?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "prepend"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "MusicKit.SetQueueOptions"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions\/2992801-items?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "items"
+    },
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions\/2992806-songs?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "songs"
+    },
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Notification Center"
+    },
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "NCUpdateResult"
+    },
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult\/failed?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "NCUpdateResult.failed"
+    },
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult\/newdata?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "NCUpdateResult.newData"
+    },
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult\/nodata?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "NCUpdateResult.noData"
+    },
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncwidgetproviding?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "NCWidgetProviding"
+    },
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncwidgetproviding\/1490262-widgetperformupdate?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "widgetPerformUpdate(completionHandler:)"
+    },
+    "https:\/\/developer.apple.com\/documentation\/safariservices?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Safari Services"
+    },
+    "https:\/\/developer.apple.com\/documentation\/safariservices\/supporting_associated_domains?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Supporting Associated Domains"
+    },
+    "https:\/\/developer.apple.com\/documentation\/security?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Security"
+    },
+    "https:\/\/developer.apple.com\/documentation\/security\/password_autofill?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Password AutoFill"
+    },
+    "https:\/\/developer.apple.com\/documentation\/security\/shared_web_credentials?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Shared Web Credentials"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Swift"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/array?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Array"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/arrayslice?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ArraySlice"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/bool?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Bool"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/contiguousarray?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "ContiguousArray"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/double?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Double"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/float?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Float"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/float16?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Float16"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/int8?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Int8"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/int16?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Int16"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/int32?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Int32"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/never?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Never"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/optional?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Optional"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/slice?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Slice"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Swift Standard Library"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/collections?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Collections"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/collections\/supporting_types?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Supporting Types"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/debugging_and_reflection?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Debugging and Reflection"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/manual_memory_management?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Manual Memory Management"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/numbers_and_basic_values?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Numbers and Basic Values"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/numbers_and_basic_values\/special-use_numeric_types?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Special-Use Numeric Types"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/uint8?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UInt8"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/uint16?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UInt16"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/uint32?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UInt32"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/unsafebufferpointer?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UnsafeBufferPointer"
+    },
+    "https:\/\/developer.apple.com\/documentation\/swift\/unsafemutablebufferpointer?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UnsafeMutableBufferPointer"
+    },
+    "https:\/\/developer.apple.com\/documentation\/tvmljs?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "TVMLKit JS"
+    },
+    "https:\/\/developer.apple.com\/documentation\/tvmljs\/keyboard?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Keyboard"
+    },
+    "https:\/\/developer.apple.com\/documentation\/tvmljs\/keyboard\/3678707-onsuggestionselected?changes=latest_beta" : {
+      "kind" : "added",
+      "name" : "onSuggestionSelected"
+    },
+    "https:\/\/developer.apple.com\/documentation\/uikit?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UIKit"
+    },
+    "https:\/\/developer.apple.com\/documentation\/uikit\/keyboards_and_input?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Keyboards and Input"
+    },
+    "https:\/\/developer.apple.com\/documentation\/uikit\/uitextinputtraits?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "UITextInputTraits"
+    },
+    "https:\/\/developer.apple.com\/documentation\/xcode?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Xcode"
+    },
+    "https:\/\/developer.apple.com\/documentation\/xcode\/allowing_apps_and_websites_to_link_to_your_content?changes=latest_beta" : {
+      "kind" : "modified",
+      "name" : "Allowing Apps and Websites to Link to Your Content"
+    }
+  },
+  "links" : {
+    "https:\/\/developer.apple.com\/documentation\/accelerate?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/accelerate\/vdsp?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/accelerate\/vdsp?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/accelerate\/dspsplitcomplex?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/accelerate\/dspdoublesplitcomplex?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/authenticationservices?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/security\/password_autofill?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/bundleresources\/applinks?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/bundleresources\/applinks\/details?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/bundleresources\/applinks\/details?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/bundleresources\/applinks\/details\/components?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/carplay?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cplisttemplate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinteresttemplate?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection\/2977575-init?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection\/2977576-init?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cplistitem?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cplistimagerowitem?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection\/2977577-items?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cplisttemplate?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cplistsection?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinterest?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinterest\/3678728-userinfo?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinteresttemplate?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinterest?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinteresttemplatedelegate?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinteresttemplatedelegate?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/carplay\/cppointofinteresttemplatedelegate\/3678729-pointofinteresttemplate?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/coregraphics?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgfloat?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgpoint?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgsize?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgrect?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/createml?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlimageclassifier?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlobjectdetector?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlstyletransfer?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mltextclassifier?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlgazetteer?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlwordembedding?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlsoundclassifier?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlactivityclassifier?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlrecommender?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mldatatable?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mldatavalue?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml\/mlobjectdetectormetrics?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/profile-specific_payload_keys?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/commands_and_queries?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/commands_and_queries?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/list_the_installed_apps?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/security_information?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/extensiblesinglesignonkerberos?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/extensiblesinglesignonkerberos\/extensiondata?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/installedapplicationlistcommand?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/installedapplicationlistcommand\/command?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/list_the_installed_apps?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/installedapplicationlistcommand?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/profile-specific_payload_keys?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/extensiblesinglesignonkerberos?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/restrictions?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/webclip?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/security_information?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/securityinforesponse?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/devicemanagement\/securityinforesponse?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement\/securityinforesponse\/securityinfo?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposurewindow?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enscaninstance?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureinfo?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/exposure_parameter_limits?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuredetectionsummary?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuredaysummary?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuresummaryitem?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644388-immediatedurationweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644392-mediumdurationweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644393-neardurationweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644394-otherdurationweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644389-infectiousnessfordayssinceonseto?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644390-infectiousnesshighweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644391-infectiousnessstandardweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/endayssinceonsetofsymptomsunknown?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644395-reporttypeconfirmedclinicaldiagn?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644396-reporttypeconfirmedtestweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644398-reporttyperecursiveweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644399-reporttypeselfreportedweight?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644397-reporttypenonemap?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureconfiguration\/3644386-dayssincelastexposurethreshold?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuredetectionsummary?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposuredetectionsummary\/3644407-daysummaries?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureinfo?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureinfo\/3644412-dayssinceonsetofsymptoms?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enexposureinfo\/3644413-diagnosisreporttype?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/endayssinceonsetofsymptomsunknown?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager\/3650384-detectexposures?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager\/3644438-getexposurewindows?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/engetexposurewindowshandler?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/enmanager\/3644439-getusertraveled?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/engetusertraveledhandler?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/exposurenotification\/exposure_parameter_limits?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/encalibrationconfidence?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/endiagnosisreporttype?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification\/eninfectiousness?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/foundation?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/foundation\/numbers_data_and_basic_values?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/foundation\/collections?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/foundation\/collections?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/array?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/foundation\/numbers_data_and_basic_values?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/double?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/coregraphics\/cgfloat?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/gamekit?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/gamekit\/gkmatchrequest?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/gamekit\/gkmatchrequest?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/gamekit\/gkmatchrequest\/3074557-restricttoautomatch?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/multipeerconnectivity?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/multipeerconnectivity\/mcpeerid?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992810-configure?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992814-getinstance?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/api?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992811-formattedmilliseconds?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992812-formattedseconds?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/2992813-generateembedcode?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/3030797-errors?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/3030798-formatmediatime?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/api?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/api\/3001448-library?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration\/2992640-app?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/configuration\/2992641-bitrate?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001469-authorizationstatusdidchange?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001470-authorizationstatuswillchange?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001471-eligibleforsubscribeview?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001488-storefrontcountrycodedidchange?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001489-storefrontidentifierdidchange?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/events\/3001490-usertokendidchange?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992671-musickit_mediaitem?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992673-albumname?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992674-artistname?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992675-artworkurl?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992678-contentrating?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001685-discnumber?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992682-isplayable?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001686-isrc?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992685-playbackduration?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3030791-playlistartworkurl?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3030792-playlistname?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992686-previewurl?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/2992687-title?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mediaitem\/3001688-tracknumber?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992649-access_denied?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992650-authorization_error?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992651-configuration_error?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992652-content_restricted?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992654-invalid_arguments?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992655-media_certificate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992656-media_descriptor?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992657-media_key?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992658-media_license?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992659-media_playback?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992660-media_session?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992661-network_error?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992662-not_found?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992663-quota_exceeded?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/3030790-server_error?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992664-service_unavailable?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/3001507-subscription_error?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992665-unknown_error?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/mkerror\/2992666-unsupported_error?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992700-api?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992702-bitrate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992710-playbackstate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992712-player?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030793-addtolibrary?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030794-playlater?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/3030795-playnext?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992716-setqueue?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/musickitinstance\/2992723-unauthorize?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate\/high?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackbitrate\/standard?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/completed?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/ended?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/loading?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/none?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/paused?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/playing?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/seeking?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/stalled?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/stopped?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playbackstates\/waiting?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992744-bitrate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992749-currentplaybackduration?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992751-currentplaybacktime?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/3030796-currentplaybacktimeremaining?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992756-nowplayingitem?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992761-playbackstate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992765-queue?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992767-repeatmode?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992770-shufflemode?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992747-changetomediaitem?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/player\/2992763-preparetoplay?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/all?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/none?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playerrepeatmode\/one?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode\/off?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/playershufflemode\/songs?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992791-items?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992792-length?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992786-append?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992787-indexforitem?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992790-item?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/queue\/2992795-prepend?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions\/2992801-items?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs\/musickit\/setqueueoptions\/2992806-songs?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncwidgetproviding?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult\/newdata?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult\/nodata?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult\/failed?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncwidgetproviding?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncwidgetproviding\/1490262-widgetperformupdate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/notificationcenter\/ncupdateresult?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/safariservices?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/safariservices\/supporting_associated_domains?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/safariservices\/supporting_associated_domains?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/bundleresources\/applinks?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/security?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/security\/password_autofill?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/security\/shared_web_credentials?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/security\/password_autofill?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/safariservices\/supporting_associated_domains?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/security\/shared_web_credentials?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/safariservices\/supporting_associated_domains?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/double?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/array?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift\/array?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/contiguousarray?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/arrayslice?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/numbers_and_basic_values?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/collections?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/debugging_and_reflection?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/manual_memory_management?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/collections?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/array?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/collections\/supporting_types?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/collections\/supporting_types?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/slice?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/debugging_and_reflection?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/never?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/manual_memory_management?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/unsafebufferpointer?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/unsafemutablebufferpointer?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/numbers_and_basic_values?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/bool?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/double?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/float?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/optional?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/numbers_and_basic_values\/special-use_numeric_types?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/swift\/swift_standard_library\/numbers_and_basic_values\/special-use_numeric_types?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/swift\/uint8?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/uint16?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/uint32?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/int8?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/int16?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/int32?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift\/float16?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/technologies?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/foundation?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/swift?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/tvmljs?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/uikit?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/carplay?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/createml?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/multipeerconnectivity?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/notificationcenter?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/safariservices?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/xcode?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/coregraphics?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/gamekit?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/accelerate?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/security?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/authenticationservices?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/devicemanagement?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/exposurenotification?changes=latest_beta",
+      "https:\/\/developer.apple.com\/documentation\/musickitjs?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/tvmljs?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/tvmljs\/keyboard?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/tvmljs\/keyboard?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/tvmljs\/keyboard\/3678707-onsuggestionselected?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/uikit?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/uikit\/keyboards_and_input?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/uikit\/keyboards_and_input?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/uikit\/uitextinputtraits?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/uikit\/uitextinputtraits?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/security\/password_autofill?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/xcode?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/xcode\/allowing_apps_and_websites_to_link_to_your_content?changes=latest_beta"
+    ],
+    "https:\/\/developer.apple.com\/documentation\/xcode\/allowing_apps_and_websites_to_link_to_your_content?changes=latest_beta" : [
+      "https:\/\/developer.apple.com\/documentation\/safariservices\/supporting_associated_domains?changes=latest_beta"
+    ]
+  },
+  "platform" : "Xcode",
+  "root" : "https:\/\/developer.apple.com\/documentation\/technologies?changes=latest_beta",
+  "timestamp" : "2020-09-05T13:01:01Z",
+  "versions" : [
+    "12.0 beta 5",
+    "12.0 beta 6"
+  ]
+}
