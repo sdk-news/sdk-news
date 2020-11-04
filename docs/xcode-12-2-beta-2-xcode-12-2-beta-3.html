@@ -1,0 +1,2851 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Xcode 12.2 beta 2 - Xcode 12.2 beta 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style type="text/css">
+      body { padding-top: 5rem; }
+      [data-toggle="collapse"] .fa:before { content: "\f139"; }
+      [data-toggle="collapse"].collapsed .fa:before { content: "\f13a"; }
+      ul.changes { list-style-type: none; padding: 0 0 0 2rem; }
+      ul.changes li::before { font-size: 50%; vertical-align: middle; margin: 0 0 0 -2rem; display: inline-block; width: 1.5rem; text-align: right; }
+      ul.changes li.added::before { content: "🟢"; }
+      ul.changes li.modified::before { content: "🟣"; }
+      ul.changes li.deprecated::before { content: "🔴"; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">SDK News</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Xcode 12.2 beta 2 - Xcode 12.2 beta 3
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="xcode-12-2-beta-2-xcode-12-2-beta-3.html">Xcode 12.2 beta 2 - Xcode 12.2 beta 3</a>
+<a class="dropdown-item" href="xcode-12-0-xcode-12-1-1-release-candidate.html">Xcode 12.0 - Xcode 12.1.1 Release Candidate</a>
+<a class="dropdown-item" href="xcode-12-0-xcode-12-2-beta-2.html">Xcode 12.0 - Xcode 12.2 beta 2</a>
+<a class="dropdown-item" href="apple-news-format-1-14-0-apple-news-format-1-15-0.html">Apple News Format 1.14.0 - Apple News Format 1.15.0</a>
+<a class="dropdown-item" href="xcode-12-2-beta-1-xcode-12-2-beta-2.html">Xcode 12.2 beta 1 - Xcode 12.2 beta 2</a>
+<a class="dropdown-item" href="xcode-11-6-xcode-12-0-gm-seed.html">Xcode 11.6 - Xcode 12.0 GM seed</a>
+<a class="dropdown-item" href="xcode-12-0-beta-6-xcode-12-0-gm-seed.html">Xcode 12.0 beta 6 - Xcode 12.0 GM seed</a>
+<a class="dropdown-item" href="xcode-11-0-xcode-12-0-gm-seed.html">Xcode 11.0 - Xcode 12.0 GM seed</a>
+<a class="dropdown-item" href="xcode-12-0-beta-5-xcode-12-0-beta-6.html">Xcode 12.0 beta 5 - Xcode 12.0 beta 6</a>
+<a class="dropdown-item" href="xcode-11-6-xcode-12-0-beta-6.html">Xcode 11.6 - Xcode 12.0 beta 6</a>
+<a class="dropdown-item" href="xcode-11-0-xcode-12-0-beta-6.html">Xcode 11.0 - Xcode 12.0 beta 6</a>
+<a class="dropdown-item" href="xcode-11-0-xcode-12-0-beta-5.html">Xcode 11.0 - Xcode 12.0 beta 5</a>
+<a class="dropdown-item" href="xcode-11-6-xcode-12-0-beta-5.html">Xcode 11.6 - Xcode 12.0 beta 5</a>
+<a class="dropdown-item" href="xcode-12-0-beta-4-xcode-12-0-beta-5.html">Xcode 12.0 beta 4 - Xcode 12.0 beta 5</a>
+<a class="dropdown-item" href="xcode-11-0-xcode-12-0-beta-4.html">Xcode 11.0 - Xcode 12.0 beta 4</a>
+<a class="dropdown-item" href="xcode-11-6-xcode-12-0-beta-4.html">Xcode 11.6 - Xcode 12.0 beta 4</a>
+<a class="dropdown-item" href="xcode-12-0-beta-3-xcode-12-0-beta-4.html">Xcode 12.0 beta 3 - Xcode 12.0 beta 4</a>
+<a class="dropdown-item" href="xcode-11-6-xcode-12-0-beta-3.html">Xcode 11.6 - Xcode 12.0 beta 3</a>
+<a class="dropdown-item" href="xcode-11-0-xcode-12-0-beta-3.html">Xcode 11.0 - Xcode 12.0 beta 3</a>
+<a class="dropdown-item" href="xcode-12-0-beta-2-xcode-12-0-beta-3.html">Xcode 12.0 beta 2 - Xcode 12.0 beta 3</a>
+<a class="dropdown-item" href="xcode-12-0-beta-1-xcode-12-0-beta-2.html">Xcode 12.0 beta 1 - Xcode 12.0 beta 2</a>
+<a class="dropdown-item" href="xcode-11-6-beta-1-xcode-12-0-beta-1.html">Xcode 11.6 beta 1 - Xcode 12.0 beta 1</a>
+<a class="dropdown-item" href="xcode-11-0-xcode-12-0-beta-1.html">Xcode 11.0 - Xcode 12.0 beta 1</a>
+<a class="dropdown-item" href="xcode-11-5-xcode-11-6-beta-1.html">Xcode 11.5 - Xcode 11.6 beta 1</a>
+<a class="dropdown-item" href="xcode-11-0-xcode-11-6-beta-1.html">Xcode 11.0 - Xcode 11.6 beta 1</a>
+<a class="dropdown-item" href="musickit-js-1-0-beta-1-musickit-js-1-0.html">MusicKit JS 1.0 beta 1 - MusicKit JS 1.0</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link" href="https://github.com/victor-pavlychko/sdk-news/" role="button">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+        <h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1796" aria-controls="collapse1796" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/swiftui?changes=latest_beta">SwiftUI</a>
+</h2>
+<ul class="changes collapse show" id="collapse1796">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/swiftui/state-and-data-flow?changes=latest_beta">State and Data Flow</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/swiftui/environmentvalues?changes=latest_beta">EnvironmentValues</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/swiftui/environmentvalues/accessibilityshowbuttonshapes?changes=latest_beta">accessibilityShowButtonShapes</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1797" aria-controls="collapse1797" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/uikit?changes=latest_beta">UIKit</a>
+</h2>
+<ul class="changes collapse show" id="collapse1797">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/uikit/keyboards_and_input?changes=latest_beta">Keyboards and Input</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/uikit/uitextinputtraits?changes=latest_beta">UITextInputTraits</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/security/password_autofill?changes=latest_beta">Password AutoFill</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/safariservices/supporting_associated_domains?changes=latest_beta">Supporting Associated Domains</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks?changes=latest_beta">applinks</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details?changes=latest_beta">applinks.Details</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details/components?changes=latest_beta">applinks.Details.Components</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1798" aria-controls="collapse1798" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/clockkit?changes=latest_beta">ClockKit</a>
+</h2>
+<ul class="changes collapse show" id="collapse1798">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/graphic?changes=latest_beta">Graphic</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornertextview?changes=latest_beta">CLKComplicationTemplateGraphicCornerTextView</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccornertextview/previewfacecolor?changes=latest_beta">CLKComplicationTemplateGraphicCornerTextView.PreviewFaceColor</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplate/previewfacecolor/3593823-pink?changes=latest_beta">pink</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeview?changes=latest_beta">CLKComplicationTemplateGraphicCircularOpenGaugeView</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularopengaugeview/previewfacecolor?changes=latest_beta">CLKComplicationTemplateGraphicCircularOpenGaugeView.PreviewFaceColor</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugeview/previewfacecolor/3593811-orange?changes=latest_beta">orange</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugeview?changes=latest_beta">CLKComplicationTemplateGraphicCircularClosedGaugeView</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugeview/previewfacecolor?changes=latest_beta">CLKComplicationTemplateGraphicCircularClosedGaugeView.PreviewFaceColor</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphiccircularclosedgaugeview/previewfacecolor/3593811-orange?changes=latest_beta">orange</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstackviewtext?changes=latest_beta">CLKComplicationTemplateGraphicExtraLargeCircularStackViewText</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplategraphicextralargecircularstackviewtext/previewfacecolor?changes=latest_beta">CLKComplicationTemplateGraphicExtraLargeCircularStackViewText.PreviewFaceColor</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplate/previewfacecolor/3593823-pink?changes=latest_beta">pink</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplate?changes=latest_beta">CLKComplicationTemplate</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplate/previewfacecolor?changes=latest_beta">CLKComplicationTemplate.PreviewFaceColor</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/clockkit/clkcomplicationtemplate/previewfacecolor/3593823-pink?changes=latest_beta">pink</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1799" aria-controls="collapse1799" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/createml?changes=latest_beta">Create ML</a>
+</h2>
+<ul class="changes collapse show" id="collapse1799">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/createml/mlimageclassifier?changes=latest_beta">MLImageClassifier</a>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1800" aria-controls="collapse1800" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/multipeerconnectivity?changes=latest_beta">Multipeer Connectivity</a>
+</h2>
+<ul class="changes collapse show" id="collapse1800">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/multipeerconnectivity/mcpeerid?changes=latest_beta">MCPeerID</a>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1801" aria-controls="collapse1801" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/safariservices?changes=latest_beta">Safari Services</a>
+</h2>
+<ul class="changes collapse show" id="collapse1801">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/safariservices/supporting_associated_domains?changes=latest_beta">Supporting Associated Domains</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks?changes=latest_beta">applinks</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details?changes=latest_beta">applinks.Details</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details/components?changes=latest_beta">applinks.Details.Components</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1802" aria-controls="collapse1802" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/storekit?changes=latest_beta">StoreKit</a>
+</h2>
+<ul class="changes collapse show" id="collapse1802">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase?changes=latest_beta">In-App Purchase</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skdownload?changes=latest_beta">SKDownload</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skdownload/1458932-contentlength?changes=latest_beta">contentLength</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/recommendations_and_reviews?changes=latest_beta">Recommendations and Reviews</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay?changes=latest_beta">SKOverlay</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/3566702-init?changes=latest_beta">init(configuration:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/3566699-configuration?changes=latest_beta">configuration</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration?changes=latest_beta">SKOverlay.AppConfiguration</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/3566714-init?changes=latest_beta">init(appIdentifier:position:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/3566712-appidentifier?changes=latest_beta">appIdentifier</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/3566715-position?changes=latest_beta">position</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/position?changes=latest_beta">SKOverlay.Position</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/position/bottom?changes=latest_beta">SKOverlay.Position.bottom</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/position/bottomraised?changes=latest_beta">SKOverlay.Position.bottomRaised</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/3573919-userdismissible?changes=latest_beta">userDismissible</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/3566713-campaigntoken?changes=latest_beta">campaignToken</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/3612099-providertoken?changes=latest_beta">providerToken</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/3566716-setadditionalvalue?changes=latest_beta">setAdditionalValue(_:forKey:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/3566711-additionalvalue?changes=latest_beta">additionalValue(forKey:)</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appclipconfiguration?changes=latest_beta">SKOverlay.AppClipConfiguration</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appclipconfiguration/3571383-init?changes=latest_beta">init(position:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appclipconfiguration/3571384-position?changes=latest_beta">position</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/position?changes=latest_beta">SKOverlay.Position</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/position/bottom?changes=latest_beta">SKOverlay.Position.bottom</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/position/bottomraised?changes=latest_beta">SKOverlay.Position.bottomRaised</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appclipconfiguration/3571382-campaigntoken?changes=latest_beta">campaignToken</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appclipconfiguration/3612098-providertoken?changes=latest_beta">providerToken</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appclipconfiguration/3571385-setadditionalvalue?changes=latest_beta">setAdditionalValue(_:forKey:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/appclipconfiguration/3571381-additionalvalue?changes=latest_beta">additionalValue(forKey:)</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/configuration?changes=latest_beta">SKOverlay.Configuration</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/3566703-present?changes=latest_beta">present(in:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/3566701-dismiss?changes=latest_beta">dismiss(in:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/3566700-delegate?changes=latest_beta">delegate</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlaydelegate?changes=latest_beta">SKOverlayDelegate</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlaydelegate/3566709-storeoverlaywillstartpresentatio?changes=latest_beta">storeOverlayWillStartPresentation(_:transitionContext:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlaydelegate/3566707-storeoverlaydidfinishpresentatio?changes=latest_beta">storeOverlayDidFinishPresentation(_:transitionContext:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlaydelegate/3566708-storeoverlaywillstartdismissal?changes=latest_beta">storeOverlayWillStartDismissal(_:transitionContext:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlaydelegate/3566706-storeoverlaydidfinishdismissal?changes=latest_beta">storeOverlayDidFinishDismissal(_:transitionContext:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/transitioncontext?changes=latest_beta">SKOverlay.TransitionContext</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/transitioncontext/3583270-addanimation?changes=latest_beta">addAnimation(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/transitioncontext/3566725-startframe?changes=latest_beta">startFrame</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlay/transitioncontext/3566724-endframe?changes=latest_beta">endFrame</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skoverlaydelegate/3566705-storeoverlaydidfailtoload?changes=latest_beta">storeOverlayDidFailToLoad(_:error:)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror?changes=latest_beta">SKError</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror/code?changes=latest_beta">SKError.Code</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror/code/overlayinvalidconfiguration?changes=latest_beta">SKError.Code.overlayInvalidConfiguration</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror/code/overlaytimeout?changes=latest_beta">SKError.Code.overlayTimeout</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/storekit/skerror/code/unsupportedplatform?changes=latest_beta">SKError.Code.unsupportedPlatform</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror/3656407-overlayinvalidconfiguration?changes=latest_beta">overlayInvalidConfiguration</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror/3656408-overlaytimeout?changes=latest_beta">overlayTimeout</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/storekit/skerror/3689489-unsupportedplatform?changes=latest_beta">unsupportedPlatform</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror/code?changes=latest_beta">SKError.Code</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror/code/overlayinvalidconfiguration?changes=latest_beta">SKError.Code.overlayInvalidConfiguration</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/storekit/skerror/code/overlaytimeout?changes=latest_beta">SKError.Code.overlayTimeout</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/storekit/skerror/code/unsupportedplatform?changes=latest_beta">SKError.Code.unsupportedPlatform</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1803" aria-controls="collapse1803" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/walletpasses?changes=latest_beta">Wallet Passes</a>
+</h2>
+<ul class="changes collapse show" id="collapse1803">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/post_v1_passes_passtypeidentifier_serialnumber_personalize?changes=latest_beta">POST /v1/passes/{passTypeIdentifier}/{serialNumber}/personalize</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass?changes=latest_beta">Pass</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass/barcodes?changes=latest_beta">Pass.Barcodes</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass/beacons?changes=latest_beta">Pass.Beacons</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass/boardingpass?changes=latest_beta">Pass.BoardingPass</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass/coupon?changes=latest_beta">Pass.Coupon</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass/eventticket?changes=latest_beta">Pass.EventTicket</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass/generic?changes=latest_beta">Pass.Generic</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass/locations?changes=latest_beta">Pass.Locations</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/pass/storecard?changes=latest_beta">Pass.StoreCard</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/passfieldcontent?changes=latest_beta">PassFieldContent</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/passfields?changes=latest_beta">PassFields</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/passfields/auxiliaryfields?changes=latest_beta">PassFields.AuxiliaryFields</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/passfields/backfields?changes=latest_beta">PassFields.BackFields</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/passfields/headerfields?changes=latest_beta">PassFields.HeaderFields</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/passfields/primaryfields?changes=latest_beta">PassFields.PrimaryFields</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/passfields/secondaryfields?changes=latest_beta">PassFields.SecondaryFields</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/personalizationdictionary?changes=latest_beta">PersonalizationDictionary</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/personalizationdictionary/requiredpersonalizationinfo?changes=latest_beta">PersonalizationDictionary.RequiredPersonalizationInfo</a>
+</li>
+</ul>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/walletpasses/personalize?changes=latest_beta">Personalize</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/walletpasses/semantictagtype?changes=latest_beta">SemanticTagType</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/walletpasses/semantictagtype/currencyamount?changes=latest_beta">SemanticTagType.CurrencyAmount</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/walletpasses/semantictagtype/location?changes=latest_beta">SemanticTagType.Location</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/walletpasses/semantictagtype/personnamecomponents?changes=latest_beta">SemanticTagType.PersonNameComponents</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/walletpasses/semantictagtype/seat?changes=latest_beta">SemanticTagType.Seat</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/walletpasses/semantictagtype/wifinetwork?changes=latest_beta">SemanticTagType.WifiNetwork</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/walletpasses/semantictags?changes=latest_beta">SemanticTags</a>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1804" aria-controls="collapse1804" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/xcode?changes=latest_beta">Xcode</a>
+</h2>
+<ul class="changes collapse show" id="collapse1804">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content?changes=latest_beta">Allowing Apps and Websites to Link to Your Content</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/safariservices/supporting_associated_domains?changes=latest_beta">Supporting Associated Domains</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks?changes=latest_beta">applinks</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details?changes=latest_beta">applinks.Details</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details/components?changes=latest_beta">applinks.Details.Components</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1805" aria-controls="collapse1805" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/xctest?changes=latest_beta">XCTest</a>
+</h2>
+<ul class="changes collapse show" id="collapse1805">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/xctest/user_interface_tests?changes=latest_beta">User Interface Tests</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/xctest/xcuielement?changes=latest_beta">XCUIElement</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/xctest/xcuigesturevelocity?changes=latest_beta">XCUIGestureVelocity</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/xctest/xcuigesturevelocity/floatliteraltype?changes=latest_beta">XCUIGestureVelocity.FloatLiteralType</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/xctest/xcuigesturevelocity/integerliteraltype?changes=latest_beta">XCUIGestureVelocity.IntegerLiteralType</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/xctest/test_execution_and_observation?changes=latest_beta">Test Execution and Observation</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/xctest/xctissue?changes=latest_beta">XCTIssue</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/xctest/xctissue/3656328-hashvalue?changes=latest_beta">hashValue</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/xctest/xctissue/3656327-hash?changes=latest_beta">hash(into:)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1806" aria-controls="collapse1806" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/coreimage?changes=latest_beta">Core Image</a>
+</h2>
+<ul class="changes collapse show" id="collapse1806">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/coreimage/cicontext?changes=latest_beta">CIContext</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/coreimage/cicontext/3600105-depthblureffectfilter?changes=latest_beta">depthBlurEffectFilter(for:disparityImage:portraitEffectsMatte:hairSemanticSegmentation:glassesMatte:gainMap:orientation:options:)</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/coreimage/core_image_data_types?changes=latest_beta">Core Image Data Types</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/coreimage/ciimageoption?changes=latest_beta">CIImageOption</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/coreimage/ciimageoption/3547135-auxiliarysemanticsegmentationgla?changes=latest_beta">auxiliarySemanticSegmentationGlassesMatte</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/coreimage/ciimagerepresentationoption?changes=latest_beta">CIImageRepresentationOption</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/coreimage/ciimagerepresentationoption/3547088-semanticsegmentationglassesmatte?changes=latest_beta">semanticSegmentationGlassesMatteImage</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1807" aria-controls="collapse1807" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/imageio?changes=latest_beta">Image I/O</a>
+</h2>
+<ul class="changes collapse show" id="collapse1807">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/imageio/image_i_o_constants?changes=latest_beta">Image I/O Constants</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypehdrgainmap?changes=latest_beta">kCGImageAuxiliaryDataTypeHDRGainMap</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypesemanticsegmentationglassesmatte?changes=latest_beta">kCGImageAuxiliaryDataTypeSemanticSegmentationGlassesMatte</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/imageio/kcgimagedestinationpreservegainmap?changes=latest_beta">kCGImageDestinationPreserveGainMap</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1808" aria-controls="collapse1808" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/metal?changes=latest_beta">Metal</a>
+</h2>
+<ul class="changes collapse show" id="collapse1808">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/metal/mtlcomputepipelinestate?changes=latest_beta">MTLComputePipelineState</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/metal/mtlvisiblefunctiontabledescriptor?changes=latest_beta">MTLVisibleFunctionTableDescriptor</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/metal/mtlintersectionfunctiontabledescriptor?changes=latest_beta">MTLIntersectionFunctionTableDescriptor</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/metal/mtlintersectionfunctiontabledescriptor?changes=latest_beta">MTLIntersectionFunctionTableDescriptor</a>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1809" aria-controls="collapse1809" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/metalperformanceshadersgraph?changes=latest_beta">Metal Performance Shaders Graph</a>
+</h2>
+<ul class="changes collapse show" id="collapse1809">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraph?changes=latest_beta">MPSGraph</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/metalperformanceshadersgraph/mpsgraph/3686986-constant?changes=latest_beta">constant(_:dataType:)</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1810" aria-controls="collapse1810" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/scenekit?changes=latest_beta">SceneKit</a>
+</h2>
+<ul class="changes collapse show" id="collapse1810">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview?changes=latest_beta">SceneView</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607793-init?changes=latest_beta">init(scene:pointOfView:options:preferredFramesPerSecond:antialiasingMode:delegate:technique:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options?changes=latest_beta">SceneView.Options</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/arrayliteralelement?changes=latest_beta">SceneView.Options.ArrayLiteralElement</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/element?changes=latest_beta">SceneView.Options.Element</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/rawvalue?changes=latest_beta">SceneView.Options.RawValue</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607671-init?changes=latest_beta">init()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607672-init?changes=latest_beta">init(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607674-init?changes=latest_beta">init(arrayLiteral:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607676-init?changes=latest_beta">init(rawValue:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607683-isempty?changes=latest_beta">isEmpty</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607693-rawvalue?changes=latest_beta">rawValue</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607664-allowscameracontrol?changes=latest_beta">allowsCameraControl</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607665-autoenablesdefaultlighting?changes=latest_beta">autoenablesDefaultLighting</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607692-jitteringenabled?changes=latest_beta">jitteringEnabled</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607697-renderscontinuously?changes=latest_beta">rendersContinuously</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607703-temporalantialiasingenabled?changes=latest_beta">temporalAntialiasingEnabled</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607666-contains?changes=latest_beta">contains(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607668-formintersection?changes=latest_beta">formIntersection(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607669-formsymmetricdifference?changes=latest_beta">formSymmetricDifference(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607670-formunion?changes=latest_beta">formUnion(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607677-insert?changes=latest_beta">insert(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607679-intersection?changes=latest_beta">intersection(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607681-isdisjoint?changes=latest_beta">isDisjoint(with:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607684-isstrictsubset?changes=latest_beta">isStrictSubset(of:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607686-isstrictsuperset?changes=latest_beta">isStrictSuperset(of:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607688-issubset?changes=latest_beta">isSubset(of:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607690-issuperset?changes=latest_beta">isSuperset(of:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607694-remove?changes=latest_beta">remove(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607698-subtract?changes=latest_beta">subtract(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607700-subtracting?changes=latest_beta">subtracting(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607702-symmetricdifference?changes=latest_beta">symmetricDifference(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607704-union?changes=latest_beta">union(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607706-update?changes=latest_beta">update(with:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/options/3607660?changes=latest_beta">!=(_:_:)</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/view_modifiers?changes=latest_beta">View Modifiers</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607778-frame?changes=latest_beta">frame(width:height:alignment:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607777-frame?changes=latest_beta">frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607776-frame?changes=latest_beta">frame()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607770-fixedsize?changes=latest_beta">fixedSize()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607771-fixedsize?changes=latest_beta">fixedSize(horizontal:vertical:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607797-layoutpriority?changes=latest_beta">layoutPriority(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607850-position?changes=latest_beta">position(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607851-position?changes=latest_beta">position(x:y:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607823-offset?changes=latest_beta">offset(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607824-offset?changes=latest_beta">offset(x:y:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607766-edgesignoringsafearea?changes=latest_beta">edgesIgnoringSafeArea(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607759-coordinatespace?changes=latest_beta">coordinateSpace(name:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607731-alignmentguide?changes=latest_beta">alignmentGuide(_:computeValue:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607730-alignmentguide?changes=latest_beta">alignmentGuide(_:computeValue:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607843-padding?changes=latest_beta">padding(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607844-padding?changes=latest_beta">padding(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607845-padding?changes=latest_beta">padding(_:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607841-overlay?changes=latest_beta">overlay(_:alignment:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607740-background?changes=latest_beta">background(_:alignment:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607895-zindex?changes=latest_beta">zIndex(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607716-accessibility?changes=latest_beta">accessibility(label:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607715-accessibility?changes=latest_beta">accessibility(inputLabels:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607720-accessibility?changes=latest_beta">accessibility(value:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607712-accessibility?changes=latest_beta">accessibility(hidden:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607714-accessibility?changes=latest_beta">accessibility(identifier:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607718-accessibility?changes=latest_beta">accessibility(selectionIdentifier:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607713-accessibility?changes=latest_beta">accessibility(hint:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607721-accessibilityaction?changes=latest_beta">accessibilityAction(_:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607722-accessibilityaction?changes=latest_beta">accessibilityAction(named:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607723-accessibilityadjustableaction?changes=latest_beta">accessibilityAdjustableAction(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607725-accessibilityscrollaction?changes=latest_beta">accessibilityScrollAction(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607724-accessibilityelement?changes=latest_beta">accessibilityElement(children:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607711-accessibility?changes=latest_beta">accessibility(addTraits:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607717-accessibility?changes=latest_beta">accessibility(removeTraits:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607719-accessibility?changes=latest_beta">accessibility(sortPriority:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607784-help?changes=latest_beta">help(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607786-help?changes=latest_beta">help(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607785-help?changes=latest_beta">help(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607750-clipped?changes=latest_beta">clipped(antialiased:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607749-clipshape?changes=latest_beta">clipShape(_:style:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607760-cornerradius?changes=latest_beta">cornerRadius(_:antialiased:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607804-mask?changes=latest_beta">mask(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607872-scaledtofill?changes=latest_beta">scaledToFill()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607873-scaledtofit?changes=latest_beta">scaledToFit()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607869-scaleeffect?changes=latest_beta">scaleEffect(_:anchor:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607870-scaleeffect?changes=latest_beta">scaleEffect(_:anchor:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607871-scaleeffect?changes=latest_beta">scaleEffect(x:y:anchor:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607737-aspectratio?changes=latest_beta">aspectRatio(_:contentMode:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607738-aspectratio?changes=latest_beta">aspectRatio(_:contentMode:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607792-imagescale?changes=latest_beta">imageScale(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607867-rotationeffect?changes=latest_beta">rotationEffect(_:anchor:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607866-rotation3deffect?changes=latest_beta">rotation3DEffect(_:axis:anchor:anchorZ:perspective:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607859-projectioneffect?changes=latest_beta">projectionEffect(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607890-transformeffect?changes=latest_beta">transformEffect(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607743-blur?changes=latest_beta">blur(radius:opaque:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607840-opacity?changes=latest_beta">opacity(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607746-brightness?changes=latest_beta">brightness(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607758-contrast?changes=latest_beta">contrast(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607751-colorinvert?changes=latest_beta">colorInvert()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607752-colormultiply?changes=latest_beta">colorMultiply(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607868-saturation?changes=latest_beta">saturation(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607782-grayscale?changes=latest_beta">grayscale(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607790-huerotation?changes=latest_beta">hueRotation(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607803-luminancetoalpha?changes=latest_beta">luminanceToAlpha()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607875-shadow?changes=latest_beta">shadow(color:radius:x:y:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607742-blendmode?changes=latest_beta">blendMode(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607754-compositinggroup?changes=latest_beta">compositingGroup()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607765-drawinggroup?changes=latest_beta">drawingGroup(opaque:colorMode:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607735-animation?changes=latest_beta">animation(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607736-animation?changes=latest_beta">animation(_:value:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607893-transition?changes=latest_beta">transition(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607805-matchedgeometryeffect?changes=latest_beta">matchedGeometryEffect(id:in:properties:anchor:isSource:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607745-border?changes=latest_beta">border(_:width:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607775-foregroundcolor?changes=latest_beta">foregroundColor(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607708-accentcolor?changes=latest_beta">accentColor(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607753-colorscheme?changes=latest_beta">colorScheme(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607853-preferredcolorscheme?changes=latest_beta">preferredColorScheme(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607795-keyboardtype?changes=latest_beta">keyboardType(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607774-font?changes=latest_beta">font(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607798-linelimit?changes=latest_beta">lineLimit(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607799-linespacing?changes=latest_beta">lineSpacing(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607809-multilinetextalignment?changes=latest_beta">multilineTextAlignment(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607806-minimumscalefactor?changes=latest_beta">minimumScaleFactor(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607894-truncationmode?changes=latest_beta">truncationMode(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607733-allowstightening?changes=latest_beta">allowsTightening(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607885-textcontenttype?changes=latest_beta">textContentType(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607884-textcase?changes=latest_beta">textCase(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607772-flipsforrighttoleftlayoutdirecti?changes=latest_beta">flipsForRightToLeftLayoutDirection(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607739-autocapitalization?changes=latest_beta">autocapitalization(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607763-disableautocorrection?changes=latest_beta">disableAutocorrection(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607796-labelshidden?changes=latest_beta">labelsHidden()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612778-labelstyle?changes=latest_beta">labelStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607747-buttonstyle?changes=latest_beta">buttonStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607748-buttonstyle?changes=latest_beta">buttonStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3622554-menustyle?changes=latest_beta">menuStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607846-pickerstyle?changes=latest_beta">pickerStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607761-datepickerstyle?changes=latest_beta">datePickerStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607886-textfieldstyle?changes=latest_beta">textFieldStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607887-togglestyle?changes=latest_beta">toggleStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3619657-indexviewstyle?changes=latest_beta">indexViewStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607802-liststyle?changes=latest_beta">listStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607783-groupboxstyle?changes=latest_beta">groupBoxStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607822-navigationviewstyle?changes=latest_beta">navigationViewStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607858-progressviewstyle?changes=latest_beta">progressViewStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607801-listrowinsets?changes=latest_beta">listRowInsets(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607800-listrowbackground?changes=latest_beta">listRowBackground(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607883-tag?changes=latest_beta">tag(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612779-listitemtint?changes=latest_beta">listItemTint(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612780-listitemtint?changes=latest_beta">listItemTint(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612785-navigationtitle?changes=latest_beta">navigationTitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612786-navigationtitle?changes=latest_beta">navigationTitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612787-navigationtitle?changes=latest_beta">navigationTitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612783-navigationsubtitle?changes=latest_beta">navigationSubtitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612782-navigationsubtitle?changes=latest_beta">navigationSubtitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612784-navigationsubtitle?changes=latest_beta">navigationSubtitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607817-navigationbartitle?changes=latest_beta">navigationBarTitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607820-navigationbartitle?changes=latest_beta">navigationBarTitle(_:displayMode:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607816-navigationbartitle?changes=latest_beta">navigationBarTitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607818-navigationbartitle?changes=latest_beta">navigationBarTitle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607819-navigationbartitle?changes=latest_beta">navigationBarTitle(_:displayMode:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607821-navigationbartitle?changes=latest_beta">navigationBarTitle(_:displayMode:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3621894-navigationbartitledisplaymode?changes=latest_beta">navigationBarTitleDisplayMode(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607812-navigationbarhidden?changes=latest_beta">navigationBarHidden(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607880-statusbar?changes=latest_beta">statusBar(hidden:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607810-navigationbarbackbuttonhidden?changes=latest_beta">navigationBarBackButtonHidden(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607813-navigationbaritems?changes=latest_beta">navigationBarItems(leading:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607814-navigationbaritems?changes=latest_beta">navigationBarItems(leading:trailing:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607815-navigationbaritems?changes=latest_beta">navigationBarItems(trailing:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607881-tabitem?changes=latest_beta">tabItem(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607882-tabviewstyle?changes=latest_beta">tabViewStyle(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612797-toolbar?changes=latest_beta">toolbar(content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607756-contextmenu?changes=latest_beta">contextMenu(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607757-contextmenu?changes=latest_beta">contextMenu(menuItems:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607787-hidden?changes=latest_beta">hidden()</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607764-disabled?changes=latest_beta">disabled(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607839-ontapgesture?changes=latest_beta">onTapGesture(count:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607836-onlongpressgesture?changes=latest_beta">onLongPressGesture(minimumDuration:maximumDistance:pressing:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607781-gesture?changes=latest_beta">gesture(_:including:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607788-highprioritygesture?changes=latest_beta">highPriorityGesture(_:including:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607879-simultaneousgesture?changes=latest_beta">simultaneousGesture(_:including:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607888-transaction?changes=latest_beta">transaction(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3619662-useractivity?changes=latest_beta">userActivity(_:element:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3619663-useractivity?changes=latest_beta">userActivity(_:isActive:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3619658-oncontinueuseractivity?changes=latest_beta">onContinueUserActivity(_:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3619659-onopenurl?changes=latest_beta">onOpenURL(perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607825-onappear?changes=latest_beta">onAppear(perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607827-ondisappear?changes=latest_beta">onDisappear(perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607826-onchange?changes=latest_beta">onChange(of:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607762-deletedisabled?changes=latest_beta">deleteDisabled(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607808-movedisabled?changes=latest_beta">moveDisabled(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607838-onreceive?changes=latest_beta">onReceive(_:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612776-keyboardshortcut?changes=latest_beta">keyboardShortcut(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3612777-keyboardshortcut?changes=latest_beta">keyboardShortcut(_:modifiers:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607835-onhover?changes=latest_beta">onHover(perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607773-focusedvalue?changes=latest_beta">focusedValue(_:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607789-hovereffect?changes=latest_beta">hoverEffect(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607828-ondrag?changes=latest_beta">onDrag(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607829-ondrop?changes=latest_beta">onDrop(of:delegate:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607832-ondrop?changes=latest_beta">onDrop(of:isTargeted:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607831-ondrop?changes=latest_beta">onDrop(of:isTargeted:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607830-ondrop?changes=latest_beta">onDrop(of:delegate:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607834-ondrop?changes=latest_beta">onDrop(of:isTargeted:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607833-ondrop?changes=latest_beta">onDrop(of:isTargeted:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607794-itemprovider?changes=latest_beta">itemProvider(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607732-allowshittesting?changes=latest_beta">allowsHitTesting(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607755-contentshape?changes=latest_beta">contentShape(_:eoFill:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607726-actionsheet?changes=latest_beta">actionSheet(isPresented:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607727-actionsheet?changes=latest_beta">actionSheet(item:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607876-sheet?changes=latest_beta">sheet(isPresented:onDismiss:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607877-sheet?changes=latest_beta">sheet(item:onDismiss:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607779-fullscreencover?changes=latest_beta">fullScreenCover(isPresented:onDismiss:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607780-fullscreencover?changes=latest_beta">fullScreenCover(item:onDismiss:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607728-alert?changes=latest_beta">alert(isPresented:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607729-alert?changes=latest_beta">alert(item:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607848-popover?changes=latest_beta">popover(isPresented:attachmentAnchor:arrowEdge:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607849-popover?changes=latest_beta">popover(item:attachmentAnchor:arrowEdge:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3619655-defaultappstorage?changes=latest_beta">defaultAppStorage(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607852-preference?changes=latest_beta">preference(key:value:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607892-transformpreference?changes=latest_beta">transformPreference(_:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607734-anchorpreference?changes=latest_beta">anchorPreference(key:value:transform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607889-transformanchorpreference?changes=latest_beta">transformAnchorPreference(key:value:transform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607837-onpreferencechange?changes=latest_beta">onPreferenceChange(_:perform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607741-backgroundpreferencevalue?changes=latest_beta">backgroundPreferenceValue(_:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607842-overlaypreferencevalue?changes=latest_beta">overlayPreferenceValue(_:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607768-environment?changes=latest_beta">environment(_:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607769-environmentobject?changes=latest_beta">environmentObject(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607891-transformenvironment?changes=latest_beta">transformEnvironment(_:transform:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607855-previewdevice?changes=latest_beta">previewDevice(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607856-previewdisplayname?changes=latest_beta">previewDisplayName(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607857-previewlayout?changes=latest_beta">previewLayout(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607854-previewcontext?changes=latest_beta">previewContext(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607791-id?changes=latest_beta">id(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607744-body?changes=latest_beta">body</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/body?changes=latest_beta">SceneView.Body</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607807-modifier?changes=latest_beta">modifier(_:)</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607709-accessibility?changes=latest_beta">accessibility(activationPoint:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3607710-accessibility?changes=latest_beta">accessibility(activationPoint:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672261-accessibilityaction?changes=latest_beta">accessibilityAction(named:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672262-accessibilityaction?changes=latest_beta">accessibilityAction(named:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672263-accessibilityactivationpoint?changes=latest_beta">accessibilityActivationPoint(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672264-accessibilityactivationpoint?changes=latest_beta">accessibilityActivationPoint(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672265-accessibilityaddtraits?changes=latest_beta">accessibilityAddTraits(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672266-accessibilityhidden?changes=latest_beta">accessibilityHidden(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672267-accessibilityhint?changes=latest_beta">accessibilityHint(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672268-accessibilityhint?changes=latest_beta">accessibilityHint(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672269-accessibilityhint?changes=latest_beta">accessibilityHint(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672270-accessibilityidentifier?changes=latest_beta">accessibilityIdentifier(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3650113-accessibilityignoresinvertcolors?changes=latest_beta">accessibilityIgnoresInvertColors(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672271-accessibilityinputlabels?changes=latest_beta">accessibilityInputLabels(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672272-accessibilityinputlabels?changes=latest_beta">accessibilityInputLabels(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672273-accessibilityinputlabels?changes=latest_beta">accessibilityInputLabels(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672274-accessibilitylabel?changes=latest_beta">accessibilityLabel(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672275-accessibilitylabel?changes=latest_beta">accessibilityLabel(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672276-accessibilitylabel?changes=latest_beta">accessibilityLabel(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3667519-accessibilitylabeledpair?changes=latest_beta">accessibilityLabeledPair(role:id:in:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3667520-accessibilitylinkedgroup?changes=latest_beta">accessibilityLinkedGroup(id:in:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672277-accessibilityremovetraits?changes=latest_beta">accessibilityRemoveTraits(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672278-accessibilitysortpriority?changes=latest_beta">accessibilitySortPriority(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672279-accessibilityvalue?changes=latest_beta">accessibilityValue(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672280-accessibilityvalue?changes=latest_beta">accessibilityValue(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3672281-accessibilityvalue?changes=latest_beta">accessibilityValue(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679204-fileexporter?changes=latest_beta">fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679205-fileexporter?changes=latest_beta">fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679206-fileexporter?changes=latest_beta">fileExporter(isPresented:documents:contentType:onCompletion:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679207-fileexporter?changes=latest_beta">fileExporter(isPresented:documents:contentType:onCompletion:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679208-fileimporter?changes=latest_beta">fileImporter(isPresented:allowedContentTypes:allowsMultipleSelection:onCompletion:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679209-fileimporter?changes=latest_beta">fileImporter(isPresented:allowedContentTypes:onCompletion:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679210-filemover?changes=latest_beta">fileMover(isPresented:file:onCompletion:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679211-filemover?changes=latest_beta">fileMover(isPresented:files:onCompletion:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3679212-handlesexternalevents?changes=latest_beta">handlesExternalEvents(preferring:allowing:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3663435-ignoressafearea?changes=latest_beta">ignoresSafeArea(_:edges:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3663437-redacted?changes=latest_beta">redacted(reason:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3675696-toolbar?changes=latest_beta">toolbar(content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3675697-toolbar?changes=latest_beta">toolbar(id:content:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/sceneview/3663438-unredacted?changes=latest_beta">unredacted()</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/scenekit_constants?changes=latest_beta">SceneKit Constants</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_typedefs?changes=latest_beta">SWIFT_TYPEDEFS</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/scenekit_type_aliases?changes=latest_beta">SceneKit Type Aliases</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/char16_t?changes=latest_beta">char16_t</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/char32_t?changes=latest_beta">char32_t</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_double2?changes=latest_beta">swift_double2</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_double3?changes=latest_beta">swift_double3</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_double4?changes=latest_beta">swift_double4</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_float2?changes=latest_beta">swift_float2</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_float3?changes=latest_beta">swift_float3</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_float4?changes=latest_beta">swift_float4</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_int2?changes=latest_beta">swift_int2</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_int3?changes=latest_beta">swift_int3</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_int4?changes=latest_beta">swift_int4</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_uint2?changes=latest_beta">swift_uint2</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_uint3?changes=latest_beta">swift_uint3</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/scenekit/swift_uint4?changes=latest_beta">swift_uint4</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1811" aria-controls="collapse1811" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/avfoundation?changes=latest_beta">AVFoundation</a>
+</h2>
+<ul class="changes collapse show" id="collapse1811">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/media_playback_and_selection?changes=latest_beta">Media Playback and Selection</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/asset_playback?changes=latest_beta">Asset Playback</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/avplayeritem?changes=latest_beta">AVPlayerItem</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/avfoundation/avplayeritem/3656127-appliesperframehdrdisplaymetadat?changes=latest_beta">appliesPerFrameHDRDisplayMetadata</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture?changes=latest_beta">Cameras and Media Capture</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/avcapturedevice?changes=latest_beta">AVCaptureDevice</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/avcapturecolorspace?changes=latest_beta">AVCaptureColorSpace</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/avfoundation/avcapturecolorspace/hlg_bt2020?changes=latest_beta">AVCaptureColorSpace.HLG_BT2020</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/avcapturephotooutput?changes=latest_beta">AVCapturePhotoOutput</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/avcapturephotosettings?changes=latest_beta">AVCapturePhotoSettings</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/avfoundation/avcapturephotosettings/3566332-isautocontentawaredistortioncorr?changes=latest_beta">isAutoContentAwareDistortionCorrectionEnabled</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings?changes=latest_beta">AVCaptureResolvedPhotoSettings</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/avfoundation/avcaptureresolvedphotosettings/3566333-iscontentawaredistortioncorrecti?changes=latest_beta">isContentAwareDistortionCorrectionEnabled</a>
+</li>
+</ul>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3566330-iscontentawaredistortioncorrecti?changes=latest_beta">isContentAwareDistortionCorrectionEnabled</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/avfoundation/avcapturephotooutput/3566331-iscontentawaredistortioncorrecti?changes=latest_beta">isContentAwareDistortionCorrectionSupported</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/avsemanticsegmentationmatte?changes=latest_beta">AVSemanticSegmentationMatte</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avfoundation/avsemanticsegmentationmatte/mattetype?changes=latest_beta">AVSemanticSegmentationMatte.MatteType</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/avfoundation/avsemanticsegmentationmatte/mattetype/3689453-glasses?changes=latest_beta">glasses</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1812" aria-controls="collapse1812" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/avkit?changes=latest_beta">AVKit</a>
+</h2>
+<ul class="changes collapse show" id="collapse1812">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avkit/avplayerviewcontroller?changes=latest_beta">AVPlayerViewController</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/avkit/avplayerviewcontroller/3689455-canstartpictureinpictureautomati?changes=latest_beta">canStartPictureInPictureAutomaticallyFromInline</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/avkit/avpictureinpicturecontroller?changes=latest_beta">AVPictureInPictureController</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/avkit/avpictureinpicturecontroller/3689454-canstartpictureinpictureautomati?changes=latest_beta">canStartPictureInPictureAutomaticallyFromInline</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1813" aria-controls="collapse1813" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/videotoolbox?changes=latest_beta">Video Toolbox</a>
+</h2>
+<ul class="changes collapse show" id="collapse1813">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/videotoolbox/videotoolbox_constants?changes=latest_beta">VideoToolbox Constants</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/videotoolbox/kvtcompressionpropertykey_preservedynamichdrmetadata?changes=latest_beta">kVTCompressionPropertyKey_PreserveDynamicHDRMetadata</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_propagateperframehdrdisplaymetadata?changes=latest_beta">kVTDecompressionPropertyKey_PropagatePerFrameHDRDisplayMetadata</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/videotoolbox/kvtvideoencoderlist_supportsframereordering?changes=latest_beta">kVTVideoEncoderList_SupportsFrameReordering</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1814" aria-controls="collapse1814" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/networkextension?changes=latest_beta">Network Extension</a>
+</h2>
+<ul class="changes collapse show" id="collapse1814">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/networkextension/personal_vpn?changes=latest_beta">Personal VPN</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/networkextension/nevpnprotocol?changes=latest_beta">NEVPNProtocol</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/networkextension/nevpnprotocol/3143658-excludelocalnetworks?changes=latest_beta">excludeLocalNetworks</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/networkextension/nevpnprotocol/3689459-enforceroutes?changes=latest_beta">enforceRoutes</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/networkextension/app_proxy_provider?changes=latest_beta">App Proxy Provider</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/networkextension/neappproxyflow?changes=latest_beta">NEAppProxyFlow</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/networkextension/neappproxyflow/3689458-remotehostname?changes=latest_beta">remoteHostname</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/networkextension/dns_proxy_provider?changes=latest_beta">DNS Proxy Provider</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/networkextension/neappproxyflow?changes=latest_beta">NEAppProxyFlow</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/networkextension/neappproxyflow/3689458-remotehostname?changes=latest_beta">remoteHostname</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/networkextension/netransparentproxyprovider?changes=latest_beta">NETransparentProxyProvider</a>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1815" aria-controls="collapse1815" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/accelerate?changes=latest_beta">Accelerate</a>
+</h2>
+<ul class="changes collapse show" id="collapse1815">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/accelerate/veclib?changes=latest_beta">vecLib</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/accelerate/veclib/veclibtypes?changes=latest_beta">vecLibTypes</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/accelerate/vuint64?changes=latest_beta">vUInt64</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/accelerate/vsint64?changes=latest_beta">vSInt64</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/accelerate/veclib/vforce?changes=latest_beta">vForce</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/accelerate/vforce?changes=latest_beta">vForce</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689176-atan2?changes=latest_beta">atan2(x:y:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689177-atan2?changes=latest_beta">atan2(x:y:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689178-atan2?changes=latest_beta">atan2(x:y:result:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689179-atan2?changes=latest_beta">atan2(x:y:result:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689180-log?changes=latest_beta">log(_:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689181-log?changes=latest_beta">log(_:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689182-log?changes=latest_beta">log(_:result:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689183-log?changes=latest_beta">log(_:result:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689184-log1p?changes=latest_beta">log1p(_:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689185-log1p?changes=latest_beta">log1p(_:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689186-log1p?changes=latest_beta">log1p(_:result:)</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/accelerate/vforce/3689187-log1p?changes=latest_beta">log1p(_:result:)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1816" aria-controls="collapse1816" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/hypervisor?changes=latest_beta">Hypervisor</a>
+</h2>
+<ul class="changes collapse show" id="collapse1816">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/hypervisor/apple_silicon?changes=latest_beta">Apple Silicon</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/hypervisor/apple_silicon/vcpu_management?changes=latest_beta">vCPU Management</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/hypervisor/apple_silicon/vcpu_management/exits?changes=latest_beta">Exits</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/hypervisor/hv_exception_syndrome_t?changes=latest_beta">hv_exception_syndrome_t</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1817" aria-controls="collapse1817" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/corebluetooth?changes=latest_beta">Core Bluetooth</a>
+</h2>
+<ul class="changes collapse show" id="collapse1817">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/corebluetooth/cberror?changes=latest_beta">CBError</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/corebluetooth/cberror/3689217-toomanylepaireddevices?changes=latest_beta">tooManyLEPairedDevices</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/corebluetooth/cberror/code?changes=latest_beta">CBError.Code</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/corebluetooth/cberror/code/toomanylepaireddevices?changes=latest_beta">CBError.Code.tooManyLEPairedDevices</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1818" aria-controls="collapse1818" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/security?changes=latest_beta">Security</a>
+</h2>
+<ul class="changes collapse show" id="collapse1818">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/security/password_autofill?changes=latest_beta">Password AutoFill</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/safariservices/supporting_associated_domains?changes=latest_beta">Supporting Associated Domains</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks?changes=latest_beta">applinks</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details?changes=latest_beta">applinks.Details</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details/components?changes=latest_beta">applinks.Details.Components</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/security/shared_web_credentials?changes=latest_beta">Shared Web Credentials</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/safariservices/supporting_associated_domains?changes=latest_beta">Supporting Associated Domains</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks?changes=latest_beta">applinks</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details?changes=latest_beta">applinks.Details</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details/components?changes=latest_beta">applinks.Details.Components</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1819" aria-controls="collapse1819" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/coretelephony?changes=latest_beta">Core Telephony</a>
+</h2>
+<ul class="changes collapse show" id="collapse1819">
+<li class="added">
+<a href="https://developer.apple.com/documentation/coretelephony/core_telephony_constants?changes=latest_beta">Core Telephony Constants</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/coretelephony/ctradioaccesstechnologynr?changes=latest_beta">CTRadioAccessTechnologyNR</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/coretelephony/ctradioaccesstechnologynrnsa?changes=latest_beta">CTRadioAccessTechnologyNRNSA</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1820" aria-controls="collapse1820" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/authenticationservices?changes=latest_beta">Authentication Services</a>
+</h2>
+<ul class="changes collapse show" id="collapse1820">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/security/password_autofill?changes=latest_beta">Password AutoFill</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/safariservices/supporting_associated_domains?changes=latest_beta">Supporting Associated Domains</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks?changes=latest_beta">applinks</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details?changes=latest_beta">applinks.Details</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/bundleresources/applinks/details/components?changes=latest_beta">applinks.Details.Components</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1821" aria-controls="collapse1821" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/network?changes=latest_beta">Network</a>
+</h2>
+<ul class="changes collapse show" id="collapse1821">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath?changes=latest_beta">NWPath</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/3687008-unsatisfiedreason?changes=latest_beta">unsatisfiedReason</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason?changes=latest_beta">NWPath.UnsatisfiedReason</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason/cellulardenied?changes=latest_beta">NWPath.UnsatisfiedReason.cellularDenied</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason/localnetworkdenied?changes=latest_beta">NWPath.UnsatisfiedReason.localNetworkDenied</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason/notavailable?changes=latest_beta">NWPath.UnsatisfiedReason.notAvailable</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason/wifidenied?changes=latest_beta">NWPath.UnsatisfiedReason.wifiDenied</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason/3687004-hashvalue?changes=latest_beta">hashValue</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason/3687003-hash?changes=latest_beta">hash(into:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason/3687000?changes=latest_beta">!=(_:_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nwpath/unsatisfiedreason/3687001?changes=latest_beta">==(_:_:)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nw_path_unsatisfied_reason_t?changes=latest_beta">nw_path_unsatisfied_reason_t</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nw_path_unsatisfied_reason_t/3687009-init?changes=latest_beta">init(_:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nw_path_unsatisfied_reason_t/3687010-init?changes=latest_beta">init(rawValue:)</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/network/nw_path_unsatisfied_reason_t/3687011-rawvalue?changes=latest_beta">rawValue</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1822" aria-controls="collapse1822" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/devicemanagement?changes=latest_beta">Device Management</a>
+</h2>
+<ul class="changes collapse show" id="collapse1822">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/profile-specific_payload_keys?changes=latest_beta">Profile-Specific Payload Keys</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/certificatetransparency?changes=latest_beta">CertificateTransparency</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/certificatetransparency/subjectpublickeyinfohashdict?changes=latest_beta">CertificateTransparency.SubjectPublicKeyInfoHashDict</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/privacypreferencespolicycontrol?changes=latest_beta">PrivacyPreferencesPolicyControl</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/privacypreferencespolicycontrol/services?changes=latest_beta">PrivacyPreferencesPolicyControl.Services</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/privacypreferencespolicycontrol/services/identity?changes=latest_beta">PrivacyPreferencesPolicyControl.Services.Identity</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/privacypreferencespolicycontrol/services/identity?changes=latest_beta">PrivacyPreferencesPolicyControl.Services.Identity</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/restrictions?changes=latest_beta">Restrictions</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/vpn?changes=latest_beta">VPN</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/vpn/alwayson?changes=latest_beta">VPN.AlwaysOn</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/devicemanagement/vpn/alwayson/allowedcaptivenetworkpluginelement?changes=latest_beta">VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/devicemanagement/vpn/alwayson/applicationexceptionelement?changes=latest_beta">VPN.AlwaysOn.ApplicationExceptionElement</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/devicemanagement/vpn/alwayson/serviceexceptionelement?changes=latest_beta">VPN.AlwaysOn.ServiceExceptionElement</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/devicemanagement/vpn/alwayson/tunnelconfigurationelement?changes=latest_beta">VPN.AlwaysOn.TunnelConfigurationElement</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/vpn/ikev2?changes=latest_beta">VPN.IKEv2</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/vpn/vpn?changes=latest_beta">VPN.VPN</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/commands_and_queries?changes=latest_beta">Commands and Queries</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/list_the_installed_apps?changes=latest_beta">List the Installed Apps</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/installedapplicationlistresponse?changes=latest_beta">InstalledApplicationListResponse</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/installedapplicationlistresponse/installedapplicationlistitem?changes=latest_beta">InstalledApplicationListResponse.InstalledApplicationListItem</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/get_device_information?changes=latest_beta">Get Device Information</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/deviceinformationcommand?changes=latest_beta">DeviceInformationCommand</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/deviceinformationcommand/command?changes=latest_beta">DeviceInformationCommand.Command</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/deviceinformationcommand/command/queries?changes=latest_beta">DeviceInformationCommand.Command.Queries</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/deviceinformationresponse?changes=latest_beta">DeviceInformationResponse</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/deviceinformationresponse/queryresponses?changes=latest_beta">DeviceInformationResponse.QueryResponses</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/deviceinformationresponse/queryresponses/servicesubscriptionproperty?changes=latest_beta">DeviceInformationResponse.QueryResponses.ServiceSubscriptionProperty</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/security_information?changes=latest_beta">Security Information</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/securityinforesponse?changes=latest_beta">SecurityInfoResponse</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/securityinforesponse/securityinfo?changes=latest_beta">SecurityInfoResponse.SecurityInfo</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/securityinforesponse/securityinfo/secureboot?changes=latest_beta">SecurityInfoResponse.SecurityInfo.SecureBoot</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/devicemanagement/securityinforesponse/securityinfo/secureboot/reducedsecurity?changes=latest_beta">SecurityInfoResponse.SecurityInfo.SecureBoot.ReducedSecurity</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/list_the_user_accounts?changes=latest_beta">List the User Accounts</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/userlistresponse?changes=latest_beta">UserListResponse</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/devicemanagement/userlistresponse/usersitem?changes=latest_beta">UserListResponse.UsersItem</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/devicemanagement/certificaterevocation?changes=latest_beta">CertificateRevocation</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/devicemanagement/certificaterevocation/subjectpublickeyinfohashdict?changes=latest_beta">CertificateRevocation.SubjectPublicKeyInfoHashDict</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1823" aria-controls="collapse1823" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/driverkit?changes=latest_beta">DriverKit</a>
+</h2>
+<ul class="changes collapse show" id="collapse1823">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/driverkit/ioservice?changes=latest_beta">IOService</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/driverkit/ioservice/3689565-requiremaxbusstall?changes=latest_beta">RequireMaxBusStall</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/driverkit/driverkit_enumerations?changes=latest_beta">DriverKit Enumerations</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous?changes=latest_beta">Anonymous</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall10usec?changes=latest_beta">kIOMaxBusStall10usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall20usec?changes=latest_beta">kIOMaxBusStall20usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall25usec?changes=latest_beta">kIOMaxBusStall25usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall30usec?changes=latest_beta">kIOMaxBusStall30usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall40usec?changes=latest_beta">kIOMaxBusStall40usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall5usec?changes=latest_beta">kIOMaxBusStall5usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstallnone?changes=latest_beta">kIOMaxBusStallNone</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1824" aria-controls="collapse1824" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/kernel?changes=latest_beta">Kernel</a>
+</h2>
+<ul class="changes collapse show" id="collapse1824">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/architecture?changes=latest_beta">architecture</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/i386_cpu_info_t?changes=latest_beta">i386_cpu_info_t</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/iokit_fundamentals?changes=latest_beta">IOKit Fundamentals</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/ioservice-1g?changes=latest_beta">IOService</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ioservice/3689549-requiremaxbusstall?changes=latest_beta">RequireMaxBusStall</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ioservice/3689550-requiremaxbusstall_impl?changes=latest_beta">RequireMaxBusStall_Impl</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/ioservice/1532887-requiremaxbusstall?changes=latest_beta">requireMaxBusStall</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/ioservice/1532798-requiremaxinterruptdelay?changes=latest_beta">requireMaxInterruptDelay</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ioservice/3689551-requiremaxbusstall_invoke?changes=latest_beta">RequireMaxBusStall_Invoke</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/driver_support?changes=latest_beta">Driver Support</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/iodtnvram?changes=latest_beta">IODTNVRAM</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/iodtnvram/3612482-choosedictionary?changes=latest_beta">chooseDictionary</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/iodtnvram/3689541-removepropertyinternal?changes=latest_beta">removePropertyInternal</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/kernel_functions?changes=latest_beta">Kernel Functions</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689540-iomallocpageablezero?changes=latest_beta">IOMallocPageableZero</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/kernel_structures?changes=latest_beta">Kernel Structures</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/last_branch_state_t?changes=latest_beta">last_branch_state_t</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/last_branch_state_t/3684955-lbr_count?changes=latest_beta">lbr_count</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/last_branch_state_t/3684956-lbr_supported_cycle_count?changes=latest_beta">lbr_supported_cycle_count</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/last_branch_state_t/3684957-lbr_supported_tsx?changes=latest_beta">lbr_supported_tsx</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/last_branch_state_t/3684958-lbrs?changes=latest_beta">lbrs</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/last_branch_state_t/3684959-reserved?changes=latest_beta">reserved</a>
+</li>
+</ul>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/x86_instruction_state_t?changes=latest_beta">x86_instruction_state_t</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/x86_instruction_state_t/3684962-insn_bytes?changes=latest_beta">insn_bytes</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/x86_instruction_state_t/3684963-insn_cacheline?changes=latest_beta">insn_cacheline</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/x86_instruction_state_t/3684964-insn_offset?changes=latest_beta">insn_offset</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/x86_instruction_state_t/3684965-insn_stream_valid_bytes?changes=latest_beta">insn_stream_valid_bytes</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/x86_instruction_state_t/3684966-out_of_synch?changes=latest_beta">out_of_synch</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/kernel_data_types?changes=latest_beta">Kernel Data Types</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ionvramoperation?changes=latest_beta">IONVRAMOperation</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ionvramoperation/kionvramoperationdelete?changes=latest_beta">kIONVRAMOperationDelete</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ionvramoperation/kionvramoperationobliterate?changes=latest_beta">kIONVRAMOperationObliterate</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ionvramoperation/kionvramoperationread?changes=latest_beta">kIONVRAMOperationRead</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ionvramoperation/kionvramoperationreset?changes=latest_beta">kIONVRAMOperationReset</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ionvramoperation/kionvramoperationwrite?changes=latest_beta">kIONVRAMOperationWrite</a>
+</li>
+</ul>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/ionvramvariabletype?changes=latest_beta">IONVRAMVariableType</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/kernel/kernel_enumerations?changes=latest_beta">Kernel Enumerations</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous?changes=latest_beta">Anonymous</a>
+<ul class="changes">
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall10usec?changes=latest_beta">kIOMaxBusStall10usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall20usec?changes=latest_beta">kIOMaxBusStall20usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall25usec?changes=latest_beta">kIOMaxBusStall25usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall30usec?changes=latest_beta">kIOMaxBusStall30usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall40usec?changes=latest_beta">kIOMaxBusStall40usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstall5usec?changes=latest_beta">kIOMaxBusStall5usec</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/kernel/3689532-anonymous/kiomaxbusstallnone?changes=latest_beta">kIOMaxBusStallNone</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1825" aria-controls="collapse1825" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/exposurenotification?changes=latest_beta">Exposure Notification</a>
+</h2>
+<ul class="changes collapse show" id="collapse1825">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration?changes=latest_beta">ENExposureConfiguration</a>
+<ul class="changes">
+<li class="deprecated">
+<a href="https://developer.apple.com/documentation/exposurenotification/endayssinceonsetofsymptomsunknown?changes=latest_beta">ENDaysSinceOnsetOfSymptomsUnknown</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration/exposure_risk_value_calculation_in_exposurenotification_version_1?changes=latest_beta">Exposure Risk Value Calculation in ExposureNotification Version 1</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/exposurenotification/enexposureinfo?changes=latest_beta">ENExposureInfo</a>
+<ul class="changes">
+<li class="deprecated">
+<a href="https://developer.apple.com/documentation/exposurenotification/endayssinceonsetofsymptomsunknown?changes=latest_beta">ENDaysSinceOnsetOfSymptomsUnknown</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>
+  <button class="btn" data-toggle="collapse" data-target="#collapse1826" aria-controls="collapse1826" aria-expanded="false" aria-label="Toggle section">
+    <i class="fa"></i>
+  </button>
+  <a href="https://developer.apple.com/documentation/musickitjs?changes=latest_beta">MusicKit JS</a>
+</h2>
+<ul class="changes collapse show" id="collapse1826">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit?changes=latest_beta">MusicKit</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/2992810-configure?changes=latest_beta">configure</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/2992814-getinstance?changes=latest_beta">getInstance</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/configuration?changes=latest_beta">MusicKit.Configuration</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/configuration/2992640-app?changes=latest_beta">app</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/configuration/2992641-bitrate?changes=latest_beta">bitrate</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance?changes=latest_beta">MusicKit.MusicKitInstance</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/2992700-api?changes=latest_beta">api</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/2992702-bitrate?changes=latest_beta">bitrate</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/2992710-playbackstate?changes=latest_beta">playbackState</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/2992712-player?changes=latest_beta">player</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/3030793-addtolibrary?changes=latest_beta">addToLibrary</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/3030794-playlater?changes=latest_beta">playLater</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/3030795-playnext?changes=latest_beta">playNext</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/2992716-setqueue?changes=latest_beta">setQueue</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/musickitinstance/2992723-unauthorize?changes=latest_beta">unauthorize</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player?changes=latest_beta">MusicKit.Player</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992744-bitrate?changes=latest_beta">bitrate</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992749-currentplaybackduration?changes=latest_beta">currentPlaybackDuration</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992751-currentplaybacktime?changes=latest_beta">currentPlaybackTime</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/3030796-currentplaybacktimeremaining?changes=latest_beta">currentPlaybackTimeRemaining</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992756-nowplayingitem?changes=latest_beta">nowPlayingItem</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992761-playbackstate?changes=latest_beta">playbackState</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992765-queue?changes=latest_beta">queue</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992767-repeatmode?changes=latest_beta">repeatMode</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992770-shufflemode?changes=latest_beta">shuffleMode</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992747-changetomediaitem?changes=latest_beta">changeToMediaItem</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/player/2992763-preparetoplay?changes=latest_beta">prepareToPlay</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackbitrate?changes=latest_beta">MusicKit.PlaybackBitrate</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackbitrate/high?changes=latest_beta">MusicKit.PlaybackBitrate.HIGH</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackbitrate/standard?changes=latest_beta">MusicKit.PlaybackBitrate.STANDARD</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates?changes=latest_beta">MusicKit.PlaybackStates</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/completed?changes=latest_beta">MusicKit.PlaybackStates.completed</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/ended?changes=latest_beta">MusicKit.PlaybackStates.ended</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/loading?changes=latest_beta">MusicKit.PlaybackStates.loading</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/none?changes=latest_beta">MusicKit.PlaybackStates.none</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/paused?changes=latest_beta">MusicKit.PlaybackStates.paused</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/playing?changes=latest_beta">MusicKit.PlaybackStates.playing</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/seeking?changes=latest_beta">MusicKit.PlaybackStates.seeking</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/stalled?changes=latest_beta">MusicKit.PlaybackStates.stalled</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/stopped?changes=latest_beta">MusicKit.PlaybackStates.stopped</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playbackstates/waiting?changes=latest_beta">MusicKit.PlaybackStates.waiting</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playerrepeatmode?changes=latest_beta">MusicKit.PlayerRepeatMode</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playerrepeatmode/all?changes=latest_beta">MusicKit.PlayerRepeatMode.all</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playerrepeatmode/none?changes=latest_beta">MusicKit.PlayerRepeatMode.none</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playerrepeatmode/one?changes=latest_beta">MusicKit.PlayerRepeatMode.one</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playershufflemode?changes=latest_beta">MusicKit.PlayerShuffleMode</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playershufflemode/off?changes=latest_beta">MusicKit.PlayerShuffleMode.off</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/playershufflemode/songs?changes=latest_beta">MusicKit.PlayerShuffleMode.songs</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/api?changes=latest_beta">MusicKit.API</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/api/3001448-library?changes=latest_beta">library</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem?changes=latest_beta">MusicKit.MediaItem</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992671-musickit_mediaitem?changes=latest_beta">MusicKit.MediaItem</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992673-albumname?changes=latest_beta">albumName</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992674-artistname?changes=latest_beta">artistName</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992675-artworkurl?changes=latest_beta">artworkURL</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992678-contentrating?changes=latest_beta">contentRating</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/3001685-discnumber?changes=latest_beta">discNumber</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992682-isplayable?changes=latest_beta">isPlayable</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/3001686-isrc?changes=latest_beta">isrc</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992685-playbackduration?changes=latest_beta">playbackDuration</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/3030791-playlistartworkurl?changes=latest_beta">playlistArtworkURL</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/3030792-playlistname?changes=latest_beta">playlistName</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992686-previewurl?changes=latest_beta">previewURL</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/2992687-title?changes=latest_beta">title</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mediaitem/3001688-tracknumber?changes=latest_beta">trackNumber</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/queue?changes=latest_beta">MusicKit.Queue</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/queue/2992791-items?changes=latest_beta">items</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/queue/2992792-length?changes=latest_beta">length</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/queue/2992786-append?changes=latest_beta">append</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/queue/2992787-indexforitem?changes=latest_beta">indexForItem</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/queue/2992790-item?changes=latest_beta">item</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/queue/2992795-prepend?changes=latest_beta">prepend</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/setqueueoptions?changes=latest_beta">MusicKit.SetQueueOptions</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/setqueueoptions/2992801-items?changes=latest_beta">items</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/setqueueoptions/2992806-songs?changes=latest_beta">songs</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror?changes=latest_beta">MusicKit.MKError</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992649-access_denied?changes=latest_beta">ACCESS_DENIED</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992650-authorization_error?changes=latest_beta">AUTHORIZATION_ERROR</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992651-configuration_error?changes=latest_beta">CONFIGURATION_ERROR</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992652-content_restricted?changes=latest_beta">CONTENT_RESTRICTED</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992654-invalid_arguments?changes=latest_beta">INVALID_ARGUMENTS</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992655-media_certificate?changes=latest_beta">MEDIA_CERTIFICATE</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992656-media_descriptor?changes=latest_beta">MEDIA_DESCRIPTOR</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992657-media_key?changes=latest_beta">MEDIA_KEY</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992658-media_license?changes=latest_beta">MEDIA_LICENSE</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992659-media_playback?changes=latest_beta">MEDIA_PLAYBACK</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992660-media_session?changes=latest_beta">MEDIA_SESSION</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992661-network_error?changes=latest_beta">NETWORK_ERROR</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992662-not_found?changes=latest_beta">NOT_FOUND</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992663-quota_exceeded?changes=latest_beta">QUOTA_EXCEEDED</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/3030790-server_error?changes=latest_beta">SERVER_ERROR</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992664-service_unavailable?changes=latest_beta">SERVICE_UNAVAILABLE</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/3001507-subscription_error?changes=latest_beta">SUBSCRIPTION_ERROR</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992665-unknown_error?changes=latest_beta">UNKNOWN_ERROR</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/mkerror/2992666-unsupported_error?changes=latest_beta">UNSUPPORTED_ERROR</a>
+</li>
+</ul>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/2992811-formattedmilliseconds?changes=latest_beta">formattedMilliseconds</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/2992812-formattedseconds?changes=latest_beta">formattedSeconds</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/2992813-generateembedcode?changes=latest_beta">generateEmbedCode</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/events?changes=latest_beta">MusicKit.Events</a>
+<ul class="changes">
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/events/3001469-authorizationstatusdidchange?changes=latest_beta">authorizationStatusDidChange</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/events/3001470-authorizationstatuswillchange?changes=latest_beta">authorizationStatusWillChange</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/events/3001471-eligibleforsubscribeview?changes=latest_beta">eligibleForSubscribeView</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/events/3001488-storefrontcountrycodedidchange?changes=latest_beta">storefrontCountryCodeDidChange</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/events/3001489-storefrontidentifierdidchange?changes=latest_beta">storefrontIdentifierDidChange</a>
+</li>
+<li class="modified">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/events/3001490-usertokendidchange?changes=latest_beta">userTokenDidChange</a>
+</li>
+</ul>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/3030797-errors?changes=latest_beta">errors</a>
+</li>
+<li class="added">
+<a href="https://developer.apple.com/documentation/musickitjs/musickit/3030798-formatmediatime?changes=latest_beta">formatMediaTime</a>
+</li>
+</ul>
+</li>
+</ul>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
