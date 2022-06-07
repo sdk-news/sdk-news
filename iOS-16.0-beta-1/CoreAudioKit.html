@@ -1,0 +1,450 @@
+<html>
+<head>
+<title>CoreAudioKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CoreAudioKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AUGenericViewController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUViewColor</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewController</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewController.auAudioUnit</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewController.tintColor</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUCompressionParameterDataSource</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUCompressionParameterDataSource</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUDelayGraphView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.accessibilityActivate()</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.accessibilityDecrement()</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.accessibilityIncrement()</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.configure(data:)</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.graphFrame()</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.tintColorDidChange()</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.touchesBegan(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.touchesEnded(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.touchesMoved(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> AUDelayGraphView.update(for:value:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUDistortionView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUDistortionView</div>
+<div class="difference"><span class="status added">Added</span> AUDistortionView.init(coder:)</div>
+<div class="difference"><span class="status added">Added</span> AUDistortionView.init(frame:)</div>
+<div class="difference"><span class="status added">Added</span> AUDistortionView.parameterDataSource</div>
+<div class="difference"><span class="status added">Added</span> AUDistortionView.removeFromSuperview()</div>
+<div class="difference"><span class="status added">Added</span> AUDistortionView.set(parameter:value:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUGenericView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AUGenericView</div>
+<div class="difference"><span class="status removed">Removed</span> AUGenericView.init(coder:)</div>
+<div class="difference"><span class="status removed">Removed</span> AUGenericView.init(frame:)</div>
+<div class="difference"><span class="status removed">Removed</span> AUGenericView.owningController</div>
+<div class="difference"><span class="status removed">Removed</span> AUGenericView.paramObserverToken</div>
+<div class="difference"><span class="status removed">Removed</span> AUGenericView.removeFromSuperview()</div>
+<div class="difference"><span class="status removed">Removed</span> AUGenericView.removeScheduledUpdatesTimer()</div>
+<div class="difference"><span class="status removed">Removed</span> AUGenericView.traitCollectionDidChange(_:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUGenericViewInternal</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternal</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternal.init(coder:)</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternal.init(frame:)</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternal.owningController</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternal.paramObserverToken</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternal.removeFromSuperview()</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternal.removeScheduledUpdatesTimer()</div>
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternal.traitCollectionDidChange(_:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUGenericViewInternalBase</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUGenericViewInternalBase</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUKnobControl</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUKnobControl</div>
+<div class="difference"><span class="status added">Added</span> AUKnobControl.init(frame:)</div>
+<div class="difference"><span class="status added">Added</span> AUKnobControl.accessibilityDecrement()</div>
+<div class="difference"><span class="status added">Added</span> AUKnobControl.accessibilityIncrement()</div>
+<div class="difference"><span class="status added">Added</span> AUKnobControl.beginTracking(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> AUKnobControl.configure(with:)</div>
+<div class="difference"><span class="status added">Added</span> AUKnobControl.continueTracking(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> AUKnobControl.endTracking(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> AUKnobControl.tintColorDidChange()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AULabeledMeterView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AULabeledMeterView</div>
+<div class="difference"><span class="status added">Added</span> AULabeledMeterView.init(frame:)</div>
+<div class="difference"><span class="status added">Added</span> AULabeledMeterView.configure(data:)</div>
+<div class="difference"><span class="status added">Added</span> AULabeledMeterView.layoutSublayers(of:)</div>
+<div class="difference"><span class="status added">Added</span> AULabeledMeterView.tintColorDidChange()</div>
+<div class="difference"><span class="status added">Added</span> AULabeledMeterView.willMove(toSuperview:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AULimiterControlsView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AULimiterControlsView</div>
+<div class="difference"><span class="status added">Added</span> AULimiterControlsView.init(frame:)</div>
+<div class="difference"><span class="status added">Added</span> AULimiterControlsView.meter</div>
+<div class="difference"><span class="status added">Added</span> AULimiterControlsView.setMeterLabel(_:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AULimiterGraphView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AULimiterGraphView</div>
+<div class="difference"><span class="status added">Added</span> AULimiterGraphView.init(frame:)</div>
+<div class="difference"><span class="status added">Added</span> AULimiterGraphView.add(level:)</div>
+<div class="difference"><span class="status added">Added</span> AULimiterGraphView.layoutSublayers(of:)</div>
+<div class="difference"><span class="status added">Added</span> AULimiterGraphView.tintColorDidChange()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUVerticalSegmentControl</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.init(frame:data:)</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.color(at:)</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.layoutSubviews()</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.removeFromSuperview()</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.segmentEnabledChanged(notification:)</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.segmentSelectionChanged(notification:)</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.setSegment(at:enabled:)</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.touchesBegan(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalSegmentControl.touchesMoved(_:with:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUVerticalTabView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUVerticalTabView</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalTabView.init(frame:data:horizontal:)</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalTabView.layoutSubviews()</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalTabView.touchesBegan(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> AUVerticalTabView.touchesMoved(_:with:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAUEQGraphView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.addRegionControl(for:width:useTrianglesForWidth:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.addRegionControl(for:y:width:useTrianglesForWidth:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.changeControlToHorizontalPoint(index:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.changeControlToHorizontalPoint(index:width:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.changeControlToPoint(index:y:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.changeControlToRegion(index:y:width:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.disableAllControls()</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CAAUEQGraphView.graphFrame()</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func graphFrame() -&gt; CoreGraphics.CGRect</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func graphFrame() -&gt; CoreFoundation.CGRect</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.setActiveControl(_:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.setBypassed(_:bypassed:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUEQGraphView.touchesCancelled(_:with:)</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CAAUEQGraphView.valueForX(location:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func valueForX(location: CoreGraphics.CGFloat) -&gt; Swift.Float</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func valueForX(location: CoreFoundation.CGFloat) -&gt; Swift.Float</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CAAUEQGraphView.valueForY(location:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func valueForY(location: CoreGraphics.CGFloat) -&gt; Swift.Float</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func valueForY(location: CoreFoundation.CGFloat) -&gt; Swift.Float</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAUEQHeaderView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CAAUEQHeaderView.requiresConstraintBasedLayout /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+class dynamic override public var requiresConstraintBasedLayout: Swift.Bool { @_Concurrency.MainActor(unsafe)
+@objc
+get }</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+class dynamic override public var requiresConstraintBasedLayout: Swift.Bool { @objc
+get }</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAUEQHeaderView.addParameter(id:name:shortName:symbolName:value:min:max:logBase:formatter:unit:additionalPad:)</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CAAUEQHeaderView.addParameter(id:name:shortName:value:min:max:logBase:formatter:unit:additionalPad:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func addParameter(id: AudioToolbox.AudioUnitParameterID, name: Swift.String, shortName: Swift.String, value: Swift.Float, min: Swift.Float, max: Swift.Float, logBase: Swift.Float, formatter: Foundation.Formatter, unit: Swift.String, additionalPad: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func addParameter(id: AudioToolbox.AudioUnitParameterID, name: Swift.String, shortName: Swift.String, value: Swift.Float, min: Swift.Float, max: Swift.Float, logBase: Swift.Float, formatter: Foundation.Formatter, unit: Swift.String, additionalPad: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CAAUEQHeaderView.adjustViewIfHorizontallyCompressed(_:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func adjustViewIfHorizontallyCompressed(_: CoreGraphics.CGSize)</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func adjustViewIfHorizontallyCompressed(_: CoreFoundation.CGSize)</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAUEQHeaderView.setConstraints(with:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAUEQViewBase</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CAAUEQViewBase.requiresConstraintBasedLayout /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+class dynamic override public var requiresConstraintBasedLayout: Swift.Bool { @_Concurrency.MainActor(unsafe)
+@objc
+get }</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+class dynamic override public var requiresConstraintBasedLayout: Swift.Bool { @objc
+get }</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAUEQViewBase.init(frame:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAUFilterControl</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAUFilterControl.set(color:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAUGraphView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CAAUGraphView.locationForX(value:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func locationForX(value: Swift.Float) -&gt; CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func locationForX(value: Swift.Float) -&gt; CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CAAUGraphView.locationForY(value:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func locationForY(value: Swift.Float) -&gt; CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func locationForY(value: Swift.Float) -&gt; CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAUNBandEQHeaderView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView</div>
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView.addParameter(id:name:shortName:symbolName:value:min:max:logBase:formatter:unit:additionalPad:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView.adjustViewIfHorizontallyCompressed(_:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView.clear()</div>
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView.createTypeControl(for:valueStrings:abbreviatedValueStrings:selectedIndex:target:selector:color:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView.reset()</div>
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView.setVisibility(for:visible:color:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView.updateEQControl(oldParam:newParam:value:color:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUNBandEQHeaderView.updateTypeControl(for:selectedIndex:color:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAUSettingsView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAUSettingsView</div>
+<div class="difference"><span class="status added">Added</span> CAAUSettingsView.init(coder:)</div>
+<div class="difference"><span class="status added">Added</span> CAAUSettingsView.init(frame:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAdjustingHeaderView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CAAdjustingHeaderView</div>
+<div class="difference"><span class="status added">Added</span> CAAdjustingHeaderView.adjustViewIfHorizontallyCompressed(_:)</div>
+<div class="difference"><span class="status added">Added</span> CAAdjustingHeaderView.clear()</div>
+<div class="difference"><span class="status added">Added</span> CAAdjustingHeaderView.setColorForParameter(id:color:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CACompressionView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CACompressionView</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.graphFrame()</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.tintColorDidChange()</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.touchesBegan(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.touchesEnded(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.touchesMoved(_:with:)</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.updateCompressionExpansionPaths()</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.updateCompressionTriangle()</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.updateGraph()</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.valueForX(location:)</div>
+<div class="difference"><span class="status added">Added</span> CACompressionView.valueForY(location:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CANBandEQGraphView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CANBandEQGraphView</div>
+<div class="difference"><span class="status added">Added</span> CANBandEQGraphView.doubleTapped(_:)</div>
+<div class="difference"><span class="status added">Added</span> CANBandEQGraphView.tintColorDidChange()</div>
+</div>
+
+</div>
+</body>
+</html>

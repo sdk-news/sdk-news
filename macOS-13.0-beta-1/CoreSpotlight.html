@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>CoreSpotlight macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CoreSpotlight macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CSSearchableIndex.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[CSSearchableIndex provideDataForBundle:identifier:type:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CSSearchableItemAttributeSet_Messaging.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CSSearchableItemAttributeSet.potentialEventMessage</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CSSearchQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CSSearchQuerySourceOptions</div>
+<div class="difference"><span class="status added">Added</span> CSSearchQuerySourceOptionDefault</div>
+<div class="difference"><span class="status added">Added</span> CSSearchQuerySourceOptionAllowMail</div>
+<div class="difference"><span class="status added">Added</span> CSSearchQueryContext</div>
+<div class="difference"><span class="status added">Added</span> CSSearchQueryContext.fetchAttributes</div>
+<div class="difference"><span class="status added">Added</span> CSSearchQueryContext.protectionClasses</div>
+<div class="difference"><span class="status added">Added</span> CSSearchQueryContext.filterQueries</div>
+<div class="difference"><span class="status added">Added</span> CSSearchQueryContext.keyboardLanguage</div>
+<div class="difference"><span class="status added">Added</span> CSSearchQueryContext.sourceOptions</div>
+<div class="difference"><span class="status added">Added</span> -[CSSearchQuery initWithQueryString:queryContext:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CSSearchQueryErrorDomain</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">CS_TVOS_UNAVAILABLE NSString *const CSSearchQueryErrorDomain</td></tr>
+<tr><th>To</th><td class="declaration">CS_TVOS_UNAVAILABLE const NSErrorDomain CSSearchQueryErrorDomain</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CSSuggestion.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CSSuggestionHighlightAttributeName</div>
+<div class="difference"><span class="status added">Added</span> CSSuggestionKind</div>
+<div class="difference"><span class="status added">Added</span> CSSuggestionKindNone</div>
+<div class="difference"><span class="status added">Added</span> CSSuggestionKindCustom</div>
+<div class="difference"><span class="status added">Added</span> CSSuggestionKindDefault</div>
+<div class="difference"><span class="status added">Added</span> CSSuggestion</div>
+<div class="difference"><span class="status added">Added</span> CSSuggestion.localizedAttributedSuggestion</div>
+<div class="difference"><span class="status added">Added</span> CSSuggestion.suggestionKind</div>
+<div class="difference"><span class="status added">Added</span> -[CSSuggestion compare:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CSUserQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CSUserQueryContext</div>
+<div class="difference"><span class="status added">Added</span> +[CSUserQueryContext userQueryContext]</div>
+<div class="difference"><span class="status added">Added</span> +[CSUserQueryContext userQueryContextWithCurrentSuggestion:]</div>
+<div class="difference"><span class="status added">Added</span> CSUserQueryContext.maxSuggestionCount</div>
+<div class="difference"><span class="status added">Added</span> CSUserQuery</div>
+<div class="difference"><span class="status added">Added</span> -[CSUserQuery initWithUserQueryString:queryContext:]</div>
+<div class="difference"><span class="status added">Added</span> CSUserQuery.foundSuggestionCount</div>
+<div class="difference"><span class="status added">Added</span> CSUserQuery.foundSuggestionsHandler</div>
+<div class="difference"><span class="status added">Added</span> -[CSUserQuery start]</div>
+<div class="difference"><span class="status added">Added</span> -[CSUserQuery cancel]</div>
+<div class="difference"><span class="status added">Added</span> CSTopHitQueryContext</div>
+<div class="difference"><span class="status added">Added</span> +[CSTopHitQueryContext topHitQueryContext]</div>
+<div class="difference"><span class="status added">Added</span> +[CSTopHitQueryContext topHitQueryContextWithCurrentSuggestion:]</div>
+<div class="difference"><span class="status added">Added</span> CSTopHitQueryContext.maxItemCount</div>
+<div class="difference"><span class="status added">Added</span> CSTopHitQuery</div>
+<div class="difference"><span class="status added">Added</span> -[CSTopHitQuery initWithUserQueryString:queryContext:]</div>
+</div>
+
+</div>
+</body>
+</html>

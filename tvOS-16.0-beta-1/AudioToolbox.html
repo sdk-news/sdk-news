@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>AudioToolbox tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AudioToolbox tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AUAudioUnit.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CallHostBlock</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUAudioUnitImplementation.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUAudioUnitV2Bridge.audioUnit</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AudioCodec.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kAudioCodecProduceOutputPacketSuccessConcealed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AudioUnitParameters.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kNewTimePitchParam_EnableTransientPreservation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AudioUnitProperties.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> MIDIEventList</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def kAudioUnitConfigurationInfo_MIDIProtocol</div>
+<div class="difference"><span class="status added">Added</span> #def kAudioUnitConfigurationInfo_MigrateFromPlugin</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AudioUnitUtilities.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kAUParameterListener_AnyParameter</div>
+<div class="difference"><span class="status added">Added</span> AudioUnitEventType</div>
+<div class="difference"><span class="status added">Added</span> kAudioUnitEvent_ParameterValueChange</div>
+<div class="difference"><span class="status added">Added</span> kAudioUnitEvent_BeginParameterChangeGesture</div>
+<div class="difference"><span class="status added">Added</span> kAudioUnitEvent_EndParameterChangeGesture</div>
+<div class="difference"><span class="status added">Added</span> kAudioUnitEvent_PropertyChange</div>
+<div class="difference"><span class="status added">Added</span> AUParameterListenerRef</div>
+<div class="difference"><span class="status added">Added</span> AUEventListenerRef</div>
+<div class="difference"><span class="status added">Added</span> AudioUnitEvent</div>
+<div class="difference"><span class="status added">Added</span> AUParameterListenerBlock</div>
+<div class="difference"><span class="status added">Added</span> AUEventListenerBlock</div>
+<div class="difference"><span class="status added">Added</span> AUParameterListenerProc</div>
+<div class="difference"><span class="status added">Added</span> AUEventListenerProc</div>
+<div class="difference"><span class="status added">Added</span> AUListenerCreateWithDispatchQueue()</div>
+<div class="difference"><span class="status added">Added</span> AUListenerCreate()</div>
+<div class="difference"><span class="status added">Added</span> AUListenerDispose()</div>
+<div class="difference"><span class="status added">Added</span> AUListenerAddParameter()</div>
+<div class="difference"><span class="status added">Added</span> AUListenerRemoveParameter()</div>
+<div class="difference"><span class="status added">Added</span> AUParameterSet()</div>
+<div class="difference"><span class="status added">Added</span> AUParameterListenerNotify()</div>
+<div class="difference"><span class="status added">Added</span> AUEventListenerCreateWithDispatchQueue()</div>
+<div class="difference"><span class="status added">Added</span> AUEventListenerCreate()</div>
+<div class="difference"><span class="status added">Added</span> AUEventListenerAddEventType()</div>
+<div class="difference"><span class="status added">Added</span> AUEventListenerRemoveEventType()</div>
+<div class="difference"><span class="status added">Added</span> AUEventListenerNotify()</div>
+<div class="difference"><span class="status added">Added</span> AUParameterValueFromLinear()</div>
+<div class="difference"><span class="status added">Added</span> AUParameterValueToLinear()</div>
+<div class="difference"><span class="status added">Added</span> AUParameterFormatValue()</div>
+</div>
+
+</div>
+</body>
+</html>

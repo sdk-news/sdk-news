@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>DeviceDiscoveryExtension watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>DeviceDiscoveryExtension watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">DDCommon.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def DD_EXTERN</div>
+<div class="difference"><span class="status added">Added</span> #def dd_os_ownership</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DDDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DDDeviceProtocolString</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceProtocolStringInvalid</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceProtocolStringDIAL</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceFlags</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceFlagsNone</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceFlagsSupportsAudio</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceFlagsSupportsVideo</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceFlagsToString()</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceProtocol</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceProtocolInvalid</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceProtocolDIAL</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceProtocolToString()</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceCategory</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceCategoryHiFiSpeaker</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceCategoryHiFiSpeakerMultiple</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceCategoryTVWithMediaBox</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceCategoryTV</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceCategoryToString()</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceState</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceStateInvalid</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceStateActivating</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceStateActivated</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceStateAuthorized</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceStateInvalidating</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceStateToString()</div>
+<div class="difference"><span class="status added">Added</span> DDDevice</div>
+<div class="difference"><span class="status added">Added</span> -[DDDevice initWithDisplayName:category:protocolType:identifier:]</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.bluetoothIdentifier</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.category</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.displayName</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.identifier</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.networkEndpoint</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.protocol</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.protocolType</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.state</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.txtRecordData</div>
+<div class="difference"><span class="status added">Added</span> DDDevice.url</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DDErrors.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DDErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCode</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodeSuccess</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodeUnknown</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodeBadParameter</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodeUnsupported</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodeTimeout</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodeInternal</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodeMissingEntitlement</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodePermission</div>
+<div class="difference"><span class="status added">Added</span> DDErrorCodeNext</div>
+<div class="difference"><span class="status added">Added</span> DDErrorOutType</div>
+<div class="difference"><span class="status added">Added</span> DDErrorHandler</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DDEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DDEventType</div>
+<div class="difference"><span class="status added">Added</span> DDEventTypeUnknown</div>
+<div class="difference"><span class="status added">Added</span> DDEventTypeDeviceFound</div>
+<div class="difference"><span class="status added">Added</span> DDEventTypeDeviceLost</div>
+<div class="difference"><span class="status added">Added</span> DDEventTypeDeviceChanged</div>
+<div class="difference"><span class="status added">Added</span> DDEventTypeDevicesPresentChanged</div>
+<div class="difference"><span class="status added">Added</span> DDEventTypeToString()</div>
+<div class="difference"><span class="status added">Added</span> DDEventHandler</div>
+<div class="difference"><span class="status added">Added</span> DDEvent</div>
+<div class="difference"><span class="status added">Added</span> DDEvent.eventType</div>
+<div class="difference"><span class="status added">Added</span> DDEventDevice</div>
+<div class="difference"><span class="status added">Added</span> -[DDEventDevice initWithEventType:device:]</div>
+<div class="difference"><span class="status added">Added</span> DDEventDevice.device</div>
+<div class="difference"><span class="status added">Added</span> DDDeviceEvent</div>
+<div class="difference"><span class="status added">Added</span> DDEventDevicesPresent</div>
+<div class="difference"><span class="status added">Added</span> DDEventDevicesPresent.devicesPresent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DDExtension.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DDDiscoverySession</div>
+<div class="difference"><span class="status added">Added</span> -[DDDiscoverySession reportEvent:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DDDiscoveryExtensionConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DDDiscoveryExtensionConfiguration</div>
+<div class="difference"><span class="status added">Added</span> DDDiscoveryExtensionConfiguration.init(discoveryExtension:)</div>
+<div class="difference"><span class="status added">Added</span> DDDiscoveryExtensionConfiguration.accept(connection:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DDDiscoveryExtensionConfigurationProtocol</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DDDiscoveryExtensionConfigurationProtocol</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DDDiscoveryExtensionProtocol</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DDDiscoveryExtensionProtocol</div>
+</div>
+
+</div>
+</body>
+</html>

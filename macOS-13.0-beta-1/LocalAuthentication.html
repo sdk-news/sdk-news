@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>LocalAuthentication macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>LocalAuthentication macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">LAContext+Authorization.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[LAContext evaluateRight:localizedReason:reply:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAContext checkCanEvaluateRight:reply:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LAPersistedRight.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LAPersistedRight</div>
+<div class="difference"><span class="status added">Added</span> LAPersistedRight.key</div>
+<div class="difference"><span class="status added">Added</span> LAPersistedRight.secret</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LAPrivateKey.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LAPrivateKey</div>
+<div class="difference"><span class="status added">Added</span> LAPrivateKey.publicKey</div>
+<div class="difference"><span class="status added">Added</span> -[LAPrivateKey signData:secKeyAlgorithm:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPrivateKey canSignUsingSecKeyAlgorithm:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPrivateKey decryptData:secKeyAlgorithm:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPrivateKey canDecryptUsingSecKeyAlgorithm:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPrivateKey exchangeKeysWithPublicKey:secKeyAlgorithm:secKeyParameters:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPrivateKey canExchangeKeysUsingSecKeyAlgorithm:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LAPublicDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def kLAPolicyDeviceOwnerAuthenticationWithWristDetection</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LAPublicKey.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LAPublicKey</div>
+<div class="difference"><span class="status added">Added</span> -[LAPublicKey exportBytesWithCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPublicKey encryptData:secKeyAlgorithm:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPublicKey canEncryptUsingSecKeyAlgorithm:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPublicKey verifyData:signature:secKeyAlgorithm:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAPublicKey canVerifyUsingSecKeyAlgorithm:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LARequirement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LAAuthenticationRequirement</div>
+<div class="difference"><span class="status added">Added</span> LAAuthenticationRequirement.defaultRequirement</div>
+<div class="difference"><span class="status added">Added</span> LAAuthenticationRequirement.biometryRequirement</div>
+<div class="difference"><span class="status added">Added</span> LAAuthenticationRequirement.biometryCurrentSetRequirement</div>
+<div class="difference"><span class="status added">Added</span> +[LAAuthenticationRequirement biometryRequirementWithFallback:]</div>
+<div class="difference"><span class="status added">Added</span> LABiometryFallbackRequirement</div>
+<div class="difference"><span class="status added">Added</span> LABiometryFallbackRequirement.defaultRequirement</div>
+<div class="difference"><span class="status added">Added</span> LABiometryFallbackRequirement.devicePasscodeRequirement</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LARight.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LARightState</div>
+<div class="difference"><span class="status added">Added</span> LARightStateUnknown</div>
+<div class="difference"><span class="status added">Added</span> LARightStateAuthorizing</div>
+<div class="difference"><span class="status added">Added</span> LARightStateAuthorized</div>
+<div class="difference"><span class="status added">Added</span> LARightStateNotAuthorized</div>
+<div class="difference"><span class="status added">Added</span> LARight</div>
+<div class="difference"><span class="status added">Added</span> LARight.state</div>
+<div class="difference"><span class="status added">Added</span> LARight.tag</div>
+<div class="difference"><span class="status added">Added</span> -[LARight init]</div>
+<div class="difference"><span class="status added">Added</span> -[LARight initWithRequirement:]</div>
+<div class="difference"><span class="status added">Added</span> -[LARight authorizeWithLocalizedReason:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LARight checkCanAuthorizeWithCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LARight deauthorizeWithCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> LARightDidBecomeAuthorizedNotification</div>
+<div class="difference"><span class="status added">Added</span> LARightDidBecomeUnauthorizedNotification</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LARightStore.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LARightStore</div>
+<div class="difference"><span class="status added">Added</span> LARightStore.sharedStore</div>
+<div class="difference"><span class="status added">Added</span> -[LARightStore rightForIdentifier:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LARightStore saveRight:identifier:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LARightStore saveRight:identifier:secret:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LARightStore removeRight:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LARightStore removeRightForIdentifier:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[LARightStore removeAllRightsWithCompletion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LASecret.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LASecret</div>
+<div class="difference"><span class="status added">Added</span> -[LASecret loadDataWithCompletion:]</div>
+</div>
+
+</div>
+</body>
+</html>

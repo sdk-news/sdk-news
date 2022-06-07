@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>DriverKit macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>DriverKit macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">IOInterruptDispatchSource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def IOInterruptDispatchSource_GetLastInterrupt_ID</div>
+<div class="difference"><span class="status added">Added</span> #def IOInterruptDispatchSource_GetLastInterrupt_Args</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IOKitKeys.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def kIORegistryEntryAllowableSetPropertiesKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIORegistryEntryDefaultLockingSetPropertiesKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIOUserClassKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIOUserClassesKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIOUserClientEntitlementsKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIODriverKitTestDriverEntitlementKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIODriverKitUserClientEntitlementCommunicatesWithDriversKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIODriverKitUserClientEntitlementAllowThirdPartyUserClientsKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIOUserClientDefaultLockingSetPropertiesKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIOUserClientDefaultLockingSingleThreadExternalMethodKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIOUserServerPreserveUserspaceRebootKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIOSystemStateWakeDescriptionKey</div>
+<div class="difference"><span class="status added">Added</span> #def kIOSystemStateWakeDescriptionWakeReasonKey</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IOLib.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IOThreadLocalStorageKeyCreate()</div>
+<div class="difference"><span class="status added">Added</span> IOThreadLocalStorageKeyDelete()</div>
+<div class="difference"><span class="status added">Added</span> IOThreadLocalStorageSet()</div>
+<div class="difference"><span class="status added">Added</span> IOThreadLocalStorageGet()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IOReporterDefs.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def IORLOG</div>
+<div class="difference"><span class="status added">Added</span> #def IORERROR</div>
+<div class="difference"><span class="status added">Added</span> #def PREFL_MEMOP_FAIL</div>
+<div class="difference"><span class="status added">Added</span> #def PREFL_MEMOP_PANIC</div>
+<div class="difference"><span class="status added">Added</span> #def IOREPORTER_DEBUG_ELEMENT</div>
+<div class="difference"><span class="status added">Added</span> #def HIDDEN</div>
+<div class="difference"><span class="status added">Added</span> get_IOReporter_IVars()</div>
+<div class="difference"><span class="status added">Added</span> get_IOHistogramReporter_IVars()</div>
+<div class="difference"><span class="status added">Added</span> get_IOStateReporter_IVars()</div>
+<div class="difference"><span class="status added">Added</span> #def IOREPORTER_CHECK_LOCK</div>
+<div class="difference"><span class="status added">Added</span> #def IOREPORTER_CHECK_CONFIG_LOCK</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IOService.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def IOService_SendIOMessageServicePropertyChange_ID</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>PassKit watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PassKit watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PKError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKAddSecureElementPassOSVersionNotSupportedError</div>
+<div class="difference"><span class="status added">Added</span> PKShareSecureElementPassErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> PKShareSecureElementPassErrorCode</div>
+<div class="difference"><span class="status added">Added</span> PKShareSecureElementPassUnknownError</div>
+<div class="difference"><span class="status added">Added</span> PKShareSecureElementPassSetupError</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityError</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKPassLibrary.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[PKPassLibrary encryptedServiceProviderDataForSecureElementPass:completion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKVehicleConnectionSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionErrorCode</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionErrorCodeUnknown</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionErrorCodeSessionUnableToStart</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionErrorCodeSessionNotActive</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionState</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionStateDisconnected</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionStateConnected</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionStateConnecting</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionStateFailedToConnect</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[PKVehicleConnectionDelegate sessionDidChangeConnectionState:]</div>
+<div class="difference"><span class="status added">Added</span> -[PKVehicleConnectionDelegate sessionDidReceiveData:]</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSession</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSession.delegate</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSession.connectionStatus</div>
+<div class="difference"><span class="status added">Added</span> +[PKVehicleConnectionSession sessionForPass:delegate:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[PKVehicleConnectionSession sendData:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[PKVehicleConnectionSession invalidate]</div>
+</div>
+
+</div>
+</body>
+</html>

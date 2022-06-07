@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>DeviceAccess macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>DeviceAccess macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">DACommon.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def DA_EXTERN</div>
+<div class="difference"><span class="status added">Added</span> #def da_os_ownership</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DADevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DADeviceProtocol</div>
+<div class="difference"><span class="status added">Added</span> DADeviceProtocolInvalid</div>
+<div class="difference"><span class="status added">Added</span> DADeviceProtocolDIAL</div>
+<div class="difference"><span class="status added">Added</span> DADeviceFlags</div>
+<div class="difference"><span class="status added">Added</span> DADeviceFlagsNone</div>
+<div class="difference"><span class="status added">Added</span> DADeviceFlagsSupportsAudio</div>
+<div class="difference"><span class="status added">Added</span> DADeviceFlagsSupportsVideo</div>
+<div class="difference"><span class="status added">Added</span> DADeviceFlagsToString()</div>
+<div class="difference"><span class="status added">Added</span> DADeviceProtocolType</div>
+<div class="difference"><span class="status added">Added</span> DADeviceProtocolTypeInvalid</div>
+<div class="difference"><span class="status added">Added</span> DADeviceProtocolTypeDIAL</div>
+<div class="difference"><span class="status added">Added</span> DADeviceProtocolTypeReserved1</div>
+<div class="difference"><span class="status added">Added</span> DADeviceProtocolTypeReserved2</div>
+<div class="difference"><span class="status added">Added</span> DADeviceProtocolTypeToString()</div>
+<div class="difference"><span class="status added">Added</span> DADeviceType</div>
+<div class="difference"><span class="status added">Added</span> DADeviceTypeHiFiSpeaker</div>
+<div class="difference"><span class="status added">Added</span> DADeviceTypeHiFiSpeaker2</div>
+<div class="difference"><span class="status added">Added</span> DADeviceTypeTVWithMediaBox</div>
+<div class="difference"><span class="status added">Added</span> DADeviceTypeTV</div>
+<div class="difference"><span class="status added">Added</span> DADeviceTypeToString()</div>
+<div class="difference"><span class="status added">Added</span> DADeviceState</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateInvalid</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateActivating</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateActivated</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateAuthorized</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateInvalidating</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateUnknown</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateSelected</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateDeselected</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateConnecting</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateConnected</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateDisconnecting</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateDisconnected</div>
+<div class="difference"><span class="status added">Added</span> DADeviceStateToString()</div>
+<div class="difference"><span class="status added">Added</span> DADevice</div>
+<div class="difference"><span class="status added">Added</span> DADevice.bluetoothIdentifier</div>
+<div class="difference"><span class="status added">Added</span> DADevice.flags</div>
+<div class="difference"><span class="status added">Added</span> DADevice.type</div>
+<div class="difference"><span class="status added">Added</span> DADevice.identifier</div>
+<div class="difference"><span class="status added">Added</span> DADevice.metadata</div>
+<div class="difference"><span class="status added">Added</span> DADevice.name</div>
+<div class="difference"><span class="status added">Added</span> DADevice.networkEndpoint</div>
+<div class="difference"><span class="status added">Added</span> DADevice.protocol</div>
+<div class="difference"><span class="status added">Added</span> DADevice.protocolType</div>
+<div class="difference"><span class="status added">Added</span> DADevice.state</div>
+<div class="difference"><span class="status added">Added</span> DADevice.txtRecordData</div>
+<div class="difference"><span class="status added">Added</span> DADevice.url</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DADiscovery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DADiscoveryConfiguration</div>
+<div class="difference"><span class="status added">Added</span> DADiscoveryConfiguration.bluetoothCompanyIdentifiers</div>
+<div class="difference"><span class="status added">Added</span> DADiscoveryConfiguration.bluetoothServices</div>
+<div class="difference"><span class="status added">Added</span> DADiscoveryConfiguration.bonjourServiceTypes</div>
+<div class="difference"><span class="status added">Added</span> DADiscovery</div>
+<div class="difference"><span class="status added">Added</span> DADiscovery.dispatchQueue</div>
+<div class="difference"><span class="status added">Added</span> DADiscovery.eventHandler</div>
+<div class="difference"><span class="status added">Added</span> -[DADiscovery initWithConfiguration:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[DADiscovery activate]</div>
+<div class="difference"><span class="status added">Added</span> -[DADiscovery invalidate]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DAErrors.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DAErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCode</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodeSuccess</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodeUnknown</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodeBadParameter</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodeUnsupported</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodeTimeout</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodeInternal</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodeMissingEntitlement</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodePermission</div>
+<div class="difference"><span class="status added">Added</span> DAErrorCodeNext</div>
+<div class="difference"><span class="status added">Added</span> DAErrorOutType</div>
+<div class="difference"><span class="status added">Added</span> DAErrorHandler</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DAEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DAEventType</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeUnknown</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeActivated</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeInvalidated</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeSessionStarted</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeSessionEnded</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeXPCInterrupted</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeDeviceFound</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeDeviceLost</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeDeviceChanged</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeDevicesPresentChanged</div>
+<div class="difference"><span class="status added">Added</span> DAEventTypeToString()</div>
+<div class="difference"><span class="status added">Added</span> DAEventHandler</div>
+<div class="difference"><span class="status added">Added</span> DAEvent</div>
+<div class="difference"><span class="status added">Added</span> DAEvent.eventType</div>
+<div class="difference"><span class="status added">Added</span> DAEventDevice</div>
+<div class="difference"><span class="status added">Added</span> -[DAEventDevice initWithEventType:device:]</div>
+<div class="difference"><span class="status added">Added</span> DAEventDevice.device</div>
+<div class="difference"><span class="status added">Added</span> DADeviceEvent</div>
+<div class="difference"><span class="status added">Added</span> DAEventDevicesPresent</div>
+<div class="difference"><span class="status added">Added</span> DAEventDevicesPresent.devicesPresent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DAExtension.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DADiscoveryExtensionSession</div>
+<div class="difference"><span class="status added">Added</span> -[DADiscoveryExtensionSession reportEvent:]</div>
+<div class="difference"><span class="status added">Added</span> DADiscoveryExtensionProtocol</div>
+<div class="difference"><span class="status added">Added</span> -[DADiscoveryExtensionProtocol startDiscoveryWithSession:]</div>
+<div class="difference"><span class="status added">Added</span> -[DADiscoveryExtensionProtocol stopDiscoveryWithSession:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DADiscoveryExtensionConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DADiscoveryExtensionConfiguration</div>
+<div class="difference"><span class="status added">Added</span> DADiscoveryExtensionConfiguration.init(discoveryExtension:)</div>
+<div class="difference"><span class="status added">Added</span> DADiscoveryExtensionConfiguration.accept(connection:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DADiscoveryExtensionConfigurationProtocol</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DADiscoveryExtensionConfigurationProtocol</div>
+</div>
+
+</div>
+</body>
+</html>

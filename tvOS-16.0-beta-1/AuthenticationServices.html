@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>AuthenticationServices tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AuthenticationServices tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPlatformPublicKeyCredentialAssertion.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPlatformPublicKeyCredentialAssertion</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPlatformPublicKeyCredentialAssertionRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest.allowedCredentials</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPlatformPublicKeyCredentialDescriptor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPlatformPublicKeyCredentialDescriptor</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationPlatformPublicKeyCredentialDescriptor initWithCredentialID:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPlatformPublicKeyCredentialProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPlatformPublicKeyCredentialProvider</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationPlatformPublicKeyCredentialProvider initWithRelyingPartyIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationPlatformPublicKeyCredentialProvider createCredentialRegistrationRequestWithChallenge:name:userID:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationPlatformPublicKeyCredentialProvider createCredentialAssertionRequestWithChallenge:]</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPlatformPublicKeyCredentialProvider.relyingPartyIdentifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPlatformPublicKeyCredentialRegistration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPlatformPublicKeyCredentialRegistration</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPublicKeyCredentialAssertion.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertion</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertion.rawAuthenticatorData</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertion.userID</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertion.signature</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPublicKeyCredentialAssertionRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertionRequest</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertionRequest.challenge</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertionRequest.relyingPartyIdentifier</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertionRequest.allowedCredentials</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialAssertionRequest.userVerificationPreference</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPublicKeyCredentialConstants.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialUserVerificationPreference</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialUserVerificationPreferencePreferred</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialUserVerificationPreferenceRequired</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialUserVerificationPreferenceDiscouraged</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPublicKeyCredentialDescriptor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialDescriptor</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialDescriptor.credentialID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPublicKeyCredentialRegistration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistration</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistration.rawAttestationObject</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationPublicKeyCredentialRegistrationRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistrationRequest</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistrationRequest.relyingPartyIdentifier</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistrationRequest.userID</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistrationRequest.name</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistrationRequest.displayName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistrationRequest.challenge</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationPublicKeyCredentialRegistrationRequest.userVerificationPreference</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASPublicKeyCredential.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASPublicKeyCredential</div>
+<div class="difference"><span class="status added">Added</span> ASPublicKeyCredential.rawClientDataJSON</div>
+<div class="difference"><span class="status added">Added</span> ASPublicKeyCredential.credentialID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASWebAuthenticationSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASWebAuthenticationSessionErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> ASWebAuthenticationSessionErrorCodeCanceledLogin</div>
+<div class="difference"><span class="status added">Added</span> ASWebAuthenticationSession</div>
+<div class="difference"><span class="status added">Added</span> -[ASWebAuthenticationSession initWithURL:callbackURLScheme:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> ASWebAuthenticationSession.canStart</div>
+<div class="difference"><span class="status added">Added</span> -[ASWebAuthenticationSession start]</div>
+</div>
+
+</div>
+</body>
+</html>

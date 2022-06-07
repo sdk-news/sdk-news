@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>MetalFX iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>MetalFX iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">MFXSpatialScalingEffect.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def MFXSpatialScalingEffectVersionStart</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectVersion</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectVersion_1</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingColorProcessingMode</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingColorProcessingMode_Perceptual</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingColorProcessingMode_Linear</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingColorProcessingMode_HDR</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor.colorTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor.outputTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor.inputWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor.inputHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor.outputWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor.outputHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor.colorProcessingMode</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffectDescriptor.version</div>
+<div class="difference"><span class="status added">Added</span> -[MFXSpatialScalingEffectDescriptor newSpatialScalingEffectWithDevice:]</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.colorTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.outputTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.inputContentWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.inputContentHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.colorTexture</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.outputTexture</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.colorTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.outputTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.inputWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.inputHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.outputWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.outputHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.colorProcessingMode</div>
+<div class="difference"><span class="status added">Added</span> MFXSpatialScalingEffect.fence</div>
+<div class="difference"><span class="status added">Added</span> -[MFXSpatialScalingEffect encodeToCommandBuffer:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MFXTemporalScalingEffect.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def MFXTemporalScalingEffectVersionStart</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectVersion</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectVersion_1</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.colorTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.depthTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.motionTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.outputTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.inputWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.inputHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.outputWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.outputHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.enableInputContentProperties</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.inputContentMinScale</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.inputContentMaxScale</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffectDescriptor.version</div>
+<div class="difference"><span class="status added">Added</span> -[MFXTemporalScalingEffectDescriptor newTemporalScalingEffectWithDevice:]</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.colorTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.depthTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.motionTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.outputTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.inputContentWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.inputContentHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.colorTexture</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.depthTexture</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.motionTexture</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.outputTexture</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.jitterOffset</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.motionVectorScale</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.reset</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.reversedDepth</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.colorTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.depthTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.motionTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.outputTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.inputWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.inputHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.outputWidth</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.outputHeight</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.inputContentMinScale</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.inputContentMaxScale</div>
+<div class="difference"><span class="status added">Added</span> MFXTemporalScalingEffect.fence</div>
+<div class="difference"><span class="status added">Added</span> -[MFXTemporalScalingEffect encodeToCommandBuffer:]</div>
+</div>
+
+</div>
+</body>
+</html>

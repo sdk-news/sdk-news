@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>CHIP iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CHIP iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CHIPAttributeCacheContainer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> -[CHIPAttributeCacheContainer subscribeWithDeviceController:deviceId:clientQueue:completion:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[CHIPAttributeCacheContainer readAttributeWithEndpointId:clusterId:attributeId:clientQueue:completion:]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">- (void)readAttributeWithEndpointId:(NSUInteger)endpointId clusterId:(NSUInteger)clusterId attributeId:(NSUInteger)attributeId clientQueue:(nonnull dispatch_queue_t)clientQueue completion:(nonnull void (^)(NSArray&lt;NSDictionary&lt;NSString *,id&gt; *&gt; * _Nullable, NSError * _Nullable))completion</td></tr>
+<tr><th>To</th><td class="declaration">- (void)readAttributeWithEndpointId:(nullable NSNumber *)endpointId clusterId:(nullable NSNumber *)clusterId attributeId:(nullable NSNumber *)attributeId clientQueue:(nonnull dispatch_queue_t)clientQueue completion:(nonnull void (^)(NSArray&lt;NSDictionary&lt;NSString *,id&gt; *&gt; * _Nullable, NSError * _Nullable))completion</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CHIPCluster.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CHIPSubscribeParams.autoResubscribe</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CHIPCommissioningParameters.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CHIPCommissioningParameters.deviceAttestationDelegate</div>
+<div class="difference"><span class="status added">Added</span> CHIPCommissioningParameters.failSafeExpiryTimeoutSecs</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CHIPDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> kCHIPTagKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPSignedIntegerValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPUnsignedIntegerValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPBooleanValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPUTF8StringValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPOctetStringValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPFloatValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPDoubleValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPNullValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPStructureValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPArrayValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPListValueTypeKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPEndpointIdKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPClusterIdKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPAttributeIdKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPCommandIdKey</div>
+<div class="difference"><span class="status removed">Removed</span> kCHIPStatusKey</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDevice subscribeWithQueue:minInterval:maxInterval:reportHandler:subscriptionEstablished:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDevice readAttributeWithEndpointId:clusterId:attributeId:clientQueue:completion:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDevice writeAttributeWithEndpointId:clusterId:attributeId:value:clientQueue:completion:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDevice invokeCommandWithEndpointId:clusterId:commandId:commandFields:clientQueue:completion:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDevice subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:clientQueue:reportHandler:subscriptionEstablished:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kCHIPAttributePathKey</div>
+<div class="difference"><span class="status added">Added</span> kCHIPCommandPathKey</div>
+<div class="difference"><span class="status added">Added</span> kCHIPErrorKey</div>
+<div class="difference"><span class="status added">Added</span> kCHIPContextTagKey</div>
+<div class="difference"><span class="status added">Added</span> kCHIPSignedIntegerValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPUnsignedIntegerValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPBooleanValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPUTF8StringValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPOctetStringValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPFloatValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPDoubleValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPNullValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPStructureValueType</div>
+<div class="difference"><span class="status added">Added</span> kCHIPArrayValueType</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDevice subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:reportHandler:subscriptionEstablished:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDevice readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDevice writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDevice invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDevice subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:]</div>
+<div class="difference"><span class="status added">Added</span> +[CHIPAttributePath attributePathWithEndpointId:clusterId:attributeId:]</div>
+<div class="difference"><span class="status added">Added</span> CHIPCommandPath</div>
+<div class="difference"><span class="status added">Added</span> CHIPCommandPath.endpoint</div>
+<div class="difference"><span class="status added">Added</span> CHIPCommandPath.cluster</div>
+<div class="difference"><span class="status added">Added</span> CHIPCommandPath.command</div>
+<div class="difference"><span class="status added">Added</span> +[CHIPCommandPath commandPathWithEndpointId:clusterId:commandId:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CHIPDeviceAttestationDelegate.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CHIPDeviceAttestationDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceAttestationDelegate deviceAttestation:failedForDevice:error:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CHIPDeviceController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceController continueCommissioningDevice:ignoreAttestationFailure:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceController startup:vendorId:nocSigner:paaCerts:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CHIPDeviceController+XPC.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDeviceControllerServerProtocol readAttributeWithController:nodeId:endpointId:clusterId:attributeId:completion:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDeviceControllerServerProtocol writeAttributeWithController:nodeId:endpointId:clusterId:attributeId:value:completion:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDeviceControllerServerProtocol invokeCommandWithController:nodeId:endpointId:clusterId:commandId:fields:completion:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDeviceControllerServerProtocol subscribeAttributeWithController:nodeId:endpointId:clusterId:attributeId:minInterval:maxInterval:establishedHandler:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDeviceControllerServerProtocol subscribeAttributeCacheWithController:nodeId:completion:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[CHIPDeviceControllerClientProtocol handleReportWithController:nodeId:value:error:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[CHIPDeviceController encodeXPCResponseValues:]</div>
+<div class="difference"><span class="status added">Added</span> +[CHIPDeviceController decodeXPCResponseValues:]</div>
+<div class="difference"><span class="status added">Added</span> +[CHIPDeviceController encodeXPCReadParams:]</div>
+<div class="difference"><span class="status added">Added</span> +[CHIPDeviceController decodeXPCReadParams:]</div>
+<div class="difference"><span class="status added">Added</span> +[CHIPDeviceController encodeXPCSubscribeParams:]</div>
+<div class="difference"><span class="status added">Added</span> +[CHIPDeviceController decodeXPCSubscribeParams:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceControllerServerProtocol readAttributeWithController:nodeId:endpointId:clusterId:attributeId:params:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceControllerServerProtocol writeAttributeWithController:nodeId:endpointId:clusterId:attributeId:value:timedWriteTimeout:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceControllerServerProtocol invokeCommandWithController:nodeId:endpointId:clusterId:commandId:fields:timedInvokeTimeout:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceControllerServerProtocol subscribeAttributeWithController:nodeId:endpointId:clusterId:attributeId:minInterval:maxInterval:params:establishedHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceControllerServerProtocol stopReportsWithController:nodeId:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceControllerServerProtocol subscribeWithController:nodeId:minInterval:maxInterval:params:shouldCache:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CHIPDeviceControllerClientProtocol handleReportWithController:nodeId:values:error:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[CHIPDeviceControllerServerProtocol readAttributeCacheWithController:nodeId:endpointId:clusterId:attributeId:completion:]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">- (void)readAttributeCacheWithController:(nullable id)controller nodeId:(uint64_t)nodeId endpointId:(NSUInteger)endpointId clusterId:(NSUInteger)clusterId attributeId:(NSUInteger)attributeId completion:(nonnull void (^)(id _Nullable, NSError * _Nullable))completion</td></tr>
+<tr><th>To</th><td class="declaration">- (void)readAttributeCacheWithController:(nullable id)controller nodeId:(uint64_t)nodeId endpointId:(nullable NSNumber *)endpointId clusterId:(nullable NSNumber *)clusterId attributeId:(nullable NSNumber *)attributeId completion:(nonnull void (^)(id _Nullable, NSError * _Nullable))completion</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

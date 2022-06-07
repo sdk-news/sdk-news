@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>ClockKit watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ClockKit watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationDataSource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationDataSource.widgetMigrator</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationIntentWidgetMigrationConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration.kind</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration.extensionBundleIdentifier</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration.intent</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration.localizedDisplayName</div>
+<div class="difference"><span class="status added">Added</span> -[CLKComplicationIntentWidgetMigrationConfiguration initWithKind:extensionBundleIdentifier:intent:localizedDisplayName:]</div>
+<div class="difference"><span class="status added">Added</span> +[CLKComplicationIntentWidgetMigrationConfiguration intentWidgetMigrationConfigurationWithKind:extensionBundleIdentifier:intent:localizedDisplayName:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationStaticWidgetMigrationConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationStaticWidgetMigrationConfiguration</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationStaticWidgetMigrationConfiguration.kind</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationStaticWidgetMigrationConfiguration.extensionBundleIdentifier</div>
+<div class="difference"><span class="status added">Added</span> -[CLKComplicationStaticWidgetMigrationConfiguration initWithKind:extensionBundleIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[CLKComplicationStaticWidgetMigrationConfiguration staticWidgetMigrationConfigurationWithKind:extensionBundleIdentifier:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationWidgetMigrationConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationWidgetMigrationConfiguration</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationWidgetMigrator.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationWidgetMigrator</div>
+<div class="difference"><span class="status added">Added</span> -[CLKComplicationWidgetMigrator getWidgetConfigurationFrom:completionHandler:]</div>
+</div>
+
+</div>
+</body>
+</html>

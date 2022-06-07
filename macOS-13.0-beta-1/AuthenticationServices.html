@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>AuthenticationServices macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AuthenticationServices macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationControllerRequestOptions</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationControllerRequestOptionPreferImmediatelyAvailableCredentials</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationController performRequestsWithOptions:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationController cancel]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationProviderExtensionAuthorizationRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionAuthorizationRequest.loginManager</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationProviderExtensionLoginConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKerberosMapping</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKerberosMapping.ticketKeyPath</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKerberosMapping.messageBufferKeyName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKerberosMapping.realmKeyName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKerberosMapping.serviceNameKeyName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKerberosMapping.clientNameKeyName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKerberosMapping.encryptionKeyTypeKeyName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKerberosMapping.sessionKeyKeyName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginConfiguration initWithClientID:issuer:tokenEndpointURL:jwksEndpointURL:audience:]</div>
+<div class="difference"><span class="status added">Added</span> +[ASAuthorizationProviderExtensionLoginConfiguration configurationWithOpenIDConfigurationURL:clientID:issuer:completion:]</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.invalidCredentialPredicate</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.accountDisplayName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.clientID</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.issuer</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.audience</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.tokenEndpointURL</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.jwksEndpointURL</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.nonceEndpointURL</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.nonceResponseKeypath</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.serverNonceClaimName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.customNonceRequestValues</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginConfiguration setCustomAssertionRequestHeaderClaims:returningError:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginConfiguration setCustomAssertionRequestBodyClaims:returningError:]</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.additionalScopes</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.includePreviousRefreshTokenInLoginRequest</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.previousRefreshTokenClaimName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.customLoginRequestValues</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginConfiguration setCustomLoginRequestHeaderClaims:returningError:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginConfiguration setCustomLoginRequestBodyClaims:returningError:]</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginConfiguration.kerberosTicketMappings</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationProviderExtensionLoginManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKeyType</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKeyTypeUserDeviceSigning</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKeyTypeUserDeviceEncryption</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionKeyTypeUserSecureEnclaveKey</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginManager</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginManager.deviceRegistered</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginManager.userRegistered</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginManager.registrationToken</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginManager.loginUserName</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginManager.ssoTokens</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionLoginManager.loginConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager saveLoginConfiguration:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager saveCertificate:keyType:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager copyKeyForKeyType:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager copyIdentityForKeyType:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager userNeedsReauthenticationWithCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager deviceRegistrationsNeedsRepair]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager userRegistrationsNeedsRepair]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager resetKeys]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionLoginManager presentRegistrationViewControllerWithCompletion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ASAuthorizationProviderExtensionRegistrationHandler.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionAuthenticationMethod</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionAuthenticationMethodPassword</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionAuthenticationMethodUserSecureEnclaveKey</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRequestOptions</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRequestOptionsNone</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRequestOptionsUserInteractionEnabled</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRequestOptionsRegistrationRepair</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRegistrationResult</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRegistrationResultSuccess</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRegistrationResultFailed</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRegistrationResultUserInterfaceRequired</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRegistrationResultFailedNoRetry</div>
+<div class="difference"><span class="status added">Added</span> ASAuthorizationProviderExtensionRegistrationHandler</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionRegistrationHandler beginDeviceRegistrationUsingLoginManager:options:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionRegistrationHandler beginUserRegistrationUsingLoginManager:userName:authenticationMethod:options:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[ASAuthorizationProviderExtensionRegistrationHandler registrationDidComplete]</div>
+</div>
+
+</div>
+</body>
+</html>

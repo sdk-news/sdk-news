@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>AudioVideoBridging macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AudioVideoBridging macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVB17221ACMPMessage.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPMessage.connectedListenersEntries</div>
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPMessage.connectedListenersEntriesValid</div>
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPMessage.ipFlags</div>
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPMessage.sourcePort</div>
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPMessage.destinationPort</div>
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPMessage.sourceIPAddress</div>
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPMessage.destinationIPAddress</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVBConstants.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPIPFlag</div>
+<div class="difference"><span class="status added">Added</span> AVB17221ACMPIPFlagNone</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVBIPAddress.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVBIPAddress</div>
+<div class="difference"><span class="status added">Added</span> -[AVBIPAddress initWithIPv6Address:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVBIPAddress initWithIPv6AddressData:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVBIPAddress initWithIPv4Address:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVBIPAddress initWithSockAddr:]</div>
+<div class="difference"><span class="status added">Added</span> AVBIPAddress.representsIPv4Address</div>
+<div class="difference"><span class="status added">Added</span> AVBIPAddress.ipv6Address</div>
+<div class="difference"><span class="status added">Added</span> AVBIPAddress.ipv4Address</div>
+</div>
+
+</div>
+</body>
+</html>

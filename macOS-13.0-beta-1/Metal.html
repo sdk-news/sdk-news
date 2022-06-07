@@ -1,0 +1,747 @@
+<html>
+<head>
+<title>Metal macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Metal macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">MTLAccelerationStructure.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureGeometryDescriptor.primitiveDataBuffer</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureGeometryDescriptor.primitiveDataBufferOffset</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureGeometryDescriptor.primitiveDataStride</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureGeometryDescriptor.primitiveDataElementSize</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureTriangleGeometryDescriptor.vertexFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureTriangleGeometryDescriptor.transformationMatrixBuffer</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureTriangleGeometryDescriptor.transformationMatrixBufferOffset</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureMotionTriangleGeometryDescriptor.vertexFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureMotionTriangleGeometryDescriptor.transformationMatrixBuffer</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureMotionTriangleGeometryDescriptor.transformationMatrixBufferOffset</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructure.gpuHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructure.gpuResourceID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLAccelerationStructureCommandEncoder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureRefitOptions</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureRefitOptionVertexData</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructureRefitOptionPerPrimitiveData</div>
+<div class="difference"><span class="status added">Added</span> -[MTLAccelerationStructureCommandEncoder refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:options:]</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructurePassSampleBufferAttachmentDescriptor</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructurePassSampleBufferAttachmentDescriptor.sampleBuffer</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructurePassSampleBufferAttachmentDescriptor.startOfEncoderSampleIndex</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructurePassSampleBufferAttachmentDescriptor.endOfEncoderSampleIndex</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray</div>
+<div class="difference"><span class="status added">Added</span> -[MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray objectAtIndexedSubscript:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray setObject:atIndexedSubscript:]</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructurePassDescriptor</div>
+<div class="difference"><span class="status added">Added</span> +[MTLAccelerationStructurePassDescriptor accelerationStructurePassDescriptor]</div>
+<div class="difference"><span class="status added">Added</span> MTLAccelerationStructurePassDescriptor.sampleBufferAttachments</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLArgument.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLBindingType</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeBuffer</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeThreadgroupMemory</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeTexture</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeSampler</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeImageblockData</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeImageblock</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeVisibleFunctionTable</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypePrimitiveAccelerationStructure</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeInstanceAccelerationStructure</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeIntersectionFunctionTable</div>
+<div class="difference"><span class="status added">Added</span> MTLBindingTypeObjectPayload</div>
+<div class="difference"><span class="status added">Added</span> MTLArgumentTypeObjectPayload</div>
+<div class="difference"><span class="status added">Added</span> MTLArgument.objectPayloadAlignment</div>
+<div class="difference"><span class="status added">Added</span> MTLArgument.objectPayloadDataSize</div>
+<div class="difference"><span class="status added">Added</span> MTLBinding</div>
+<div class="difference"><span class="status added">Added</span> MTLBinding.name</div>
+<div class="difference"><span class="status added">Added</span> MTLBinding.type</div>
+<div class="difference"><span class="status added">Added</span> MTLBinding.access</div>
+<div class="difference"><span class="status added">Added</span> MTLBinding.index</div>
+<div class="difference"><span class="status added">Added</span> MTLBinding.used</div>
+<div class="difference"><span class="status added">Added</span> MTLBinding.argument</div>
+<div class="difference"><span class="status added">Added</span> MTLBufferBinding</div>
+<div class="difference"><span class="status added">Added</span> MTLBufferBinding.bufferAlignment</div>
+<div class="difference"><span class="status added">Added</span> MTLBufferBinding.bufferDataSize</div>
+<div class="difference"><span class="status added">Added</span> MTLBufferBinding.bufferDataType</div>
+<div class="difference"><span class="status added">Added</span> MTLBufferBinding.bufferStructType</div>
+<div class="difference"><span class="status added">Added</span> MTLBufferBinding.bufferPointerType</div>
+<div class="difference"><span class="status added">Added</span> MTLThreadgroupBinding</div>
+<div class="difference"><span class="status added">Added</span> MTLThreadgroupBinding.threadgroupMemoryAlignment</div>
+<div class="difference"><span class="status added">Added</span> MTLThreadgroupBinding.threadgroupMemoryDataSize</div>
+<div class="difference"><span class="status added">Added</span> MTLTextureBinding</div>
+<div class="difference"><span class="status added">Added</span> MTLTextureBinding.textureType</div>
+<div class="difference"><span class="status added">Added</span> MTLTextureBinding.textureDataType</div>
+<div class="difference"><span class="status added">Added</span> MTLTextureBinding.depthTexture</div>
+<div class="difference"><span class="status added">Added</span> MTLTextureBinding.arrayLength</div>
+<div class="difference"><span class="status added">Added</span> MTLObjectPayloadBinding</div>
+<div class="difference"><span class="status added">Added</span> MTLObjectPayloadBinding.objectPayloadAlignment</div>
+<div class="difference"><span class="status added">Added</span> MTLObjectPayloadBinding.objectPayloadDataSize</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeBuffer</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeThreadgroupMemory</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeTexture</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeSampler</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeImageblockData</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeImageblock</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeVisibleFunctionTable</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypePrimitiveAccelerationStructure</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeInstanceAccelerationStructure</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentTypeIntersectionFunctionTable</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLArgument</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLArgumentEncoder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentEncoder</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use &apos;gpuAddress&apos; or &apos;gpuHandle&apos; instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLBinaryArchive.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLBinaryArchiveErrorInternalError</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLBuffer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLBuffer.gpuAddress</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLCommandBuffer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[MTLCommandBuffer accelerationStructureCommandEncoderWithDescriptor:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLCommandBufferErrorBlacklisted</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLCommandEncoder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLResourceUsageSample</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLComputePipeline.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLComputePipelineReflection.bindings</div>
+<div class="difference"><span class="status added">Added</span> MTLComputePipelineState.gpuHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLComputePipelineState.gpuResourceID</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLComputePipelineReflection.arguments</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionMethod</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionMethodZlib</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionMethodLZFSE</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionMethodLZ4</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionMethodLZMA</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionMethodLZBitmap</div>
+<div class="difference"><span class="status added">Added</span> MTLGPUFamilyApple8</div>
+<div class="difference"><span class="status added">Added</span> MTLGPUFamilyMetal3</div>
+<div class="difference"><span class="status added">Added</span> MTLSparsePageSize</div>
+<div class="difference"><span class="status added">Added</span> MTLSparsePageSize16</div>
+<div class="difference"><span class="status added">Added</span> MTLSparsePageSize64</div>
+<div class="difference"><span class="status added">Added</span> MTLSparsePageSize256</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice newRenderPipelineStateWithMeshDescriptor:options:reflection:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice newRenderPipelineStateWithMeshDescriptor:options:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice newIOHandleWithURL:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice newIOCommandQueueWithDescriptor:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice newIOHandleWithURL:compressionMethod:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice sparseTileSizeInBytesForSparsePageSize:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice sparseTileSizeWithTextureType:pixelFormat:sampleCount:sparsePageSize:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice newArgumentEncoderWithBufferBinding:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice heapAccelerationStructureSizeAndAlignWithSize:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLDevice heapAccelerationStructureSizeAndAlignWithDescriptor:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_macOS_GPUFamily1_v1</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_OSX_GPUFamily1_v1</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_macOS_GPUFamily1_v2</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_OSX_GPUFamily1_v2</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_macOS_ReadWriteTextureTier2</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_OSX_ReadWriteTextureTier2</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_macOS_GPUFamily1_v3</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_macOS_GPUFamily1_v4</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLFeatureSet_macOS_GPUFamily2_v1</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLGPUFamilyMac1</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLGPUFamilyMacCatalyst1</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLGPUFamilyMacCatalyst2</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLDevice.barycentricCoordsSupported</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[MTLDevice newLibraryWithFile:error:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use -newLibraryWithURL:error: instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[MTLDevice supportsFeatureSet:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use supportsFamily instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLHeap.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLHeapDescriptor.sparsePageSize</div>
+<div class="difference"><span class="status added">Added</span> -[MTLHeap newAccelerationStructureWithSize:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLHeap newAccelerationStructureWithDescriptor:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLHeap newAccelerationStructureWithSize:offset:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLHeap newAccelerationStructureWithDescriptor:offset:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLIndirectCommandBuffer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLIndirectCommandBufferDescriptor.supportRayTracing</div>
+<div class="difference"><span class="status added">Added</span> MTLIndirectCommandBuffer.gpuHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLIndirectCommandBuffer.gpuResourceID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLIntersectionFunctionTable.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLIntersectionFunctionTable.gpuHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLIntersectionFunctionTable.gpuResourceID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLIOCommandBuffer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLIOStatus</div>
+<div class="difference"><span class="status added">Added</span> MTLIOStatusPending</div>
+<div class="difference"><span class="status added">Added</span> MTLIOStatusCancelled</div>
+<div class="difference"><span class="status added">Added</span> MTLIOStatusError</div>
+<div class="difference"><span class="status added">Added</span> MTLIOStatusComplete</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandBufferHandler</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandBuffer</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer addCompletedHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer loadBytes:size:sourceHandle:sourceHandleOffset:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer loadBuffer:offset:size:sourceHandle:sourceHandleOffset:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer loadTexture:slice:level:size:sourceBytesPerRow:sourceBytesPerImage:destinationOrigin:sourceHandle:sourceHandleOffset:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer copyStatusToBuffer:offset:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer commit]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer waitUntilCompleted]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer tryCancel]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer addBarrier]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer pushDebugGroup:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer popDebugGroup]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer enqueue]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer waitForEvent:value:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandBuffer signalEvent:value:]</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandBuffer.label</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandBuffer.status</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandBuffer.error</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLIOCommandQueue.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLIOPriority</div>
+<div class="difference"><span class="status added">Added</span> MTLIOPriorityHigh</div>
+<div class="difference"><span class="status added">Added</span> MTLIOPriorityNormal</div>
+<div class="difference"><span class="status added">Added</span> MTLIOPriorityLow</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueType</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueTypeConcurrent</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueTypeSerial</div>
+<div class="difference"><span class="status added">Added</span> MTLIOErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> MTLIOError</div>
+<div class="difference"><span class="status added">Added</span> MTLIOErrorURLInvalid</div>
+<div class="difference"><span class="status added">Added</span> MTLIOErrorInternal</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueue</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandQueue enqueueBarrier]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandQueue commandBuffer]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOCommandQueue commandBufferWithUnretainedReferences]</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueue.label</div>
+<div class="difference"><span class="status added">Added</span> MTLIOScratchBuffer</div>
+<div class="difference"><span class="status added">Added</span> MTLIOScratchBuffer.buffer</div>
+<div class="difference"><span class="status added">Added</span> MTLIOScratchBufferAllocator</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOScratchBufferAllocator newScratchBufferWithMinimumSize:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLIOScratchBufferAllocator allocateScratchBufferWithMinimumSize:]</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueDescriptor</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueDescriptor.maxCommandBufferCount</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueDescriptor.priority</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueDescriptor.type</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueDescriptor.maxCommandsInFlight</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCommandQueueDescriptor.scratchBufferAllocator</div>
+<div class="difference"><span class="status added">Added</span> MTLIOFileHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLIOFileHandle.label</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLIOCompressor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionStatus</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionStatusComplete</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionStatusError</div>
+<div class="difference"><span class="status added">Added</span> kMTLIOCompressionContextDefaultChunkSize</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCreateCompressionContext()</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionContextAppendData()</div>
+<div class="difference"><span class="status added">Added</span> MTLIOFlushAndDestroyCompressionContext()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLLibrary.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLFunctionTypeMesh</div>
+<div class="difference"><span class="status added">Added</span> MTLFunctionTypeObject</div>
+<div class="difference"><span class="status added">Added</span> MTLLanguageVersion1_0</div>
+<div class="difference"><span class="status added">Added</span> MTLLanguageVersion3_0</div>
+<div class="difference"><span class="status added">Added</span> MTLLibraryOptimizationLevel</div>
+<div class="difference"><span class="status added">Added</span> MTLLibraryOptimizationLevelDefault</div>
+<div class="difference"><span class="status added">Added</span> MTLLibraryOptimizationLevelSize</div>
+<div class="difference"><span class="status added">Added</span> MTLCompileOptions.optimizationLevel</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLRenderCommandEncoder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLRenderStageObject</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderStageMesh</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectBytes:length:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectBuffer:offset:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectBufferOffset:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectBuffers:offsets:withRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectTexture:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectTextures:withRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectSamplerState:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectSamplerStates:withRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectSamplerState:lodMinClamp:lodMaxClamp:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectSamplerStates:lodMinClamps:lodMaxClamps:withRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setObjectThreadgroupMemoryLength:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshBytes:length:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshBuffer:offset:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshBufferOffset:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshBuffers:offsets:withRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshTexture:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshTextures:withRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshSamplerState:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshSamplerStates:withRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshSamplerState:lodMinClamp:lodMaxClamp:atIndex:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder setMeshSamplerStates:lodMinClamps:lodMaxClamps:withRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder drawMeshThreadgroups:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder drawMeshThreads:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:]</div>
+<div class="difference"><span class="status added">Added</span> -[MTLRenderCommandEncoder drawMeshThreadgroupsWithIndirectBuffer:indirectBufferOffset:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[MTLRenderCommandEncoder useResource:usage:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[MTLRenderCommandEncoder useResources:count:usage:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[MTLRenderCommandEncoder useHeap:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[MTLRenderCommandEncoder useHeaps:count:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLRenderPipeline.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineReflection.vertexBindings</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineReflection.fragmentBindings</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineReflection.tileBindings</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineReflection.objectBindings</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineReflection.meshBindings</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineReflection.objectArguments</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineReflection.meshArguments</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineState.maxTotalThreadsPerObjectThreadgroup</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineState.maxTotalThreadsPerMeshThreadgroup</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineState.objectThreadExecutionWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineState.meshThreadExecutionWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineState.maxTotalThreadgroupsPerMeshGrid</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineState.gpuHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLRenderPipelineState.gpuResourceID</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.label</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.objectFunction</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.meshFunction</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.fragmentFunction</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.maxTotalThreadsPerObjectThreadgroup</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.maxTotalThreadsPerMeshThreadgroup</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.objectThreadgroupSizeIsMultipleOfThreadExecutionWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.meshThreadgroupSizeIsMultipleOfThreadExecutionWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.payloadMemoryLength</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.maxTotalThreadgroupsPerMeshGrid</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.objectBuffers</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.meshBuffers</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.fragmentBuffers</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.rasterSampleCount</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.alphaToCoverageEnabled</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.alphaToOneEnabled</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.rasterizationEnabled</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.maxVertexAmplificationCount</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.colorAttachments</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.depthAttachmentPixelFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLMeshRenderPipelineDescriptor.stencilAttachmentPixelFormat</div>
+<div class="difference"><span class="status added">Added</span> -[MTLMeshRenderPipelineDescriptor reset]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLRenderPipelineReflection.vertexArguments</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLRenderPipelineReflection.fragmentArguments</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLRenderPipelineDescriptor.sampleCount</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLResource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLResourceOptionCPUCacheModeDefault</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLResourceOptionCPUCacheModeWriteCombined</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLSampler.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLSamplerState.gpuHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLSamplerState.gpuResourceID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLTexture.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLTextureCompressionType</div>
+<div class="difference"><span class="status added">Added</span> MTLTextureCompressionTypeLossless</div>
+<div class="difference"><span class="status added">Added</span> MTLTextureCompressionTypeLossy</div>
+<div class="difference"><span class="status added">Added</span> MTLTextureDescriptor.compressionType</div>
+<div class="difference"><span class="status added">Added</span> MTLTexture.compressionType</div>
+<div class="difference"><span class="status added">Added</span> MTLTexture.gpuHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLTexture.gpuResourceID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLTypes.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLGPUHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLResourceID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLVisibleFunctionTable.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLVisibleFunctionTable.gpuHandle</div>
+<div class="difference"><span class="status added">Added</span> MTLVisibleFunctionTable.gpuResourceID</div>
+</div>
+
+</div>
+</body>
+</html>

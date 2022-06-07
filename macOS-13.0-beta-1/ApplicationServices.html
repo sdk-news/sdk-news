@@ -1,0 +1,395 @@
+<html>
+<head>
+<title>ApplicationServices macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ApplicationServices macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/ATS.framework/Headers/ATSDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> #def ATS_AVAILABLE_BUT_DEPRECATED_WITH_ADVICE</div>
+<div class="difference"><span class="status removed">Removed</span> #def ATS_AVAILABLE_BUT_DEPRECATED</div>
+<div class="difference"><span class="status removed">Removed</span> #def ATS_DEPRECATED_IN_MAC_OS_X_VERSION</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def ATS_UNAVAILABLE</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/ATS.framework/Headers/ATSFont.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> ATSGetGeneration()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontActivateFromFileReference()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontActivateFromMemory()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontDeactivate()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetContainerFromFileReference()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetContainer()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontSetEnabled()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontIsEnabled()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyApplyFunction()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyIteratorCreate()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyIteratorRelease()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyIteratorReset()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyIteratorNext()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyFindFromName()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyGetGeneration()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyGetName()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyGetEncoding()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontApplyFunction()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontIteratorCreate()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontIteratorRelease()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontIteratorReset()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontIteratorNext()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFindFromName()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFindFromPostScriptName()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFindFromContainer()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetGeneration()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetName()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetPostScriptName()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetTableDirectory()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetTable()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetHorizontalMetrics()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetVerticalMetrics()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyFindFromQuickDrawName()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontFamilyGetQuickDrawName()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetFileReference()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetFontFamilyResource()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontNotify()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontNotificationSubscribe()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontNotificationUnsubscribe()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSCreateFontQueryRunLoopSource()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontSetGlobalAutoActivationSetting()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetGlobalAutoActivationSetting()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontSetAutoActivationSettingForApplication()</div>
+<div class="difference"><span class="status removed">Removed</span> ATSFontGetAutoActivationSettingForApplication()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/ATS.framework/Headers/ATSLayoutTypes.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> ATSULineRef</div>
+<div class="difference"><span class="status removed">Removed</span> ATSUDirectLayoutOperationOverrideProcPtr</div>
+<div class="difference"><span class="status removed">Removed</span> ATSUDirectLayoutOperationOverrideUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def NewATSUDirectLayoutOperationOverrideUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def DisposeATSUDirectLayoutOperationOverrideUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def InvokeATSUDirectLayoutOperationOverrideUPP</div>
+<div class="difference"><span class="status removed">Removed</span> ATSULayoutOperationOverrideSpecifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/ATS.framework/Headers/ATSTypes.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> ATSFSSpec</div>
+<div class="difference"><span class="status removed">Removed</span> FMFontFamilyCallbackFilterProcPtr</div>
+<div class="difference"><span class="status removed">Removed</span> FMFontCallbackFilterProcPtr</div>
+<div class="difference"><span class="status removed">Removed</span> FMFontFamilyCallbackFilterUPP</div>
+<div class="difference"><span class="status removed">Removed</span> FMFontCallbackFilterUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def NewFMFontFamilyCallbackFilterUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def NewFMFontCallbackFilterUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def DisposeFMFontFamilyCallbackFilterUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def DisposeFMFontCallbackFilterUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def InvokeFMFontFamilyCallbackFilterUPP</div>
+<div class="difference"><span class="status removed">Removed</span> #def InvokeFMFontCallbackFilterUPP</div>
+<div class="difference"><span class="status removed">Removed</span> FMFontDirectoryFilter</div>
+<div class="difference"><span class="status removed">Removed</span> FMFilter</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/ATSUI.framework/Headers/ATSAvailability.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def ATSUI_UNAVAILABLE</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/PrintCore.framework/Headers/PDEPluginInterface.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PDEPlugIn</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPlugIn initWithBundle:]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPlugIn PDEPanelsForType:withHostInfo:]</div>
+<div class="difference"><span class="status added">Added</span> PDEPanel</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel willShow]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel shouldHide]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel saveValuesAndReturnError:]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel restoreValuesAndReturnError:]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel supportedPPDOptionKeys]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel PPDOptionKeyValueDidChange:ppdChoice:]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel panelView]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel panelName]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel panelKind]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel summaryInfo]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel shouldShowHelp]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel shouldPrint]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPanel printWindowWillClose:]</div>
+<div class="difference"><span class="status added">Added</span> PDEPlugInCallbackProtocol</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPlugInCallbackProtocol printSession]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPlugInCallbackProtocol printSettings]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPlugInCallbackProtocol pageFormat]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPlugInCallbackProtocol PMPrinter]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPlugInCallbackProtocol ppdFile]</div>
+<div class="difference"><span class="status added">Added</span> -[PDEPlugInCallbackProtocol willChangePPDOptionKeyValue:ppdChoice:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/PrintCore.framework/Headers/PMPrintingDialogExtensions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def kPMPageAttributesKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMCopiesAndPagesPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMLayoutPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMOutputOptionsPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMDuplexPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMCustomPaperSizePDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMCoverPagePDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMColorMatchingPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMSchedulerPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMImagingOptionsPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMFaxCoverPagePDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMFaxModemPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMFaxAddressesPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMPaperHandlingPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMPDFEffectsPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMSummaryPanelKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMUniPrinterPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMJobPINPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMPaperSourcePDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMPriorityPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMRotationScalingPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMUnsupportedPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMErrorHandlingPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMPaperFeedPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMPrinterFeaturesPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMInkPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMColorPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMMediaQualityPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def kPMWatermarkPDEKindID</div>
+<div class="difference"><span class="status added">Added</span> #def SUMMARY_DISPLAY_ORDER</div>
+<div class="difference"><span class="status added">Added</span> #def kPMSandboxCompatiblePDEs</div>
+<div class="difference"><span class="status added">Added</span> #def kDialogExtensionIntfIDStr</div>
+<div class="difference"><span class="status added">Added</span> #def kGeneralPageSetupDialogTypeIDStr</div>
+<div class="difference"><span class="status added">Added</span> #def kGeneralPrintDialogTypeIDStr</div>
+<div class="difference"><span class="status added">Added</span> #def kAppPageSetupDialogTypeIDStr</div>
+<div class="difference"><span class="status added">Added</span> #def kAppPrintDialogTypeIDStr</div>
+<div class="difference"><span class="status added">Added</span> #def kAppPrintThumbnailTypeIDStr</div>
+<div class="difference"><span class="status added">Added</span> #def kPrinterModuleTypeIDStr</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/QD.framework/Headers/QDAvailability.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def QD_AVAILABLE_BUT_DEPRECATED</div>
+<div class="difference"><span class="status added">Added</span> #def QD_AVAILABLE_BUT_DEPRECATED_R</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/SpeechSynthesis.framework/Headers/SpeechSynthesis.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> SpeechManagerVersion()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MakeVoiceSpec()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CountVoices()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GetIndVoice()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GetVoiceDescription()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GetVoiceInfo()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NewSpeechChannel()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DisposeSpeechChannel()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> StopSpeech()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> StopSpeechAt()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PauseSpeechAt()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ContinueSpeech()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SpeechBusy()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SpeechBusySystemWide()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SetSpeechRate()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GetSpeechRate()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SetSpeechPitch()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GetSpeechPitch()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SpeakCFString()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UseSpeechDictionary()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CopyPhonemesFromText()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CopySpeechProperty()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SetSpeechProperty()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SpeechSynthesisRegisterModuleURL()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SpeechSynthesisUnregisterModuleURL()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use AVSpeechSynthesizer in AVFoundation framework</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

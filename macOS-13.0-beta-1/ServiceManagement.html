@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>ServiceManagement macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ServiceManagement macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">SMAppService.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SMAppServiceStatus</div>
+<div class="difference"><span class="status added">Added</span> SMAppServiceStatusNotRegistered</div>
+<div class="difference"><span class="status added">Added</span> SMAppServiceStatusEnabled</div>
+<div class="difference"><span class="status added">Added</span> SMAppServiceStatusRequiresApproval</div>
+<div class="difference"><span class="status added">Added</span> SMAppServiceStatusNotFound</div>
+<div class="difference"><span class="status added">Added</span> SMAppService</div>
+<div class="difference"><span class="status added">Added</span> +[SMAppService loginItemServiceWithIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> SMAppService.mainAppService</div>
+<div class="difference"><span class="status added">Added</span> +[SMAppService agentServiceWithPlistName:]</div>
+<div class="difference"><span class="status added">Added</span> +[SMAppService daemonServiceWithPlistName:]</div>
+<div class="difference"><span class="status added">Added</span> -[SMAppService registerAndReturnError:]</div>
+<div class="difference"><span class="status added">Added</span> -[SMAppService unregisterAndReturnError:]</div>
+<div class="difference"><span class="status added">Added</span> -[SMAppService unregisterWithCompletionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> SMAppService.status</div>
+<div class="difference"><span class="status added">Added</span> +[SMAppService statusForLegacyURL:]</div>
+<div class="difference"><span class="status added">Added</span> +[SMAppService openSystemSettingsLoginItems]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SMErrors.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kSMErrorLaunchDeniedByUser</div>
+<div class="difference"><span class="status added">Added</span> kSMErrorAlreadyRegistered</div>
+</div>
+
+</div>
+</body>
+</html>

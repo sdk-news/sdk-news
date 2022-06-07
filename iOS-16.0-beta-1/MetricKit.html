@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>MetricKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>MetricKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">MXAppLaunchDiagnostic.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MXAppLaunchDiagnostic</div>
+<div class="difference"><span class="status added">Added</span> MXAppLaunchDiagnostic.callStackTree</div>
+<div class="difference"><span class="status added">Added</span> MXAppLaunchDiagnostic.launchDuration</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MXAppLaunchMetric.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MXAppLaunchMetric.histogrammedExtendedLaunch</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MXDiagnosticPayload.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MXDiagnosticPayload.appLaunchDiagnostics</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MXError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MXErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> MXErrorCode</div>
+<div class="difference"><span class="status added">Added</span> MXErrorLaunchTaskInvalidID</div>
+<div class="difference"><span class="status added">Added</span> MXErrorLaunchTaskMaxCount</div>
+<div class="difference"><span class="status added">Added</span> MXErrorLaunchTaskPastDeadline</div>
+<div class="difference"><span class="status added">Added</span> MXErrorLaunchTaskDuplicated</div>
+<div class="difference"><span class="status added">Added</span> MXErrorLaunchTaskUnknown</div>
+<div class="difference"><span class="status added">Added</span> MXErrorLaunchTaskInternalFailure</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MXMetricManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MXLaunchTaskID</div>
+<div class="difference"><span class="status added">Added</span> +[MXMetricManager extendLaunchMeasurementForTaskID:error:]</div>
+<div class="difference"><span class="status added">Added</span> +[MXMetricManager finishExtendedLaunchMeasurementForTaskID:error:]</div>
+</div>
+
+</div>
+</body>
+</html>

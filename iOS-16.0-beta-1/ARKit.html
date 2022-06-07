@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>ARKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ARKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">ARConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ARConfiguration.configurableCaptureDeviceForPrimaryCamera</div>
+<div class="difference"><span class="status added">Added</span> ARConfiguration.recommendedVideoFormatFor4KResolution</div>
+<div class="difference"><span class="status added">Added</span> ARConfiguration.recommendedVideoFormatForHighResolutionFrameCapturing</div>
+<div class="difference"><span class="status added">Added</span> ARConfiguration.videoHDRAllowed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ARError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ARErrorCodeHighResolutionFrameCaptureInProgress</div>
+<div class="difference"><span class="status added">Added</span> ARErrorCodeHighResolutionFrameCaptureFailed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ARFaceAnchor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ARFaceAnchor.geometry</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) ARFaceGeometry *geometry</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, strong, nonnull) ARFaceGeometry *geometry</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ARFaceAnchor.leftEyeTransform</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly) simd_float4x4 leftEyeTransform</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, assign) simd_float4x4 leftEyeTransform</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ARFaceAnchor.rightEyeTransform</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly) simd_float4x4 rightEyeTransform</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, assign) simd_float4x4 rightEyeTransform</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ARFaceAnchor.lookAtPoint</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly) simd_float3 lookAtPoint</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, assign) simd_float3 lookAtPoint</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ARFaceAnchor.blendShapes</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSDictionary&lt;ARBlendShapeLocation,NSNumber *&gt; *blendShapes</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, strong, nonnull) NSDictionary&lt;ARBlendShapeLocation,NSNumber *&gt; *blendShapes</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ARFrame.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ARFrame.exifData</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ARPlaneAnchor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ARPlaneExtent</div>
+<div class="difference"><span class="status added">Added</span> ARPlaneExtent.rotationOnYAxis</div>
+<div class="difference"><span class="status added">Added</span> ARPlaneExtent.width</div>
+<div class="difference"><span class="status added">Added</span> ARPlaneExtent.height</div>
+<div class="difference"><span class="status added">Added</span> ARPlaneAnchor.planeExtent</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ARPlaneAnchor.extent</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ARSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[ARSession captureHighResolutionFrameWithCompletion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ARVideoFormat.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ARVideoFormat.isRecommendedForHighResolutionFrameCapturing</div>
+<div class="difference"><span class="status added">Added</span> ARVideoFormat.videoHDRSupported</div>
+</div>
+
+</div>
+</body>
+</html>

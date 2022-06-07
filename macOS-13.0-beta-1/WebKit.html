@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>WebKit macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>WebKit macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">WebPreferences.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> WebPreferences.javaEnabled</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WKError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WKErrorDuplicateCredential</div>
+<div class="difference"><span class="status added">Added</span> WKErrorMalformedCredential</div>
+<div class="difference"><span class="status added">Added</span> WKErrorCredentialNotFound</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WKWebView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WKWebView.minimumViewportInset</div>
+<div class="difference"><span class="status added">Added</span> WKWebView.maximumViewportInset</div>
+<div class="difference"><span class="status added">Added</span> -[WKWebView setMinimumViewportInset:maximumViewportInset:]</div>
+</div>
+
+</div>
+</body>
+</html>

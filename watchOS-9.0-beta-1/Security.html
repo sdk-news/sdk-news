@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Security watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Security watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">SecProtocolOptions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> #def SEC_PROTOCOL_CERT_COMPRESSION_DEFAULT</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SecTrust.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> SecTrustCopyExceptions()</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">CFDataRef _Nonnull SecTrustCopyExceptions(SecTrustRef _Nonnull trust)</td></tr>
+<tr><th>To</th><td class="declaration">CFDataRef _Nullable SecTrustCopyExceptions(SecTrustRef _Nonnull trust)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>NearbyInteraction iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>NearbyInteraction iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">NIAlgorithmConvergenceStatusReason.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusReason</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusReasonInsufficientHorizontalSweep</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusReasonInsufficientVerticalSweep</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusReasonInsufficientMovement</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusReasonInsufficientLighting</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusReasonDescription()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NIConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NINearbyPeerConfiguration.cameraAssistanceEnabled</div>
+<div class="difference"><span class="status added">Added</span> NINearbyAccessoryConfiguration.cameraAssistanceEnabled</div>
+<div class="difference"><span class="status added">Added</span> -[NINearbyAccessoryConfiguration initWithAccessoryData:bluetoothPeerIdentifier:error:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NIDeviceCapability.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NIDeviceCapability</div>
+<div class="difference"><span class="status added">Added</span> NIDeviceCapability.supportsPreciseDistanceMeasurement</div>
+<div class="difference"><span class="status added">Added</span> NIDeviceCapability.supportsDirectionMeasurement</div>
+<div class="difference"><span class="status added">Added</span> NIDeviceCapability.supportsCameraAssistance</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NIError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NIErrorCodeInvalidARConfiguration</div>
+<div class="difference"><span class="status added">Added</span> NIErrorCodeAccessoryPeerDeviceUnavailable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NINearbyObject.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NINearbyObjectAngleNotAvailable</div>
+<div class="difference"><span class="status added">Added</span> NINearbyObjectVerticalDirectionEstimate</div>
+<div class="difference"><span class="status added">Added</span> NINearbyObjectVerticalDirectionEstimateUnknown</div>
+<div class="difference"><span class="status added">Added</span> NINearbyObjectVerticalDirectionEstimateSame</div>
+<div class="difference"><span class="status added">Added</span> NINearbyObjectVerticalDirectionEstimateAbove</div>
+<div class="difference"><span class="status added">Added</span> NINearbyObjectVerticalDirectionEstimateBelow</div>
+<div class="difference"><span class="status added">Added</span> NINearbyObjectVerticalDirectionEstimateAboveOrBelow</div>
+<div class="difference"><span class="status added">Added</span> NINearbyObject.verticalDirectionEstimate</div>
+<div class="difference"><span class="status added">Added</span> NINearbyObject.horizontalAngle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NISession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NINearbyObjectWorldTransformNotAvailable</div>
+<div class="difference"><span class="status added">Added</span> NISession.deviceCapabilities</div>
+<div class="difference"><span class="status added">Added</span> -[NISession setARSession:]</div>
+<div class="difference"><span class="status added">Added</span> -[NISession worldTransformForObject:]</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatus</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusUnknown</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusNotConverged</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergenceStatusConverged</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergence</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergence.status</div>
+<div class="difference"><span class="status added">Added</span> NIAlgorithmConvergence.reasons</div>
+<div class="difference"><span class="status added">Added</span> -[NISessionDelegate session:didUpdateAlgorithmConvergence:forObject:]</div>
+<div class="difference"><span class="status added">Added</span> -[NISessionDelegate sessionDidStartRunning:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NISession.supported</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Intents iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Intents iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">INMessage.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[INMessage initWithIdentifier:conversationIdentifier:content:dateSent:sender:recipients:groupName:messageType:serviceName:audioMessageFile:]</div>
+<div class="difference"><span class="status added">Added</span> INMessage.audioMessageFile</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">INSendMessageIntentResponse_Deprecated.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> INSendMessageIntentResponse.sentMessage</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readwrite, copy, nullable) INMessage *sentMessage</td><td>Available</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, copy, nullable) INMessage *sentMessage</td><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">INSendMessageIntentResponse.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> INSendMessageIntentResponse.sentMessages</div>
+</div>
+
+</div>
+</body>
+</html>

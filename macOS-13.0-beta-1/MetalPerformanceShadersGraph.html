@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>MetalPerformanceShadersGraph macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>MetalPerformanceShadersGraph macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">MPSGraph.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MPSGraphExecutionStage</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphExecutionStageCompleted</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphCompilationCompletionHandler</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphCompilationDescriptor.waitForCompilationCompletion</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphCompilationDescriptor.compilationCompletionHandler</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphCompilationDescriptor.dispatchQueue</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraphExecutionDescriptor waitForEvent:value:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraphExecutionDescriptor signalEvent:atExecutionEvent:value:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPSGraphArithmeticOps.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[MPSGraph truncateWithTensor:name:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPSGraphCore.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MPSGraphPaddingStyleONNX_SAME_LOWER</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPSGraphExecutable.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[MPSGraphExecutableExecutionDescriptor waitForEvent:value:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraphExecutableExecutionDescriptor signalEvent:atExecutionEvent:value:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPSGraphMatrixMultiplicationOps.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[MPSGraph HammingDistanceWithPrimaryTensor:secondaryTensor:resultDataType:name:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPSGraphOptimizerOps.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[MPSGraph adamWithLearningRateTensor:beta1Tensor:beta2Tensor:epsilonTensor:beta1PowerTensor:beta2PowerTensor:valuesTensor:momentumTensor:velocityTensor:maximumVelocityTensor:gradientTensor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph adamWithCurrentLearningRateTensor:beta1Tensor:beta2Tensor:epsilonTensor:valuesTensor:momentumTensor:velocityTensor:maximumVelocityTensor:gradientTensor:name:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPSGraphPoolingOps.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[MPSGraph maxPooling2DGradientWithGradientTensor:indicesTensor:outputShape:descriptor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph maxPooling2DGradientWithGradientTensor:indicesTensor:outputShapeTensor:descriptor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph maxPooling4DGradientWithGradientTensor:indicesTensor:outputShape:descriptor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph maxPooling4DGradientWithGradientTensor:indicesTensor:outputShapeTensor:descriptor:name:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPSGraphRNNOps.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.reverse</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.bidirectional</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.training</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.resetGateFirst</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.resetAfter</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.flipZ</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.updateGateActivation</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.resetGateActivation</div>
+<div class="difference"><span class="status added">Added</span> MPSGraphGRUDescriptor.outputGateActivation</div>
+<div class="difference"><span class="status added">Added</span> +[MPSGraphGRUDescriptor descriptor]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph GRUWithSourceTensor:recurrentWeight:inputWeight:bias:initState:mask:secondaryBias:descriptor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph GRUWithSourceTensor:recurrentWeight:inputWeight:bias:initState:descriptor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph GRUWithSourceTensor:recurrentWeight:inputWeight:bias:descriptor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph GRUGradientsWithSourceTensor:recurrentWeight:sourceGradient:zState:outputFwd:stateGradient:inputWeight:bias:initState:mask:secondaryBias:descriptor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph GRUGradientsWithSourceTensor:recurrentWeight:sourceGradient:zState:outputFwd:inputWeight:bias:initState:descriptor:name:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPSGraph GRUGradientsWithSourceTensor:recurrentWeight:sourceGradient:zState:outputFwd:inputWeight:bias:descriptor:name:]</div>
+</div>
+
+</div>
+</body>
+</html>

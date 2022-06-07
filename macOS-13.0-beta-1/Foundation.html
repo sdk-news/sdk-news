@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>Foundation macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Foundation macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">FoundationErrors.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSXPCConnectionCodeSigningRequirementFailure</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSAppleEventManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSAppleEventManagerWillProcessFirstEventNotification</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSNotificationName _Nonnull NSAppleEventManagerWillProcessFirstEventNotification</td></tr>
+<tr><th>To</th><td class="declaration">const NSNotificationName _Nonnull NSAppleEventManagerWillProcessFirstEventNotification</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSAttributedString.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSMarkdownSourcePositionAttributeName</div>
+<div class="difference"><span class="status added">Added</span> NSAttributedStringMarkdownSourcePosition</div>
+<div class="difference"><span class="status added">Added</span> NSAttributedStringMarkdownSourcePosition.startLine</div>
+<div class="difference"><span class="status added">Added</span> NSAttributedStringMarkdownSourcePosition.startColumn</div>
+<div class="difference"><span class="status added">Added</span> NSAttributedStringMarkdownSourcePosition.endLine</div>
+<div class="difference"><span class="status added">Added</span> NSAttributedStringMarkdownSourcePosition.endColumn</div>
+<div class="difference"><span class="status added">Added</span> -[NSAttributedStringMarkdownSourcePosition initWithStartLine:startColumn:endLine:endColumn:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSAttributedStringMarkdownSourcePosition rangeInString:]</div>
+<div class="difference"><span class="status added">Added</span> NSAttributedStringMarkdownParsingOptions.appliesSourcePositionAttributes</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSClassDescription.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSClassDescriptionNeededForClassNotification</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSNotificationName _Nonnull NSClassDescriptionNeededForClassNotification</td></tr>
+<tr><th>To</th><td class="declaration">const NSNotificationName _Nonnull NSClassDescriptionNeededForClassNotification</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSInvocation.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[NSInvocation invokeUsingIMP:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSMapTable.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSCopyMapTableWithZone()</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSMapTable * _Nonnull NSCopyMapTableWithZone(NSMapTable * _Nonnull table, NSZone * _Nullable zone)</td></tr>
+<tr><th>To</th><td class="declaration">NSMapTable * _Nonnull NSCopyMapTableWithZone(NSMapTable * _Nonnull table, NSZone * _Nullable zone)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSCreateMapTableWithZone()</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSMapTable * _Nonnull NSCreateMapTableWithZone(NSMapTableKeyCallBacks keyCallBacks, NSMapTableValueCallBacks valueCallBacks, NSUInteger capacity, NSZone * _Nullable zone)</td></tr>
+<tr><th>To</th><td class="declaration">NSMapTable * _Nonnull NSCreateMapTableWithZone(NSMapTableKeyCallBacks keyCallBacks, NSMapTableValueCallBacks valueCallBacks, NSUInteger capacity, NSZone * _Nullable zone)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSCreateMapTable()</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSMapTable * _Nonnull NSCreateMapTable(NSMapTableKeyCallBacks keyCallBacks, NSMapTableValueCallBacks valueCallBacks, NSUInteger capacity)</td></tr>
+<tr><th>To</th><td class="declaration">NSMapTable * _Nonnull NSCreateMapTable(NSMapTableKeyCallBacks keyCallBacks, NSMapTableValueCallBacks valueCallBacks, NSUInteger capacity)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSObjCRuntime.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def NS_HEADER_AUDIT_BEGIN</div>
+<div class="difference"><span class="status added">Added</span> #def NS_HEADER_AUDIT_END</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSProcessInfo.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSActivityAnimationTrackingEnabled</div>
+<div class="difference"><span class="status added">Added</span> NSActivityTrackingEnabled</div>
+<div class="difference"><span class="status added">Added</span> NSActivityUserInteractive</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSScriptKeyValueCoding.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSOperationNotSupportedForKeyException</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString * _Nonnull NSOperationNotSupportedForKeyException</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const _Nonnull NSOperationNotSupportedForKeyException</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSURL.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSURLComponents.encodedHost</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSURLFileScheme</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString * _Nonnull NSURLFileScheme</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const _Nonnull NSURLFileScheme</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSURLComponents.percentEncodedHost</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use encodedHost instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSURLHandle.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSHTTPPropertyStatusCodeKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSHTTPPropertyStatusCodeKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSHTTPPropertyStatusCodeKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSHTTPPropertyStatusReasonKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSHTTPPropertyStatusReasonKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSHTTPPropertyStatusReasonKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSHTTPPropertyServerHTTPVersionKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSHTTPPropertyServerHTTPVersionKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSHTTPPropertyServerHTTPVersionKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSHTTPPropertyRedirectionHeadersKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSHTTPPropertyRedirectionHeadersKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSHTTPPropertyRedirectionHeadersKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSHTTPPropertyErrorPageDataKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSHTTPPropertyErrorPageDataKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSHTTPPropertyErrorPageDataKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSHTTPPropertyHTTPProxy</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSHTTPPropertyHTTPProxy</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSHTTPPropertyHTTPProxy</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSFTPPropertyUserLoginKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSFTPPropertyUserLoginKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSFTPPropertyUserLoginKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSFTPPropertyUserPasswordKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSFTPPropertyUserPasswordKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSFTPPropertyUserPasswordKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSFTPPropertyActiveTransferModeKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSFTPPropertyActiveTransferModeKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSFTPPropertyActiveTransferModeKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSFTPPropertyFileOffsetKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSFTPPropertyFileOffsetKey</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSFTPPropertyFileOffsetKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSFTPPropertyFTPProxy</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *NSFTPPropertyFTPProxy</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const NSFTPPropertyFTPProxy</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSURLRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSMutableURLRequest.requiresDNSSECValidation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSURLSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSURLSessionConfiguration.requiresDNSSECValidation</div>
+<div class="difference"><span class="status added">Added</span> -[NSURLSessionTaskDelegate URLSession:didCreateTask:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSXPCConnection.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[NSXPCConnection activate]</div>
+<div class="difference"><span class="status added">Added</span> -[NSXPCConnection setCodeSigningRequirement:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSXPCListener activate]</div>
+<div class="difference"><span class="status added">Added</span> -[NSXPCListener setConnectionCodeSigningRequirement:]</div>
+</div>
+
+</div>
+</body>
+</html>

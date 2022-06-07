@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>CloudKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CloudKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CKAllowedSharingOptions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CKSharingParticipantAccessOption</div>
+<div class="difference"><span class="status added">Added</span> CKSharingParticipantAccessOptionAnyoneWithLink</div>
+<div class="difference"><span class="status added">Added</span> CKSharingParticipantAccessOptionSpecifiedRecipientsOnly</div>
+<div class="difference"><span class="status added">Added</span> CKSharingParticipantAccessOptionAny</div>
+<div class="difference"><span class="status added">Added</span> CKSharingParticipantPermissionOption</div>
+<div class="difference"><span class="status added">Added</span> CKSharingParticipantPermissionOptionReadOnly</div>
+<div class="difference"><span class="status added">Added</span> CKSharingParticipantPermissionOptionReadWrite</div>
+<div class="difference"><span class="status added">Added</span> CKSharingParticipantPermissionOptionAny</div>
+<div class="difference"><span class="status added">Added</span> CKAllowedSharingOptions</div>
+<div class="difference"><span class="status added">Added</span> -[CKAllowedSharingOptions initWithAllowedParticipantPermissionOptions:allowedParticipantAccessOptions:]</div>
+<div class="difference"><span class="status added">Added</span> CKAllowedSharingOptions.allowedParticipantPermissionOptions</div>
+<div class="difference"><span class="status added">Added</span> CKAllowedSharingOptions.allowedParticipantAccessOptions</div>
+<div class="difference"><span class="status added">Added</span> CKAllowedSharingOptions.standardOptions</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CKSystemSharingUIObserver.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CKSystemSharingUIObserver</div>
+<div class="difference"><span class="status added">Added</span> -[CKSystemSharingUIObserver initWithContainer:]</div>
+<div class="difference"><span class="status added">Added</span> CKSystemSharingUIObserver.systemSharingUIDidSaveShareBlock</div>
+<div class="difference"><span class="status added">Added</span> CKSystemSharingUIObserver.systemSharingUIDidStopSharingBlock</div>
+<div class="difference"><span class="status added">Added</span> CKSystemSharingUIObserver.systemUIDidSaveShareBlock</div>
+<div class="difference"><span class="status added">Added</span> CKSystemSharingUIObserver.systemUIDidStopSharingBlock</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSItemProvider+CKSharingSupport.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CKSharePreparationCompletionHandler</div>
+<div class="difference"><span class="status added">Added</span> CKSharePreparationHandler</div>
+<div class="difference"><span class="status added">Added</span> NSItemProvider (CKSharingSupport)</div>
+<div class="difference"><span class="status added">Added</span> -[NSItemProvider registerCKShareWithContainer:allowedSharingOptions:preparationHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSItemProvider registerCKShare:container:allowedSharingOptions:]</div>
+<div class="difference"><span class="status added">Added</span> CKSharingOptions</div>
+<div class="difference"><span class="status added">Added</span> CKSharingOptionsStandard</div>
+<div class="difference"><span class="status added">Added</span> CKSharingOptionsAllowPublic</div>
+<div class="difference"><span class="status added">Added</span> CKSharingOptionsAllowPrivate</div>
+<div class="difference"><span class="status added">Added</span> CKSharingOptionsAllowReadOnly</div>
+<div class="difference"><span class="status added">Added</span> CKSharingOptionsAllowReadWrite</div>
+<div class="difference"><span class="status added">Added</span> NSItemProvider (Deprecated_CKSharingSupport)</div>
+<div class="difference"><span class="status added">Added</span> -[NSItemProvider registerCKShareWithContainer:sharingOptions:preparationHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSItemProvider registerCKShare:container:sharingOptions:]</div>
+</div>
+
+</div>
+</body>
+</html>

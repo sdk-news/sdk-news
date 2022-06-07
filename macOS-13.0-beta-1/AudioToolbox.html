@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>AudioToolbox macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AudioToolbox macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AUAudioUnit.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[AUAudioUnit messageChannelFor:]</div>
+<div class="difference"><span class="status added">Added</span> CallHostBlock</div>
+<div class="difference"><span class="status added">Added</span> AUMessageChannel</div>
+<div class="difference"><span class="status added">Added</span> -[AUMessageChannel callAudioUnit:]</div>
+<div class="difference"><span class="status added">Added</span> AUMessageChannel.callHostBlock</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUAudioUnitImplementation.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AUAudioUnitV2Bridge.audioUnit</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AUComponent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kAudioUnitSubType_AUSoundIsolation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AudioCodec.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kAudioCodecProduceOutputPacketSuccessConcealed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AudioUnitParameters.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kNewTimePitchParam_EnableTransientPreservation</div>
+<div class="difference"><span class="status added">Added</span> kAUSoundIsolationParam_WetDryMixPercent</div>
+<div class="difference"><span class="status added">Added</span> kAUSoundIsolationParam_SoundToIsolate</div>
+<div class="difference"><span class="status added">Added</span> kAUSoundIsolationSoundType_Voice</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AudioUnitProperties.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> MIDIEventList</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def kAudioUnitConfigurationInfo_MIDIProtocol</div>
+<div class="difference"><span class="status added">Added</span> #def kAudioUnitConfigurationInfo_MigrateFromPlugin</div>
+</div>
+
+</div>
+</body>
+</html>

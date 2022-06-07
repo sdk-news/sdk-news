@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>ImageCaptureCore iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ImageCaptureCore iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">ICCameraDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[ICCameraDevice requestReadDataFromFile:atOffset:length:readDelegate:didReadDataSelector:contextInfo:]</div>
+<div class="difference"><span class="status added">Added</span> -[ICCameraDevice requestSendPTPCommand:outData:sendCommandDelegate:didSendCommandSelector:contextInfo:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ICCameraDevice.ptpEventHandler</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, copy, nonnull) void (^)(NSData * _Nonnull) ptpEventHandler</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nonnull) void (^)(NSData * _Nonnull) ptpEventHandler</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ICDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ICDeviceTypeMaskCamera</div>
+<div class="difference"><span class="status added">Added</span> ICDeviceTypeMaskScanner</div>
+<div class="difference"><span class="status added">Added</span> ICDeviceLocationTypeMaskLocal</div>
+<div class="difference"><span class="status added">Added</span> ICDeviceLocationTypeMaskShared</div>
+<div class="difference"><span class="status added">Added</span> ICDeviceLocationTypeMaskBonjour</div>
+<div class="difference"><span class="status added">Added</span> ICDeviceLocationTypeMaskBluetooth</div>
+<div class="difference"><span class="status added">Added</span> ICDeviceLocationTypeMaskRemote</div>
+<div class="difference"><span class="status added">Added</span> ICDevice.systemSymbolName</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ICDeviceBrowser.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ICDeviceBrowser.browsedDeviceTypeMask</div>
+</div>
+
+</div>
+</body>
+</html>

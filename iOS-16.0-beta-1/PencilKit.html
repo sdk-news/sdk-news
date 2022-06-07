@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>PencilKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PencilKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PKDrawing</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKDrawing.bounds</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var bounds: CoreGraphics.CGRect { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var bounds: CoreFoundation.CGRect { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKDrawing.image(from:scale:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func image(from: CoreGraphics.CGRect, scale: CoreGraphics.CGFloat) -&gt; UIKit.UIImage</td></tr>
+<tr><th>To</th><td class="declaration">public func image(from: CoreFoundation.CGRect, scale: CoreFoundation.CGFloat) -&gt; UIKit.UIImage</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKDrawing.transform(using:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">mutating public func transform(using: CoreGraphics.CGAffineTransform)</td></tr>
+<tr><th>To</th><td class="declaration">mutating public func transform(using: CoreFoundation.CGAffineTransform)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKDrawing.transformed(using:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func transformed(using: CoreGraphics.CGAffineTransform) -&gt; PencilKit.PKDrawing</td></tr>
+<tr><th>To</th><td class="declaration">public func transformed(using: CoreFoundation.CGAffineTransform) -&gt; PencilKit.PKDrawing</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKInkingTool</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKInkingTool.InkType.defaultWidth</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var defaultWidth: CoreGraphics.CGFloat { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var defaultWidth: CoreFoundation.CGFloat { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKInkingTool.InkType.validWidthRange</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var validWidthRange: Swift.ClosedRange&lt;CoreGraphics.CGFloat&gt; { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var validWidthRange: Swift.ClosedRange&lt;CoreFoundation.CGFloat&gt; { get }</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKStroke</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKStroke.init(ink:path:transform:mask:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(ink: PencilKit.PKInk, path: PencilKit.PKStrokePath, transform: CoreGraphics.CGAffineTransform = .identity, mask: UIKit.UIBezierPath? = nil)</td></tr>
+<tr><th>To</th><td class="declaration">public init(ink: PencilKit.PKInk, path: PencilKit.PKStrokePath, transform: CoreFoundation.CGAffineTransform = .identity, mask: UIKit.UIBezierPath? = nil)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStroke.maskedPathRanges</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var maskedPathRanges: [Swift.ClosedRange&lt;CoreGraphics.CGFloat&gt;] { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var maskedPathRanges: [Swift.ClosedRange&lt;CoreFoundation.CGFloat&gt;] { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStroke.renderBounds</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var renderBounds: CoreGraphics.CGRect { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var renderBounds: CoreFoundation.CGRect { get }</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKStrokePath</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKStrokePath.interpolatedLocation(at:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func interpolatedLocation(at: CoreGraphics.CGFloat) -&gt; CoreGraphics.CGPoint</td></tr>
+<tr><th>To</th><td class="declaration">public func interpolatedLocation(at: CoreFoundation.CGFloat) -&gt; CoreFoundation.CGPoint</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePath.interpolatedPoint(at:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func interpolatedPoint(at: CoreGraphics.CGFloat) -&gt; PencilKit.PKStrokePoint</td></tr>
+<tr><th>To</th><td class="declaration">public func interpolatedPoint(at: CoreFoundation.CGFloat) -&gt; PencilKit.PKStrokePoint</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePath.interpolatedPoints(in:by:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func interpolatedPoints(in: Swift.ClosedRange&lt;CoreGraphics.CGFloat&gt;? = nil, by: PencilKit.PKStrokePath.InterpolatedSlice.Stride) -&gt; PencilKit.PKStrokePath.InterpolatedSlice</td></tr>
+<tr><th>To</th><td class="declaration">public func interpolatedPoints(in: Swift.ClosedRange&lt;CoreFoundation.CGFloat&gt;? = nil, by: PencilKit.PKStrokePath.InterpolatedSlice.Stride) -&gt; PencilKit.PKStrokePath.InterpolatedSlice</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePath.parametricValue(_:offsetBy:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func parametricValue(_: CoreGraphics.CGFloat, offsetBy: PencilKit.PKStrokePath.InterpolatedSlice.Stride) -&gt; CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public func parametricValue(_: CoreFoundation.CGFloat, offsetBy: PencilKit.PKStrokePath.InterpolatedSlice.Stride) -&gt; CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKStrokePoint</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKStrokePoint.init(location:timeOffset:size:opacity:force:azimuth:altitude:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(location: CoreGraphics.CGPoint, timeOffset: Foundation.TimeInterval, size: CoreGraphics.CGSize, opacity: CoreGraphics.CGFloat, force: CoreGraphics.CGFloat, azimuth: CoreGraphics.CGFloat, altitude: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">public init(location: CoreFoundation.CGPoint, timeOffset: Foundation.TimeInterval, size: CoreFoundation.CGSize, opacity: CoreFoundation.CGFloat, force: CoreFoundation.CGFloat, azimuth: CoreFoundation.CGFloat, altitude: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePoint.altitude</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var altitude: CoreGraphics.CGFloat { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var altitude: CoreFoundation.CGFloat { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePoint.azimuth</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var azimuth: CoreGraphics.CGFloat { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var azimuth: CoreFoundation.CGFloat { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePoint.force</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var force: CoreGraphics.CGFloat { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var force: CoreFoundation.CGFloat { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePoint.location</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var location: CoreGraphics.CGPoint { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var location: CoreFoundation.CGPoint { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePoint.opacity</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var opacity: CoreGraphics.CGFloat { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var opacity: CoreFoundation.CGFloat { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKStrokePoint.size</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var size: CoreGraphics.CGSize { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var size: CoreFoundation.CGSize { get }</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

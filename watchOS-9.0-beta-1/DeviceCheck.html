@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>DeviceCheck watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>DeviceCheck watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">DCAppAttestService.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DCAppAttestService</div>
+<div class="difference"><span class="status added">Added</span> DCAppAttestService.sharedService</div>
+<div class="difference"><span class="status added">Added</span> DCAppAttestService.supported</div>
+<div class="difference"><span class="status added">Added</span> -[DCAppAttestService generateKeyWithCompletionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[DCAppAttestService attestKey:clientDataHash:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[DCAppAttestService generateAssertion:clientDataHash:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DCDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DCDevice</div>
+<div class="difference"><span class="status added">Added</span> DCDevice.currentDevice</div>
+<div class="difference"><span class="status added">Added</span> DCDevice.supported</div>
+<div class="difference"><span class="status added">Added</span> -[DCDevice generateTokenWithCompletionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DCError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DCErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> DCError</div>
+<div class="difference"><span class="status added">Added</span> DCErrorUnknownSystemFailure</div>
+<div class="difference"><span class="status added">Added</span> DCErrorFeatureUnsupported</div>
+<div class="difference"><span class="status added">Added</span> DCErrorInvalidInput</div>
+<div class="difference"><span class="status added">Added</span> DCErrorInvalidKey</div>
+<div class="difference"><span class="status added">Added</span> DCErrorServerUnavailable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DeviceCheck.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def DC_EXPORT</div>
+</div>
+
+</div>
+</body>
+</html>

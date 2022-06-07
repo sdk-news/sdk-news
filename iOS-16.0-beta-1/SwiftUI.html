@@ -1,0 +1,3579 @@
+<html>
+<head>
+<title>SwiftUI iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>SwiftUI iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AccessibilityFocusState</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AccessibilityFocusState.init()</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;T&gt;()</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;T&gt;()</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AccessibilityFocusState.init(for:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;T&gt;(for: SwiftUI.AccessibilityTechnologies)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;T&gt;(for: SwiftUI.AccessibilityTechnologies)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AccessibilityQuickActionOutlineStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AccessibilityQuickActionOutlineStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AccessibilityQuickActionPromptStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AccessibilityQuickActionPromptStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AccessibilityQuickActionStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AccessibilityQuickActionStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AccessoryCircularCapacityGaugeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AccessoryCircularCapacityGaugeStyle</div>
+<div class="difference"><span class="status added">Added</span> AccessoryCircularCapacityGaugeStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> AccessoryCircularCapacityGaugeStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AccessoryCircularCapacityGaugeStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AccessoryCircularGaugeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AccessoryCircularGaugeStyle</div>
+<div class="difference"><span class="status added">Added</span> AccessoryCircularGaugeStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> AccessoryCircularGaugeStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AccessoryCircularGaugeStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AccessoryLinearCapacityGaugeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AccessoryLinearCapacityGaugeStyle</div>
+<div class="difference"><span class="status added">Added</span> AccessoryLinearCapacityGaugeStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> AccessoryLinearCapacityGaugeStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AccessoryLinearCapacityGaugeStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AccessoryLinearGaugeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AccessoryLinearGaugeStyle</div>
+<div class="difference"><span class="status added">Added</span> AccessoryLinearGaugeStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> AccessoryLinearGaugeStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AccessoryLinearGaugeStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Alignment</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> Alignment.bottom /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Alignment.bottomLeading /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Alignment.bottomTrailing /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Alignment.center /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Alignment.leading /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Alignment.top /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Alignment.topLeading /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Alignment.topTrailing /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Alignment.trailing /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AnyGradient</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AnyGradient</div>
+<div class="difference"><span class="status added">Added</span> AnyGradient.==(lhs:rhs:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> AnyGradient.hashValue</div>
+<div class="difference"><span class="status added">Added</span> AnyGradient.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AnyLayout</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AnyLayout</div>
+<div class="difference"><span class="status added">Added</span> AnyLayout.explicitAlignment(of:in:proposal:subviews:cache:)</div>
+<div class="difference"><span class="status added">Added</span> AnyLayout.makeCache(subviews:)</div>
+<div class="difference"><span class="status added">Added</span> AnyLayout.placeSubviews(in:proposal:subviews:cache:)</div>
+<div class="difference"><span class="status added">Added</span> AnyLayout.sizeThatFits(proposal:subviews:cache:)</div>
+<div class="difference"><span class="status added">Added</span> AnyLayout.spacing(subviews:cache:)</div>
+<div class="difference"><span class="status added">Added</span> AnyLayout.updateCache(_:subviews:)</div>
+<div class="difference"><span class="status added">Added</span> AnyLayout.AnimatableData</div>
+<div class="difference"><span class="status added">Added</span> AnyLayout.Cache</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AnyShape</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AnyShape</div>
+<div class="difference"><span class="status added">Added</span> AnyShape.path(in:)</div>
+<div class="difference"><span class="status added">Added</span> AnyShape.sizeThatFits(_:)</div>
+<div class="difference"><span class="status added">Added</span> AnyShape.AnimatableData</div>
+<div class="difference"><span class="status added">Added</span> AnyShape.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AsyncImage</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AsyncImage.init(url:scale:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(url: Foundation.URL?, scale: CoreGraphics.CGFloat = 1)</td></tr>
+<tr><th>To</th><td class="declaration">public init(url: Foundation.URL?, scale: CoreFoundation.CGFloat = 1)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AsyncImage.init(url:scale:content:placeholder:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_alwaysEmitIntoClient
+public init&lt;I, P&gt;(url: Foundation.URL?, scale: CoreGraphics.CGFloat = 1, @SwiftUI.ViewBuilder
+content: @escaping () -&gt; I, @SwiftUI.ViewBuilder
+placeholder: @escaping () -&gt; P)</td></tr>
+<tr><th>To</th><td class="declaration">@_alwaysEmitIntoClient
+public init&lt;I, P&gt;(url: Foundation.URL?, scale: CoreFoundation.CGFloat = 1, @SwiftUI.ViewBuilder
+content: @escaping () -&gt; I, @SwiftUI.ViewBuilder
+placeholder: @escaping () -&gt; P)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AsyncImage.init(url:scale:transaction:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(url: Foundation.URL?, scale: CoreGraphics.CGFloat = 1, transaction: SwiftUI.Transaction = Transaction(), @SwiftUI.ViewBuilder
+content: @escaping () -&gt; Content)</td></tr>
+<tr><th>To</th><td class="declaration">public init(url: Foundation.URL?, scale: CoreFoundation.CGFloat = 1, transaction: SwiftUI.Transaction = Transaction(), @SwiftUI.ViewBuilder
+content: @escaping () -&gt; Content)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AutomaticDisclosureGroupStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AutomaticDisclosureGroupStyle</div>
+<div class="difference"><span class="status added">Added</span> AutomaticDisclosureGroupStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> AutomaticDisclosureGroupStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AutomaticDisclosureGroupStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AutomaticFormStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AutomaticFormStyle</div>
+<div class="difference"><span class="status added">Added</span> AutomaticFormStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> AutomaticFormStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AutomaticFormStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AutomaticLabeledContentStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle</div>
+<div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle.body(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AutomaticMenuBarExtraStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AutomaticMenuBarExtraStyle</div>
+<div class="difference"><span class="status added">Added</span> AutomaticMenuBarExtraStyle.init()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AutomaticNavigationSplitViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AutomaticNavigationSplitViewStyle</div>
+<div class="difference"><span class="status added">Added</span> AutomaticNavigationSplitViewStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> AutomaticNavigationSplitViewStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AutomaticNavigationSplitViewStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AutomaticTableStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AutomaticTableStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BackgroundStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> BackgroundStyle</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>SwiftUI.ShapeStyle</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BackgroundTask</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BackgroundTask</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BalancedNavigationSplitViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BalancedNavigationSplitViewStyle</div>
+<div class="difference"><span class="status added">Added</span> BalancedNavigationSplitViewStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> BalancedNavigationSplitViewStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> BalancedNavigationSplitViewStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BorderedButtonMenuStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> BorderedButtonMenuStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 11.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS, introduced: 11.0, deprecated: 100000.0, message: &quot;Use .menuStyle(.button) and .buttonStyle(.bordered).&quot;)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BorderlessButtonMenuStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> BorderlessButtonMenuStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 14.0, macOS 11.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 14.0, deprecated: 100000.0, message: &quot;Use .menuStyle(.button) and .buttonStyle(.borderless).&quot;)
+@available(macOS, introduced: 11.0, deprecated: 100000.0, message: &quot;Use .menuStyle(.button) and .buttonStyle(.borderless).&quot;)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ButtonBorderShape</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ButtonBorderShape.roundedRectangle(radius:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS, unavailable)
+@available(tvOS, unavailable)
+public static func roundedRectangle(radius: CoreGraphics.CGFloat) -&gt; SwiftUI.ButtonBorderShape</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS, unavailable)
+@available(tvOS, unavailable)
+public static func roundedRectangle(radius: CoreFoundation.CGFloat) -&gt; SwiftUI.ButtonBorderShape</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ButtonMenuStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ButtonMenuStyle</div>
+<div class="difference"><span class="status added">Added</span> ButtonMenuStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> ButtonMenuStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> ButtonMenuStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ButtonToggleStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ButtonToggleStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 15.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 15.0, macOS 12.0, watchOS 9.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Canvas</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Canvas.init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(opaque: Swift.Bool = false, colorMode: SwiftUI.ColorRenderingMode = .nonLinear, rendersAsynchronously: Swift.Bool = false, renderer: @escaping () -&gt; Swift.Void, @SwiftUI.ViewBuilder
+symbols: () -&gt; Symbols)</td></tr>
+<tr><th>To</th><td class="declaration">public init(opaque: Swift.Bool = false, colorMode: SwiftUI.ColorRenderingMode = .nonLinear, rendersAsynchronously: Swift.Bool = false, renderer: @escaping () -&gt; Swift.Void, @SwiftUI.ViewBuilder
+symbols: () -&gt; Symbols)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> Canvas.renderer</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var renderer: () -&gt; Swift.Void</td></tr>
+<tr><th>To</th><td class="declaration">public var renderer: () -&gt; Swift.Void</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Capsule</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Capsule.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Circle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Circle.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ColumnNavigationViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ColumnNavigationViewStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 15.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 15.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationSplitView&quot;)
+@available(macOS, introduced: 12.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationSplitView&quot;)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ColumnsFormStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ColumnsFormStyle</div>
+<div class="difference"><span class="status added">Added</span> ColumnsFormStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> ColumnsFormStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> ColumnsFormStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CommandGroupPlacement</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CommandGroupPlacement.singleWindowList /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CommandsBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CommandsBuilder.buildBlock(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_alwaysEmitIntoClient
+public static func buildBlock&lt;Content&gt;(_: Content) -&gt; Content where Content: SwiftUI.Commands</td></tr>
+<tr><th>To</th><td class="declaration">@_alwaysEmitIntoClient
+public static func buildBlock&lt;C&gt;(_: C) -&gt; C where C: SwiftUI.Commands</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CompactDatePickerStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CompactDatePickerStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> CompactDatePickerStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ContainerRelativeShape</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ContainerRelativeShape.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ContentTransition</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ContentTransition</div>
+<div class="difference"><span class="status added">Added</span> ContentTransition.identity /* static */</div>
+<div class="difference"><span class="status added">Added</span> ContentTransition.interpolate /* static */</div>
+<div class="difference"><span class="status added">Added</span> ContentTransition.opacity /* static */</div>
+<div class="difference"><span class="status added">Added</span> ContentTransition.==(a:b:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ControlGroupStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ControlGroupStyleConfiguration.label</div>
+<div class="difference"><span class="status added">Added</span> ControlGroupStyleConfiguration.Label</div>
+<div class="difference"><span class="status added">Added</span> ControlGroupStyleConfiguration.Label.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ControlSize</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ControlSize</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 15.0, macOS 10.15, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 15.0, macOS 10.15, watchOS 9.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CustomPresentationDetent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CustomPresentationDetent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DatePickerStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DatePickerStyleConfiguration</div>
+<div class="difference"><span class="status added">Added</span> DatePickerStyleConfiguration.$selection</div>
+<div class="difference"><span class="status added">Added</span> DatePickerStyleConfiguration.displayedComponents</div>
+<div class="difference"><span class="status added">Added</span> DatePickerStyleConfiguration.label</div>
+<div class="difference"><span class="status added">Added</span> DatePickerStyleConfiguration.maximumDate</div>
+<div class="difference"><span class="status added">Added</span> DatePickerStyleConfiguration.minimumDate</div>
+<div class="difference"><span class="status added">Added</span> DatePickerStyleConfiguration.Label</div>
+<div class="difference"><span class="status added">Added</span> DatePickerStyleConfiguration.Label.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DefaultDatePickerStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DefaultDatePickerStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> DefaultDatePickerStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DefaultDateProgressLabel</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DefaultDateProgressLabel</div>
+<div class="difference"><span class="status added">Added</span> DefaultDateProgressLabel.body</div>
+<div class="difference"><span class="status added">Added</span> DefaultDateProgressLabel.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DefaultFocusEvaluationPriority</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DefaultFocusEvaluationPriority</div>
+<div class="difference"><span class="status added">Added</span> DefaultFocusEvaluationPriority.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> DefaultFocusEvaluationPriority.userInitiated /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DefaultGaugeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DefaultGaugeStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS, unavailable)
+@available(tvOS, unavailable)
+@available(watchOS 7.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 13.0, watchOS 7.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DefaultNavigationViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DefaultNavigationViewStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 7.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)
+@available(macOS, introduced: 10.15, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationSplitView instead&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)
+@available(watchOS, introduced: 7.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DefaultShareLinkLabel</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DefaultShareLinkLabel</div>
+<div class="difference"><span class="status added">Added</span> DefaultShareLinkLabel.body</div>
+<div class="difference"><span class="status added">Added</span> DefaultShareLinkLabel.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DigitalCrownEvent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DigitalCrownEvent</div>
+<div class="difference"><span class="status added">Added</span> DigitalCrownEvent.offset</div>
+<div class="difference"><span class="status added">Added</span> DigitalCrownEvent.velocity</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DisclosureGroupStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DisclosureGroupStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyleConfiguration</div>
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyleConfiguration.$isExpanded</div>
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyleConfiguration.content</div>
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyleConfiguration.label</div>
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyleConfiguration.Content</div>
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyleConfiguration.Content.Body</div>
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyleConfiguration.Label</div>
+<div class="difference"><span class="status added">Added</span> DisclosureGroupStyleConfiguration.Label.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DoubleColumnNavigationViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DoubleColumnNavigationViewStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 100000, message: &quot;Use NavigationViewStyle.columns&quot;)
+@available(macOS, introduced: 10.15, deprecated: 100000, message: &quot;Use NavigationViewStyle.columns&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 100000, message: &quot;Use NavigationViewStyle.stack&quot;)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)
+@available(macOS, introduced: 10.15, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationSplitView instead&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DragGesture</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DragGesture.init(minimumDistance:coordinateSpace:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(minimumDistance: CoreGraphics.CGFloat = 10, coordinateSpace: SwiftUI.CoordinateSpace = .local)</td></tr>
+<tr><th>To</th><td class="declaration">public init(minimumDistance: CoreFoundation.CGFloat = 10, coordinateSpace: SwiftUI.CoordinateSpace = .local)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DragGesture.minimumDistance</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var minimumDistance: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var minimumDistance: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DragGesture.Value.location</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var location: CoreGraphics.CGPoint</td></tr>
+<tr><th>To</th><td class="declaration">public var location: CoreFoundation.CGPoint</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DragGesture.Value.predictedEndLocation</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var predictedEndLocation: CoreGraphics.CGPoint { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var predictedEndLocation: CoreFoundation.CGPoint { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DragGesture.Value.predictedEndTranslation</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var predictedEndTranslation: CoreGraphics.CGSize { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var predictedEndTranslation: CoreFoundation.CGSize { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DragGesture.Value.startLocation</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var startLocation: CoreGraphics.CGPoint</td></tr>
+<tr><th>To</th><td class="declaration">public var startLocation: CoreFoundation.CGPoint</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DragGesture.Value.translation</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var translation: CoreGraphics.CGSize { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var translation: CoreFoundation.CGSize { get }</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DropInfo</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DropInfo.location</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var location: CoreGraphics.CGPoint { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var location: CoreFoundation.CGPoint { get }</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicTableRowContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DynamicTableRowContent</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EdgeInsets</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EdgeInsets.init(top:leading:bottom:trailing:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(top: CoreGraphics.CGFloat, leading: CoreGraphics.CGFloat, bottom: CoreGraphics.CGFloat, trailing: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(top: CoreFoundation.CGFloat, leading: CoreFoundation.CGFloat, bottom: CoreFoundation.CGFloat, trailing: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EdgeInsets.bottom</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var bottom: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var bottom: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EdgeInsets.leading</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var leading: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var leading: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EdgeInsets.top</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var top: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var top: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EdgeInsets.trailing</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var trailing: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var trailing: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EditOperations</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> EditOperations</div>
+<div class="difference"><span class="status added">Added</span> EditOperations.all /* static */</div>
+<div class="difference"><span class="status added">Added</span> EditOperations.delete /* static */</div>
+<div class="difference"><span class="status added">Added</span> EditOperations.move /* static */</div>
+<div class="difference"><span class="status added">Added</span> EditOperations.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> EditOperations.rawValue</div>
+<div class="difference"><span class="status added">Added</span> EditOperations.ArrayLiteralElement</div>
+<div class="difference"><span class="status added">Added</span> EditOperations.Element</div>
+<div class="difference"><span class="status added">Added</span> EditOperations.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EditableCollectionContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> EditableCollectionContent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Ellipse</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Ellipse.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EllipticalGradient</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EllipticalGradient.init(colors:center:startRadiusFraction:endRadiusFraction:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(colors: [SwiftUI.Color], center: SwiftUI.UnitPoint = .center, startRadiusFraction: CoreGraphics.CGFloat = 0, endRadiusFraction: CoreGraphics.CGFloat = 0.5)</td></tr>
+<tr><th>To</th><td class="declaration">public init(colors: [SwiftUI.Color], center: SwiftUI.UnitPoint = .center, startRadiusFraction: CoreFoundation.CGFloat = 0, endRadiusFraction: CoreFoundation.CGFloat = 0.5)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EllipticalGradient.init(gradient:center:startRadiusFraction:endRadiusFraction:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(gradient: SwiftUI.Gradient, center: SwiftUI.UnitPoint = .center, startRadiusFraction: CoreGraphics.CGFloat = 0, endRadiusFraction: CoreGraphics.CGFloat = 0.5)</td></tr>
+<tr><th>To</th><td class="declaration">public init(gradient: SwiftUI.Gradient, center: SwiftUI.UnitPoint = .center, startRadiusFraction: CoreFoundation.CGFloat = 0, endRadiusFraction: CoreFoundation.CGFloat = 0.5)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EllipticalGradient.init(stops:center:startRadiusFraction:endRadiusFraction:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(stops: [SwiftUI.Gradient.Stop], center: SwiftUI.UnitPoint = .center, startRadiusFraction: CoreGraphics.CGFloat = 0, endRadiusFraction: CoreGraphics.CGFloat = 0.5)</td></tr>
+<tr><th>To</th><td class="declaration">public init(stops: [SwiftUI.Gradient.Stop], center: SwiftUI.UnitPoint = .center, startRadiusFraction: CoreFoundation.CGFloat = 0, endRadiusFraction: CoreFoundation.CGFloat = 0.5)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EmptyTableRowContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> EmptyTableRowContent</div>
+<div class="difference"><span class="status added">Added</span> EmptyTableRowContent.TableRowBody</div>
+<div class="difference"><span class="status added">Added</span> EmptyTableRowContent.TableRowValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EmptyWidgetConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EmptyWidgetConfiguration</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 14.0, macOS 11.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 14.0, macOS 11.0, watchOS 9.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FieldDatePickerStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> FieldDatePickerStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> FieldDatePickerStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FocusState</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> FocusState.init()</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;T&gt;()</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;T&gt;()</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FormStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> FormStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FormStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> FormStyleConfiguration</div>
+<div class="difference"><span class="status added">Added</span> FormStyleConfiguration.content</div>
+<div class="difference"><span class="status added">Added</span> FormStyleConfiguration.Content</div>
+<div class="difference"><span class="status added">Added</span> FormStyleConfiguration.Content.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Gauge</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Gauge</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS, unavailable)
+@available(tvOS, unavailable)
+@available(watchOS 7.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 13.0, watchOS 7.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GaugeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GaugeStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS, unavailable)
+@available(tvOS, unavailable)
+@available(watchOS 7.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 13.0, watchOS 7.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GaugeStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GaugeStyleConfiguration</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS, unavailable)
+@available(tvOS, unavailable)
+@available(watchOS 7.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 13.0, watchOS 7.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GeometryProxy</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GeometryProxy.size</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var size: CoreGraphics.CGSize { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var size: CoreFoundation.CGSize { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GeometryProxy.frame(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func frame(in: SwiftUI.CoordinateSpace) -&gt; CoreGraphics.CGRect</td></tr>
+<tr><th>To</th><td class="declaration">public func frame(in: SwiftUI.CoordinateSpace) -&gt; CoreFoundation.CGRect</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Gradient</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Gradient.Stop.init(color:location:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(color: SwiftUI.Color, location: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">public init(color: SwiftUI.Color, location: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> Gradient.Stop.location</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var location: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var location: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GraphicalDatePickerStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GraphicalDatePickerStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> GraphicalDatePickerStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GraphicsContext</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.clipBoundingRect</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var clipBoundingRect: CoreGraphics.CGRect { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var clipBoundingRect: CoreFoundation.CGRect { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.concatenate(_:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">mutating public func concatenate(_: CoreGraphics.CGAffineTransform)</td></tr>
+<tr><th>To</th><td class="declaration">mutating public func concatenate(_: CoreFoundation.CGAffineTransform)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.draw(_:at:anchor:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func draw(_: SwiftUI.GraphicsContext.ResolvedImage, at: CoreGraphics.CGPoint, anchor: SwiftUI.UnitPoint = .center)
+public func draw(_: SwiftUI.GraphicsContext.ResolvedSymbol, at: CoreGraphics.CGPoint, anchor: SwiftUI.UnitPoint = .center)
+public func draw(_: SwiftUI.GraphicsContext.ResolvedText, at: CoreGraphics.CGPoint, anchor: SwiftUI.UnitPoint = .center)
+public func draw(_: SwiftUI.Image, at: CoreGraphics.CGPoint, anchor: SwiftUI.UnitPoint = .center)
+public func draw(_: SwiftUI.Text, at: CoreGraphics.CGPoint, anchor: SwiftUI.UnitPoint = .center)</td></tr>
+<tr><th>To</th><td class="declaration">public func draw(_: SwiftUI.GraphicsContext.ResolvedImage, at: CoreFoundation.CGPoint, anchor: SwiftUI.UnitPoint = .center)
+public func draw(_: SwiftUI.GraphicsContext.ResolvedSymbol, at: CoreFoundation.CGPoint, anchor: SwiftUI.UnitPoint = .center)
+public func draw(_: SwiftUI.GraphicsContext.ResolvedText, at: CoreFoundation.CGPoint, anchor: SwiftUI.UnitPoint = .center)
+public func draw(_: SwiftUI.Image, at: CoreFoundation.CGPoint, anchor: SwiftUI.UnitPoint = .center)
+public func draw(_: SwiftUI.Text, at: CoreFoundation.CGPoint, anchor: SwiftUI.UnitPoint = .center)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.draw(_:in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func draw(_: SwiftUI.GraphicsContext.ResolvedSymbol, in: CoreGraphics.CGRect)
+public func draw(_: SwiftUI.GraphicsContext.ResolvedText, in: CoreGraphics.CGRect)
+public func draw(_: SwiftUI.Text, in: CoreGraphics.CGRect)</td></tr>
+<tr><th>To</th><td class="declaration">public func draw(_: SwiftUI.GraphicsContext.ResolvedSymbol, in: CoreFoundation.CGRect)
+public func draw(_: SwiftUI.GraphicsContext.ResolvedText, in: CoreFoundation.CGRect)
+public func draw(_: SwiftUI.Text, in: CoreFoundation.CGRect)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.draw(_:in:style:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func draw(_: SwiftUI.GraphicsContext.ResolvedImage, in: CoreGraphics.CGRect, style: SwiftUI.FillStyle = FillStyle())
+public func draw(_: SwiftUI.Image, in: CoreGraphics.CGRect, style: SwiftUI.FillStyle = FillStyle())</td></tr>
+<tr><th>To</th><td class="declaration">public func draw(_: SwiftUI.GraphicsContext.ResolvedImage, in: CoreFoundation.CGRect, style: SwiftUI.FillStyle = FillStyle())
+public func draw(_: SwiftUI.Image, in: CoreFoundation.CGRect, style: SwiftUI.FillStyle = FillStyle())</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.scaleBy(x:y:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">mutating public func scaleBy(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">mutating public func scaleBy(x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.stroke(_:with:lineWidth:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func stroke(_: SwiftUI.Path, with: SwiftUI.GraphicsContext.Shading, lineWidth: CoreGraphics.CGFloat = 1)</td></tr>
+<tr><th>To</th><td class="declaration">public func stroke(_: SwiftUI.Path, with: SwiftUI.GraphicsContext.Shading, lineWidth: CoreFoundation.CGFloat = 1)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.translateBy(x:y:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">mutating public func translateBy(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">mutating public func translateBy(x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.Filter.blur(radius:options:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func blur(radius: CoreGraphics.CGFloat, options: SwiftUI.GraphicsContext.BlurOptions = BlurOptions()) -&gt; SwiftUI.GraphicsContext.Filter</td></tr>
+<tr><th>To</th><td class="declaration">public static func blur(radius: CoreFoundation.CGFloat, options: SwiftUI.GraphicsContext.BlurOptions = BlurOptions()) -&gt; SwiftUI.GraphicsContext.Filter</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.Filter.shadow(color:radius:x:y:blendMode:options:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func shadow(color: SwiftUI.Color = Color(.sRGBLinear, white: 0, opacity: 0.33), radius: CoreGraphics.CGFloat, x: CoreGraphics.CGFloat = 0, y: CoreGraphics.CGFloat = 0, blendMode: SwiftUI.GraphicsContext.BlendMode = .normal, options: SwiftUI.GraphicsContext.ShadowOptions = ShadowOptions()) -&gt; SwiftUI.GraphicsContext.Filter</td></tr>
+<tr><th>To</th><td class="declaration">public static func shadow(color: SwiftUI.Color = Color(.sRGBLinear, white: 0, opacity: 0.33), radius: CoreFoundation.CGFloat, x: CoreFoundation.CGFloat = 0, y: CoreFoundation.CGFloat = 0, blendMode: SwiftUI.GraphicsContext.BlendMode = .normal, options: SwiftUI.GraphicsContext.ShadowOptions = ShadowOptions()) -&gt; SwiftUI.GraphicsContext.Filter</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.ResolvedImage.baseline</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public let baseline: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public let baseline: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.ResolvedImage.size</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var size: CoreGraphics.CGSize { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var size: CoreFoundation.CGSize { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.ResolvedSymbol.size</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var size: CoreGraphics.CGSize { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var size: CoreFoundation.CGSize { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.ResolvedText.firstBaseline(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func firstBaseline(in: CoreGraphics.CGSize) -&gt; CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public func firstBaseline(in: CoreFoundation.CGSize) -&gt; CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.ResolvedText.lastBaseline(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func lastBaseline(in: CoreGraphics.CGSize) -&gt; CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public func lastBaseline(in: CoreFoundation.CGSize) -&gt; CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.ResolvedText.measure(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func measure(in: CoreGraphics.CGSize) -&gt; CoreGraphics.CGSize</td></tr>
+<tr><th>To</th><td class="declaration">public func measure(in: CoreFoundation.CGSize) -&gt; CoreFoundation.CGSize</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.Shading.conicGradient(_:center:angle:options:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func conicGradient(_: SwiftUI.Gradient, center: CoreGraphics.CGPoint, angle: SwiftUI.Angle = Angle(), options: SwiftUI.GraphicsContext.GradientOptions = GradientOptions()) -&gt; SwiftUI.GraphicsContext.Shading</td></tr>
+<tr><th>To</th><td class="declaration">public static func conicGradient(_: SwiftUI.Gradient, center: CoreFoundation.CGPoint, angle: SwiftUI.Angle = Angle(), options: SwiftUI.GraphicsContext.GradientOptions = GradientOptions()) -&gt; SwiftUI.GraphicsContext.Shading</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.Shading.linearGradient(_:startPoint:endPoint:options:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func linearGradient(_: SwiftUI.Gradient, startPoint: CoreGraphics.CGPoint, endPoint: CoreGraphics.CGPoint, options: SwiftUI.GraphicsContext.GradientOptions = GradientOptions()) -&gt; SwiftUI.GraphicsContext.Shading</td></tr>
+<tr><th>To</th><td class="declaration">public static func linearGradient(_: SwiftUI.Gradient, startPoint: CoreFoundation.CGPoint, endPoint: CoreFoundation.CGPoint, options: SwiftUI.GraphicsContext.GradientOptions = GradientOptions()) -&gt; SwiftUI.GraphicsContext.Shading</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.Shading.radialGradient(_:center:startRadius:endRadius:options:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func radialGradient(_: SwiftUI.Gradient, center: CoreGraphics.CGPoint, startRadius: CoreGraphics.CGFloat, endRadius: CoreGraphics.CGFloat, options: SwiftUI.GraphicsContext.GradientOptions = GradientOptions()) -&gt; SwiftUI.GraphicsContext.Shading</td></tr>
+<tr><th>To</th><td class="declaration">public static func radialGradient(_: SwiftUI.Gradient, center: CoreFoundation.CGPoint, startRadius: CoreFoundation.CGFloat, endRadius: CoreFoundation.CGFloat, options: SwiftUI.GraphicsContext.GradientOptions = GradientOptions()) -&gt; SwiftUI.GraphicsContext.Shading</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GraphicsContext.Shading.tiledImage(_:origin:sourceRect:scale:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func tiledImage(_: SwiftUI.Image, origin: CoreGraphics.CGPoint = .zero, sourceRect: CoreGraphics.CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), scale: CoreGraphics.CGFloat = 1) -&gt; SwiftUI.GraphicsContext.Shading</td></tr>
+<tr><th>To</th><td class="declaration">public static func tiledImage(_: SwiftUI.Image, origin: CoreFoundation.CGPoint = .zero, sourceRect: CoreFoundation.CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), scale: CoreFoundation.CGFloat = 1) -&gt; SwiftUI.GraphicsContext.Shading</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Grid</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> Grid</div>
+<div class="difference"><span class="status added">Added</span> Grid.init(alignment:horizontalSpacing:verticalSpacing:content:)</div>
+<div class="difference"><span class="status added">Added</span> Grid.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GridItem</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GridItem.spacing</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var spacing: CoreGraphics.CGFloat?</td></tr>
+<tr><th>To</th><td class="declaration">public var spacing: CoreFoundation.CGFloat?</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GridRow</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GridRow</div>
+<div class="difference"><span class="status added">Added</span> GridRow.init(alignment:content:)</div>
+<div class="difference"><span class="status added">Added</span> GridRow.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GroupedFormStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GroupedFormStyle</div>
+<div class="difference"><span class="status added">Added</span> GroupedFormStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> GroupedFormStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> GroupedFormStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HStack</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> HStack.init(alignment:spacing:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(alignment: SwiftUI.VerticalAlignment = .center, spacing: CoreGraphics.CGFloat? = nil, @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(alignment: SwiftUI.VerticalAlignment = .center, spacing: CoreFoundation.CGFloat? = nil, @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HoverEffect</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> HoverEffect</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 13.4, *)
+@available(macOS, unavailable)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 13.4, tvOS 16.0, *)
+@available(macOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> HoverEffect.highlight /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HoverPhase</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HoverPhase</div>
+<div class="difference"><span class="status added">Added</span> HoverPhase.==(a:b:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ImagePaint</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ImagePaint.init(image:sourceRect:scale:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(image: SwiftUI.Image, sourceRect: CoreGraphics.CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), scale: CoreGraphics.CGFloat = 1)</td></tr>
+<tr><th>To</th><td class="declaration">public init(image: SwiftUI.Image, sourceRect: CoreFoundation.CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), scale: CoreFoundation.CGFloat = 1)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ImagePaint.scale</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var scale: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var scale: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ImagePaint.sourceRect</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var sourceRect: CoreGraphics.CGRect</td></tr>
+<tr><th>To</th><td class="declaration">public var sourceRect: CoreFoundation.CGRect</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ImageRenderer</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ImageRenderer</div>
+<div class="difference"><span class="status added">Added</span> ImageRenderer.init(content:)</div>
+<div class="difference"><span class="status added">Added</span> ImageRenderer.cgImage</div>
+<div class="difference"><span class="status added">Added</span> ImageRenderer.objectWillChange</div>
+<div class="difference"><span class="status added">Added</span> ImageRenderer.uiImage</div>
+<div class="difference"><span class="status added">Added</span> ImageRenderer.render(rasterizationScale:renderer:)</div>
+<div class="difference"><span class="status added">Added</span> ImageRenderer.ObjectWillChangePublisher</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IndexedIdentifierCollection</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.endIndex</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.startIndex</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.subscript(position:)</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.index(after:)</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.Element</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.Index</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.Indices</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.Iterator</div>
+<div class="difference"><span class="status added">Added</span> IndexedIdentifierCollection.SubSequence</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">InsetTableStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> InsetTableStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> InsetTableStyle.init(alternatesRowBackgrounds:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ItemProviderTableRowModifier</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ItemProviderTableRowModifier</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LabeledContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LabeledContent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LabeledContentStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LabeledContentStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LabeledContentStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LabeledContentStyleConfiguration</div>
+<div class="difference"><span class="status added">Added</span> LabeledContentStyleConfiguration.content</div>
+<div class="difference"><span class="status added">Added</span> LabeledContentStyleConfiguration.label</div>
+<div class="difference"><span class="status added">Added</span> LabeledContentStyleConfiguration.Content</div>
+<div class="difference"><span class="status added">Added</span> LabeledContentStyleConfiguration.Content.Body</div>
+<div class="difference"><span class="status added">Added</span> LabeledContentStyleConfiguration.Label</div>
+<div class="difference"><span class="status added">Added</span> LabeledContentStyleConfiguration.Label.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LabeledControlGroupContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LabeledControlGroupContent</div>
+<div class="difference"><span class="status added">Added</span> LabeledControlGroupContent.body</div>
+<div class="difference"><span class="status added">Added</span> LabeledControlGroupContent.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LabeledToolbarItemGroupContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LabeledToolbarItemGroupContent</div>
+<div class="difference"><span class="status added">Added</span> LabeledToolbarItemGroupContent.body</div>
+<div class="difference"><span class="status added">Added</span> LabeledToolbarItemGroupContent.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Layout</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> Layout</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LayoutProperties</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LayoutProperties</div>
+<div class="difference"><span class="status added">Added</span> LayoutProperties.init()</div>
+<div class="difference"><span class="status added">Added</span> LayoutProperties.stackOrientation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LayoutSubview</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LayoutSubview</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubview.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubview.priority</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubview.spacing</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubview.subscript(key:)</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubview.dimensions(in:)</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubview.place(at:anchor:proposal:)</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubview.sizeThatFits(_:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LayoutSubviews</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LayoutSubviews</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.==(lhs:rhs:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.endIndex</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.layoutDirection</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.startIndex</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.subscript(bounds:)</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.subscript(index:)</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.subscript(indices:)</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.Element</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.Index</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.Indices</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.Iterator</div>
+<div class="difference"><span class="status added">Added</span> LayoutSubviews.SubSequence</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LayoutValueKey</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LayoutValueKey</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LazyHGrid</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LazyHGrid.init(rows:alignment:spacing:pinnedViews:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(rows: [SwiftUI.GridItem], alignment: SwiftUI.VerticalAlignment = .center, spacing: CoreGraphics.CGFloat? = nil, pinnedViews: SwiftUI.PinnedScrollableViews = .init(), @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+<tr><th>To</th><td class="declaration">public init(rows: [SwiftUI.GridItem], alignment: SwiftUI.VerticalAlignment = .center, spacing: CoreFoundation.CGFloat? = nil, pinnedViews: SwiftUI.PinnedScrollableViews = .init(), @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LazyHStack</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LazyHStack.init(alignment:spacing:pinnedViews:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(alignment: SwiftUI.VerticalAlignment = .center, spacing: CoreGraphics.CGFloat? = nil, pinnedViews: SwiftUI.PinnedScrollableViews = .init(), @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+<tr><th>To</th><td class="declaration">public init(alignment: SwiftUI.VerticalAlignment = .center, spacing: CoreFoundation.CGFloat? = nil, pinnedViews: SwiftUI.PinnedScrollableViews = .init(), @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LazyVGrid</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LazyVGrid.init(columns:alignment:spacing:pinnedViews:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(columns: [SwiftUI.GridItem], alignment: SwiftUI.HorizontalAlignment = .center, spacing: CoreGraphics.CGFloat? = nil, pinnedViews: SwiftUI.PinnedScrollableViews = .init(), @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+<tr><th>To</th><td class="declaration">public init(columns: [SwiftUI.GridItem], alignment: SwiftUI.HorizontalAlignment = .center, spacing: CoreFoundation.CGFloat? = nil, pinnedViews: SwiftUI.PinnedScrollableViews = .init(), @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LazyVStack</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LazyVStack.init(alignment:spacing:pinnedViews:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(alignment: SwiftUI.HorizontalAlignment = .center, spacing: CoreGraphics.CGFloat? = nil, pinnedViews: SwiftUI.PinnedScrollableViews = .init(), @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+<tr><th>To</th><td class="declaration">public init(alignment: SwiftUI.HorizontalAlignment = .center, spacing: CoreFoundation.CGFloat? = nil, pinnedViews: SwiftUI.PinnedScrollableViews = .init(), @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LinearCapacityGaugeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LinearCapacityGaugeStyle</div>
+<div class="difference"><span class="status added">Added</span> LinearCapacityGaugeStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> LinearCapacityGaugeStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> LinearCapacityGaugeStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LinearGaugeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LinearGaugeStyle.init(tint:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(watchOS, introduced: 7.0, deprecated: 100000.0, message: &quot;Use ``View/tint(_)`` instead.&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">List</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> List</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> List.init(selection:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(watchOS, unavailable)
+public init(selection: SwiftUI.Binding&lt;SelectionValue?&gt;?, @SwiftUI.ViewBuilder
+content: () -&gt; Content)
+@available(watchOS, unavailable)
+public init(selection: SwiftUI.Binding&lt;Swift.Set&lt;SelectionValue&gt;&gt;?, @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@_disfavoredOverload
+@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
+public init(selection: SwiftUI.Binding&lt;SelectionValue&gt;, @SwiftUI.ViewBuilder
+content: () -&gt; Content)
+@_Concurrency.MainActor(unsafe)
+@available(watchOS, unavailable)
+public init(selection: SwiftUI.Binding&lt;SelectionValue?&gt;?, @SwiftUI.ViewBuilder
+content: () -&gt; Content)
+@_Concurrency.MainActor(unsafe)
+@available(watchOS, unavailable)
+public init(selection: SwiftUI.Binding&lt;Swift.Set&lt;SelectionValue&gt;&gt;?, @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LocalizedStringKey</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LocalizedStringKey.StringInterpolation.appendInterpolation(_:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LongPressGesture</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LongPressGesture.init(minimumDuration:maximumDistance:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(tvOS, unavailable)
+public init(minimumDuration: Swift.Double = 0.5, maximumDistance: CoreGraphics.CGFloat = 10)</td></tr>
+<tr><th>To</th><td class="declaration">@available(tvOS, unavailable)
+public init(minimumDuration: Swift.Double = 0.5, maximumDistance: CoreFoundation.CGFloat = 10)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MagnificationGesture</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MagnificationGesture.init(minimumScaleDelta:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(minimumScaleDelta: CoreGraphics.CGFloat = 0.01)</td></tr>
+<tr><th>To</th><td class="declaration">public init(minimumScaleDelta: CoreFoundation.CGFloat = 0.01)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MagnificationGesture.minimumScaleDelta</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var minimumScaleDelta: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var minimumScaleDelta: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MagnificationGesture.Value</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias Value = CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public typealias Value = CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MenuBarExtra</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MenuBarExtra</div>
+<div class="difference"><span class="status added">Added</span> MenuBarExtra.init(content:label:)</div>
+<div class="difference"><span class="status added">Added</span> MenuBarExtra.init(isInserted:content:label:)</div>
+<div class="difference"><span class="status added">Added</span> MenuBarExtra.body</div>
+<div class="difference"><span class="status added">Added</span> MenuBarExtra.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MenuBarExtraStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MenuBarExtraStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MenuOrder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MenuOrder</div>
+<div class="difference"><span class="status added">Added</span> MenuOrder.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> MenuOrder.fixed /* static */</div>
+<div class="difference"><span class="status added">Added</span> MenuOrder.priority /* static */</div>
+<div class="difference"><span class="status added">Added</span> MenuOrder.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> MenuOrder.hashValue</div>
+<div class="difference"><span class="status added">Added</span> MenuOrder.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MultiDatePicker</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MultiDatePicker</div>
+<div class="difference"><span class="status added">Added</span> MultiDatePicker.body</div>
+<div class="difference"><span class="status added">Added</span> MultiDatePicker.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationLink</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NavigationLink.init(destination:isActive:label:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 100000.0, renamed: &quot;NavigationLink(isActive:destination:label:)&quot;)
+@available(macOS, introduced: 10.15, deprecated: 100000.0, renamed: &quot;NavigationLink(isActive:destination:label:)&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 100000.0, renamed: &quot;NavigationLink(isActive:destination:label:)&quot;)
+@available(watchOS, introduced: 6.0, deprecated: 100000.0, renamed: &quot;NavigationLink(isActive:destination:label:)&quot;)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 16.0, message: &quot;use NavigationLink(value:label:) inside a NavigationStack or NavigationSplitView&quot;)
+@available(macOS, introduced: 10.15, deprecated: 13.0, message: &quot;use NavigationLink(value:label:) inside a NavigationStack or NavigationSplitView&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 16.0, message: &quot;use NavigationLink(value:label:) inside a NavigationStack or NavigationSplitView&quot;)
+@available(watchOS, introduced: 6.0, deprecated: 9.0, message: &quot;use NavigationLink(value:label:) inside a NavigationStack or NavigationSplitView&quot;)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NavigationLink.init(destination:tag:selection:label:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 100000.0, renamed: &quot;NavigationLink(tag:selection:destination:label:)&quot;)
+@available(macOS, introduced: 10.15, deprecated: 100000.0, renamed: &quot;NavigationLink(tag:selection:destination:label:)&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 100000.0, renamed: &quot;NavigationLink(tag:selection:destination:label:)&quot;)
+@available(watchOS, introduced: 6.0, deprecated: 100000.0, renamed: &quot;NavigationLink(tag:selection:destination:label:)&quot;)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 16.0, message: &quot;use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView&quot;)
+@available(macOS, introduced: 10.15, deprecated: 13.0, message: &quot;use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 16.0, message: &quot;use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView&quot;)
+@available(watchOS, introduced: 6.0, deprecated: 9.0, message: &quot;use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView&quot;)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NavigationLink.init(isActive:destination:label:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 16.0, message: &quot;use NavigationLink(value:label:) inside a NavigationStack or NavigationSplitView&quot;)
+@available(macOS, introduced: 10.15, deprecated: 13.0, message: &quot;use NavigationLink(value:label:) inside a NavigationStack or NavigationSplitView&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 16.0, message: &quot;use NavigationLink(value:label:) inside a NavigationStack or NavigationSplitView&quot;)
+@available(watchOS, introduced: 6.0, deprecated: 9.0, message: &quot;use NavigationLink(value:label:) inside a NavigationStack or NavigationSplitView&quot;)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NavigationLink.init(tag:selection:destination:label:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 16.0, message: &quot;use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView&quot;)
+@available(macOS, introduced: 10.15, deprecated: 13.0, message: &quot;use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 16.0, message: &quot;use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView&quot;)
+@available(watchOS, introduced: 6.0, deprecated: 9.0, message: &quot;use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationPath</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NavigationPath</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.init()</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.codable</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.count</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.isEmpty</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.append(_:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.removeLast(_:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.CodableRepresentation</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.CodableRepresentation.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationPath.CodableRepresentation.encode(to:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationSplitView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NavigationSplitView</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitView.init(columnVisibility:sidebar:content:detail:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitView.init(columnVisibility:sidebar:detail:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitView.init(sidebar:content:detail:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitView.init(sidebar:detail:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitView.body</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitView.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationSplitViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationSplitViewStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewStyleConfiguration</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationSplitViewVisibility</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewVisibility</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewVisibility.all /* static */</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewVisibility.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewVisibility.detailOnly /* static */</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewVisibility.doubleColumn /* static */</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewVisibility.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewVisibility.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationSplitViewVisibility.encode(to:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationStack</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NavigationStack</div>
+<div class="difference"><span class="status added">Added</span> NavigationStack.init(path:root:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationStack.init(root:)</div>
+<div class="difference"><span class="status added">Added</span> NavigationStack.body</div>
+<div class="difference"><span class="status added">Added</span> NavigationStack.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NavigationView</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 7.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 100000.0, message: &quot;use NavigationStack or NavigationSplitView instead&quot;)
+@available(macOS, introduced: 10.15, deprecated: 100000.0, message: &quot;use NavigationStack or NavigationSplitView instead&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 100000.0, message: &quot;use NavigationStack or NavigationSplitView instead&quot;)
+@available(watchOS, introduced: 7.0, deprecated: 100000.0, message: &quot;use NavigationStack or NavigationSplitView instead&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NavigationViewStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 7.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)
+@available(macOS, introduced: 10.15, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)
+@available(tvOS, introduced: 13.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)
+@available(watchOS, introduced: 7.0, deprecated: 100000.0, message: &quot;replace styled NavigationView with NavigationStack or NavigationSplitView instead&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NewDocumentAction</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NewDocumentAction</div>
+<div class="difference"><span class="status added">Added</span> NewDocumentAction.callAsFunction(_:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">OffsetShape</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> OffsetShape.init(shape:offset:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(shape: Content, offset: CoreGraphics.CGSize)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(shape: Content, offset: CoreFoundation.CGSize)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> OffsetShape.offset</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var offset: CoreGraphics.CGSize</td></tr>
+<tr><th>To</th><td class="declaration">public var offset: CoreFoundation.CGSize</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> OffsetShape.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> OffsetShape.AnimatableData</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias AnimatableData = SwiftUI.AnimatablePair&lt;Content.AnimatableData, CoreGraphics.CGSize.AnimatableData&gt;</td></tr>
+<tr><th>To</th><td class="declaration">public typealias AnimatableData = SwiftUI.AnimatablePair&lt;Content.AnimatableData, CoreFoundation.CGSize.AnimatableData&gt;</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">OnInsertTableRowModifier</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> OnInsertTableRowModifier</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">OpenDocumentAction</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> OpenDocumentAction</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">OpenWindowAction</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> OpenWindowAction</div>
+<div class="difference"><span class="status added">Added</span> OpenWindowAction.callAsFunction(id:)</div>
+<div class="difference"><span class="status added">Added</span> OpenWindowAction.callAsFunction(id:value:)</div>
+<div class="difference"><span class="status added">Added</span> OpenWindowAction.callAsFunction(value:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PasteButton</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PasteButton</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 10.15, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 10.15, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PasteButton.init(payloadType:onPaste:)</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PasteButton.init(supportedContentTypes:payloadAction:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 11.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 11.0, *)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PasteButton.init(supportedContentTypes:validator:payloadAction:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 11.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS, introduced: 11.0, deprecated: 100000.0)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Path</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Path.init(ellipseIn:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(ellipseIn: CoreGraphics.CGRect)</td></tr>
+<tr><th>To</th><td class="declaration">public init(ellipseIn: CoreFoundation.CGRect)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> Path.init(roundedRect:cornerRadius:style:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(roundedRect: CoreGraphics.CGRect, cornerRadius: CoreGraphics.CGFloat, style: SwiftUI.RoundedCornerStyle = .circular)</td></tr>
+<tr><th>To</th><td class="declaration">public init(roundedRect: CoreFoundation.CGRect, cornerRadius: CoreFoundation.CGFloat, style: SwiftUI.RoundedCornerStyle = .circular)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> Path.init(roundedRect:cornerSize:style:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(roundedRect: CoreGraphics.CGRect, cornerSize: CoreGraphics.CGSize, style: SwiftUI.RoundedCornerStyle = .circular)</td></tr>
+<tr><th>To</th><td class="declaration">public init(roundedRect: CoreFoundation.CGRect, cornerSize: CoreFoundation.CGSize, style: SwiftUI.RoundedCornerStyle = .circular)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> Path.boundingRect</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var boundingRect: CoreGraphics.CGRect { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var boundingRect: CoreFoundation.CGRect { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> Path.contains(_:eoFill:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func contains(_: CoreGraphics.CGPoint, eoFill: Swift.Bool = false) -&gt; Swift.Bool</td></tr>
+<tr><th>To</th><td class="declaration">public func contains(_: CoreFoundation.CGPoint, eoFill: Swift.Bool = false) -&gt; Swift.Bool</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> Path.trimmedPath(from:to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func trimmedPath(from: CoreGraphics.CGFloat, to: CoreGraphics.CGFloat) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func trimmedPath(from: CoreFoundation.CGFloat, to: CoreFoundation.CGFloat) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PresentationDetent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PresentationDetent</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.large /* static */</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.medium /* static */</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.custom(_:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.fraction(_:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.height(_:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.hashValue</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.Context</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.Context.maxDetentValue</div>
+<div class="difference"><span class="status added">Added</span> PresentationDetent.Context.subscript(dynamicMember:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PresentedWindowContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PresentedWindowContent</div>
+<div class="difference"><span class="status added">Added</span> PresentedWindowContent.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ProjectionTransform</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m11</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m11: CoreGraphics.CGFloat = 1.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m11: CoreFoundation.CGFloat = 1.0</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m12</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m12: CoreGraphics.CGFloat = 0.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m12: CoreFoundation.CGFloat = 0.0</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m13</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m13: CoreGraphics.CGFloat = 0.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m13: CoreFoundation.CGFloat = 0.0</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m21</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m21: CoreGraphics.CGFloat = 0.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m21: CoreFoundation.CGFloat = 0.0</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m22</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m22: CoreGraphics.CGFloat = 1.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m22: CoreFoundation.CGFloat = 1.0</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m23</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m23: CoreGraphics.CGFloat = 0.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m23: CoreFoundation.CGFloat = 0.0</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m31</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m31: CoreGraphics.CGFloat = 0.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m31: CoreFoundation.CGFloat = 0.0</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m32</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m32: CoreGraphics.CGFloat = 0.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m32: CoreFoundation.CGFloat = 0.0</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ProjectionTransform.m33</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var m33: CoreGraphics.CGFloat = 1.0</td></tr>
+<tr><th>To</th><td class="declaration">public var m33: CoreFoundation.CGFloat = 1.0</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ProminentDetailNavigationSplitViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ProminentDetailNavigationSplitViewStyle</div>
+<div class="difference"><span class="status added">Added</span> ProminentDetailNavigationSplitViewStyle.init()</div>
+<div class="difference"><span class="status added">Added</span> ProminentDetailNavigationSplitViewStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> ProminentDetailNavigationSplitViewStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ProposedViewSize</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ProposedViewSize</div>
+<div class="difference"><span class="status added">Added</span> ProposedViewSize.infinity /* static */</div>
+<div class="difference"><span class="status added">Added</span> ProposedViewSize.unspecified /* static */</div>
+<div class="difference"><span class="status added">Added</span> ProposedViewSize.zero /* static */</div>
+<div class="difference"><span class="status added">Added</span> ProposedViewSize.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> ProposedViewSize.init(width:height:)</div>
+<div class="difference"><span class="status added">Added</span> ProposedViewSize.height</div>
+<div class="difference"><span class="status added">Added</span> ProposedViewSize.width</div>
+<div class="difference"><span class="status added">Added</span> ProposedViewSize.replacingUnspecifiedDimensions(by:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PullDownMenuBarExtraStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PullDownMenuBarExtraStyle</div>
+<div class="difference"><span class="status added">Added</span> PullDownMenuBarExtraStyle.init()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RadialGradient</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> RadialGradient.init(colors:center:startRadius:endRadius:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_alwaysEmitIntoClient
+public init(colors: [SwiftUI.Color], center: SwiftUI.UnitPoint, startRadius: CoreGraphics.CGFloat, endRadius: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">@_alwaysEmitIntoClient
+public init(colors: [SwiftUI.Color], center: SwiftUI.UnitPoint, startRadius: CoreFoundation.CGFloat, endRadius: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RadialGradient.init(gradient:center:startRadius:endRadius:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(gradient: SwiftUI.Gradient, center: SwiftUI.UnitPoint, startRadius: CoreGraphics.CGFloat, endRadius: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">public init(gradient: SwiftUI.Gradient, center: SwiftUI.UnitPoint, startRadius: CoreFoundation.CGFloat, endRadius: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RadialGradient.init(stops:center:startRadius:endRadius:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_alwaysEmitIntoClient
+public init(stops: [SwiftUI.Gradient.Stop], center: SwiftUI.UnitPoint, startRadius: CoreGraphics.CGFloat, endRadius: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">@_alwaysEmitIntoClient
+public init(stops: [SwiftUI.Gradient.Stop], center: SwiftUI.UnitPoint, startRadius: CoreFoundation.CGFloat, endRadius: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Rectangle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Rectangle.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RenameAction</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RenameAction</div>
+<div class="difference"><span class="status added">Added</span> RenameAction.callAsFunction()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RenameButton</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RenameButton</div>
+<div class="difference"><span class="status added">Added</span> RenameButton.init()</div>
+<div class="difference"><span class="status added">Added</span> RenameButton.body</div>
+<div class="difference"><span class="status added">Added</span> RenameButton.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RotatedShape</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> RotatedShape.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RoundedRectangle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> RoundedRectangle.init(cornerRadius:style:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(cornerRadius: CoreGraphics.CGFloat, style: SwiftUI.RoundedCornerStyle = .circular)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(cornerRadius: CoreFoundation.CGFloat, style: SwiftUI.RoundedCornerStyle = .circular)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RoundedRectangle.init(cornerSize:style:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(cornerSize: CoreGraphics.CGSize, style: SwiftUI.RoundedCornerStyle = .circular)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(cornerSize: CoreFoundation.CGSize, style: SwiftUI.RoundedCornerStyle = .circular)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RoundedRectangle.cornerSize</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var cornerSize: CoreGraphics.CGSize</td></tr>
+<tr><th>To</th><td class="declaration">public var cornerSize: CoreFoundation.CGSize</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RoundedRectangle.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> RoundedRectangle.AnimatableData</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias AnimatableData = CoreGraphics.CGSize.AnimatableData</td></tr>
+<tr><th>To</th><td class="declaration">public typealias AnimatableData = CoreFoundation.CGSize.AnimatableData</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ScaledShape</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ScaledShape.init(shape:scale:anchor:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(shape: Content, scale: CoreGraphics.CGSize, anchor: SwiftUI.UnitPoint = .center)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(shape: Content, scale: CoreFoundation.CGSize, anchor: SwiftUI.UnitPoint = .center)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ScaledShape.scale</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var scale: CoreGraphics.CGSize</td></tr>
+<tr><th>To</th><td class="declaration">public var scale: CoreFoundation.CGSize</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ScaledShape.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ScaledShape.AnimatableData</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias AnimatableData = SwiftUI.AnimatablePair&lt;Content.AnimatableData, SwiftUI.AnimatablePair&lt;CoreGraphics.CGSize.AnimatableData, SwiftUI.UnitPoint.AnimatableData&gt;&gt;</td></tr>
+<tr><th>To</th><td class="declaration">public typealias AnimatableData = SwiftUI.AnimatablePair&lt;Content.AnimatableData, SwiftUI.AnimatablePair&lt;CoreFoundation.CGSize.AnimatableData, SwiftUI.UnitPoint.AnimatableData&gt;&gt;</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ScenePadding</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ScenePadding</div>
+<div class="difference"><span class="status added">Added</span> ScenePadding.minimum /* static */</div>
+<div class="difference"><span class="status added">Added</span> ScenePadding.navigationBar /* static */</div>
+<div class="difference"><span class="status added">Added</span> ScenePadding.==(a:b:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ScrollDismissesKeyboardMode</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ScrollDismissesKeyboardMode</div>
+<div class="difference"><span class="status added">Added</span> ScrollDismissesKeyboardMode.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> ScrollDismissesKeyboardMode.immediately /* static */</div>
+<div class="difference"><span class="status added">Added</span> ScrollDismissesKeyboardMode.interactively /* static */</div>
+<div class="difference"><span class="status added">Added</span> ScrollDismissesKeyboardMode.never /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ScrollIndicatorVisibility</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ScrollIndicatorVisibility</div>
+<div class="difference"><span class="status added">Added</span> ScrollIndicatorVisibility.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> ScrollIndicatorVisibility.hidden /* static */</div>
+<div class="difference"><span class="status added">Added</span> ScrollIndicatorVisibility.never /* static */</div>
+<div class="difference"><span class="status added">Added</span> ScrollIndicatorVisibility.visible /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SearchSuggestionsPlacement</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.content /* static */</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.menu /* static */</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.Set</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.Set.content /* static */</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.Set.menu /* static */</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.Set.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.Set.rawValue</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.Set.ArrayLiteralElement</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.Set.Element</div>
+<div class="difference"><span class="status added">Added</span> SearchSuggestionsPlacement.Set.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ShadowStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ShadowStyle</div>
+<div class="difference"><span class="status added">Added</span> ShadowStyle.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> ShadowStyle.drop(color:radius:x:y:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> ShadowStyle.inner(color:radius:x:y:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ShareLink</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ShareLink</div>
+<div class="difference"><span class="status added">Added</span> ShareLink.init(items:subject:message:preview:label:)</div>
+<div class="difference"><span class="status added">Added</span> ShareLink.body</div>
+<div class="difference"><span class="status added">Added</span> ShareLink.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SharePreview</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SharePreview</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SnapshotData</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SnapshotData</div>
+<div class="difference"><span class="status added">Added</span> SnapshotData.identifier</div>
+<div class="difference"><span class="status added">Added</span> SnapshotData.reason</div>
+<div class="difference"><span class="status added">Added</span> SnapshotData.SnapshotReason</div>
+<div class="difference"><span class="status added">Added</span> SnapshotData.SnapshotReason.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> SnapshotData.SnapshotReason.hashValue</div>
+<div class="difference"><span class="status added">Added</span> SnapshotData.SnapshotReason.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SnapshotResponse</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SnapshotResponse</div>
+<div class="difference"><span class="status added">Added</span> SnapshotResponse.init(restoredDefaultState:estimatedSnapshotExpiration:identifier:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Spacer</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Spacer.init(minLength:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(minLength: CoreGraphics.CGFloat? = nil)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(minLength: CoreFoundation.CGFloat? = nil)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> Spacer.minLength</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var minLength: CoreGraphics.CGFloat?</td></tr>
+<tr><th>To</th><td class="declaration">public var minLength: CoreFoundation.CGFloat?</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SpatialTapGesture</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SpatialTapGesture</div>
+<div class="difference"><span class="status added">Added</span> SpatialTapGesture.init(count:coordinateSpace:)</div>
+<div class="difference"><span class="status added">Added</span> SpatialTapGesture.coordinateSpace</div>
+<div class="difference"><span class="status added">Added</span> SpatialTapGesture.count</div>
+<div class="difference"><span class="status added">Added</span> SpatialTapGesture.Body</div>
+<div class="difference"><span class="status added">Added</span> SpatialTapGesture.Value</div>
+<div class="difference"><span class="status added">Added</span> SpatialTapGesture.Value.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> SpatialTapGesture.Value.location</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StackNavigationViewStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> StackNavigationViewStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 13.0, tvOS 13.0, watchOS 7.0, *)
+@available(macOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 13.0, deprecated: 100000.0, message: &quot;replace stack-styled NavigationView with NavigationStack&quot;)
+@available(macOS, unavailable)
+@available(tvOS, introduced: 13.0, deprecated: 100000.0, message: &quot;replace stack-styled NavigationView with NavigationStack&quot;)
+@available(watchOS, introduced: 7.0, deprecated: 100000.0, message: &quot;replace stack-styled NavigationView with NavigationStack&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Stepper</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Stepper</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 13.0, macOS 10.15, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 13.0, macOS 10.15, watchOS 9.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StepperFieldDatePickerStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> StepperFieldDatePickerStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> StepperFieldDatePickerStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StrokeStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> StrokeStyle.init(lineWidth:lineCap:lineJoin:miterLimit:dash:dashPhase:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(lineWidth: CoreGraphics.CGFloat = 1, lineCap: CoreGraphics.CGLineCap = .butt, lineJoin: CoreGraphics.CGLineJoin = .miter, miterLimit: CoreGraphics.CGFloat = 10, dash: [CoreGraphics.CGFloat] = [CGFloat](), dashPhase: CoreGraphics.CGFloat = 0)</td></tr>
+<tr><th>To</th><td class="declaration">public init(lineWidth: CoreFoundation.CGFloat = 1, lineCap: CoreGraphics.CGLineCap = .butt, lineJoin: CoreGraphics.CGLineJoin = .miter, miterLimit: CoreFoundation.CGFloat = 10, dash: [CoreFoundation.CGFloat] = [CGFloat](), dashPhase: CoreFoundation.CGFloat = 0)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> StrokeStyle.dash</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var dash: [CoreGraphics.CGFloat]</td></tr>
+<tr><th>To</th><td class="declaration">public var dash: [CoreFoundation.CGFloat]</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> StrokeStyle.dashPhase</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var dashPhase: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var dashPhase: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> StrokeStyle.lineWidth</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var lineWidth: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var lineWidth: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> StrokeStyle.miterLimit</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var miterLimit: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var miterLimit: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TabView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TabView.init(selection:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, deprecated: 100000.0, message: &quot;Use SelectableTabsBuilder based TabView initializers instead&quot;)
+@available(macOS, deprecated: 100000.0, message: &quot;Use SelectableTabsBuilder based TabView initializers instead&quot;)
+@available(tvOS, deprecated: 100000.0, message: &quot;Use SelectableTabsBuilder based TabView initializers instead&quot;)
+@available(watchOS, deprecated: 100000.0, message: &quot;Use SelectableTabsBuilder based TabView initializers instead&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Table</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Table</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableColumn</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableColumn</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableColumnBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableColumnBuilder</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableColumnContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableColumnContent</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableForEachContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableForEachContent</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableHeaderRowContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TableHeaderRowContent</div>
+<div class="difference"><span class="status added">Added</span> TableHeaderRowContent.TableRowBody</div>
+<div class="difference"><span class="status added">Added</span> TableHeaderRowContent.TableRowValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableRow</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableRow</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableRowBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableRowBuilder</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> TableRowBuilder.buildBlock(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_alwaysEmitIntoClient
+public static func buildBlock&lt;Content&gt;(_: Content) -&gt; Content where Content: SwiftUI.TableRowContent, Value == Content.TableRowValue</td></tr>
+<tr><th>To</th><td class="declaration">@_alwaysEmitIntoClient
+public static func buildBlock&lt;C&gt;(_: C) -&gt; C where C: SwiftUI.TableRowContent, Value == C.TableRowValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableRowContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableRowContent</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableStyleConfiguration</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TapGesture</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TapGesture</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 13.0, macOS 10.15, watchOS 6.0, *)
+@available(tvOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 13.0, macOS 10.15, tvOS 16.0, watchOS 6.0, *)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> TapGesture.Value</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias Value = ()</td></tr>
+<tr><th>To</th><td class="declaration">public typealias Value = Swift.Void</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TextFieldLink</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TextFieldLink</div>
+<div class="difference"><span class="status added">Added</span> TextFieldLink.body</div>
+<div class="difference"><span class="status added">Added</span> TextFieldLink.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Toggle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> Toggle.init(isOn:label:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToggleStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ToggleStyleConfiguration.isMixed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToolbarItemPlacement</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ToolbarItemPlacement.secondaryAction /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToolbarPlacement</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ToolbarPlacement</div>
+<div class="difference"><span class="status added">Added</span> ToolbarPlacement.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarPlacement.bottomBar /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarPlacement.navigationBar /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarPlacement.tabBar /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarPlacement.windowToolbar /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarPlacement.init(id:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToolbarRole</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ToolbarRole</div>
+<div class="difference"><span class="status added">Added</span> ToolbarRole.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarRole.browser /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarRole.editor /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarRole.navigationStack /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TransformedShape</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TransformedShape.init(shape:transform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(shape: Content, transform: CoreGraphics.CGAffineTransform)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(shape: Content, transform: CoreFoundation.CGAffineTransform)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> TransformedShape.transform</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var transform: CoreGraphics.CGAffineTransform</td></tr>
+<tr><th>To</th><td class="declaration">public var transform: CoreFoundation.CGAffineTransform</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> TransformedShape.path(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func path(in: CoreGraphics.CGRect) -&gt; SwiftUI.Path</td></tr>
+<tr><th>To</th><td class="declaration">public func path(in: CoreFoundation.CGRect) -&gt; SwiftUI.Path</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TupleTableColumnContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TupleTableColumnContent</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TupleTableRowContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TupleTableRowContent</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS, unavailable)
+@available(macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 16.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIHostingConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIHostingConfiguration</div>
+<div class="difference"><span class="status added">Added</span> UIHostingConfiguration.background(_:)</div>
+<div class="difference"><span class="status added">Added</span> UIHostingConfiguration.background(background:)</div>
+<div class="difference"><span class="status added">Added</span> UIHostingConfiguration.makeContentView()</div>
+<div class="difference"><span class="status added">Added</span> UIHostingConfiguration.margins(_:_:)</div>
+<div class="difference"><span class="status added">Added</span> UIHostingConfiguration.minSize()</div>
+<div class="difference"><span class="status added">Added</span> UIHostingConfiguration.minSize(width:height:)</div>
+<div class="difference"><span class="status added">Added</span> UIHostingConfiguration.updated(for:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIHostingController</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIHostingController.childForHomeIndicatorAutoHidden</div>
+<div class="difference"><span class="status added">Added</span> UIHostingController.childForScreenEdgesDeferringSystemGestures</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIHostingController.childForStatusBarHidden</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var childForStatusBarHidden: UIKit.UIViewController? { @_Concurrency.MainActor(unsafe)
+@objc
+get }</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var childForStatusBarHidden: UIKit.UIViewController? { @objc
+get }</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIHostingController.childForStatusBarStyle</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIHostingController.keyCommands</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var keyCommands: [UIKit.UIKeyCommand]? { @_Concurrency.MainActor(unsafe)
+@objc
+get }</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var keyCommands: [UIKit.UIKeyCommand]? { @objc
+get }</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIHostingController.preferredScreenEdgesDeferringSystemGestures</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIHostingController.preferredStatusBarStyle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var preferredStatusBarStyle: UIKit.UIStatusBarStyle { @_Concurrency.MainActor(unsafe)
+@objc
+get }</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var preferredStatusBarStyle: UIKit.UIStatusBarStyle { @objc
+get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIHostingController.preferredStatusBarUpdateAnimation</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var preferredStatusBarUpdateAnimation: UIKit.UIStatusBarAnimation { @_Concurrency.MainActor(unsafe)
+@objc
+get }</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var preferredStatusBarUpdateAnimation: UIKit.UIStatusBarAnimation { @objc
+get }</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIHostingController.prefersHomeIndicatorAutoHidden</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIHostingController.prefersStatusBarHidden</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var prefersStatusBarHidden: Swift.Bool { @_Concurrency.MainActor(unsafe)
+@objc
+get }</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override var prefersStatusBarHidden: Swift.Bool { @objc
+get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIHostingController.sizeThatFits(in:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+public func sizeThatFits(in: CoreGraphics.CGSize) -&gt; CoreGraphics.CGSize</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+public func sizeThatFits(in: CoreFoundation.CGSize) -&gt; CoreFoundation.CGSize</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIHostingController.viewWillTransition(to:with:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override func viewWillTransition(to: CoreGraphics.CGSize, with: UIKit.UIViewControllerTransitionCoordinator)</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override func viewWillTransition(to: CoreFoundation.CGSize, with: UIKit.UIViewControllerTransitionCoordinator)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIHostingControllerSizingOptions</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIHostingControllerSizingOptions</div>
+<div class="difference"><span class="status added">Added</span> UIHostingControllerSizingOptions.intrinsicContentSize /* static */</div>
+<div class="difference"><span class="status added">Added</span> UIHostingControllerSizingOptions.preferredContentSize /* static */</div>
+<div class="difference"><span class="status added">Added</span> UIHostingControllerSizingOptions.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> UIHostingControllerSizingOptions.rawValue</div>
+<div class="difference"><span class="status added">Added</span> UIHostingControllerSizingOptions.ArrayLiteralElement</div>
+<div class="difference"><span class="status added">Added</span> UIHostingControllerSizingOptions.Element</div>
+<div class="difference"><span class="status added">Added</span> UIHostingControllerSizingOptions.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UnitPoint</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UnitPoint.init(x:y:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(x: CoreGraphics.CGFloat, y: CoreGraphics.CGFloat)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UnitPoint.x</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var x: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var x: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UnitPoint.y</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var y: CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public var y: CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VStack</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> VStack.init(alignment:spacing:content:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@inlinable
+public init(alignment: SwiftUI.HorizontalAlignment = .center, spacing: CoreGraphics.CGFloat? = nil, @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+<tr><th>To</th><td class="declaration">@inlinable
+public init(alignment: SwiftUI.HorizontalAlignment = .center, spacing: CoreFoundation.CGFloat? = nil, @SwiftUI.ViewBuilder
+content: () -&gt; Content)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ViewDimensions</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ViewDimensions.height</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var height: CoreGraphics.CGFloat { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var height: CoreFoundation.CGFloat { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ViewDimensions.width</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var width: CoreGraphics.CGFloat { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var width: CoreFoundation.CGFloat { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ViewDimensions.subscript(explicit:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public subscript(explicit: SwiftUI.HorizontalAlignment) -&gt; CoreGraphics.CGFloat?
+public subscript(explicit: SwiftUI.VerticalAlignment) -&gt; CoreGraphics.CGFloat?</td></tr>
+<tr><th>To</th><td class="declaration">public subscript(explicit: SwiftUI.HorizontalAlignment) -&gt; CoreFoundation.CGFloat?
+public subscript(explicit: SwiftUI.VerticalAlignment) -&gt; CoreFoundation.CGFloat?</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ViewDimensions.subscript(guide:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public subscript(guide: SwiftUI.HorizontalAlignment) -&gt; CoreGraphics.CGFloat
+public subscript(guide: SwiftUI.VerticalAlignment) -&gt; CoreGraphics.CGFloat</td></tr>
+<tr><th>To</th><td class="declaration">public subscript(guide: SwiftUI.HorizontalAlignment) -&gt; CoreFoundation.CGFloat
+public subscript(guide: SwiftUI.VerticalAlignment) -&gt; CoreFoundation.CGFloat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ViewSpacing</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ViewSpacing</div>
+<div class="difference"><span class="status added">Added</span> ViewSpacing.zero /* static */</div>
+<div class="difference"><span class="status added">Added</span> ViewSpacing.init()</div>
+<div class="difference"><span class="status added">Added</span> ViewSpacing.distance(to:along:)</div>
+<div class="difference"><span class="status added">Added</span> ViewSpacing.formUnion(_:edges:)</div>
+<div class="difference"><span class="status added">Added</span> ViewSpacing.union(_:edges:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ViewThatFits</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ViewThatFits</div>
+<div class="difference"><span class="status added">Added</span> ViewThatFits.init(in:content:)</div>
+<div class="difference"><span class="status added">Added</span> ViewThatFits.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WheelDatePickerStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WheelDatePickerStyle.makeBody(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> WheelDatePickerStyle.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Widget</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Widget</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 14.0, macOS 11.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 14.0, macOS 11.0, watchOS 9.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetBundle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> WidgetBundle</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 14.0, macOS 11.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 14.0, macOS 11.0, watchOS 9.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetBundleBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> WidgetBundleBuilder</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 14.0, macOS 11.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 14.0, macOS 11.0, watchOS 9.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> WidgetConfiguration</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 14.0, macOS 11.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS 14.0, macOS 11.0, watchOS 9.0, *)
+@available(tvOS, unavailable)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Window</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> Window</div>
+<div class="difference"><span class="status added">Added</span> Window.body</div>
+<div class="difference"><span class="status added">Added</span> Window.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WindowMenuBarExtraStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WindowMenuBarExtraStyle</div>
+<div class="difference"><span class="status added">Added</span> WindowMenuBarExtraStyle.init()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WindowResizability</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WindowResizability</div>
+<div class="difference"><span class="status added">Added</span> WindowResizability.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> WindowResizability.contentMinSize /* static */</div>
+<div class="difference"><span class="status added">Added</span> WindowResizability.contentSize /* static */</div>
+</div>
+
+</div>
+</body>
+</html>

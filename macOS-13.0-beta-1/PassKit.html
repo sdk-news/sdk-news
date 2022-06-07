@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>PassKit macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PassKit macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PKAddCarKeyPassConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKAddCarKeyPassConfiguration.manufacturerIdentifier</div>
+<div class="difference"><span class="status added">Added</span> PKAddCarKeyPassConfiguration.provisioningTemplateIdentifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKAddShareablePassConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKShareablePassMetadataPreview</div>
+<div class="difference"><span class="status added">Added</span> -[PKShareablePassMetadataPreview initWithPassThumbnail:localizedDescription:]</div>
+<div class="difference"><span class="status added">Added</span> -[PKShareablePassMetadataPreview initWithTemplateIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[PKShareablePassMetadataPreview previewWithPassThumbnail:localizedDescription:]</div>
+<div class="difference"><span class="status added">Added</span> +[PKShareablePassMetadataPreview previewWithTemplateIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> PKShareablePassMetadataPreview.passThumbnailImage</div>
+<div class="difference"><span class="status added">Added</span> PKShareablePassMetadataPreview.localizedDescription</div>
+<div class="difference"><span class="status added">Added</span> PKShareablePassMetadataPreview.ownerDisplayName</div>
+<div class="difference"><span class="status added">Added</span> PKShareablePassMetadataPreview.provisioningTemplateIdentifier</div>
+<div class="difference"><span class="status added">Added</span> -[PKShareablePassMetadata initWithProvisioningCredentialIdentifier:sharingInstanceIdentifier:cardTemplateIdentifier:preview:]</div>
+<div class="difference"><span class="status added">Added</span> -[PKShareablePassMetadata initWithProvisioningCredentialIdentifier:sharingInstanceIdentifier:cardConfigurationIdentifier:preview:]</div>
+<div class="difference"><span class="status added">Added</span> PKShareablePassMetadata.cardTemplateIdentifier</div>
+<div class="difference"><span class="status added">Added</span> PKShareablePassMetadata.serverEnvironmentIdentifier</div>
+<div class="difference"><span class="status added">Added</span> PKShareablePassMetadata.preview</div>
+<div class="difference"><span class="status added">Added</span> +[PKAddShareablePassConfiguration configurationForPassMetadata:primaryAction:completion:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKShareablePassMetadata.templateIdentifier</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, strong, nonnull) NSString *templateIdentifier</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, strong, nonnull) NSString *templateIdentifier</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKShareablePassMetadata.requiresUnifiedAccessCapableDevice</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, assign) BOOL requiresUnifiedAccessCapableDevice</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, assign) BOOL requiresUnifiedAccessCapableDevice</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKShareablePassMetadata.accountHash</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, strong, nonnull) NSString *accountHash</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, strong, nonnull) NSString *accountHash</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKShareablePassMetadata.relyingPartyIdentifier</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, strong, nonnull) NSString *relyingPartyIdentifier</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, strong, nonnull) NSString *relyingPartyIdentifier</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKAutomaticReloadPaymentRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKAutomaticReloadPaymentRequest</div>
+<div class="difference"><span class="status added">Added</span> PKAutomaticReloadPaymentRequest.paymentDescription</div>
+<div class="difference"><span class="status added">Added</span> PKAutomaticReloadPaymentRequest.automaticReloadBilling</div>
+<div class="difference"><span class="status added">Added</span> PKAutomaticReloadPaymentRequest.billingAgreement</div>
+<div class="difference"><span class="status added">Added</span> PKAutomaticReloadPaymentRequest.managementURL</div>
+<div class="difference"><span class="status added">Added</span> PKAutomaticReloadPaymentRequest.tokenNotificationURL</div>
+<div class="difference"><span class="status added">Added</span> -[PKAutomaticReloadPaymentRequest initWithPaymentDescription:automaticReloadBilling:managementURL:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKAutomaticReloadPaymentSummaryItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKAutomaticReloadPaymentSummaryItem</div>
+<div class="difference"><span class="status added">Added</span> PKAutomaticReloadPaymentSummaryItem.thresholdAmount</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKAddSecureElementPassOSVersionNotSupportedError</div>
+<div class="difference"><span class="status added">Added</span> PKShareSecureElementPassErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> PKShareSecureElementPassErrorCode</div>
+<div class="difference"><span class="status added">Added</span> PKShareSecureElementPassUnknownError</div>
+<div class="difference"><span class="status added">Added</span> PKShareSecureElementPassSetupError</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityError</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKPassLibrary.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[PKPassLibrary encryptedServiceProviderDataForSecureElementPass:completion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKPaymentRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKPaymentRequest.multiTokenContexts</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentRequest.recurringPaymentRequest</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentRequest.automaticReloadPaymentRequest</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKPaymentRequestStatus.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKPaymentAuthorizationResult.orderDetails</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentRequestUpdate.multiTokenContexts</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentRequestUpdate.recurringPaymentRequest</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentRequestUpdate.automaticReloadPaymentRequest</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentOrderDetails</div>
+<div class="difference"><span class="status added">Added</span> -[PKPaymentOrderDetails initWithOrderTypeIdentifier:orderIdentifier:webServiceURL:authenticationToken:]</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentOrderDetails.orderTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentOrderDetails.orderIdentifier</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentOrderDetails.webServiceURL</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentOrderDetails.authenticationToken</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKPaymentTokenContext.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKPaymentTokenContext</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentTokenContext.merchantIdentifier</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentTokenContext.externalIdentifier</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentTokenContext.merchantName</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentTokenContext.merchantDomain</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentTokenContext.amount</div>
+<div class="difference"><span class="status added">Added</span> -[PKPaymentTokenContext initWithMerchantIdentifier:externalIdentifier:merchantName:merchantDomain:amount:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKRecurringPaymentRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKRecurringPaymentRequest</div>
+<div class="difference"><span class="status added">Added</span> PKRecurringPaymentRequest.paymentDescription</div>
+<div class="difference"><span class="status added">Added</span> PKRecurringPaymentRequest.regularBilling</div>
+<div class="difference"><span class="status added">Added</span> PKRecurringPaymentRequest.trialBilling</div>
+<div class="difference"><span class="status added">Added</span> PKRecurringPaymentRequest.billingAgreement</div>
+<div class="difference"><span class="status added">Added</span> PKRecurringPaymentRequest.managementURL</div>
+<div class="difference"><span class="status added">Added</span> PKRecurringPaymentRequest.tokenNotificationURL</div>
+<div class="difference"><span class="status added">Added</span> -[PKRecurringPaymentRequest initWithPaymentDescription:regularBilling:managementURL:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKVehicleConnectionSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionErrorCode</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionErrorCodeUnknown</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionErrorCodeSessionUnableToStart</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionErrorCodeSessionNotActive</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionState</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionStateDisconnected</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionStateConnected</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionStateConnecting</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSessionConnectionStateFailedToConnect</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[PKVehicleConnectionDelegate sessionDidChangeConnectionState:]</div>
+<div class="difference"><span class="status added">Added</span> -[PKVehicleConnectionDelegate sessionDidReceiveData:]</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSession</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSession.delegate</div>
+<div class="difference"><span class="status added">Added</span> PKVehicleConnectionSession.connectionStatus</div>
+<div class="difference"><span class="status added">Added</span> +[PKVehicleConnectionSession sessionForPass:delegate:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[PKVehicleConnectionSession sendData:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[PKVehicleConnectionSession invalidate]</div>
+</div>
+
+</div>
+</body>
+</html>

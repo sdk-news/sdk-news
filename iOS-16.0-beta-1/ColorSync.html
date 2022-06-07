@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>ColorSync iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ColorSync iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">ColorSyncBase.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def CSEXTERN</div>
+<div class="difference"><span class="status added">Added</span> #def CSEXPORT</div>
+<div class="difference"><span class="status added">Added</span> #def CSLOCAL</div>
+<div class="difference"><span class="status added">Added</span> #def CSEXTERN_DESKTOP</div>
+<div class="difference"><span class="status added">Added</span> #def GET_CS_AVAIL_MACRO</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_STARTING</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_STARTING_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_STARTING1</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_STARTING2</div>
+<div class="difference"><span class="status added">Added</span> #def GET_CS_AVAIL_BUT_DEPR_MACRO</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_BUT_DEPRECATED</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_BUT_DEPRECATED1</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_BUT_DEPRECATED2</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_BUT_DEPRECATED3</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_BUT_DEPRECATED4</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_BUT_DEPRECATED5</div>
+<div class="difference"><span class="status added">Added</span> #def CS_UNAVAILABLE_DESKTOP</div>
+<div class="difference"><span class="status added">Added</span> #def CS_UNAVAILABLE_EMBEDDED</div>
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_DESKTOP</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ColorSyncCMM.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ColorSyncCMMRef</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncCMMGetTypeID()</div>
+<div class="difference"><span class="status added">Added</span> CMMInitializeLinkProfileProc</div>
+<div class="difference"><span class="status added">Added</span> CMMInitializeTransformProc</div>
+<div class="difference"><span class="status added">Added</span> CMMApplyTransformProc</div>
+<div class="difference"><span class="status added">Added</span> CMMCreateTransformPropertyProc</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ColorSyncProfile.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileRef</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncMutableProfileRef</div>
+<div class="difference"><span class="status added">Added</span> #def icVersion4Number</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncGenericGrayProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncGenericGrayGamma22Profile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncGenericRGBProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncGenericCMYKProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncDisplayP3Profile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSRGBProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAdobeRGB1998Profile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncGenericLabProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncGenericXYZProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncACESCGLinearProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncDCIP3Profile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncITUR709Profile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncITUR2020Profile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncROMMRGBProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileHeader</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileClass</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileColorSpace</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfilePCS</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileURL</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileDescription</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileMD5Digest</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileIsValid</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigAToB0Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigAToB1Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigAToB2Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigBToA0Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigBToA1Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigBToA2Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigCmykData</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigGrayData</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigLabData</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigRgbData</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigXYZData</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigAbstractClass</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigBlueTRCTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigBlueColorantTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigMediaBlackPointTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigCopyrightTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigProfileDescriptionTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigDeviceModelDescTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigDeviceMfgDescTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigGreenTRCTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigGreenColorantTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigGamutTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigGrayTRCTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigLinkClass</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigDisplayClass</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigNamedColor2Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigNamedColorClass</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigPreview0Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigPreview1Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigPreview2Tag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigOutputClass</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigProfileSequenceDescTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigRedTRCTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigRedColorantTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigInputClass</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigColorSpaceClass</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigTechnologyTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigViewingConditionsTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigViewingCondDescTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncSigMediaWhitePointTag</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileGetTypeID()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCreate()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCreateWithURL()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCreateWithName()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCreateMutable()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCreateMutableCopy()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCreateLink()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileVerify()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileIsWideGamut()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileIsMatrixBased()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileIsPQBased()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileIsHLGBased()</div>
+<div class="difference"><span class="status added">Added</span> #def COLORSYNC_MD5_LENGTH</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncMD5</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileGetMD5()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCopyData()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileGetURL()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCopyHeader()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileSetHeader()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCopyDescriptionString()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCopyTagSignatures()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileContainsTag()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileCopyTag()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileSetTag()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileRemoveTag()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncProfileIterateCallback</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileCacheSeed</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncIterateInstalledProfiles()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ColorSyncTransform.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ColorSyncTransformRef</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncTransformGetTypeID()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncTransformCreate()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncTransformCopyProperty()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncTransformSetProperty()</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncTransformGetProfileSequence()</div>
+<div class="difference"><span class="status added">Added</span> kColorSync1BitGamut</div>
+<div class="difference"><span class="status added">Added</span> kColorSync8BitInteger</div>
+<div class="difference"><span class="status added">Added</span> kColorSync16BitInteger</div>
+<div class="difference"><span class="status added">Added</span> kColorSync16BitFloat</div>
+<div class="difference"><span class="status added">Added</span> kColorSync32BitInteger</div>
+<div class="difference"><span class="status added">Added</span> kColorSync32BitNamedColorIndex</div>
+<div class="difference"><span class="status added">Added</span> kColorSync32BitFloat</div>
+<div class="difference"><span class="status added">Added</span> kColorSync10BitInteger</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncDataDepth</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAlphaNone</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAlphaPremultipliedLast</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAlphaPremultipliedFirst</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAlphaLast</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAlphaFirst</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAlphaNoneSkipLast</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAlphaNoneSkipFirst</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncAlphaInfo</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncAlphaInfoMask</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncByteOrderMask</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncByteOrderDefault</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncByteOrder16Little</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncByteOrder32Little</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncByteOrder16Big</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncByteOrder32Big</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncDataLayout</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncTransformConvert()</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfile</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncRenderingIntent</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncRenderingIntentPerceptual</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncRenderingIntentRelative</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncRenderingIntentSaturation</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncRenderingIntentAbsolute</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncRenderingIntentUseProfileHeader</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformTag</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformDeviceToPCS</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformPCSToPCS</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformPCSToDevice</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformDeviceToDevice</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformGamutCheck</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncBlackPointCompensation</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncExtendedRange</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConvertQuality</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncBestQuality</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncNormalQuality</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncDraftQuality</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConvertUseExtendedRange</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformInfo</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformCreator</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformSrcSpace</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformDstSpace</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformCodeFragmentType</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformCodeFragmentMD5</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformFullConversionData</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformSimplifiedConversionData</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformParametricConversionData</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncTransformProfileSequnce</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionMatrix</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionParamCurve0</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionParamCurve1</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionParamCurve2</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionParamCurve3</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionParamCurve4</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversion1DLut</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionGridPoints</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionChannelID</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversion3DLut</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionNDLut</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionInpChan</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionOutChan</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncConversionBPC</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncFixedPointRange</div>
+<div class="difference"><span class="status added">Added</span> ColorSyncCreateCodeFragment()</div>
+</div>
+
+</div>
+</body>
+</html>

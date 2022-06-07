@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Quartz macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Quartz macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/ImageKit.framework/Headers/IKImageEditPanel.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[IKImageEditPanelDataSource image]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">- (CGImageRef)image</td></tr>
+<tr><th>To</th><td class="declaration">@property (atomic, readonly) CGImageRef image</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[IKImageEditPanelDataSource imageProperties]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">- (NSDictionary *)imageProperties</td></tr>
+<tr><th>To</th><td class="declaration">@property (atomic, readonly, copy) NSDictionary *imageProperties</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[IKImageEditPanelDataSource hasAdjustMode]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">- (BOOL)hasAdjustMode</td></tr>
+<tr><th>To</th><td class="declaration">@property (atomic, readonly) BOOL hasAdjustMode</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[IKImageEditPanelDataSource hasEffectsMode]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">- (BOOL)hasEffectsMode</td></tr>
+<tr><th>To</th><td class="declaration">@property (atomic, readonly) BOOL hasEffectsMode</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[IKImageEditPanelDataSource hasDetailsMode]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">- (BOOL)hasDetailsMode</td></tr>
+<tr><th>To</th><td class="declaration">@property (atomic, readonly) BOOL hasDetailsMode</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

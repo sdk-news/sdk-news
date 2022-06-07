@@ -1,0 +1,763 @@
+<html>
+<head>
+<title>AVFoundation iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AVFoundation iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVAsset.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVURLAssetHTTPUserAgentKey</div>
+<div class="difference"><span class="status added">Added</span> AVURLAssetPrimarySessionIdentifierKey</div>
+<div class="difference"><span class="status added">Added</span> AVURLAsset.httpSessionIdentifier</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[AVAsset trackWithTrackID:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAsset tracksWithMediaType:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAsset tracksWithMediaCharacteristic:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAsset metadataForFormat:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAsset chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAsset chapterMetadataGroupsBestMatchingPreferredLanguages:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAsset mediaSelectionGroupForMediaCharacteristic:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVURLAsset compatibleTrackForCompositionTrack:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVFragmentedAsset trackWithTrackID:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVFragmentedAsset tracksWithMediaType:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVFragmentedAsset tracksWithMediaCharacteristic:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAssetExportSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVAssetTrackGroupOutputHandling</div>
+<div class="difference"><span class="status added">Added</span> AVAssetTrackGroupOutputHandlingNone</div>
+<div class="difference"><span class="status added">Added</span> AVAssetTrackGroupOutputHandlingPreserveAlternateTracks</div>
+<div class="difference"><span class="status added">Added</span> AVAssetTrackGroupOutputHandlingDefaultPolicy</div>
+<div class="difference"><span class="status added">Added</span> AVAssetExportSession.audioTrackGroupHandling</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> +[AVAssetExportSession exportPresetsCompatibleWithAsset:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAssetImageGenerator.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[AVAssetImageGenerator generateCGImageAsynchronouslyForTime:completionHandler:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[AVAssetImageGenerator copyCGImageAtTime:actualTime:error:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAssetPlaybackAssistant.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVAssetPlaybackConfigurationOption</div>
+<div class="difference"><span class="status added">Added</span> AVAssetPlaybackConfigurationOptionStereoVideo</div>
+<div class="difference"><span class="status added">Added</span> AVAssetPlaybackConfigurationOptionStereoMultiviewVideo</div>
+<div class="difference"><span class="status added">Added</span> AVAssetPlaybackAssistant</div>
+<div class="difference"><span class="status added">Added</span> +[AVAssetPlaybackAssistant assetPlaybackAssistantWithAsset:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVAssetPlaybackAssistant loadPlaybackConfigurationOptionsWithCompletionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAssetReaderOutput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AVAssetReaderOutputCaptionAdaptor (AVAssetReaderCaptionValidation)</div>
+<div class="difference"><span class="status removed">Removed</span> AVAssetReaderOutputCaptionAdaptor.validationDelegate</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAssetResourceLoader.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVAssetResourceLoadingContentInformationRequest.entireLengthAvailableOnDemand</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAssetTrack.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVAssetTrack.canProvideSampleCursors</div>
+<div class="difference"><span class="status added">Added</span> -[AVAssetTrack makeSampleCursorWithPresentationTimeStamp:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVAssetTrack makeSampleCursorAtFirstSampleInDecodeOrder]</div>
+<div class="difference"><span class="status added">Added</span> -[AVAssetTrack makeSampleCursorAtLastSampleInDecodeOrder]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[AVAssetTrack segmentForTrackTime:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAssetTrack samplePresentationTimeForTrackTime:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAssetTrack metadataForFormat:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAssetTrack associatedTracksOfType:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVBase.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def AVF_DEPRECATED_FOR_SWIFT_ONLY</div>
+<div class="difference"><span class="status added">Added</span> #def AVF_DEPLOYING_TO_2022_RELEASES_AND_LATER</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCaptureDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVCaptureDevice.continuityCamera</div>
+<div class="difference"><span class="status added">Added</span> AVCaptureDevice.companionDeskViewCamera</div>
+<div class="difference"><span class="status added">Added</span> AVCaptureDevice.studioLightEnabled</div>
+<div class="difference"><span class="status added">Added</span> AVCaptureDevice.studioLightActive</div>
+<div class="difference"><span class="status added">Added</span> AVCaptureDeviceFormat.studioLightSupported</div>
+<div class="difference"><span class="status added">Added</span> AVCaptureDeviceFormat.videoFrameRateRangeForStudioLight</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVCaptureDeviceSubjectAreaDidChangeNotification</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">__WATCHOS_PROHIBITED NSString *const AVCaptureDeviceSubjectAreaDidChangeNotification</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) NSString *const AVCaptureDeviceSubjectAreaDidChangeNotification</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVCaptureDeviceTypeBuiltInTelephotoCamera</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">__WATCHOS_PROHIBITED const AVCaptureDeviceType AVCaptureDeviceTypeBuiltInTelephotoCamera</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const AVCaptureDeviceType AVCaptureDeviceTypeBuiltInTelephotoCamera</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVCaptureDeviceTypeBuiltInDualCamera</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">__WATCHOS_PROHIBITED const AVCaptureDeviceType AVCaptureDeviceTypeBuiltInDualCamera</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const AVCaptureDeviceType AVCaptureDeviceTypeBuiltInDualCamera</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVCaptureDeviceTypeBuiltInTrueDepthCamera</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">__WATCHOS_PROHIBITED const AVCaptureDeviceType AVCaptureDeviceTypeBuiltInTrueDepthCamera</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const AVCaptureDeviceType AVCaptureDeviceTypeBuiltInTrueDepthCamera</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCapturePhotoOutput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVCapturePhotoOutput.supportedFlashModes</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSArray&lt;NSNumber *&gt; *supportedFlashModes</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSArray&lt;NSNumber *&gt; *supportedFlashModes</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCaptureSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVCaptureSession.multitaskingCameraAccessSupported</div>
+<div class="difference"><span class="status added">Added</span> AVCaptureSession.multitaskingCameraAccessEnabled</div>
+<div class="difference"><span class="status added">Added</span> AVCaptureSession.hardwareCost</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVCaptureSessionInterruptionReasonKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">__WATCHOS_PROHIBITED NSString *const AVCaptureSessionInterruptionReasonKey</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) NSString *const AVCaptureSessionInterruptionReasonKey</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVCaptureSessionInterruptionSystemPressureStateKey</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">__WATCHOS_PROHIBITED NSString *const AVCaptureSessionInterruptionSystemPressureStateKey</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) NSString *const AVCaptureSessionInterruptionSystemPressureStateKey</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCaptureSessionPreset.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVCaptureSessionPresetInputPriority</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">__WATCHOS_PROHIBITED const AVCaptureSessionPreset AVCaptureSessionPresetInputPriority</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const AVCaptureSessionPreset AVCaptureSessionPresetInputPriority</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVComposition.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[AVMutableComposition insertTimeRange:ofAsset:atTime:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVComposition metadataForFormat:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVComposition chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVComposition chapterMetadataGroupsBestMatchingPreferredLanguages:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVComposition mediaSelectionGroupForMediaCharacteristic:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVComposition unusedTrackID]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[AVMutableComposition insertTimeRange:ofAsset:atTime:error:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCompositionTrack.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[AVCompositionTrack hasMediaCharacteristic:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVCompositionTrack samplePresentationTimeForTrackTime:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVCompositionTrack metadataForFormat:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVCompositionTrack associatedTracksOfType:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVErrorInvalidSampleCursor</div>
+<div class="difference"><span class="status added">Added</span> AVErrorFailedToLoadSampleData</div>
+<div class="difference"><span class="status added">Added</span> AVErrorAirPlayReceiverTemporarilyUnavailable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVGeometry.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSValue (NSValueCMVideoDimensionsExtensions)</div>
+<div class="difference"><span class="status added">Added</span> +[NSValue valueWithCMVideoDimensions:]</div>
+<div class="difference"><span class="status added">Added</span> NSValue.CMVideoDimensionsValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVMovie.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovie metadataForFormat:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovie chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovie chapterMetadataGroupsBestMatchingPreferredLanguages:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovie mediaSelectionGroupForMediaCharacteristic:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovie unusedTrackID]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[AVMovie trackWithTrackID:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVMovie tracksWithMediaType:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVMovie tracksWithMediaCharacteristic:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVFragmentedMovie trackWithTrackID:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVFragmentedMovie tracksWithMediaType:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVFragmentedMovie tracksWithMediaCharacteristic:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>loadTracksWithMediaCharacteristic:completionHandler:</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVMovieTrack.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovieTrack hasMediaCharacteristic:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovieTrack segmentForTrackTime:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovieTrack samplePresentationTimeForTrackTime:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovieTrack metadataForFormat:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMutableMovieTrack associatedTracksOfType:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlayer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlayer.defaultRate</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlayerInterstitialEventController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlayerInterstitialEventCue</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerInterstitialEventNoCue</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerInterstitialEventJoinCue</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerInterstitialEventLeaveCue</div>
+<div class="difference"><span class="status added">Added</span> +[AVPlayerInterstitialEvent interstitialEventWithPrimaryItem:time:]</div>
+<div class="difference"><span class="status added">Added</span> +[AVPlayerInterstitialEvent interstitialEventWithPrimaryItem:date:]</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerInterstitialEvent.alignsStartWithPrimarySegmentBoundary</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerInterstitialEvent.alignsResumptionWithPrimarySegmentBoundary</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerInterstitialEvent.cue</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerInterstitialEvent.willPlayOnce</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>NSCopying</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[AVPlayerInterstitialEvent interstitialEventWithPrimaryItem:identifier:time:templateItems:restrictions:resumptionOffset:playoutLimit:userDefinedAttributes:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[AVPlayerInterstitialEvent interstitialEventWithPrimaryItem:identifier:date:templateItems:restrictions:resumptionOffset:playoutLimit:userDefinedAttributes:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.primaryItem</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, weak, nullable) AVPlayerItem *primaryItem</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, weak, nullable) AVPlayerItem *primaryItem</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.identifier</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSString *identifier</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, copy, nonnull) NSString *identifier</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.time</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly) CMTime time</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite) CMTime time</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.date</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nullable) NSDate *date</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, copy, nullable) NSDate *date</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.templateItems</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSArray&lt;AVPlayerItem *&gt; *templateItems</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, copy, nonnull) NSArray&lt;AVPlayerItem *&gt; *templateItems</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.restrictions</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly) AVPlayerInterstitialEventRestrictions restrictions</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite) AVPlayerInterstitialEventRestrictions restrictions</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.resumptionOffset</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly) CMTime resumptionOffset</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite) CMTime resumptionOffset</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.playoutLimit</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly) CMTime playoutLimit</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite) CMTime playoutLimit</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEvent.userDefinedAttributes</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSDictionary *userDefinedAttributes</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, copy, nonnull) NSDictionary *userDefinedAttributes</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerInterstitialEventMonitor.events</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readonly, nonnull) NSArray&lt;AVPlayerInterstitialEvent *&gt; *events</td></tr>
+<tr><th>To</th><td class="declaration">@property (readonly, copy, nonnull) NSArray&lt;AVPlayerInterstitialEvent *&gt; *events</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlayerItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVPlayerItem.videoComposition</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, copy, nullable) AVVideoComposition *videoComposition</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nullable) AVVideoComposition *videoComposition</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVPlayerItem.customVideoCompositor</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nullable) id&lt;AVVideoCompositing&gt; customVideoCompositor</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) id&lt;AVVideoCompositing&gt; customVideoCompositor</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVRouteDetector.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVRouteDetector.detectsCustomRoutes</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVSampleBufferGenerator.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVSampleBufferGenerator</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleBufferGenerator initWithAsset:timebase:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleBufferGenerator createSampleBufferForRequest:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleBufferGenerator makeBatch]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleBufferGenerator createSampleBufferForRequest:addingToBatch:error:]</div>
+<div class="difference"><span class="status added">Added</span> +[AVSampleBufferGenerator notifyOfDataReadyForSampleBuffer:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferRequest</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleBufferRequest initWithStartCursor:]</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferRequest.startCursor</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferRequest.direction</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferRequest.limitCursor</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferRequest.preferredMinSampleCount</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferRequest.maxSampleCount</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferRequest.mode</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferRequest.overrideTime</div>
+<div class="difference"><span class="status added">Added</span> AVSampleBufferGeneratorBatch</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleBufferGeneratorBatch makeDataReadyWithCompletionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleBufferGeneratorBatch cancel]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVSampleCursor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AVSampleCursor (AVSampleCursorTemporalPosition)</div>
+<div class="difference"><span class="status removed">Removed</span> AVSampleCursor (AVSampleCursorCurrentSampleInfo)</div>
+<div class="difference"><span class="status removed">Removed</span> AVSampleCursor (AVSampleCursorSampleStorageInfo)</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVSampleCursor</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleCursor stepInDecodeOrderByCount:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleCursor stepInPresentationOrderByCount:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleCursor stepByDecodeTime:wasPinned:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSampleCursor stepByPresentationTime:wasPinned:]</div>
+<div class="difference"><span class="status added">Added</span> AVSampleCursor.currentSampleDependencyAttachments</div>
+<div class="difference"><span class="status added">Added</span> AVSampleCursor.currentSampleAudioDependencyInfo</div>
+<div class="difference"><span class="status added">Added</span> AVSampleCursor.samplesRequiredForDecoderRefresh</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVSynchronizedLayer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVSynchronizedLayer.playerItem</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, retain, nullable) AVPlayerItem *playerItem</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, retain, nullable) AVPlayerItem *playerItem</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVVideoComposition.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[AVVideoComposition videoCompositionWithPropertiesOfAsset:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> +[AVVideoComposition videoCompositionWithAsset:applyingCIFiltersWithHandler:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> +[AVMutableVideoComposition videoCompositionWithPropertiesOfAsset:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> +[AVMutableVideoComposition videoCompositionWithPropertiesOfAsset:prototypeInstruction:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> +[AVMutableVideoComposition videoCompositionWithAsset:applyingCIFiltersWithHandler:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVVideoComposition determineValidityForAsset:timeRange:validationDelegate:completionHandler:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> +[AVVideoComposition videoCompositionWithPropertiesOfAsset:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[AVVideoComposition videoCompositionWithAsset:applyingCIFiltersWithHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[AVMutableVideoComposition videoCompositionWithPropertiesOfAsset:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[AVMutableVideoComposition videoCompositionWithPropertiesOfAsset:prototypeInstruction:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[AVMutableVideoComposition videoCompositionWithAsset:applyingCIFiltersWithHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAsset unusedTrackID]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVVideoComposition isValidForAsset:timeRange:validationDelegate:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVVideoSettings.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVVideoTransferFunction_Linear</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>PhotosUI iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PhotosUI iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PHEditingExtensionContext.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> PHEditingExtensionContext</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHLivePhotoView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[PHLivePhotoViewDelegate livePhotoView:extraMinimumTouchDurationForTouch:withStyle:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHPicker.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHPickerFilter.depthEffectPhotosFilter</div>
+<div class="difference"><span class="status added">Added</span> PHPickerFilter.burstsFilter</div>
+<div class="difference"><span class="status added">Added</span> PHPickerFilter.panoramasFilter</div>
+<div class="difference"><span class="status added">Added</span> PHPickerFilter.screenshotsFilter</div>
+<div class="difference"><span class="status added">Added</span> PHPickerFilter.screenRecordingsFilter</div>
+<div class="difference"><span class="status added">Added</span> PHPickerFilter.cinematicVideosFilter</div>
+<div class="difference"><span class="status added">Added</span> PHPickerFilter.slomoVideosFilter</div>
+<div class="difference"><span class="status added">Added</span> PHPickerFilter.timelapseVideosFilter</div>
+<div class="difference"><span class="status added">Added</span> +[PHPickerFilter playbackStyleFilter:]</div>
+<div class="difference"><span class="status added">Added</span> +[PHPickerFilter allFilterMatchingSubfilters:]</div>
+<div class="difference"><span class="status added">Added</span> +[PHPickerFilter notFilterOfSubfilter:]</div>
+<div class="difference"><span class="status added">Added</span> -[PHPickerViewController deselectAssetsWithIdentifiers:]</div>
+<div class="difference"><span class="status added">Added</span> -[PHPickerViewController moveAssetWithIdentifier:afterAssetWithIdentifier:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PHPickerFilter.imagesFilter</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PHPickerFilter *imagesFilter</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PHPickerFilter *imagesFilter</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PHPickerConfiguration.filter</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, copy, nullable) PHPickerFilter *filter</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nullable) PHPickerFilter *filter</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PHPickerResult.itemProvider</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSItemProvider *itemProvider</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSItemProvider *itemProvider</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PHPickerResult.assetIdentifier</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nullable) NSString *assetIdentifier</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSString *assetIdentifier</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

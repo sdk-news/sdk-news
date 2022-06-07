@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Photos iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Photos iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PHAsset.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHAsset.hasAdjustments</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHAssetResource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHAssetResource.pixelWidth</div>
+<div class="difference"><span class="status added">Added</span> PHAssetResource.pixelHeight</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHCollection.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> +[PHAssetCollection fetchAssetCollectionsWithALAssetGroupURLs:options:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Will be removed in a future release</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHPhotosErrorNetworkError</div>
+<div class="difference"><span class="status added">Added</span> PHPhotosErrorPersistentChangeTokenExpired</div>
+<div class="difference"><span class="status added">Added</span> PHPhotosErrorPersistentChangeDetailsUnavailable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PhotosTypes.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHAssetCollectionSubtypeSmartAlbumCinematic</div>
+<div class="difference"><span class="status added">Added</span> PHAssetMediaSubtypeVideoCinematic</div>
+<div class="difference"><span class="status added">Added</span> PHObjectType</div>
+<div class="difference"><span class="status added">Added</span> PHObjectTypeAsset</div>
+<div class="difference"><span class="status added">Added</span> PHObjectTypeAssetCollection</div>
+<div class="difference"><span class="status added">Added</span> PHObjectTypeCollectionList</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHPersistentChange.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHPersistentChange</div>
+<div class="difference"><span class="status added">Added</span> PHPersistentChange.changeToken</div>
+<div class="difference"><span class="status added">Added</span> -[PHPersistentChange changeDetailsForObjectType:error:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHPersistentChangeFetchResult.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHPersistentChangeFetchResult</div>
+<div class="difference"><span class="status added">Added</span> -[PHPersistentChangeFetchResult enumerateChangesWithBlock:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHPersistentChangeToken.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHPersistentChangeToken</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHPersistentObjectChangeDetails.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PHPersistentObjectChangeDetails</div>
+<div class="difference"><span class="status added">Added</span> PHPersistentObjectChangeDetails.objectType</div>
+<div class="difference"><span class="status added">Added</span> PHPersistentObjectChangeDetails.insertedLocalIdentifiers</div>
+<div class="difference"><span class="status added">Added</span> PHPersistentObjectChangeDetails.updatedLocalIdentifiers</div>
+<div class="difference"><span class="status added">Added</span> PHPersistentObjectChangeDetails.deletedLocalIdentifiers</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PHPhotoLibrary.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[PHPhotoLibrary fetchPersistentChangesSinceToken:error:]</div>
+<div class="difference"><span class="status added">Added</span> PHPhotoLibrary.currentChangeToken</div>
+</div>
+
+</div>
+</body>
+</html>

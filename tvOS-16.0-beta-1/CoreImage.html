@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>CoreImage tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CoreImage tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CIFilterBuiltins.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CIColorCube.extrapolate</div>
+<div class="difference"><span class="status added">Added</span> CIColorCubesMixedWithMask.extrapolate</div>
+<div class="difference"><span class="status added">Added</span> CIColorCubeWithColorSpace.extrapolate</div>
+<div class="difference"><span class="status added">Added</span> CIConvertLab</div>
+<div class="difference"><span class="status added">Added</span> CIConvertLab.inputImage</div>
+<div class="difference"><span class="status added">Added</span> CIConvertLab.normalize</div>
+<div class="difference"><span class="status added">Added</span> CIAttributedTextImageGenerator.padding</div>
+<div class="difference"><span class="status added">Added</span> CITextImageGenerator.padding</div>
+<div class="difference"><span class="status added">Added</span> CIAreaLogarithmicHistogram</div>
+<div class="difference"><span class="status added">Added</span> CIAreaLogarithmicHistogram.scale</div>
+<div class="difference"><span class="status added">Added</span> CIAreaLogarithmicHistogram.count</div>
+<div class="difference"><span class="status added">Added</span> CIAreaLogarithmicHistogram.minimumStop</div>
+<div class="difference"><span class="status added">Added</span> CIAreaLogarithmicHistogram.maximumStop</div>
+<div class="difference"><span class="status added">Added</span> +[CIFilter convertLabToRGBFilter]</div>
+<div class="difference"><span class="status added">Added</span> +[CIFilter convertRGBtoLabFilter]</div>
+<div class="difference"><span class="status added">Added</span> +[CIFilter areaLogarithmicHistogramFilter]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CIImage.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[CIImage imageByConvertingWorkingSpaceToLab]</div>
+<div class="difference"><span class="status added">Added</span> -[CIImage imageByConvertingLabToWorkingSpace]</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>RealityKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>RealityKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">ARView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ARView.init(frame:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic override public required init(frame: CoreGraphics.CGRect)</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic override public required init(frame: CoreFoundation.CGRect)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ARView.init(frame:cameraMode:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@available(*, deprecated, message: &quot;Renamed to `init(frame:cameraMode:automaticallyConfigureSession:)`.&quot;)
+convenience public init(frame: CoreGraphics.CGRect, cameraMode: RealityKit.ARView.CameraMode)</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@available(*, deprecated, message: &quot;Renamed to `init(frame:cameraMode:automaticallyConfigureSession:)`.&quot;)
+convenience public init(frame: CoreFoundation.CGRect, cameraMode: RealityKit.ARView.CameraMode)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ARView.init(frame:cameraMode:automaticallyConfigureSession:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@available(macCatalyst 14.0, *)
+public init(frame: CoreGraphics.CGRect, cameraMode: RealityKit.ARView.CameraMode, automaticallyConfigureSession: Swift.Bool)</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@available(macCatalyst 14.0, *)
+public init(frame: CoreFoundation.CGRect, cameraMode: RealityKit.ARView.CameraMode, automaticallyConfigureSession: Swift.Bool)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

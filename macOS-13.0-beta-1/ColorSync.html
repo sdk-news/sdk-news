@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>ColorSync macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ColorSync macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">ColorSyncBase.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> #def CS_UNAVAILABLE_PUBLIC_EMBEDDED</div>
+<div class="difference"><span class="status removed">Removed</span> #def CS_AVAILABLE_PUBLIC_STARTING</div>
+<div class="difference"><span class="status removed">Removed</span> #def CS_AVAILABLE_PUBLIC_DESKTOP</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def CS_AVAILABLE_DESKTOP</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ColorSyncProfile.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def icVersion4Number</div>
+<div class="difference"><span class="status added">Added</span> kColorSyncProfileIsValid</div>
+</div>
+
+</div>
+</body>
+</html>
