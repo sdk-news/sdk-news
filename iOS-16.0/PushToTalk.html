@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>PushToTalk iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PushToTalk iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PTBase.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def PT_EXTERN</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PTChannelDescriptor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PTChannelDescriptor</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelDescriptor initWithName:image:]</div>
+<div class="difference"><span class="status added">Added</span> PTChannelDescriptor.name</div>
+<div class="difference"><span class="status added">Added</span> PTChannelDescriptor.image</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PTChannelManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PTServiceStatus</div>
+<div class="difference"><span class="status added">Added</span> PTServiceStatusReady</div>
+<div class="difference"><span class="status added">Added</span> PTServiceStatusConnecting</div>
+<div class="difference"><span class="status added">Added</span> PTServiceStatusUnavailable</div>
+<div class="difference"><span class="status added">Added</span> PTChannelManager</div>
+<div class="difference"><span class="status added">Added</span> +[PTChannelManager channelManagerWithDelegate:restorationDelegate:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> PTChannelManager.activeChannelUUID</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManager requestJoinChannelWithUUID:descriptor:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManager requestBeginTransmittingWithChannelUUID:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManager stopTransmittingWithChannelUUID:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManager leaveChannelWithUUID:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManager setChannelDescriptor:forChannelUUID:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManager setActiveRemoteParticipant:forChannelUUID:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManager setServiceStatus:forChannelUUID:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PTChannelManagerDelegate.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PTChannelJoinReason</div>
+<div class="difference"><span class="status added">Added</span> PTChannelJoinReasonDeveloperRequest</div>
+<div class="difference"><span class="status added">Added</span> PTChannelJoinReasonChannelRestoration</div>
+<div class="difference"><span class="status added">Added</span> PTChannelLeaveReason</div>
+<div class="difference"><span class="status added">Added</span> PTChannelLeaveReasonUnknown</div>
+<div class="difference"><span class="status added">Added</span> PTChannelLeaveReasonUserRequest</div>
+<div class="difference"><span class="status added">Added</span> PTChannelLeaveReasonDeveloperRequest</div>
+<div class="difference"><span class="status added">Added</span> PTChannelLeaveReasonSystemPolicy</div>
+<div class="difference"><span class="status added">Added</span> PTChannelTransmitRequestSource</div>
+<div class="difference"><span class="status added">Added</span> PTChannelTransmitRequestSourceUnknown</div>
+<div class="difference"><span class="status added">Added</span> PTChannelTransmitRequestSourceUserRequest</div>
+<div class="difference"><span class="status added">Added</span> PTChannelTransmitRequestSourceDeveloperRequest</div>
+<div class="difference"><span class="status added">Added</span> PTChannelTransmitRequestSourceHandsfreeButton</div>
+<div class="difference"><span class="status added">Added</span> PTChannelManagerDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:didJoinChannelWithUUID:reason:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:didLeaveChannelWithUUID:reason:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:channelUUID:didBeginTransmittingFromSource:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:channelUUID:didEndTransmittingFromSource:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:receivedEphemeralPushToken:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate incomingPushResultForChannelManager:channelUUID:pushPayload:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:didActivateAudioSession:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:didDeactivateAudioSession:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:failedToJoinChannelWithUUID:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:failedToLeaveChannelWithUUID:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:failedToBeginTransmittingInChannelWithUUID:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelManagerDelegate channelManager:failedToStopTransmittingInChannelWithUUID:error:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PTChannelRestorationDelegate.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PTChannelRestorationDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[PTChannelRestorationDelegate channelDescriptorForRestoredChannelUUID:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PTErrors.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PTInstantiationErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> PTInstantiationError</div>
+<div class="difference"><span class="status added">Added</span> PTInstantiationErrorUnknown</div>
+<div class="difference"><span class="status added">Added</span> PTInstantiationErrorInvalidPlatform</div>
+<div class="difference"><span class="status added">Added</span> PTInstantiationErrorMissingBackgroundMode</div>
+<div class="difference"><span class="status added">Added</span> PTInstantiationErrorMissingPushServerEnvironment</div>
+<div class="difference"><span class="status added">Added</span> PTInstantiationErrorMissingEntitlement</div>
+<div class="difference"><span class="status added">Added</span> PTInstantiationErrorInstantiationAlreadyInProgress</div>
+<div class="difference"><span class="status added">Added</span> PTChannelError</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorUnknown</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorChannelNotFound</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorChannelLimitReached</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorCallActive</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorTransmissionInProgress</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorTransmissionNotFound</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorAppNotForeground</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorDeviceManagementRestriction</div>
+<div class="difference"><span class="status added">Added</span> PTChannelErrorScreenTimeRestriction</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PTParticipant.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PTParticipant</div>
+<div class="difference"><span class="status added">Added</span> PTParticipant.name</div>
+<div class="difference"><span class="status added">Added</span> PTParticipant.image</div>
+<div class="difference"><span class="status added">Added</span> -[PTParticipant initWithName:image:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PTPushResult.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PTPushResult</div>
+<div class="difference"><span class="status added">Added</span> PTPushResult.leaveChannelPushResult</div>
+<div class="difference"><span class="status added">Added</span> +[PTPushResult pushResultForActiveRemoteParticipant:]</div>
+</div>
+
+</div>
+</body>
+</html>

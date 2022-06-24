@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>FileProvider macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>FileProvider macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V3_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V3_1_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V4_0_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V5_0</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V5_0_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V2_V5</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderDomain.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomain.replicated</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomain.supportsSyncingTrash</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorExcludedFromSync</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorDomainDisabled</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderContentPolicy</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderContentPolicyInherited</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderContentPolicyDownloadLazily</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderContentPolicyDownloadLazilyAndEvictOnRemoteUpdate</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderContentPolicyDownloadEagerlyAndKeepDownloaded</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItem.contentPolicy</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSFileProviderItemCapabilitiesAllowsEvicting</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>use NSFileProviderContentPolicy instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager requestModificationOfFields:forItemWithIdentifier:options:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager requestDownloadForItemWithIdentifier:requestedRange:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderService.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderServiceSource.restricted</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager getServiceWithName:itemIdentifier:completionHandler:]</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>VisionKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>VisionKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">DataScannerViewController</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DataScannerViewController</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.isAvailable /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.isSupported /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.supportedTextRecognitionLanguages /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.init(coder:)</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.init(nibName:bundle:)</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.init(recognizedDataTypes:qualityLevel:recognizesMultipleItems:isHighFrameRateTrackingEnabled:isPinchToZoomEnabled:isGuidanceEnabled:isHighlightingEnabled:)</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.delegate</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.isGuidanceEnabled</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.isHighFrameRateTrackingEnabled</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.isHighlightingEnabled</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.isPinchToZoomEnabled</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.isScanning</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.maxZoomFactor</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.minZoomFactor</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.overlayContainerView</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.qualityLevel</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.recognizedDataTypes</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.recognizedItems</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.recognizesMultipleItems</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.loadView()</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.startScanning()</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.stopScanning()</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.viewDidDisappear(_:)</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.viewDidLoad()</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.viewWillAppear(_:)</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.QualityLevel</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.QualityLevel.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.QualityLevel.hashValue</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.QualityLevel.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.RecognizedDataType</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.RecognizedDataType.==(lhs:rhs:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.RecognizedDataType.barcode(symbologies:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.RecognizedDataType.text(languages:textContentType:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.RecognizedDataType.hashValue</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.RecognizedDataType.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.ScanningUnavailable</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.ScanningUnavailable.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.ScanningUnavailable.hashValue</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.ScanningUnavailable.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.TextContentType</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.TextContentType.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.TextContentType.hashValue</div>
+<div class="difference"><span class="status added">Added</span> DataScannerViewController.TextContentType.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DataScannerViewControllerDelegate</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DataScannerViewControllerDelegate</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ImageAnalysis</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ImageAnalysis</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysis.hasResults(for:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ImageAnalysisInteraction</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.init()</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.activeInteractionTypes</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.contentsRect</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.hasActiveTextSelection</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.liveTextButtonVisible</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.view</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.analysisHasText(at:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.didMove(to:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.hasDataDetector(at:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.hasInteractiveItem(at:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.hasSupplementaryInterface(at:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.hasText(at:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.resetTextSelection()</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.setContentsRectNeedsUpdate()</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.setSupplementaryInterfaceHidden(_:animated:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.willMove(to:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes.automatic /* static */</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes.dataDetectors /* static */</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes.textSelection /* static */</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes.rawValue</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes.ArrayLiteralElement</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes.Element</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteraction.InteractionTypes.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ImageAnalysisInteractionDelegate</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ImageAnalysisInteractionDelegate</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ImageAnalyzer</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.isSupported /* static */</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.supportedTextRecognitionLanguages /* static */</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.init()</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.AnalysisTypes</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.AnalysisTypes.machineReadableCode /* static */</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.AnalysisTypes.text /* static */</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.AnalysisTypes.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.AnalysisTypes.rawValue</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.AnalysisTypes.ArrayLiteralElement</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.AnalysisTypes.Element</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.AnalysisTypes.RawValue</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.Configuration</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.Configuration.analysisTypes</div>
+<div class="difference"><span class="status added">Added</span> ImageAnalyzer.Configuration.locales</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RecognizedItem</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RecognizedItem</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.bounds</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.id</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Barcode</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Barcode.bounds</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Barcode.id</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Barcode.observation</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Barcode.payloadStringValue</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Barcode.ID</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Bounds</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Bounds.bottomLeft</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Bounds.bottomRight</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Bounds.topLeft</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Bounds.topRight</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.ID</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Text</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Text.bounds</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Text.id</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Text.observation</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Text.transcript</div>
+<div class="difference"><span class="status added">Added</span> RecognizedItem.Text.ID</div>
+</div>
+
+</div>
+</body>
+</html>

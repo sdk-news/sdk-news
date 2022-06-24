@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>MetalFX macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>MetalFX macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">MTLFXSpatialScaler.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerVersion</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerVersion_v1</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerVersion_End</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerColorProcessingMode</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerColorProcessingMode_Perceptual</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerColorProcessingMode_Linear</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerColorProcessingMode_HDR</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor.colorTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor.outputTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor.inputWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor.inputHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor.outputWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor.outputHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor.colorProcessingMode</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScalerDescriptor.version</div>
+<div class="difference"><span class="status added">Added</span> -[MTLFXSpatialScalerDescriptor newSpatialScalerWithDevice:]</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.colorTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.outputTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.inputContentWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.inputContentHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.colorTexture</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.outputTexture</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.colorTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.outputTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.inputWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.inputHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.outputWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.outputHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.colorProcessingMode</div>
+<div class="difference"><span class="status added">Added</span> MTLFXSpatialScaler.fence</div>
+<div class="difference"><span class="status added">Added</span> -[MTLFXSpatialScaler encodeToCommandBuffer:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLFXTemporalScaler.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerVersion</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerVersion_v1</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerVersion_End</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.colorTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.depthTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.motionTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.outputTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.inputWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.inputHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.outputWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.outputHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.enableInputContentProperties</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.inputContentMinScale</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.inputContentMaxScale</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScalerDescriptor.version</div>
+<div class="difference"><span class="status added">Added</span> -[MTLFXTemporalScalerDescriptor newTemporalScalerWithDevice:]</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.colorTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.depthTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.motionTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.outputTextureUsage</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.inputContentWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.inputContentHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.colorTexture</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.depthTexture</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.motionTexture</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.outputTexture</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.jitterOffset</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.motionVectorScale</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.reset</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.reversedDepth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.colorTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.depthTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.motionTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.outputTextureFormat</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.inputWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.inputHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.outputWidth</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.outputHeight</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.inputContentMinScale</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.inputContentMaxScale</div>
+<div class="difference"><span class="status added">Added</span> MTLFXTemporalScaler.fence</div>
+<div class="difference"><span class="status added">Added</span> -[MTLFXTemporalScaler encodeToCommandBuffer:]</div>
+</div>
+
+</div>
+</body>
+</html>

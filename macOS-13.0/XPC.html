@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>XPC macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>XPC macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">base.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def XPC_SIZEDBY</div>
+<div class="difference"><span class="status added">Added</span> #def XPC_COUNTEDBY</div>
+<div class="difference"><span class="status added">Added</span> #def XPC_UNSAFE_FORGE_SIZED_BY</div>
+<div class="difference"><span class="status added">Added</span> #def XPC_UNSAFE_FORGE_SINGLE</div>
+<div class="difference"><span class="status added">Added</span> #def XPC_SWIFT_NAME</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">rich_error.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> xpc_rich_error_copy_description()</div>
+<div class="difference"><span class="status added">Added</span> xpc_rich_error_can_retry()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">session.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> xpc_session_create_flags_t</div>
+<div class="difference"><span class="status added">Added</span> XPC_SESSION_CREATE_INACTIVE</div>
+<div class="difference"><span class="status added">Added</span> XPC_SESSION_CREATE_MACH_PRIVILEGED</div>
+<div class="difference"><span class="status added">Added</span> XPC_SESSION_CREATE_NONE</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_cancel_handler_t</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_incoming_message_handler_t</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_reply_handler_t</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_copy_description()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_create_xpc_service()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_create_mach_service()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_set_incoming_message_handler()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_set_cancel_handler()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_activate()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_cancel()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_send_message()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_send_message_with_reply_sync()</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_send_message_with_reply_async()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">xpc.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def XPC_TYPE_SESSION</div>
+<div class="difference"><span class="status added">Added</span> xpc_session_t</div>
+<div class="difference"><span class="status added">Added</span> #def XPC_TYPE_RICH_ERROR</div>
+<div class="difference"><span class="status added">Added</span> xpc_rich_error_t</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>Accelerate iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Accelerate iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vecLib.framework/Headers/BNNS/bnns_constants.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticAbs</div>
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticErf</div>
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticFloorDivide</div>
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticNegate</div>
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticReciprocal</div>
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticSign</div>
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticSquare</div>
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticTruncDivide</div>
+<div class="difference"><span class="status added">Added</span> BNNSArithmeticTruncRemainder</div>
+<div class="difference"><span class="status added">Added</span> BNNSReduceFunctionL2Norm</div>
+<div class="difference"><span class="status added">Added</span> BNNSReduceFunctionLogSumExp</div>
+<div class="difference"><span class="status added">Added</span> BNNSReduceFunctionNone</div>
+<div class="difference"><span class="status added">Added</span> BNNSReduceFunctionProduct</div>
+<div class="difference"><span class="status added">Added</span> BNNSDataLayoutFullyConnectedSparse</div>
+<div class="difference"><span class="status added">Added</span> BNNSDataLayoutMHA_DHK</div>
+<div class="difference"><span class="status added">Added</span> BNNSLinearSamplingAlignCorners</div>
+<div class="difference"><span class="status added">Added</span> BNNSLinearSamplingDefault</div>
+<div class="difference"><span class="status added">Added</span> BNNSLinearSamplingMode</div>
+<div class="difference"><span class="status added">Added</span> BNNSLinearSamplingOffsetCorners</div>
+<div class="difference"><span class="status added">Added</span> BNNSLinearSamplingStrictAlignCorners</div>
+<div class="difference"><span class="status added">Added</span> BNNSLinearSamplingUnalignCorners</div>
+<div class="difference"><span class="status added">Added</span> BNNSBoxCoordinateMode</div>
+<div class="difference"><span class="status added">Added</span> BNNSCenterSizeHeightFirst</div>
+<div class="difference"><span class="status added">Added</span> BNNSCenterSizeWidthFirst</div>
+<div class="difference"><span class="status added">Added</span> BNNSCornersHeightFirst</div>
+<div class="difference"><span class="status added">Added</span> BNNSCornersWidthFirst</div>
+<div class="difference"><span class="status added">Added</span> BNNSSparsityType</div>
+<div class="difference"><span class="status added">Added</span> BNNSSparsityTypeUnstructured</div>
+<div class="difference"><span class="status added">Added</span> BNNSTargetSystem</div>
+<div class="difference"><span class="status added">Added</span> BNNSTargetSystemGeneric</div>
+<div class="difference"><span class="status added">Added</span> BNNSShuffleType</div>
+<div class="difference"><span class="status added">Added</span> BNNSShuffleTypePixelShuffleNCHW</div>
+<div class="difference"><span class="status added">Added</span> BNNSShuffleTypePixelUnshuffleNCHW</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vecLib.framework/Headers/BNNS/bnns_structures.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BNNSLayerParametersCropResize</div>
+<div class="difference"><span class="status added">Added</span> BNNSSparsityParameters</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vecLib.framework/Headers/BNNS/bnns.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BNNSPoolingFilterApplyBatchEx()</div>
+<div class="difference"><span class="status added">Added</span> BNNSPoolingFilterApplyBackwardBatchEx()</div>
+<div class="difference"><span class="status added">Added</span> BNNSMatMulWorkspaceSize()</div>
+<div class="difference"><span class="status added">Added</span> BNNSMatMul()</div>
+<div class="difference"><span class="status added">Added</span> BNNSTile()</div>
+<div class="difference"><span class="status added">Added</span> BNNSGather()</div>
+<div class="difference"><span class="status added">Added</span> BNNSScatter()</div>
+<div class="difference"><span class="status added">Added</span> BNNSGatherND()</div>
+<div class="difference"><span class="status added">Added</span> BNNSScatterND()</div>
+<div class="difference"><span class="status added">Added</span> BNNSShuffle()</div>
+<div class="difference"><span class="status added">Added</span> BNNSBandPart()</div>
+<div class="difference"><span class="status added">Added</span> BNNSCropResize()</div>
+<div class="difference"><span class="status added">Added</span> BNNSTileBackward()</div>
+<div class="difference"><span class="status added">Added</span> BNNSCropResizeBackward()</div>
+<div class="difference"><span class="status added">Added</span> BNNSNDArrayGetDataSize()</div>
+<div class="difference"><span class="status added">Added</span> BNNSNDArrayFullyConnectedSparsifySparseCOO()</div>
+<div class="difference"><span class="status added">Added</span> BNNSNDArrayFullyConnectedSparsifySparseCSR()</div>
+<div class="difference"><span class="status added">Added</span> BNNSRandomFillNormalFloat()</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> BNNSDirectApplyBroadcastMatMul()</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> BNNSDirectApplyTopK()</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">int BNNSDirectApplyTopK(size_t K, size_t axis, size_t batch_size, const BNNSNDArrayDescriptor * _Nonnull input, size_t input_batch_stride, BNNSNDArrayDescriptor * _Nonnull best_values, size_t best_values_batch_stride, BNNSNDArrayDescriptor * _Nonnull best_indices, size_t best_indices_batch_stride, const BNNSFilterParameters * _Nullable filter_params)</td></tr>
+<tr><th>To</th><td class="declaration">int BNNSDirectApplyTopK(size_t K, size_t axis, size_t batch_size, const BNNSNDArrayDescriptor * _Nonnull input, size_t input_batch_stride, BNNSNDArrayDescriptor * _Nonnull best_values, size_t best_values_batch_stride, BNNSNDArrayDescriptor * _Nullable best_indices, size_t best_indices_batch_stride, const BNNSFilterParameters * _Nullable filter_params)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vecLib.framework/Headers/Sparse/Solve.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SparseGetInertia()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vecLib.framework/Headers/vDSP.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> vDSP_biquadm_SetCoefficientsDoubleD()</div>
+<div class="difference"><span class="status added">Added</span> vDSP_biquadm_SetTargetsDoubleD()</div>
+<div class="difference"><span class="status added">Added</span> vDSP_biquadm_SetCoefficientsSingleD()</div>
+<div class="difference"><span class="status added">Added</span> vDSP_biquadm_SetTargetsSingleD()</div>
+<div class="difference"><span class="status added">Added</span> vDSP_biquadm_SetActiveFiltersD()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vImage.framework/Headers/Alpha.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> vImagePremultiplyData_RGBA16F()</div>
+<div class="difference"><span class="status added">Added</span> #def vImagePremultiplyData_BGRA16F</div>
+<div class="difference"><span class="status added">Added</span> vImageUnpremultiplyData_RGBA16F()</div>
+<div class="difference"><span class="status added">Added</span> #def vImageUnpremultiplyData_BGRA16F</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vImage.framework/Headers/Conversion.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> vImageOverwriteChannelsWithScalar_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageBufferFill_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImagePermuteChannels_ARGB16F()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vImage.framework/Headers/Convolution.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> vImageConvolve_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageConvolve_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageConvolveWithBias_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageConvolveWithBias_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageSepConvolve_Planar16F()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vImage.framework/Headers/Geometry.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> vImageRotate_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageRotate_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageRotate_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageScale_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageScale_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageScale_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageAffineWarp_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageAffineWarp_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageAffineWarp_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageAffineWarpD_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageAffineWarpD_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageAffineWarpD_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalReflect_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalReflect_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalReflect_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalReflect_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalReflect_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalReflect_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageRotate90_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageRotate90_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageRotate90_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalShear_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalShear_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalShear_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalShear_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalShear_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalShear_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalShearD_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalShearD_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageHorizontalShearD_ARGB16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalShearD_Planar16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalShearD_CbCr16F()</div>
+<div class="difference"><span class="status added">Added</span> vImageVerticalShearD_ARGB16F()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">../Frameworks/vImage.framework/Headers/vImage_Types.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> Pixel_16F</div>
+<div class="difference"><span class="status added">Added</span> Pixel_16F16F</div>
+<div class="difference"><span class="status added">Added</span> Pixel_ARGB_16F</div>
+<div class="difference"><span class="status added">Added</span> Pixel_FF</div>
+<div class="difference"><span class="status added">Added</span> kvImageUseFP16Accumulator</div>
+</div>
+
+</div>
+</body>
+</html>

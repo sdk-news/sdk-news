@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Vision iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Vision iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">VNDetectBarcodesRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VNDetectBarcodesRequestRevision3</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNDetectContoursRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> VNDetectContoursRequest.contrastPivot</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readwrite, nullable) NSNumber *contrastPivot</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, strong, nullable) NSNumber *contrastPivot</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNDetectFaceLandmarksRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> VNDetectFaceLandmarksRequestRevision1</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNDetectFaceRectanglesRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> VNDetectFaceRectanglesRequestRevision1</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VNErrorTuriCoreErrorCode</div>
+<div class="difference"><span class="status added">Added</span> VNErrorTimeout</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNFaceLandmarks.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VNFaceLandmarkRegion2D.pointsClassification</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNGenerateOpticalFlowRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VNGenerateOpticalFlowRequest.keepNetworkOutput</div>
+<div class="difference"><span class="status added">Added</span> VNGenerateOpticalFlowRequestRevision2</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> VNGenerateOpticalFlowRequest.computationAccuracy</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readwrite) VNGenerateOpticalFlowRequestComputationAccuracy computationAccuracy</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, assign) VNGenerateOpticalFlowRequestComputationAccuracy computationAccuracy</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> VNGenerateOpticalFlowRequest.outputPixelFormat</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readwrite) OSType outputPixelFormat</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readwrite, assign) OSType outputPixelFormat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNObservation.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[VNHorizonObservation transformForImageWidth:height:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNRecognizeTextRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VNRecognizeTextRequest.automaticallyDetectsLanguage</div>
+<div class="difference"><span class="status added">Added</span> VNRecognizeTextRequestRevision3</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VNTypes.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VNImageCropAndScaleOptionScaleFitRotate90CCW</div>
+<div class="difference"><span class="status added">Added</span> VNImageCropAndScaleOptionScaleFillRotate90CCW</div>
+<div class="difference"><span class="status added">Added</span> VNPointsClassification</div>
+<div class="difference"><span class="status added">Added</span> VNPointsClassificationDisconnected</div>
+<div class="difference"><span class="status added">Added</span> VNPointsClassificationOpenPath</div>
+<div class="difference"><span class="status added">Added</span> VNPointsClassificationClosedPath</div>
+</div>
+
+</div>
+</body>
+</html>

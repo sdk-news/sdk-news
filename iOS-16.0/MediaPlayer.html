@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>MediaPlayer iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>MediaPlayer iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVPlayerItem+MediaPlayerAdditions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlayerItem (MPAdditions)</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerItem.nowPlayingInfo</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPNowPlayingInfoCenter.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MPNowPlayingInfoPropertyAdTimeRanges</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingInfoPropertyCreditsStartTime</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MPNowPlayingSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MPAdTimeRange</div>
+<div class="difference"><span class="status added">Added</span> MPAdTimeRange.timeRange</div>
+<div class="difference"><span class="status added">Added</span> -[MPAdTimeRange initWithTimeRange:]</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSession</div>
+<div class="difference"><span class="status added">Added</span> -[MPNowPlayingSession initWithPlayers:]</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSession.players</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSession.delegate</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSession.automaticallyPublishNowPlayingInfo</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSession.nowPlayingInfoCenter</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSession.remoteCommandCenter</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSession.canBecomeActive</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSession.active</div>
+<div class="difference"><span class="status added">Added</span> -[MPNowPlayingSession becomeActiveIfPossibleWithCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPNowPlayingSession addPlayer:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPNowPlayingSession removePlayer:]</div>
+<div class="difference"><span class="status added">Added</span> MPNowPlayingSessionDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[MPNowPlayingSessionDelegate nowPlayingSessionDidChangeActive:]</div>
+<div class="difference"><span class="status added">Added</span> -[MPNowPlayingSessionDelegate nowPlayingSessionDidChangeCanBecomeActive:]</div>
+</div>
+
+</div>
+</body>
+</html>

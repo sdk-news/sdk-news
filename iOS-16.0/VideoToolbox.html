@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>VideoToolbox iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>VideoToolbox iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">VTCompressionProperties.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kVTCompressionPropertyKey_ConstantBitRate</div>
+<div class="difference"><span class="status added">Added</span> kVTCompressionPropertyKey_ReferenceBufferCount</div>
+<div class="difference"><span class="status added">Added</span> kVTCompressionPropertyKey_MinAllowedFrameQP</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VTErrors.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kVTPixelRotationNotSupportedErr</div>
+<div class="difference"><span class="status added">Added</span> kVTVideoDecoderUnknownErr</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VTPixelRotationProperties.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kVTPixelRotationPropertyKey_Rotation</div>
+<div class="difference"><span class="status added">Added</span> kVTRotation_0</div>
+<div class="difference"><span class="status added">Added</span> kVTRotation_CW90</div>
+<div class="difference"><span class="status added">Added</span> kVTRotation_180</div>
+<div class="difference"><span class="status added">Added</span> kVTRotation_CCW90</div>
+<div class="difference"><span class="status added">Added</span> kVTPixelRotationPropertyKey_FlipHorizontalOrientation</div>
+<div class="difference"><span class="status added">Added</span> kVTPixelRotationPropertyKey_FlipVerticalOrientation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VTPixelRotationSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VTPixelRotationSessionRef</div>
+<div class="difference"><span class="status added">Added</span> VTPixelRotationSessionCreate()</div>
+<div class="difference"><span class="status added">Added</span> VTPixelRotationSessionInvalidate()</div>
+<div class="difference"><span class="status added">Added</span> VTPixelRotationSessionGetTypeID()</div>
+<div class="difference"><span class="status added">Added</span> VTPixelRotationSessionRotateImage()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VTPixelTransferSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VTPixelTransferSessionRef</div>
+<div class="difference"><span class="status added">Added</span> VTPixelTransferSessionCreate()</div>
+<div class="difference"><span class="status added">Added</span> VTPixelTransferSessionInvalidate()</div>
+<div class="difference"><span class="status added">Added</span> VTPixelTransferSessionGetTypeID()</div>
+<div class="difference"><span class="status added">Added</span> VTPixelTransferSessionTransferImage()</div>
+</div>
+
+</div>
+</body>
+</html>

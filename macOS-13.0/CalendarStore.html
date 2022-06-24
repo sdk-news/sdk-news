@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>CalendarStore macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CalendarStore macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CalEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CalEvent.isAllDay</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property BOOL isAllDay</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic) BOOL isAllDay</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CalEvent.location</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (copy) NSString *location</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy) NSString *location</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CalEvent.recurrenceRule</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (copy) CalRecurrenceRule *recurrenceRule</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy) CalRecurrenceRule *recurrenceRule</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CalEvent.startDate</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (copy) NSDate *startDate</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy) NSDate *startDate</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CalEvent.endDate</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (copy) NSDate *endDate</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy) NSDate *endDate</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CalEvent.attendees</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readonly, copy) NSArray *attendees</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, copy) NSArray *attendees</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CalEvent.isDetached</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readonly) BOOL isDetached</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly) BOOL isDetached</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

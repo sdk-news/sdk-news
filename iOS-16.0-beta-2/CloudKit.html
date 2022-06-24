@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>CloudKit iOS 16.0 20A5283m to 20A5303f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CloudKit iOS 16.0 20A5283m to 20A5303f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CKSystemSharingUIObserver.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CKSystemSharingUIObserver.systemUIDidSaveShareBlock</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CKSystemSharingUIObserver.systemUIDidStopSharingBlock</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSItemProvider+CKSharingSupport.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> CKSharingOptions</div>
+<div class="difference"><span class="status removed">Removed</span> CKSharingOptionsStandard</div>
+<div class="difference"><span class="status removed">Removed</span> CKSharingOptionsAllowPublic</div>
+<div class="difference"><span class="status removed">Removed</span> CKSharingOptionsAllowPrivate</div>
+<div class="difference"><span class="status removed">Removed</span> CKSharingOptionsAllowReadOnly</div>
+<div class="difference"><span class="status removed">Removed</span> CKSharingOptionsAllowReadWrite</div>
+<div class="difference"><span class="status removed">Removed</span> NSItemProvider (Deprecated_CKSharingSupport)</div>
+<div class="difference"><span class="status removed">Removed</span> -[NSItemProvider registerCKShareWithContainer:sharingOptions:preparationHandler:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[NSItemProvider registerCKShare:container:sharingOptions:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CKShareTransferRepresentation</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CKShareTransferRepresentation</div>
+<div class="difference"><span class="status added">Added</span> CKShareTransferRepresentation.body</div>
+<div class="difference"><span class="status added">Added</span> CKShareTransferRepresentation.Body</div>
+<div class="difference"><span class="status added">Added</span> CKShareTransferRepresentation.ExportedShare</div>
+<div class="difference"><span class="status added">Added</span> CKShareTransferRepresentation.ExportedShare.transferRepresentation /* static */</div>
+<div class="difference"><span class="status added">Added</span> CKShareTransferRepresentation.ExportedShare.existing(_:container:allowedSharingOptions:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> CKShareTransferRepresentation.ExportedShare.Representation</div>
+</div>
+
+</div>
+</body>
+</html>

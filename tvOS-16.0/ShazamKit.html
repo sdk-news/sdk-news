@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>ShazamKit tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ShazamKit tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">SHError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SHErrorCodeInternalError</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SHMediaItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SHMediaItemTimeRanges</div>
+<div class="difference"><span class="status added">Added</span> SHMediaItemFrequencySkewRanges</div>
+<div class="difference"><span class="status added">Added</span> SHMediaItem.timeRanges</div>
+<div class="difference"><span class="status added">Added</span> SHMediaItem.frequencySkewRanges</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SHRange.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SHRange</div>
+<div class="difference"><span class="status added">Added</span> SHRange.lowerBound</div>
+<div class="difference"><span class="status added">Added</span> SHRange.upperBound</div>
+<div class="difference"><span class="status added">Added</span> +[SHRange rangeWithLowerBound:upperBound:]</div>
+<div class="difference"><span class="status added">Added</span> -[SHRange initWithLowerBound:upperBound:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SHSignatureGenerator.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[SHSignatureGenerator generateSignatureFromAsset:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UTType+SHShazamAdditions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UTType (SHShazamAdditions)</div>
+<div class="difference"><span class="status added">Added</span> UTType.SHSignatureContentType</div>
+<div class="difference"><span class="status added">Added</span> UTType.SHCustomCatalogContentType</div>
+</div>
+
+</div>
+</body>
+</html>

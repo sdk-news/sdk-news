@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>CoreGraphics macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CoreGraphics macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CGAffineTransform.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> CGAffineTransform</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CGAffineTransformComponents</div>
+<div class="difference"><span class="status added">Added</span> CGAffineTransformDecompose()</div>
+<div class="difference"><span class="status added">Added</span> CGAffineTransformMakeWithComponents()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CGBase.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> #def CGFLOAT_TYPE</div>
+<div class="difference"><span class="status removed">Removed</span> #def CGFLOAT_IS_DOUBLE</div>
+<div class="difference"><span class="status removed">Removed</span> #def CGFLOAT_MIN</div>
+<div class="difference"><span class="status removed">Removed</span> #def CGFLOAT_MAX</div>
+<div class="difference"><span class="status removed">Removed</span> #def CGFLOAT_EPSILON</div>
+<div class="difference"><span class="status removed">Removed</span> CGFloat</div>
+<div class="difference"><span class="status removed">Removed</span> #def CGFLOAT_DEFINED</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def CG_PURE</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CGColorSpace.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> kCGColorSpaceITUR_709_HLG</div>
+<div class="difference"><span class="status added">Added</span> CGColorSpaceCreateCopyWithStandardRange()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CGGeometry.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> CGPoint</div>
+<div class="difference"><span class="status removed">Removed</span> CGSize</div>
+<div class="difference"><span class="status removed">Removed</span> #def CGVECTOR_DEFINED</div>
+<div class="difference"><span class="status removed">Removed</span> CGVector</div>
+<div class="difference"><span class="status removed">Removed</span> CGRect</div>
+<div class="difference"><span class="status removed">Removed</span> CGRectEdge</div>
+<div class="difference"><span class="status removed">Removed</span> CGRectMaxXEdge</div>
+<div class="difference"><span class="status removed">Removed</span> CGRectMaxYEdge</div>
+<div class="difference"><span class="status removed">Removed</span> CGRectMinXEdge</div>
+<div class="difference"><span class="status removed">Removed</span> CGRectMinYEdge</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CGPath.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CGPathCreateCopyByNormalizing()</div>
+<div class="difference"><span class="status added">Added</span> CGPathCreateCopyByUnioningPath()</div>
+<div class="difference"><span class="status added">Added</span> CGPathCreateCopyByIntersectingPath()</div>
+<div class="difference"><span class="status added">Added</span> CGPathCreateCopyBySubtractingPath()</div>
+<div class="difference"><span class="status added">Added</span> CGPathCreateCopyBySymmetricDifferenceOfPath()</div>
+<div class="difference"><span class="status added">Added</span> CGPathCreateCopyOfLineBySubtractingPath()</div>
+<div class="difference"><span class="status added">Added</span> CGPathCreateCopyOfLineByIntersectingPath()</div>
+<div class="difference"><span class="status added">Added</span> CGPathCreateSeparateComponents()</div>
+<div class="difference"><span class="status added">Added</span> CGPathCreateCopyByFlattening()</div>
+<div class="difference"><span class="status added">Added</span> CGPathIntersectsPath()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CGPDFScanner.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CGPDFScannerStop()</div>
+</div>
+
+</div>
+</body>
+</html>

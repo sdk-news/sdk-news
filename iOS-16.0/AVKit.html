@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>AVKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AVKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVInterstitialTimeRange.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVInterstitialTimeRange</div>
+<div class="difference"><span class="status added">Added</span> AVInterstitialTimeRange.timeRange</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVKitDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def AVKIT_ONLY_API_DEPRECATED_WITH_REPLACEMENT</div>
+<div class="difference"><span class="status added">Added</span> #def AVKIT_INIT_UNAVAILABLE</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlaybackSpeed.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed</div>
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed.systemDefaultSpeeds</div>
+<div class="difference"><span class="status added">Added</span> -[AVPlaybackSpeed initWithRate:localizedName:]</div>
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed.rate</div>
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed.localizedName</div>
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed.localizedNumericName</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlayerItem+AVKitAdditions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlayerItem.interstitialTimeRanges</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlayerViewController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlayerViewController.allowsVideoFrameAnalysis</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerViewController.speeds</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerViewController.selectedSpeed</div>
+<div class="difference"><span class="status added">Added</span> -[AVPlayerViewController selectSpeed:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVPlayerViewControllerDelegate playerViewController:willPresentInterstitialTimeRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVPlayerViewControllerDelegate playerViewController:didPresentInterstitialTimeRange:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVRoutePickerView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVRoutePickerView.customRoutingController</div>
+</div>
+
+</div>
+</body>
+</html>

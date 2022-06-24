@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>UIKit iOS 16.0 20A5283m to 20A5303f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>UIKit iOS 16.0 20A5283m to 20A5303f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">UIButtonConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIButtonConfigurationIndicator</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfigurationIndicatorAutomatic</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfigurationIndicatorNone</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfigurationIndicatorPopup</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfiguration.indicator</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfiguration.indicatorColorTransformer</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIPasteControl.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> UIPasteControlCornerStyle</div>
+<div class="difference"><span class="status removed">Removed</span> UIPasteControlCornerStyleNone</div>
+<div class="difference"><span class="status removed">Removed</span> UIPasteControlCornerStyleSmall</div>
+<div class="difference"><span class="status removed">Removed</span> UIPasteControlCornerStyleMedium</div>
+<div class="difference"><span class="status removed">Removed</span> UIPasteControlCornerStyleLarge</div>
+<div class="difference"><span class="status removed">Removed</span> UIPasteControlCornerStyleCapsule</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIPasteControlConfiguration.cornerRadius</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIPasteControlConfiguration.displayMode</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic) UIPasteControlDisplayMode displayMode</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, assign) UIPasteControlDisplayMode displayMode</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIPasteControlConfiguration.cornerStyle</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic) UIPasteControlCornerStyle cornerStyle</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, assign) UIButtonConfigurationCornerStyle cornerStyle</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIPasteControlConfiguration.baseForegroundColor</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, nullable) UIColor *baseForegroundColor</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, strong, nullable) UIColor *baseForegroundColor</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIPasteControlConfiguration.baseBackgroundColor</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, nullable) UIColor *baseBackgroundColor</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, strong, nullable) UIColor *baseBackgroundColor</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UISearchController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UISearchController.ignoresSearchSuggestionsForSearchBarPlacementStacked</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIViewController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UIViewController setNeedsUpdateOfSupportedInterfaceOrientations]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> +[UIViewController attemptRotationToDeviceOrientation]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Please use instance method `setNeedsUpdateOfSupportedInterfaceOrientations`.</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIViewController.shouldAutorotate</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Update supported interface orientations and call setNeedsUpdateOfSupportedInterfaceOrientations to indicate a change.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindowSceneGeometry.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIWindowSceneGeometry.interfaceOrientation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindowSceneGeometryPreferencesIOS.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIWindowSceneGeometryPreferencesIOS</div>
+<div class="difference"><span class="status added">Added</span> -[UIWindowSceneGeometryPreferencesIOS init]</div>
+<div class="difference"><span class="status added">Added</span> -[UIWindowSceneGeometryPreferencesIOS initWithInterfaceOrientations:]</div>
+<div class="difference"><span class="status added">Added</span> UIWindowSceneGeometryPreferencesIOS.interfaceOrientations</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindowSceneGeometryPreferencesMac.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIWindowSceneGeometryPreferencesMac</div>
+<div class="difference"><span class="status added">Added</span> -[UIWindowSceneGeometryPreferencesMac init]</div>
+<div class="difference"><span class="status added">Added</span> -[UIWindowSceneGeometryPreferencesMac initWithSystemFrame:]</div>
+<div class="difference"><span class="status added">Added</span> UIWindowSceneGeometryPreferencesMac.systemFrame</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindowSceneMacGeometryPreferences.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> UIWindowSceneMacGeometryPreferences</div>
+<div class="difference"><span class="status removed">Removed</span> -[UIWindowSceneMacGeometryPreferences initWithSystemFrame:]</div>
+<div class="difference"><span class="status removed">Removed</span> UIWindowSceneMacGeometryPreferences.systemFrame</div>
+</div>
+
+</div>
+</body>
+</html>

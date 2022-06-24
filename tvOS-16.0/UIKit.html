@@ -1,0 +1,721 @@
+<html>
+<head>
+<title>UIKit tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>UIKit tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">NSParagraphStyle.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSParagraphStyle.textLists</div>
+<div class="difference"><span class="status added">Added</span> NSMutableParagraphStyle.textLists</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSTextElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSTextElement.childElements</div>
+<div class="difference"><span class="status added">Added</span> NSTextElement.parentElement</div>
+<div class="difference"><span class="status added">Added</span> NSTextElement.isRepresentedElement</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSTextList.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSTextListOptions</div>
+<div class="difference"><span class="status added">Added</span> NSTextListPrependEnclosingMarker</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerFormat</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerBox</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerCheck</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerCircle</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerDiamond</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerDisc</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerHyphen</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerSquare</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerLowercaseHexadecimal</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerUppercaseHexadecimal</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerOctal</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerLowercaseAlpha</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerUppercaseAlpha</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerLowercaseLatin</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerUppercaseLatin</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerLowercaseRoman</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerUppercaseRoman</div>
+<div class="difference"><span class="status added">Added</span> NSTextListMarkerDecimal</div>
+<div class="difference"><span class="status added">Added</span> NSTextList</div>
+<div class="difference"><span class="status added">Added</span> -[NSTextList initWithMarkerFormat:options:startingItemNumber:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSTextList initWithMarkerFormat:options:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSTextList initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> NSTextList.markerFormat</div>
+<div class="difference"><span class="status added">Added</span> NSTextList.listOptions</div>
+<div class="difference"><span class="status added">Added</span> NSTextList.startingItemNumber</div>
+<div class="difference"><span class="status added">Added</span> NSTextList.ordered</div>
+<div class="difference"><span class="status added">Added</span> -[NSTextList markerForItemNumber:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSTextListElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSTextListElement</div>
+<div class="difference"><span class="status added">Added</span> -[NSTextListElement initWithParentElement:textList:contents:markerAttributes:childElements:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSTextListElement textListElementWithContents:markerAttributes:textList:childElements:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSTextListElement textListElementWithChildElements:textList:nestingLevel:]</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.textList</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.contents</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.markerAttributes</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.attributedString</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.childElements</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.parentElement</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ShareSheetDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> #def SHARESHEET_EXTERN</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIAction</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>UIMenuLeaf</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIAlertController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIAlertControllerSeverity</div>
+<div class="difference"><span class="status added">Added</span> UIAlertControllerSeverityDefault</div>
+<div class="difference"><span class="status added">Added</span> UIAlertControllerSeverityCritical</div>
+<div class="difference"><span class="status added">Added</span> UIAlertController.severity</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIApplication.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIApplicationLaunchOptionsAnnotationKey</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>This dictionary key is no longer used.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIButtonConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIButtonConfigurationIndicator</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfigurationIndicatorAutomatic</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfigurationIndicatorNone</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfigurationIndicatorPopup</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfiguration.indicator</div>
+<div class="difference"><span class="status added">Added</span> UIButtonConfiguration.indicatorColorTransformer</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UICalendarViewDecoration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UICalendarViewDecorationSize</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UICollectionView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UICollectionViewSelfSizingInvalidation</div>
+<div class="difference"><span class="status added">Added</span> UICollectionViewSelfSizingInvalidationDisabled</div>
+<div class="difference"><span class="status added">Added</span> UICollectionViewSelfSizingInvalidationEnabled</div>
+<div class="difference"><span class="status added">Added</span> UICollectionViewSelfSizingInvalidationEnabledIncludingConstraints</div>
+<div class="difference"><span class="status added">Added</span> -[UICollectionViewDelegate collectionView:canPerformPrimaryActionForItemAtIndexPath:]</div>
+<div class="difference"><span class="status added">Added</span> -[UICollectionViewDelegate collectionView:performPrimaryActionForItemAtIndexPath:]</div>
+<div class="difference"><span class="status added">Added</span> UICollectionView.selfSizingInvalidation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UICollectionViewCell.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UICollectionViewCell defaultBackgroundConfiguration]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UICollectionViewCompositionalLayout.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSCollectionLayoutSection.supplementaryContentInsetsReference</div>
+<div class="difference"><span class="status added">Added</span> +[NSCollectionLayoutGroup horizontalGroupWithLayoutSize:repeatingSubitem:count:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSCollectionLayoutGroup verticalGroupWithLayoutSize:repeatingSubitem:count:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSCollectionLayoutSection.supplementariesFollowContentInsets</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[NSCollectionLayoutGroup horizontalGroupWithLayoutSize:subitem:count:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[NSCollectionLayoutGroup verticalGroupWithLayoutSize:subitem:count:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UICommand.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UICommand</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>UIMenuLeaf</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIContextMenuConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIContextMenuConfigurationElementOrder</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIEditMenuInteraction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIEditMenuArrowDirection</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIFindSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIFindSessionSearchResultDisplayStyleCurrentAndTotal</div>
+<div class="difference"><span class="status added">Added</span> UIFindSessionSearchResultDisplayStyleTotal</div>
+<div class="difference"><span class="status added">Added</span> UIFindSessionSearchResultDisplayStyleNone</div>
+<div class="difference"><span class="status added">Added</span> UITextSearchMatchMethodContains</div>
+<div class="difference"><span class="status added">Added</span> UITextSearchMatchMethodStartsWith</div>
+<div class="difference"><span class="status added">Added</span> UITextSearchMatchMethodFullWord</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIFocusDebugger.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> +[UIFocusDebugger checkFocusGroupTreeForEnvironment:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[UIFocusDebugger focusGroupsForEnvironment:]</div>
+<div class="difference"><span class="status added">Added</span> +[UIFocusDebugger preferredFocusEnvironmentsForEnvironment:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIImage.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[UIImage systemImageNamed:variableValue:withConfiguration:]</div>
+<div class="difference"><span class="status added">Added</span> +[UIImage imageNamed:inBundle:variableValue:withConfiguration:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIImageSymbolConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[UIImageSymbolConfiguration configurationPreferringMonochrome]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIInterface.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UINSToolbarItemPresentationSize</div>
+<div class="difference"><span class="status added">Added</span> UINSToolbarItemPresentationSizeUnspecified</div>
+<div class="difference"><span class="status added">Added</span> UINSToolbarItemPresentationSizeRegular</div>
+<div class="difference"><span class="status added">Added</span> UINSToolbarItemPresentationSizeSmall</div>
+<div class="difference"><span class="status added">Added</span> UINSToolbarItemPresentationSizeLarge</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIListContentTextProperties.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIListContentTextProperties.showsExpansionTextWhenTruncated</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIMenu.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIMenuElementSize</div>
+<div class="difference"><span class="status added">Added</span> UIMenuElementSizeSmall</div>
+<div class="difference"><span class="status added">Added</span> UIMenuElementSizeMedium</div>
+<div class="difference"><span class="status added">Added</span> UIMenuElementSizeLarge</div>
+<div class="difference"><span class="status added">Added</span> UIMenu.preferredElementSize</div>
+<div class="difference"><span class="status added">Added</span> UIMenuDocument</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIMenuElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIMenuElementAttributesKeepsMenuPresented</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIMenuLeaf.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIMenuLeaf</div>
+<div class="difference"><span class="status added">Added</span> UIMenuLeaf.title</div>
+<div class="difference"><span class="status added">Added</span> UIMenuLeaf.image</div>
+<div class="difference"><span class="status added">Added</span> UIMenuLeaf.discoverabilityTitle</div>
+<div class="difference"><span class="status added">Added</span> UIMenuLeaf.attributes</div>
+<div class="difference"><span class="status added">Added</span> UIMenuLeaf.state</div>
+<div class="difference"><span class="status added">Added</span> UIMenuLeaf.sender</div>
+<div class="difference"><span class="status added">Added</span> UIMenuLeaf.presentationSourceItem</div>
+<div class="difference"><span class="status added">Added</span> -[UIMenuLeaf performWithSender:target:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UINavigationBar.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UINavigationBarNSToolbarSection</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UINavigationItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UINavigationItemSearchBarPlacement</div>
+<div class="difference"><span class="status added">Added</span> UINavigationItemStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIPageControl.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIPageControlDirection</div>
+<div class="difference"><span class="status added">Added</span> UIPageControlDirectionNatural</div>
+<div class="difference"><span class="status added">Added</span> UIPageControlDirectionLeftToRight</div>
+<div class="difference"><span class="status added">Added</span> UIPageControlDirectionRightToLeft</div>
+<div class="difference"><span class="status added">Added</span> UIPageControlDirectionTopToBottom</div>
+<div class="difference"><span class="status added">Added</span> UIPageControlDirectionBottomToTop</div>
+<div class="difference"><span class="status added">Added</span> UIPageControl.direction</div>
+<div class="difference"><span class="status added">Added</span> UIPageControl.preferredCurrentPageIndicatorImage</div>
+<div class="difference"><span class="status added">Added</span> -[UIPageControl currentPageIndicatorImageForPage:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIPageControl setCurrentPageIndicatorImage:forPage:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIPasteControl.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIPasteControlDisplayMode</div>
+<div class="difference"><span class="status added">Added</span> UIPasteControlDisplayModeIconAndLabel</div>
+<div class="difference"><span class="status added">Added</span> UIPasteControlDisplayModeIconOnly</div>
+<div class="difference"><span class="status added">Added</span> UIPasteControlDisplayModeLabelOnly</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIResponder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions find:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions findAndReplace:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions findNext:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions findPrevious:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions useSelectionForFind:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions rename:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions duplicate:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions move:]</div>
+<div class="difference"><span class="status added">Added</span> -[UIResponderStandardEditActions export:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UISceneDefinitions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UISceneErrorCodeGeometryRequestUnsupported</div>
+<div class="difference"><span class="status added">Added</span> UISceneErrorCodeGeometryRequestDenied</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UISceneWindowingBehaviors.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UISceneWindowingBehaviors</div>
+<div class="difference"><span class="status added">Added</span> UISceneWindowingBehaviors.closable</div>
+<div class="difference"><span class="status added">Added</span> UISceneWindowingBehaviors.miniaturizable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIScreen.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIScreenReferenceDisplayModeStatusDidChangeNotification</div>
+<div class="difference"><span class="status added">Added</span> UIScreenReferenceDisplayModeStatus</div>
+<div class="difference"><span class="status added">Added</span> UIScreenReferenceDisplayModeStatusNotSupported</div>
+<div class="difference"><span class="status added">Added</span> UIScreenReferenceDisplayModeStatusNotEnabled</div>
+<div class="difference"><span class="status added">Added</span> UIScreenReferenceDisplayModeStatusLimited</div>
+<div class="difference"><span class="status added">Added</span> UIScreenReferenceDisplayModeStatusEnabled</div>
+<div class="difference"><span class="status added">Added</span> UIScreen.referenceDisplayModeStatus</div>
+<div class="difference"><span class="status added">Added</span> UIScreen.currentEDRHeadroom</div>
+<div class="difference"><span class="status added">Added</span> UIScreen.potentialEDRHeadroom</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIScreenDidConnectNotification</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(ios(3.2)) const NSNotificationName UIScreenDidConnectNotification</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">API_DEPRECATED(&quot;Use UISceneDelegate or related notifications to be informed of connecting scenes from other screens&quot;, ios(3.2, 16.0)) const NSNotificationName UIScreenDidConnectNotification</td><td>Deprecated</td><td>Use UISceneDelegate or related notifications to be informed of connecting scenes from other screens</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIScreenDidDisconnectNotification</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(ios(3.2)) const NSNotificationName UIScreenDidDisconnectNotification</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">API_DEPRECATED(&quot;Use UISceneDelegate or related notifications to be informed of disconnecting scenes from other screens&quot;, ios(3.2, 16.0)) const NSNotificationName UIScreenDidDisconnectNotification</td><td>Deprecated</td><td>Use UISceneDelegate or related notifications to be informed of disconnecting scenes from other screens</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIScreen.screens</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) NSArray&lt;UIScreen *&gt; *screens</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) NSArray&lt;UIScreen *&gt; *screens</td><td>Deprecated</td><td>Use UIApplication.shared.openSessions to find open sessions with scenes from other screens</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIScreen.mainScreen</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) UIScreen *mainScreen</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) UIScreen *mainScreen</td><td>Deprecated</td><td>Use a UIScreen instance found through context instead: i.e, view.window.windowScene.screen</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIScrollView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIScrollViewKeyboardDismissModeOnDragWithAccessory</div>
+<div class="difference"><span class="status added">Added</span> UIScrollViewKeyboardDismissModeInteractiveWithAccessory</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UISearchController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UISearchController.searchSuggestions</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, copy, nullable) NSArray&lt;id&lt;UISearchSuggestion&gt;&gt; *searchSuggestions</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nullable) NSArray&lt;id&lt;UISearchSuggestion&gt;&gt; *searchSuggestions</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UISearchSuggestion.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UISearchSuggestion.representedObject</div>
+<div class="difference"><span class="status added">Added</span> UISearchSuggestionItem.representedObject</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UITableView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UITableViewDelegate tableView:canPerformPrimaryActionForRowAtIndexPath:]</div>
+<div class="difference"><span class="status added">Added</span> -[UITableViewDelegate tableView:performPrimaryActionForRowAtIndexPath:]</div>
+<div class="difference"><span class="status added">Added</span> UITableViewSelfSizingInvalidation</div>
+<div class="difference"><span class="status added">Added</span> UITableViewSelfSizingInvalidationDisabled</div>
+<div class="difference"><span class="status added">Added</span> UITableViewSelfSizingInvalidationEnabled</div>
+<div class="difference"><span class="status added">Added</span> UITableViewSelfSizingInvalidationEnabledIncludingConstraints</div>
+<div class="difference"><span class="status added">Added</span> UITableView.selfSizingInvalidation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UITableViewCell.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UITableViewCell defaultBackgroundConfiguration]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UITableViewHeaderFooterView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UITableViewHeaderFooterView defaultBackgroundConfiguration]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UITextField.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UITextFieldDelegate textField:editMenuForCharactersInRange:suggestedActions:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UITextInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UITextInput editMenuForTextRange:suggestedActions:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UITextSearching.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UITextSearchDocumentIdentifier</div>
+<div class="difference"><span class="status added">Added</span> UITextSearchFoundTextStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UITextView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UITextViewDelegate textView:editMenuForTextInRange:suggestedActions:]</div>
+<div class="difference"><span class="status added">Added</span> +[UITextView textViewUsingTextLayoutManager:]</div>
+<div class="difference"><span class="status added">Added</span> UITextView.textLayoutManager</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UITraitCollection.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[UITraitCollection traitCollectionWithToolbarItemPresentationSize:]</div>
+<div class="difference"><span class="status added">Added</span> UITraitCollection.toolbarItemPresentationSize</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIView.minimumContentSizeCategory</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, copy, nullable) UIContentSizeCategory minimumContentSizeCategory</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nullable) UIContentSizeCategory minimumContentSizeCategory</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIView.maximumContentSizeCategory</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, copy, nullable) UIContentSizeCategory maximumContentSizeCategory</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nullable) UIContentSizeCategory maximumContentSizeCategory</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> UIView.appliedContentSizeCategoryLimitsDescription</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nonnull) NSString *appliedContentSizeCategoryLimitsDescription</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, copy, nonnull) NSString *appliedContentSizeCategoryLimitsDescription</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIViewController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIViewController.interactionActivityTrackingBaseName</div>
+<div class="difference"><span class="status added">Added</span> UIViewController.activePresentationController</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindow.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UILayoutGuideAspectFitting</div>
+<div class="difference"><span class="status added">Added</span> UILayoutGuideAspectFitting.aspectRatio</div>
+<div class="difference"><span class="status added">Added</span> UIWindow.safeAreaAspectFitLayoutGuide</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindowScene.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[UIWindowScene requestGeometryUpdateWithPreferences:errorHandler:]</div>
+<div class="difference"><span class="status added">Added</span> UIWindowScene.effectiveGeometry</div>
+<div class="difference"><span class="status added">Added</span> UIWindowScene.windowingBehaviors</div>
+<div class="difference"><span class="status added">Added</span> UIWindowScene.fullScreen</div>
+<div class="difference"><span class="status added">Added</span> UIWindowSceneSessionRoleExternalDisplayNonInteractive</div>
+<div class="difference"><span class="status added">Added</span> UISceneSizeRestrictions.allowsFullScreen</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIWindowSceneSessionRoleExternalDisplay</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(ios(13.0)) const UISceneSessionRole UIWindowSceneSessionRoleExternalDisplay</td><td>Available</td></tr>
+<tr><th>To</th><td class="declaration">API_DEPRECATED_WITH_REPLACEMENT(&quot;UIWindowSceneSessionRoleExternalDisplayNonInteractive&quot;, ios(13.0, 16.0)) const UISceneSessionRole UIWindowSceneSessionRoleExternalDisplay</td><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindowSceneGeometry.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIWindowSceneGeometry</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindowSceneGeometryPreferences.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIWindowSceneGeometryPreferences</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">UIWindowSceneMacGeometryPreferences.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UIWindowSceneMacGeometryPreferences</div>
+<div class="difference"><span class="status added">Added</span> -[UIWindowSceneMacGeometryPreferences initWithSystemFrame:]</div>
+<div class="difference"><span class="status added">Added</span> UIWindowSceneMacGeometryPreferences.systemFrame</div>
+</div>
+
+</div>
+</body>
+</html>

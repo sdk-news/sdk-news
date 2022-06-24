@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>PDFKit iOS 16.0 20A5283m to 20A5303f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PDFKit iOS 16.0 20A5283m to 20A5303f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PDFDocument.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PDFDocumentBurnInAnnotationsOption</div>
+<div class="difference"><span class="status added">Added</span> PDFDocumentSaveTextFromOCROption</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PDFPageOverlayViewProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> -[PDFPageOverlayViewProvider overlayViewForPage:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[PDFPageOverlayViewProvider relinquishOverlayViewForPage:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[PDFPageOverlayViewProvider overlayViewWasInstalledForPage:]</div>
+<div class="difference"><span class="status removed">Removed</span> -[PDFPageOverlayViewProvider overlayViewWillBeUninstalledForPage:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[PDFPageOverlayViewProvider pdfView:overlayViewForPage:]</div>
+<div class="difference"><span class="status added">Added</span> -[PDFPageOverlayViewProvider pdfView:willDisplayOverlayView:forPage:]</div>
+<div class="difference"><span class="status added">Added</span> -[PDFPageOverlayViewProvider pdfView:willEndDisplayingOverlayView:forPage:]</div>
+</div>
+
+</div>
+</body>
+</html>

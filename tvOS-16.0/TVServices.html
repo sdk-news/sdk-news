@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>TVServices tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>TVServices tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">TVAppProfileDescriptor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TVAppProfileDescriptor</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>User Management capability get-current-user is no longer supported. Please use runs-as-current-user instead alongside kSecUseUserIndependentKeychain for sharing keychain items across users.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TVUserManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TVUserManager.shouldStorePreferencesForCurrentUser</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TVUserIdentifier</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>User Management capability get-current-user is no longer supported. Please use runs-as-current-user instead alongside kSecUseUserIndependentKeychain for sharing keychain items across users.</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> TVUserManager.currentUserIdentifier</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nullable) TVUserIdentifier currentUserIdentifier</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) TVUserIdentifier currentUserIdentifier</td><td>Deprecated</td><td>User Management capability get-current-user is no longer supported. Please use runs-as-current-user instead alongside kSecUseUserIndependentKeychain for sharing keychain items across users.</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> TVUserManager.userIdentifiersForCurrentProfile</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, copy, nonnull) NSArray&lt;TVUserIdentifier&gt; *userIdentifiersForCurrentProfile</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nonnull) NSArray&lt;TVUserIdentifier&gt; *userIdentifiersForCurrentProfile</td><td>Deprecated</td><td>User Management capability get-current-user is no longer supported. Please use runs-as-current-user instead alongside kSecUseUserIndependentKeychain for sharing keychain items across users.</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[TVUserManager presentProfilePreferencePanelWithCurrentSettings:availableProfiles:completion:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>User Management capability get-current-user is no longer supported. Please use runs-as-current-user instead alongside kSecUseUserIndependentKeychain for sharing keychain items across users.</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[TVUserManager shouldStorePreferenceForCurrentUserToProfile:completion:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>User Management capability get-current-user is no longer supported. Please use runs-as-current-user instead alongside kSecUseUserIndependentKeychain for sharing keychain items across users.</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> TVUserManagerCurrentUserIdentifierDidChangeNotification</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>User Management capability `get-current-user` is no longer supported. Use the capability `runs-as-current-user` with it there is no need to be notified of user changes.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

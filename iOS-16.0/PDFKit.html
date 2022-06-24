@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>PDFKit iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PDFKit iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PDFDocument.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PDFDocumentBurnInAnnotationsOption</div>
+<div class="difference"><span class="status added">Added</span> PDFDocumentSaveTextFromOCROption</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PDFKitPlatform.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def PDFKitTextContentType</div>
+<div class="difference"><span class="status added">Added</span> #def PDFTrackingRunLoopMode</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PDFPageOverlayViewProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PDFPageOverlayViewProvider</div>
+<div class="difference"><span class="status added">Added</span> -[PDFPageOverlayViewProvider pdfView:overlayViewForPage:]</div>
+<div class="difference"><span class="status added">Added</span> -[PDFPageOverlayViewProvider pdfView:willDisplayOverlayView:forPage:]</div>
+<div class="difference"><span class="status added">Added</span> -[PDFPageOverlayViewProvider pdfView:willEndDisplayingOverlayView:forPage:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PDFView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PDFView.pageOverlayViewProvider</div>
+<div class="difference"><span class="status added">Added</span> PDFView.inMarkupMode</div>
+<div class="difference"><span class="status added">Added</span> PDFView.findInteraction</div>
+<div class="difference"><span class="status added">Added</span> PDFView.findInteractionEnabled</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PDFView</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td>UIGestureRecognizerDelegate</td></tr>
+<tr><th>To</th><td>UIFindInteractionDelegate, UIGestureRecognizerDelegate</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

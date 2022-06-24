@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>WidgetKit watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>WidgetKit watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">WGWidgetDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WGWidgetUserInfoKeyKind</div>
+<div class="difference"><span class="status added">Added</span> WGWidgetUserInfoKeyFamily</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AccessoryWidgetBackground</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AccessoryWidgetBackground</div>
+<div class="difference"><span class="status added">Added</span> AccessoryWidgetBackground.init()</div>
+<div class="difference"><span class="status added">Added</span> AccessoryWidgetBackground.body</div>
+<div class="difference"><span class="status added">Added</span> AccessoryWidgetBackground.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentConfiguration</div>
+<div class="difference"><span class="status added">Added</span> IntentConfiguration.body</div>
+<div class="difference"><span class="status added">Added</span> IntentConfiguration.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentRecommendation</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentRecommendation</div>
+<div class="difference"><span class="status added">Added</span> IntentRecommendation.init(intent:description:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentTimelineProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentTimelineProvider</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StaticConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> StaticConfiguration</div>
+<div class="difference"><span class="status added">Added</span> StaticConfiguration.body</div>
+<div class="difference"><span class="status added">Added</span> StaticConfiguration.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Timeline</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> Timeline</div>
+<div class="difference"><span class="status added">Added</span> Timeline.init(entries:policy:)</div>
+<div class="difference"><span class="status added">Added</span> Timeline.entries</div>
+<div class="difference"><span class="status added">Added</span> Timeline.policy</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TimelineEntry</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TimelineEntry</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TimelineEntryRelevance</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance</div>
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance.init(score:duration:)</div>
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance.duration</div>
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance.hashValue</div>
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance.score</div>
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> TimelineEntryRelevance.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TimelineProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TimelineProvider</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TimelineProviderContext</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TimelineProviderContext</div>
+<div class="difference"><span class="status added">Added</span> TimelineProviderContext.displaySize</div>
+<div class="difference"><span class="status added">Added</span> TimelineProviderContext.environmentVariants</div>
+<div class="difference"><span class="status added">Added</span> TimelineProviderContext.family</div>
+<div class="difference"><span class="status added">Added</span> TimelineProviderContext.isPreview</div>
+<div class="difference"><span class="status added">Added</span> TimelineProviderContext.EnvironmentVariants</div>
+<div class="difference"><span class="status added">Added</span> TimelineProviderContext.EnvironmentVariants.subscript(dynamicMember:)</div>
+<div class="difference"><span class="status added">Added</span> TimelineProviderContext.EnvironmentVariants.subscript(keyPath:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TimelineReloadPolicy</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TimelineReloadPolicy</div>
+<div class="difference"><span class="status added">Added</span> TimelineReloadPolicy.atEnd /* static */</div>
+<div class="difference"><span class="status added">Added</span> TimelineReloadPolicy.never /* static */</div>
+<div class="difference"><span class="status added">Added</span> TimelineReloadPolicy.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> TimelineReloadPolicy.after(_:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetCenter</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WidgetCenter</div>
+<div class="difference"><span class="status added">Added</span> WidgetCenter.shared /* static */</div>
+<div class="difference"><span class="status added">Added</span> WidgetCenter.getCurrentConfigurations(_:)</div>
+<div class="difference"><span class="status added">Added</span> WidgetCenter.invalidateConfigurationRecommendations()</div>
+<div class="difference"><span class="status added">Added</span> WidgetCenter.reloadAllTimelines()</div>
+<div class="difference"><span class="status added">Added</span> WidgetCenter.reloadTimelines(ofKind:)</div>
+<div class="difference"><span class="status added">Added</span> WidgetCenter.UserInfoKey</div>
+<div class="difference"><span class="status added">Added</span> WidgetCenter.UserInfoKey.family /* static */</div>
+<div class="difference"><span class="status added">Added</span> WidgetCenter.UserInfoKey.kind /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetFamily</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WidgetFamily</div>
+<div class="difference"><span class="status added">Added</span> WidgetFamily.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> WidgetFamily.debugDescription</div>
+<div class="difference"><span class="status added">Added</span> WidgetFamily.description</div>
+<div class="difference"><span class="status added">Added</span> WidgetFamily.rawValue</div>
+<div class="difference"><span class="status added">Added</span> WidgetFamily.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetInfo</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WidgetInfo</div>
+<div class="difference"><span class="status added">Added</span> WidgetInfo.configuration</div>
+<div class="difference"><span class="status added">Added</span> WidgetInfo.family</div>
+<div class="difference"><span class="status added">Added</span> WidgetInfo.kind</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetPreviewContext</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WidgetPreviewContext</div>
+<div class="difference"><span class="status added">Added</span> WidgetPreviewContext.init(family:)</div>
+<div class="difference"><span class="status added">Added</span> WidgetPreviewContext.subscript(key:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetRenderingMode</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WidgetRenderingMode</div>
+<div class="difference"><span class="status added">Added</span> WidgetRenderingMode.accented /* static */</div>
+<div class="difference"><span class="status added">Added</span> WidgetRenderingMode.fullColor /* static */</div>
+<div class="difference"><span class="status added">Added</span> WidgetRenderingMode.vibrant /* static */</div>
+<div class="difference"><span class="status added">Added</span> WidgetRenderingMode.==(a:b:) /* static */</div>
+</div>
+
+</div>
+</body>
+</html>

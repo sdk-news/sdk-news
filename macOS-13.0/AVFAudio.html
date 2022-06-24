@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>AVFAudio macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AVFAudio macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVAudioEngine.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[AVAudioEngine connectMIDI:to:format:eventListBlock:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVAudioEngine connectMIDI:toNodes:format:eventListBlock:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[AVAudioEngine connectMIDI:to:format:block:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[AVAudioEngine connectMIDI:toNodes:format:block:]</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAudioSequencer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def AVAS_EXPORT</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKey</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyAlbum</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyApproximateDurationInSeconds</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyArtist</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyChannelLayout</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyComments</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyComposer</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyCopyright</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyEncodingApplication</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyGenre</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyISRC</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyKeySignature</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyLyricist</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyNominalBitRate</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyRecordedDate</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeySourceBitDepth</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeySourceEncoder</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeySubTitle</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyTempo</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyTimeSignature</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyTitle</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyTrackNumber</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerInfoDictionaryKeyYear</div>
+<div class="difference"><span class="status added">Added</span> -[AVAudioSequencer reverseEvents]</div>
+<div class="difference"><span class="status added">Added</span> -[AVAudioSequencer createAndAppendTrack]</div>
+<div class="difference"><span class="status added">Added</span> -[AVAudioSequencer removeTrack:]</div>
+<div class="difference"><span class="status added">Added</span> AVAudioSequencerUserCallback</div>
+<div class="difference"><span class="status added">Added</span> -[AVAudioSequencer setUserCallback:]</div>
+<div class="difference"><span class="status added">Added</span> #def AVMusicTimeStampEndOfTrack</div>
+<div class="difference"><span class="status added">Added</span> AVMusicTrack.usesAutomatedParameters</div>
+<div class="difference"><span class="status added">Added</span> -[AVMusicTrack addEvent:atBeat:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMusicTrack moveEventsInRange:byAmount:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMusicTrack clearEventsInRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMusicTrack cutEventsInRange:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMusicTrack copyEventsInRange:fromTrack:insertAtBeat:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVMusicTrack copyAndMergeEventsInRange:fromTrack:mergeAtBeat:]</div>
+<div class="difference"><span class="status added">Added</span> AVMusicEventEnumerationBlock</div>
+<div class="difference"><span class="status added">Added</span> -[AVMusicTrack enumerateEventsInRange:usingBlock:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAudioUnitComponent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVAudioUnitComponent.configurationDictionary</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSDictionary&lt;NSString *,id&gt; *configurationDictionary</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSDictionary&lt;NSString *,id&gt; *configurationDictionary</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVAudioUnitMIDIInstrument.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[AVAudioUnitMIDIInstrument sendMIDIEventList:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVMusicEvents.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVMusicEvent</div>
+<div class="difference"><span class="status added">Added</span> AVMIDINoteEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMIDINoteEvent initWithChannel:key:velocity:duration:]</div>
+<div class="difference"><span class="status added">Added</span> AVMIDINoteEvent.channel</div>
+<div class="difference"><span class="status added">Added</span> AVMIDINoteEvent.key</div>
+<div class="difference"><span class="status added">Added</span> AVMIDINoteEvent.velocity</div>
+<div class="difference"><span class="status added">Added</span> AVMIDINoteEvent.duration</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIChannelEvent</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIChannelEvent.channel</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageType</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeBankSelect</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeModWheel</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeBreath</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeFoot</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypePortamentoTime</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeDataEntry</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeVolume</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeBalance</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypePan</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeExpression</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeSustain</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypePortamento</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeSostenuto</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeSoft</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeLegatoPedal</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeHold2Pedal</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeFilterResonance</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeReleaseTime</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeAttackTime</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeBrightness</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeDecayTime</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeVibratoRate</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeVibratoDepth</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeVibratoDelay</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeReverbLevel</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeChorusLevel</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeRPN_LSB</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeRPN_MSB</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeAllSoundOff</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeResetAllControllers</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeAllNotesOff</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeOmniModeOff</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeOmniModeOn</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeMonoModeOn</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeMessageTypeMonoModeOff</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMIDIControlChangeEvent initWithChannel:messageType:value:]</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeEvent.messageType</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIControlChangeEvent.value</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIPolyPressureEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMIDIPolyPressureEvent initWithChannel:key:pressure:]</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIPolyPressureEvent.key</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIPolyPressureEvent.pressure</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIProgramChangeEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMIDIProgramChangeEvent initWithChannel:programNumber:]</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIProgramChangeEvent.programNumber</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIChannelPressureEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMIDIChannelPressureEvent initWithChannel:pressure:]</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIChannelPressureEvent.pressure</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIPitchBendEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMIDIPitchBendEvent initWithChannel:value:]</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIPitchBendEvent.value</div>
+<div class="difference"><span class="status added">Added</span> AVMIDISysexEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMIDISysexEvent initWithData:]</div>
+<div class="difference"><span class="status added">Added</span> AVMIDISysexEvent.sizeInBytes</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventType</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeSequenceNumber</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeText</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeCopyright</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeTrackName</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeInstrument</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeLyric</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeMarker</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeCuePoint</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeMidiChannel</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeMidiPort</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeEndOfTrack</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeTempo</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeSmpteOffset</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeTimeSignature</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeKeySignature</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEventTypeProprietaryEvent</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMIDIMetaEvent initWithType:data:]</div>
+<div class="difference"><span class="status added">Added</span> AVMIDIMetaEvent.type</div>
+<div class="difference"><span class="status added">Added</span> AVMusicUserEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVMusicUserEvent initWithData:]</div>
+<div class="difference"><span class="status added">Added</span> AVMusicUserEvent.sizeInBytes</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedNoteOnEventDefaultInstrument</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedNoteOnEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVExtendedNoteOnEvent initWithMIDINote:velocity:groupID:duration:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVExtendedNoteOnEvent initWithMIDINote:velocity:instrumentID:groupID:duration:]</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedNoteOnEvent.midiNote</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedNoteOnEvent.velocity</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedNoteOnEvent.instrumentID</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedNoteOnEvent.groupID</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedNoteOnEvent.duration</div>
+<div class="difference"><span class="status added">Added</span> AVParameterEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVParameterEvent initWithParameterID:scope:element:value:]</div>
+<div class="difference"><span class="status added">Added</span> AVParameterEvent.parameterID</div>
+<div class="difference"><span class="status added">Added</span> AVParameterEvent.scope</div>
+<div class="difference"><span class="status added">Added</span> AVParameterEvent.element</div>
+<div class="difference"><span class="status added">Added</span> AVParameterEvent.value</div>
+<div class="difference"><span class="status added">Added</span> AVAUPresetEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVAUPresetEvent initWithScope:element:dictionary:]</div>
+<div class="difference"><span class="status added">Added</span> AVAUPresetEvent.scope</div>
+<div class="difference"><span class="status added">Added</span> AVAUPresetEvent.element</div>
+<div class="difference"><span class="status added">Added</span> AVAUPresetEvent.presetDictionary</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedTempoEvent</div>
+<div class="difference"><span class="status added">Added</span> -[AVExtendedTempoEvent initWithTempo:]</div>
+<div class="difference"><span class="status added">Added</span> AVExtendedTempoEvent.tempo</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVSpeechSynthesis.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisVoiceQualityPremium</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarkerMark</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarkerMarkPhoneme</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarkerMarkWord</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarkerMarkSentence</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarkerMarkParagraph</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesizerMarkerCallback</div>
+<div class="difference"><span class="status added">Added</span> +[AVSpeechUtterance speechUtteranceWithSSMLRepresentation:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSpeechUtterance initWithSSMLRepresentation:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSpeechSynthesizer writeUtterance:toBufferCallback:toMarkerCallback:]</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarker</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarker.mark</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarker.byteSampleOffset</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisMarker.textRange</div>
+<div class="difference"><span class="status added">Added</span> -[AVSpeechSynthesisMarker initWithMarkerType:forTextRange:atByteSampleOffset:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVSpeechSynthesisProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice.name</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice.identifier</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice.primaryLanguages</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice.supportedLanguages</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice.voiceSize</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice.version</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice.gender</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderVoice.age</div>
+<div class="difference"><span class="status added">Added</span> -[AVSpeechSynthesisProviderVoice initWithName:identifier:primaryLanguages:supportedLanguages:]</div>
+<div class="difference"><span class="status added">Added</span> +[AVSpeechSynthesisProviderVoice updateSpeechVoices]</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderRequest</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderRequest.ssmlRepresentation</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderRequest.voice</div>
+<div class="difference"><span class="status added">Added</span> -[AVSpeechSynthesisProviderRequest initWithSSMLRepresentation:voice:]</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderAudioUnit</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderOutputBlock</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderAudioUnit.speechVoices</div>
+<div class="difference"><span class="status added">Added</span> AVSpeechSynthesisProviderAudioUnit.speechSynthesisOutputMetadataBlock</div>
+<div class="difference"><span class="status added">Added</span> -[AVSpeechSynthesisProviderAudioUnit synthesizeSpeechRequest:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVSpeechSynthesisProviderAudioUnit cancelSpeechRequest]</div>
+</div>
+
+</div>
+</body>
+</html>

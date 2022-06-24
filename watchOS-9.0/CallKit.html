@@ -1,0 +1,351 @@
+<html>
+<head>
+<title>CallKit watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CallKit watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CXAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXAction</div>
+<div class="difference"><span class="status added">Added</span> CXAction.UUID</div>
+<div class="difference"><span class="status added">Added</span> CXAction.complete</div>
+<div class="difference"><span class="status added">Added</span> CXAction.timeoutDate</div>
+<div class="difference"><span class="status added">Added</span> -[CXAction init]</div>
+<div class="difference"><span class="status added">Added</span> -[CXAction initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXAction fulfill]</div>
+<div class="difference"><span class="status added">Added</span> -[CXAction fail]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXAnswerCallAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXAnswerCallAction</div>
+<div class="difference"><span class="status added">Added</span> -[CXAnswerCallAction fulfillWithDateConnected:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXBase.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def CX_EXTERN</div>
+<div class="difference"><span class="status added">Added</span> #def CX_CLASS_AVAILABLE</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXCall.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXCall</div>
+<div class="difference"><span class="status added">Added</span> CXCall.UUID</div>
+<div class="difference"><span class="status added">Added</span> CXCall.outgoing</div>
+<div class="difference"><span class="status added">Added</span> CXCall.onHold</div>
+<div class="difference"><span class="status added">Added</span> CXCall.hasConnected</div>
+<div class="difference"><span class="status added">Added</span> CXCall.hasEnded</div>
+<div class="difference"><span class="status added">Added</span> -[CXCall isEqualToCall:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXCallAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXCallAction</div>
+<div class="difference"><span class="status added">Added</span> CXCallAction.callUUID</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallAction initWithCallUUID:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallAction initWithCoder:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXCallController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXCallController</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallController init]</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallController initWithQueue:]</div>
+<div class="difference"><span class="status added">Added</span> CXCallController.callObserver</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallController requestTransaction:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallController requestTransactionWithActions:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallController requestTransactionWithAction:completion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXCallDirectory.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXCallDirectoryPhoneNumber</div>
+<div class="difference"><span class="status added">Added</span> CXCallDirectoryPhoneNumberMax</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXCallDirectoryManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXCallDirectoryEnabledStatus</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXCallObserver.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXCallObserverDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallObserverDelegate callObserver:callChanged:]</div>
+<div class="difference"><span class="status added">Added</span> CXCallObserver</div>
+<div class="difference"><span class="status added">Added</span> CXCallObserver.calls</div>
+<div class="difference"><span class="status added">Added</span> -[CXCallObserver setDelegate:queue:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXCallUpdate.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXCallUpdate</div>
+<div class="difference"><span class="status added">Added</span> CXCallUpdate.remoteHandle</div>
+<div class="difference"><span class="status added">Added</span> CXCallUpdate.localizedCallerName</div>
+<div class="difference"><span class="status added">Added</span> CXCallUpdate.supportsHolding</div>
+<div class="difference"><span class="status added">Added</span> CXCallUpdate.supportsGrouping</div>
+<div class="difference"><span class="status added">Added</span> CXCallUpdate.supportsUngrouping</div>
+<div class="difference"><span class="status added">Added</span> CXCallUpdate.supportsDTMF</div>
+<div class="difference"><span class="status added">Added</span> CXCallUpdate.hasVideo</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXEndCallAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXEndCallAction</div>
+<div class="difference"><span class="status added">Added</span> -[CXEndCallAction fulfillWithDateEnded:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> CXErrorDomainIncomingCall</div>
+<div class="difference"><span class="status added">Added</span> CXErrorDomainRequestTransaction</div>
+<div class="difference"><span class="status added">Added</span> CXErrorDomainCallDirectoryManager</div>
+<div class="difference"><span class="status added">Added</span> CXErrorDomainNotificationServiceExtension</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCode</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeUnknownError</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeUnentitled</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeInvalidArgument</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeMissingVoIPBackgroundMode</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeIncomingCallError</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeIncomingCallErrorUnknown</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeIncomingCallErrorUnentitled</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeIncomingCallErrorCallUUIDAlreadyExists</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeIncomingCallErrorFilteredByDoNotDisturb</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeIncomingCallErrorFilteredByBlockList</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionError</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionErrorUnknown</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionErrorUnentitled</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionErrorUnknownCallProvider</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionErrorEmptyTransaction</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionErrorUnknownCallUUID</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionErrorCallUUIDAlreadyExists</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionErrorInvalidAction</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeRequestTransactionErrorMaximumCallGroupsReached</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerError</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorUnknown</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorNoExtensionFound</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorLoadingInterrupted</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorEntriesOutOfOrder</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorDuplicateEntries</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorMaximumEntriesExceeded</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorExtensionDisabled</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorCurrentlyLoading</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeCallDirectoryManagerErrorUnexpectedIncrementalRemoval</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeNotificationServiceExtensionError</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeNotificationServiceExtensionErrorUnknown</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeNotificationServiceExtensionErrorInvalidClientProcess</div>
+<div class="difference"><span class="status added">Added</span> CXErrorCodeNotificationServiceExtensionErrorMissingNotificationFilteringEntitlement</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXHandle.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXHandleType</div>
+<div class="difference"><span class="status added">Added</span> CXHandleTypeGeneric</div>
+<div class="difference"><span class="status added">Added</span> CXHandleTypePhoneNumber</div>
+<div class="difference"><span class="status added">Added</span> CXHandleTypeEmailAddress</div>
+<div class="difference"><span class="status added">Added</span> CXHandle</div>
+<div class="difference"><span class="status added">Added</span> CXHandle.type</div>
+<div class="difference"><span class="status added">Added</span> CXHandle.value</div>
+<div class="difference"><span class="status added">Added</span> -[CXHandle initWithType:value:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXHandle isEqualToHandle:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXPlayDTMFCallAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXPlayDTMFCallActionType</div>
+<div class="difference"><span class="status added">Added</span> CXPlayDTMFCallActionTypeSingleTone</div>
+<div class="difference"><span class="status added">Added</span> CXPlayDTMFCallActionTypeSoftPause</div>
+<div class="difference"><span class="status added">Added</span> CXPlayDTMFCallActionTypeHardPause</div>
+<div class="difference"><span class="status added">Added</span> CXPlayDTMFCallAction</div>
+<div class="difference"><span class="status added">Added</span> -[CXPlayDTMFCallAction initWithCallUUID:digits:type:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXPlayDTMFCallAction initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> CXPlayDTMFCallAction.digits</div>
+<div class="difference"><span class="status added">Added</span> CXPlayDTMFCallAction.type</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXCallEndedReason</div>
+<div class="difference"><span class="status added">Added</span> CXCallEndedReasonFailed</div>
+<div class="difference"><span class="status added">Added</span> CXCallEndedReasonRemoteEnded</div>
+<div class="difference"><span class="status added">Added</span> CXCallEndedReasonUnanswered</div>
+<div class="difference"><span class="status added">Added</span> CXCallEndedReasonAnsweredElsewhere</div>
+<div class="difference"><span class="status added">Added</span> CXCallEndedReasonDeclinedElsewhere</div>
+<div class="difference"><span class="status added">Added</span> CXProviderDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate providerDidReset:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate providerDidBegin:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:executeTransaction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:performStartCallAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:performAnswerCallAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:performEndCallAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:performSetHeldCallAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:performSetMutedCallAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:performSetGroupCallAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:performPlayDTMFCallAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:timedOutPerformingAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:didActivateAudioSession:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderDelegate provider:didDeactivateAudioSession:]</div>
+<div class="difference"><span class="status added">Added</span> CXProvider</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider initWithConfiguration:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider setDelegate:queue:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider reportNewIncomingCallWithUUID:update:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider reportCallWithUUID:updated:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider reportCallWithUUID:endedAtDate:reason:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider reportOutgoingCallWithUUID:startedConnectingAtDate:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider reportOutgoingCallWithUUID:connectedAtDate:]</div>
+<div class="difference"><span class="status added">Added</span> CXProvider.configuration</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider invalidate]</div>
+<div class="difference"><span class="status added">Added</span> CXProvider.pendingTransactions</div>
+<div class="difference"><span class="status added">Added</span> -[CXProvider pendingCallActionsOfClass:withCallUUID:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXProviderConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXProviderConfiguration</div>
+<div class="difference"><span class="status added">Added</span> CXProviderConfiguration.ringtoneSound</div>
+<div class="difference"><span class="status added">Added</span> CXProviderConfiguration.iconTemplateImageData</div>
+<div class="difference"><span class="status added">Added</span> CXProviderConfiguration.maximumCallGroups</div>
+<div class="difference"><span class="status added">Added</span> CXProviderConfiguration.maximumCallsPerCallGroup</div>
+<div class="difference"><span class="status added">Added</span> CXProviderConfiguration.includesCallsInRecents</div>
+<div class="difference"><span class="status added">Added</span> CXProviderConfiguration.supportsVideo</div>
+<div class="difference"><span class="status added">Added</span> CXProviderConfiguration.supportedHandleTypes</div>
+<div class="difference"><span class="status added">Added</span> -[CXProviderConfiguration init]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXSetGroupCallAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXSetGroupCallAction</div>
+<div class="difference"><span class="status added">Added</span> -[CXSetGroupCallAction initWithCallUUID:callUUIDToGroupWith:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXSetGroupCallAction initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> CXSetGroupCallAction.callUUIDToGroupWith</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXSetHeldCallAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXSetHeldCallAction</div>
+<div class="difference"><span class="status added">Added</span> -[CXSetHeldCallAction initWithCallUUID:onHold:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXSetHeldCallAction initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> CXSetHeldCallAction.onHold</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXSetMutedCallAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXSetMutedCallAction</div>
+<div class="difference"><span class="status added">Added</span> -[CXSetMutedCallAction initWithCallUUID:muted:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXSetMutedCallAction initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> CXSetMutedCallAction.muted</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXStartCallAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXStartCallAction</div>
+<div class="difference"><span class="status added">Added</span> -[CXStartCallAction initWithCallUUID:handle:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXStartCallAction initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> CXStartCallAction.handle</div>
+<div class="difference"><span class="status added">Added</span> CXStartCallAction.contactIdentifier</div>
+<div class="difference"><span class="status added">Added</span> CXStartCallAction.video</div>
+<div class="difference"><span class="status added">Added</span> -[CXStartCallAction fulfillWithDateStarted:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CXTransaction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CXTransaction</div>
+<div class="difference"><span class="status added">Added</span> CXTransaction.UUID</div>
+<div class="difference"><span class="status added">Added</span> CXTransaction.complete</div>
+<div class="difference"><span class="status added">Added</span> CXTransaction.actions</div>
+<div class="difference"><span class="status added">Added</span> -[CXTransaction initWithActions:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXTransaction initWithAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[CXTransaction addAction:]</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>SharedWithYou tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>SharedWithYou tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">NSItemProvider+SWCollaborationMetadata.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata (NSItemProvider)</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadataTypeIdentifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWAttributionView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWAttributionViewDisplayContext</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewDisplayContextSummary</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewDisplayContextDetail</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewHorizontalAlignment</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewHorizontalAlignmentDefault</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewHorizontalAlignmentLeading</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewHorizontalAlignmentCenter</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewHorizontalAlignmentTrailing</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewBackgroundStyle</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewBackgroundStyleDefault</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewBackgroundStyleColor</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionViewBackgroundStyleMaterial</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView.highlight</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView.displayContext</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView.horizontalAlignment</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView.backgroundStyle</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView.preferredMaxLayoutWidth</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView.highlightMenu</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView.menuTitleForHideAction</div>
+<div class="difference"><span class="status added">Added</span> SWAttributionView.supplementalMenu</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWCollaborationHighlight.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWCollaborationHighlight</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationHighlight.collaborationIdentifier</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationHighlight.title</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationHighlight.creationDate</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationHighlight.contentType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWCollaborationView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWCollaborationViewDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationViewDelegate collaborationViewShouldPresentPopover:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationViewDelegate collaborationViewWillPresentPopover:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationViewDelegate collaborationViewDidDismissPopover:]</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationView</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationView.cloudSharingDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationView setContentView:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationView initWithItemProvider:]</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationView.activeParticipantCount</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationView.delegate</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationView.headerTitle</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationView.headerSubtitle</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationView.headerImage</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationView dismissPopover:]</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationView.manageButtonTitle</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationView setShowManageButton:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWErrors.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWHighlightCenterErrorCode</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightCenterErrorCodeNoError</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightCenterErrorCodeInternalError</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightCenterErrorCodeInvalidURL</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightCenterErrorCodeAccessDenied</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWHighlight.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWHighlight</div>
+<div class="difference"><span class="status added">Added</span> SWHighlight.identifier</div>
+<div class="difference"><span class="status added">Added</span> SWHighlight.URL</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWHighlightCenter.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWHighlightCenterDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightCenterDelegate highlightCenterHighlightsDidChange:]</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightCenter</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightCenter.delegate</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightCenter.highlights</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightCenter.highlightCollectionTitle</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightCenter postNoticeForHighlightEvent:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightCenter collaborationHighlightForURL:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightCenter collaborationHighlightForIdentifier:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightCenter getSignedIdentityProofForCollaborationHighlight:usingData:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightCenter highlightForURL:error:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWHighlightChangeEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWHighlightChangeEventTrigger</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightChangeEventTriggerEdit</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightChangeEventTriggerComment</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightChangeEvent</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightChangeEvent.changeEventTrigger</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightChangeEvent initWithHighlight:trigger:]</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightChangeEvent.highlightURL</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWHighlightEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWHighlightEvent</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightEvent.highlightURL</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWHighlightMembershipEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWHighlightMembershipEventTrigger</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightMembershipEventTriggerAddedCollaborator</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightMembershipEventTriggerRemovedCollaborator</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightMembershipEvent</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightMembershipEvent.membershipEventTrigger</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightMembershipEvent initWithHighlight:trigger:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWHighlightMentionEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWHighlightMentionEvent</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightMentionEvent.mentionedPersonHandle</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightMentionEvent initWithHighlight:mentionedPersonCloudKitShareHandle:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightMentionEvent initWithHighlight:mentionedPersonIdentity:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWHighlightPersistenceEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWHighlightPersistenceEventTrigger</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightPersistenceEventTriggerCreated</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightPersistenceEventTriggerDeleted</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightPersistenceEventTriggerRenamed</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightPersistenceEventTriggerMoved</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightPersistenceEvent</div>
+<div class="difference"><span class="status added">Added</span> SWHighlightPersistenceEvent.persistenceEventTrigger</div>
+<div class="difference"><span class="status added">Added</span> -[SWHighlightPersistenceEvent initWithHighlight:trigger:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWRemoveParticipantAlertController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWRemoveParticipantAlertController</div>
+<div class="difference"><span class="status added">Added</span> +[SWRemoveParticipantAlertController alertControllerWithParticipant:highlight:]</div>
+</div>
+
+</div>
+</body>
+</html>

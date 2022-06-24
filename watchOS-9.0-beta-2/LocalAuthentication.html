@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>LocalAuthentication watchOS 9.0 20R5287p to 20R5307f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>LocalAuthentication watchOS 9.0 20R5287p to 20R5307f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">LAContext.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> LAPolicyDeviceOwnerAuthenticationWithBiometrics</div>
+<div class="difference"><span class="status removed">Removed</span> LAContext.localizedFallbackTitle</div>
+<div class="difference"><span class="status removed">Removed</span> LAContext.localizedCancelTitle</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LAContext.interactionNotAllowed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LAError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> LAErrorBiometryNotAvailable</div>
+<div class="difference"><span class="status removed">Removed</span> LAErrorBiometryNotEnrolled</div>
+<div class="difference"><span class="status removed">Removed</span> LAErrorBiometryLockout</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LAErrorDomain</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const _Nonnull LAErrorDomain</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(tvos) NSString *const LAErrorDomain</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>RoomPlan iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>RoomPlan iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">RoomPlan.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RoomPlanVersionNumber</div>
+<div class="difference"><span class="status added">Added</span> RoomPlanVersionString</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CapturedRoom</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CapturedRoom</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.doors</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.objects</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.openings</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.walls</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.windows</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.export(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Confidence</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Confidence.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Confidence.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Confidence.hashValue</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Confidence.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Confidence.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Error</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Error.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Error.errorDescription</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Error.hashValue</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Error.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.category</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.confidence</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.dimensions</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.identifier</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.transform</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.Category</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.Category.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.Category.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.Category.hashValue</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.Category.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Object.Category.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.category</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.completedEdges</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.confidence</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.curve</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.dimensions</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.identifier</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.transform</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Category</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Category.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Category.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Category.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Curve</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Curve.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Curve.endAngle</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Curve.radius</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Curve.startAngle</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Curve.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Edge</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Edge.allCases /* static */</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Edge.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Edge.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Edge.hashValue</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Edge.encode(to:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Edge.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoom.Surface.Edge.AllCases</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CapturedRoomData</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CapturedRoomData</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoomData.init(from:)</div>
+<div class="difference"><span class="status added">Added</span> CapturedRoomData.encode(to:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RoomBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RoomBuilder</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.init(options:)</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.ConfigurationOptions</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.ConfigurationOptions.beautifyObjects /* static */</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.ConfigurationOptions.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.ConfigurationOptions.rawValue</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.ConfigurationOptions.ArrayLiteralElement</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.ConfigurationOptions.Element</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.ConfigurationOptions.RawValue</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.GenerationError</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.GenerationError.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.GenerationError.errorDescription</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.GenerationError.hashValue</div>
+<div class="difference"><span class="status added">Added</span> RoomBuilder.GenerationError.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RoomCaptureSession</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.isSupported /* static */</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.init()</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.arSession</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.delegate</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.run(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.stop()</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.CaptureError</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.CaptureError.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.CaptureError.errorDescription</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.CaptureError.hashValue</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.CaptureError.hash(into:)</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.Configuration</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.Configuration.init()</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.Configuration.isCoachingEnabled</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.Instruction</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.Instruction.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.Instruction.hashValue</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureSession.Instruction.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RoomCaptureSessionDelegate</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RoomCaptureSessionDelegate</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RoomCaptureView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RoomCaptureView</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureView.init(frame:)</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureView.captureSession</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureView.delegate</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureView.subviews</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureView.didMoveToSuperview()</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureView.encode(with:)</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureView.layoutSubviews()</div>
+<div class="difference"><span class="status added">Added</span> RoomCaptureView.traitCollectionDidChange(_:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RoomCaptureViewDelegate</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RoomCaptureViewDelegate</div>
+</div>
+
+</div>
+</body>
+</html>

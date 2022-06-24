@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>IdentityLookup iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>IdentityLookup iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">ILMessageFilterAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubAction</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionNone</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalOthers</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalFinance</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalOrders</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalReminders</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalHealth</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalWeather</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalCarrier</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalRewards</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionTransactionalPublicServices</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionPromotionalOthers</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionPromotionalOffers</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterSubActionPromotionalCoupons</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ILMessageFilterCapabilitiesQueryHandling.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ILMessageFilterCapabilitiesQueryHandling</div>
+<div class="difference"><span class="status added">Added</span> -[ILMessageFilterCapabilitiesQueryHandling handleCapabilitiesQueryRequest:context:completion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ILMessageFilterCapabilitiesQueryRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ILMessageFilterCapabilitiesQueryRequest</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ILMessageFilterCapabilitiesQueryResponse.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ILMessageFilterCapabilitiesQueryResponse</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterCapabilitiesQueryResponse.transactionalSubActions</div>
+<div class="difference"><span class="status added">Added</span> ILMessageFilterCapabilitiesQueryResponse.promotionalSubActions</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ILMessageFilterQueryRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ILMessageFilterQueryRequest.receiverISOCountryCode</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ILMessageFilterQueryResponse.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ILMessageFilterQueryResponse.subAction</div>
+</div>
+
+</div>
+</body>
+</html>

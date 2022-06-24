@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>EventKitUI iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>EventKitUI iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">UIFont+EKDayOccurrenceView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> UIFont.ek_defaultOccurrenceSecondaryTextFont</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) UIFont *ek_defaultOccurrenceSecondaryTextFont</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nullable) UIFont *ek_defaultOccurrenceSecondaryTextFont</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[UIFont ek_defaultOccurrencePrimaryTextFontForSizeClass:]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">+ (nonnull UIFont *)ek_defaultOccurrencePrimaryTextFontForSizeClass:(UIUserInterfaceSizeClass)sizeClass</td></tr>
+<tr><th>To</th><td class="declaration">+ (nullable UIFont *)ek_defaultOccurrencePrimaryTextFontForSizeClass:(UIUserInterfaceSizeClass)sizeClass</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> +[UIFont ek_defaultOccurrenceSmallPrimaryTextFontForSizeClass:]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">+ (nonnull UIFont *)ek_defaultOccurrenceSmallPrimaryTextFontForSizeClass:(UIUserInterfaceSizeClass)sizeClass</td></tr>
+<tr><th>To</th><td class="declaration">+ (nullable UIFont *)ek_defaultOccurrenceSmallPrimaryTextFontForSizeClass:(UIUserInterfaceSizeClass)sizeClass</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

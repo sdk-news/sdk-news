@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>StoreKit watchOS 9.0 20R5287p to 20R5307f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>StoreKit watchOS 9.0 20R5287p to 20R5307f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">Product</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> Product.priceLocale</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Transaction</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Transaction.environmentStringRepresentation</div>
+<table>
+<tr><th></th><th>Replacement</th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_alwaysEmitIntoClient</td><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration"><em>none</em></td><td class="declaration">@_backDeploy(before: iOS, 16.0)
+@_backDeploy(before: macOS, 13.0)
+@_backDeploy(before: tvOS, 16.0)
+@_backDeploy(before: watchOS, 9.0)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

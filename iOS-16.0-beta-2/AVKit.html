@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>AVKit iOS 16.0 20A5283m to 20A5303f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AVKit iOS 16.0 20A5283m to 20A5303f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVPlaybackSpeedCollection.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AVPlaybackSpeedCollection</div>
+<div class="difference"><span class="status removed">Removed</span> +[AVPlaybackSpeedCollection defaultSpeedFromList:]</div>
+<div class="difference"><span class="status removed">Removed</span> +[AVPlaybackSpeedCollection collectionWithSpeeds:]</div>
+<div class="difference"><span class="status removed">Removed</span> AVPlaybackSpeedCollection.speeds</div>
+<div class="difference"><span class="status removed">Removed</span> AVPlaybackSpeedCollection.selectedSpeed</div>
+<div class="difference"><span class="status removed">Removed</span> -[AVPlaybackSpeedCollection selectSpeed:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlayerViewController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AVPlayerViewController.playbackSpeedCollection</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlayerViewController.speeds</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerViewController.selectedSpeed</div>
+<div class="difference"><span class="status added">Added</span> -[AVPlayerViewController selectSpeed:]</div>
+</div>
+
+</div>
+</body>
+</html>

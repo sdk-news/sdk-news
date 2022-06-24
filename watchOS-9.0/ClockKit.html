@@ -1,0 +1,914 @@
+<html>
+<head>
+<title>ClockKit watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ClockKit watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CLKComplication.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKComplication</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationDataSource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationDataSource.widgetMigrator</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource getTimelineEndDateForComplication:withHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource getPrivacyBehaviorForComplication:withHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource getTimelineAnimationBehaviorForComplication:withHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource getAlwaysOnTemplateForComplication:withHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource getCurrentTimelineEntryForComplication:withHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource getTimelineEntriesForComplication:afterDate:limit:withHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource getLocalizableSampleTemplateForComplication:withHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource getComplicationDescriptorsWithHandler:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDataSource handleSharedComplicationDescriptors:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationDescriptor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDescriptor initWithIdentifier:displayName:supportedFamilies:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDescriptor initWithIdentifier:displayName:supportedFamilies:userInfo:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[CLKComplicationDescriptor initWithIdentifier:displayName:supportedFamilies:userActivity:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationIntentWidgetMigrationConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration.kind</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration.extensionBundleIdentifier</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration.intent</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationIntentWidgetMigrationConfiguration.localizedDisplayName</div>
+<div class="difference"><span class="status added">Added</span> -[CLKComplicationIntentWidgetMigrationConfiguration initWithKind:extensionBundleIdentifier:intent:localizedDisplayName:]</div>
+<div class="difference"><span class="status added">Added</span> +[CLKComplicationIntentWidgetMigrationConfiguration intentWidgetMigrationConfigurationWithKind:extensionBundleIdentifier:intent:localizedDisplayName:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationServer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationServerActiveComplicationsDidChangeNotification</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(watchos(2.0)) NSString *const CLKComplicationServerActiveComplicationsDidChangeNotification</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">API_DEPRECATED(&quot;On watchOS 9.0 or later, use WidgetKit instead&quot;, watchos(2.0, API_TO_BE_DEPRECATED)) NSString *const CLKComplicationServerActiveComplicationsDidChangeNotification</td><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationServer</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationStaticWidgetMigrationConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationStaticWidgetMigrationConfiguration</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationStaticWidgetMigrationConfiguration.kind</div>
+<div class="difference"><span class="status added">Added</span> CLKComplicationStaticWidgetMigrationConfiguration.extensionBundleIdentifier</div>
+<div class="difference"><span class="status added">Added</span> -[CLKComplicationStaticWidgetMigrationConfiguration initWithKind:extensionBundleIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[CLKComplicationStaticWidgetMigrationConfiguration staticWidgetMigrationConfigurationWithKind:extensionBundleIdentifier:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationTemplate.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplate</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularSmallSimpleText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularSmallSimpleImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularSmallRingText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularSmallRingImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularSmallStackText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularSmallStackImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularSmallColumnsText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularLargeStandardBody</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularLargeTallBody</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularLargeTable</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateModularLargeColumns</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateUtilitarianSmallSquare</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateUtilitarianSmallRingText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateUtilitarianSmallRingImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateUtilitarianSmallFlat</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateUtilitarianLargeFlat</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateCircularSmallSimpleText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateCircularSmallSimpleImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateCircularSmallRingText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateCircularSmallRingImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateCircularSmallStackText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateCircularSmallStackImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateExtraLargeSimpleText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateExtraLargeSimpleImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateExtraLargeRingText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateExtraLargeRingImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateExtraLargeStackText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateExtraLargeStackImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateExtraLargeColumnsText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCornerGaugeText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCornerGaugeImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCornerTextImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCornerStackText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCornerCircularImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircular</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircularImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircularOpenGaugeRangeText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircularOpenGaugeSimpleText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircularOpenGaugeImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircularClosedGaugeText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircularClosedGaugeImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircularStackText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicCircularStackImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicBezelCircularText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicRectangularFullImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicRectangularLargeImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicRectangularStandardBody</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicRectangularTextGauge</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircular</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircularImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeRangeText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeSimpleText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircularStackText</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTemplateGraphicExtraLargeCircularStackImage</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationTimelineEntry.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTimelineEntry</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationWidgetMigrationConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationWidgetMigrationConfiguration</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKComplicationWidgetMigrator.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CLKComplicationWidgetMigrator</div>
+<div class="difference"><span class="status added">Added</span> -[CLKComplicationWidgetMigrator getWidgetConfigurationFrom:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTimeTravelDirectionNone</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTimeTravelDirectionForward</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTimeTravelDirectionBackward</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationPrivacyBehaviorShowOnLockScreen</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationPrivacyBehaviorHideOnLockScreen</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTimelineAnimationBehaviorNever</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTimelineAnimationBehaviorGrouped</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationTimelineAnimationBehaviorAlways</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationColumnAlignmentLeading</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationColumnAlignmentTrailing</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationRingStyleClosed</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKComplicationRingStyleOpen</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKGaugeProviderStyleRing</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKGaugeProviderStyleFill</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKSimpleGaugeProviderFillFractionEmpty</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKLaunchedTimelineEntryDateKey</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKLaunchedComplicationIdentifierKey</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKAllComplicationFamilies()</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKFullColorImageProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKFullColorImageProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKGaugeProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKGaugeProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKSimpleGaugeProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKTimeIntervalGaugeProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKImageProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKImageProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLKTextProvider.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CLKTextProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKSimpleTextProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKDateTextProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKTimeTextProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKTimeIntervalTextProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKRelativeDateStyleNatural</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKRelativeDateStyleOffset</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKRelativeDateStyleTimer</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKRelativeDateStyleNaturalAbbreviated</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKRelativeDateStyleOffsetShort</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKRelativeDateStyleNaturalFull</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CLKRelativeDateTextProvider</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>On watchOS 9.0 or later, use WidgetKit instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

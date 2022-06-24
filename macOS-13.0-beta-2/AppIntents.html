@@ -1,0 +1,1403 @@
+<html>
+<head>
+<title>AppIntents macOS 13.0 22A5266o to 22A5286g API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AppIntents macOS 13.0 22A5266o to 22A5286g API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AnyEntityQueryComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AnyEntityQueryComparator</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct AnyEntityQueryComparator&lt;Entity, Subject, Property, ComparatorMappingType&gt;</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt; where Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AnyIntentValue</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AnyIntentValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AnyIntentValueType</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AnyIntentValueType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppEntity</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AppEntity</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>AppIntents.AppValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppEnum</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AppEnum</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>AppIntents.AppValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppShortcutPhrase</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AppShortcutPhrase.StringInterpolation.appendInterpolation(_:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">mutating public func appendInterpolation&lt;ValueType, Subject&gt;(_: Subject) where Subject: Swift.KeyPath&lt;AppIntentType, AppIntents.IntentParameter&lt;ValueType&gt;&gt;, ValueType: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">mutating public func appendInterpolation&lt;ValueType, Subject&gt;(_: Subject) where Subject: Swift.KeyPath&lt;AppIntentType, AppIntents.IntentParameter&lt;ValueType&gt;&gt;, ValueType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppShortcutsProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AppShortcutsProvider</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppValue</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AppValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AudioStartingIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AudioStartingIntent</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td>AppIntents.AppIntent</td></tr>
+<tr><th>To</th><td>AppIntents.SystemIntent</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BoolDisplayName</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> BoolDisplayName</div>
+<div class="difference"><span class="status removed">Removed</span> BoolDisplayName.init(true:false:)</div>
+<div class="difference"><span class="status removed">Removed</span> BoolDisplayName.`false`</div>
+<div class="difference"><span class="status removed">Removed</span> BoolDisplayName.`true`</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CLPlacemarkDisplayStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> CLPlacemarkDisplayStyle</div>
+<div class="difference"><span class="status removed">Removed</span> CLPlacemarkDisplayStyle.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> CLPlacemarkDisplayStyle.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> CLPlacemarkDisplayStyle.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ConfirmationActionName</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.`continue` /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.`do` /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.add /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.addData /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.book /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.buy /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.call /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.checkIn /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.create /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.download /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.filter /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.find /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.get /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.go /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.log /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.open /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.order /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.pay /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.play /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.playSound /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.post /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.request /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.run /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.search /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.send /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.set /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.share /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.start /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.startNavigation /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.toggle /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.turnOff /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.turnOn /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.view /* static */</div>
+<div class="difference"><span class="status added">Added</span> ConfirmationActionName.custom(acceptLabel:acceptAlternatives:denyLabel:denyAlternatives:destructive:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ContainsComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ContainsComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class ContainsComparator&lt;Property, Value, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where Value: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class ContainsComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt; where InputType: AppIntents._IntentValue, Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ContainsComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ContainsComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Value.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CopyableEntity</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> CopyableEntity</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DeleteEntitiesIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> DeleteEntitiesIntent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DeleteIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DeleteIntent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DisplayRepresentable</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DisplayRepresentable</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td>AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td><em>none</em></td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicOptionsItem</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DynamicOptionsItem</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct DynamicOptionsItem&lt;V&gt; where V: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct DynamicOptionsItem&lt;V&gt; where V: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicOptionsResult</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DynamicOptionsResult</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct DynamicOptionsResult&lt;Result&gt;: AppIntents.DynamicOptionsResultProtocol where Result: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct DynamicOptionsResult&lt;Result&gt;: AppIntents.DynamicOptionsResultProtocol where Result: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.emptyResult /* static */</div>
+<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.allResults</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicOptionsSection</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DynamicOptionsSection</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct DynamicOptionsSection&lt;Result&gt; where Result: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct DynamicOptionsSection&lt;Result&gt; where Result: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EmptyResolverSpecification</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EmptyResolverSpecification</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct EmptyResolverSpecification&lt;T&gt;: AppIntents.ResolverSpecification where T: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct EmptyResolverSpecification&lt;T&gt;: AppIntents.ResolverSpecification where T: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityProperty</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityProperty</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.AnyIntentValueType</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+@propertyWrapper
+final public class EntityProperty&lt;Value&gt;: AppIntents.AnyIntentValueType, @unchecked Swift.Sendable where Value: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td>AppIntents.AnyIntentValue</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+@propertyWrapper
+final public class EntityProperty&lt;Value&gt;: AppIntents.AnyIntentValue, @unchecked Swift.Sendable where Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQueryComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQueryComparator</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public class EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where ComparatorMappingType: Swift.Sendable, Value: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public class EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt; where ComparatorMappingType: Swift.Sendable, InputType: AppIntents._IntentValue, Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQueryComparatorsBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQueryComparatorsBuilder</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum EntityQueryComparatorsBuilder&lt;Entity, Subject, Property, ComparatorMappingType&gt;</td></tr>
+<tr><th>To</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum EntityQueryComparatorsBuilder&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt; where Entity: AppIntents.AppEntity, Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue, Subject: AppIntents.AppEntity</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EntityQueryComparatorsBuilder.buildBlock(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildBlock&lt;Value&gt;(_: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;...) -&gt; [AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, ComparatorMappingType&gt;] where ComparatorMappingType: Swift.Sendable, Value: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildBlock(_: AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt;...) -&gt; [AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt;]</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EntityQueryComparatorsBuilder.buildExpression(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildExpression&lt;Value&gt;(_: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;) -&gt; AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where ComparatorMappingType: Swift.Sendable, Value: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildExpression(_: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType, ComparatorMappingType&gt;) -&gt; AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt;
+public static func buildExpression(_: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt;) -&gt; AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt; where ComparatorMappingType: Swift.Sendable, PropertyType: Swift.ExpressibleByNilLiteral
+public static func buildExpression&lt;InputType&gt;(_: AppIntents.ContainsComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt;) -&gt; AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt; where InputType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQueryProperties</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> EntityQueryProperties.init(content:)</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> EntityQueryProperties.init(properties:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQueryPropertiesBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQueryPropertiesBuilder.buildBlock(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildBlock(_: AppIntents.EntityQueryPropertyDeclaration&lt;Entity, ComparatorMappingType&gt;?...) -&gt; [AppIntents.EntityQueryPropertyDeclaration&lt;Entity, ComparatorMappingType&gt;]</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildBlock(_: AppIntents.EntityQueryPropertyDeclaration&lt;Entity, ComparatorMappingType&gt;...) -&gt; [AppIntents.EntityQueryPropertyDeclaration&lt;Entity, ComparatorMappingType&gt;]</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> EntityQueryPropertiesBuilder.buildExpression(_:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQueryProperty</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQueryProperty</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class EntityQueryProperty&lt;Entity, Subject, Property, ComparatorMappingType&gt;: AppIntents.EntityQueryPropertyDeclaration&lt;Entity, ComparatorMappingType&gt; where Entity: AppIntents.AppEntity, Subject: AppIntents.AppEntity</td></tr>
+<tr><th>To</th><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class EntityQueryProperty&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt;: AppIntents.EntityQueryPropertyDeclaration&lt;Entity, ComparatorMappingType&gt; where Entity: AppIntents.AppEntity, Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue, Subject: AppIntents.AppEntity</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> EntityQueryProperty.init(keyPath:comparators:)</div>
+<div class="difference"><span class="status removed">Removed</span> EntityQueryProperty.init(keyPath:entityProvider:comparators:)</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQueryProperty.QueryComparators</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias QueryComparators = [AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, ComparatorMappingType&gt;]</td></tr>
+<tr><th>To</th><td class="declaration">public typealias QueryComparators = [AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt;]</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQuerySortingOptions</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> EntityQuerySortingOptions.init()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQuerySortingOptionsBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQuerySortingOptionsBuilder.buildBlock(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildBlock(_: AppIntents.EntityQuerySortableByProperty&lt;Entity&gt;?...) -&gt; [AppIntents.EntityQuerySortableByProperty&lt;Entity&gt;]</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildBlock(_: AppIntents.EntityQuerySortableByProperty&lt;Entity&gt;...) -&gt; [AppIntents.EntityQuerySortableByProperty&lt;Entity&gt;]</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> EntityQuerySortingOptionsBuilder.buildExpression(_:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EqualToComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EqualToComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class EqualToComparator&lt;Property, Value, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where Value: AppIntents._IntentValueType, Value: Swift.Equatable</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class EqualToComparator&lt;Property, PropertyType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType, ComparatorMappingType&gt; where Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue, PropertyType: Swift.Equatable</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EqualToComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EqualToComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Property.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Value.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType.UnwrappedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GreaterThanComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GreaterThanComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class GreaterThanComparator&lt;Property, Value, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where Value: AppIntents._IntentValueType, Value: Swift.Comparable</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class GreaterThanComparator&lt;Property, PropertyType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt; where Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType.UnwrappedType: Swift.Comparable, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GreaterThanComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GreaterThanComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Property.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Value.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType.UnwrappedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GreaterThanOrEqualToComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GreaterThanOrEqualToComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class GreaterThanOrEqualToComparator&lt;Property, Value, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where Value: AppIntents._IntentValueType, Value: Swift.Comparable</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class GreaterThanOrEqualToComparator&lt;Property, PropertyType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt; where Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType.UnwrappedType: Swift.Comparable, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GreaterThanOrEqualToComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GreaterThanOrEqualToComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Property.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Value.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType.UnwrappedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HasPrefixComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> HasPrefixComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Swift.String, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class HasPrefixComparator&lt;Property, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Swift.String, ComparatorMappingType&gt;</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class HasPrefixComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt; where InputType: AppIntents._IntentValue, Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> HasPrefixComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> HasPrefixComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HasSuffixComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> HasSuffixComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Swift.String, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class HasSuffixComparator&lt;Property, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Swift.String, ComparatorMappingType&gt;</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class HasSuffixComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt; where InputType: AppIntents._IntentValue, Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> HasSuffixComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> HasSuffixComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Swift.String&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentDescription</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentDescription</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.ExpressibleByStringLiteral</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentDescription.init(stringLiteral:)</div>
+<div class="difference"><span class="status added">Added</span> IntentDescription.categoryName</div>
+<div class="difference"><span class="status added">Added</span> IntentDescription.descriptionText</div>
+<div class="difference"><span class="status added">Added</span> IntentDescription.searchKeywords</div>
+<div class="difference"><span class="status added">Added</span> IntentDescription.ExtendedGraphemeClusterLiteralType</div>
+<div class="difference"><span class="status added">Added</span> IntentDescription.StringLiteralType</div>
+<div class="difference"><span class="status added">Added</span> IntentDescription.UnicodeScalarLiteralType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentDonationManager</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentDonationManager.donate(intent:result:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@discardableResult
+public func donate&lt;IntentType, IntentPerformResultType&gt;(intent: IntentType, result: IntentPerformResultType? = nil) -&gt; AppIntents.IntentDonationIdentifier where IntentPerformResultType: AppIntents.IntentPerformResult, IntentType: AppIntents.AppIntent</td></tr>
+<tr><th>To</th><td class="declaration">@discardableResult
+public func donate&lt;Intent, IntentPerformResultType&gt;(intent: Intent, result: IntentPerformResultType? = nil) -&gt; AppIntents.IntentDonationIdentifier where Intent: AppIntents.AppIntent, IntentPerformResultType: AppIntents.IntentPerformResult</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentParameter</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentParameter</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+@propertyWrapper
+final public class IntentParameter&lt;Value&gt;: @unchecked Swift.Sendable where Value: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+@propertyWrapper
+final public class IntentParameter&lt;Value&gt;: @unchecked Swift.Sendable where Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> IntentParameter.defaultValue</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">final public let defaultValue: Value.ProjectedType?</td></tr>
+<tr><th>To</th><td class="declaration">final public let defaultValue: Value.UnwrappedType?</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentParameterContext</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentParameterContext</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.AnyIntentValueType</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct IntentParameterContext&lt;Value&gt;: AppIntents.AnyIntentValueType, @unchecked Swift.Sendable where Value: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td>AppIntents.AnyIntentValue</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct IntentParameterContext&lt;Value&gt;: AppIntents.AnyIntentValue, @unchecked Swift.Sendable where Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentParameterSummary</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentParameterSummary</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct IntentParameterSummary&lt;IntentType&gt;: AppIntents.ParameterSummary where IntentType: AppIntents.AppIntent</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct IntentParameterSummary&lt;Intent&gt;: AppIntents.ParameterSummary where Intent: AppIntents.AppIntent</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> IntentParameterSummary.ParameterKeyPathsBuilder.buildBlock(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildBlock(_: Swift.PartialKeyPath&lt;IntentType&gt;...) -&gt; [Swift.PartialKeyPath&lt;IntentType&gt;]</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildBlock(_: Swift.PartialKeyPath&lt;Intent&gt;...) -&gt; [Swift.PartialKeyPath&lt;Intent&gt;]</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> IntentParameterSummary.ParameterKeyPathsBuilder.buildExpression(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildExpression&lt;ValueType&gt;(_: Swift.KeyPath&lt;IntentType, AppIntents.IntentParameter&lt;ValueType&gt;&gt;) -&gt; Swift.PartialKeyPath&lt;IntentType&gt; where ValueType: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildExpression&lt;ValueType&gt;(_: Swift.KeyPath&lt;Intent, AppIntents.IntentParameter&lt;ValueType&gt;&gt;) -&gt; Swift.PartialKeyPath&lt;Intent&gt; where ValueType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentPaymentMethod</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> IntentPaymentMethod.PaymentType</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPaymentMethod.PaymentType.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPaymentMethod.PaymentType.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPaymentMethod.PaymentType.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentPerson</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.init(value:kind:label:)</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.hash(into:)</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.Kind</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.Kind.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.Kind.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.Kind.hash(into:)</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.Label</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.Label.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.Label.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Handle.Label.hash(into:)</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Identifier</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Identifier.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Identifier.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Identifier.hash(into:)</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.Name</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.ParameterMode</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.ParameterMode.init(rawValue:)</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.ParameterMode.rawValue</div>
+<div class="difference"><span class="status removed">Removed</span> IntentPerson.ParameterMode.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentPrediction</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentPrediction</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct IntentPrediction&lt;IntentType, T&gt;: AppIntents.IntentPredictionConfiguration where IntentType: AppIntents.AppIntent</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct IntentPrediction&lt;Intent, T&gt;: AppIntents.IntentPredictionConfiguration where Intent: AppIntents.AppIntent</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentPredictionsBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentPredictionsBuilder</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum IntentPredictionsBuilder&lt;IntentType&gt; where IntentType: AppIntents.AppIntent</td></tr>
+<tr><th>To</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum IntentPredictionsBuilder&lt;Intent&gt; where Intent: AppIntents.AppIntent</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> IntentPredictionsBuilder.buildBlock(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildBlock&lt;A0&gt;(_: A0) -&gt; A0 where A0: AppIntents.IntentPredictionConfiguration, IntentType == A0.IntentType</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildBlock&lt;A0&gt;(_: A0) -&gt; A0 where A0: AppIntents.IntentPredictionConfiguration, Intent == A0.Intent</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentPredictionsBuilder.buildExpression(_:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LessThanComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LessThanComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class LessThanComparator&lt;Property, Value, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where Value: AppIntents._IntentValueType, Value: Swift.Comparable</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class LessThanComparator&lt;Property, PropertyType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt; where Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType.UnwrappedType: Swift.Comparable, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> LessThanComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> LessThanComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Property.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Value.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType.UnwrappedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LessThanOrEqualToComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LessThanOrEqualToComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class LessThanOrEqualToComparator&lt;Property, Value, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where Value: AppIntents._IntentValueType, Value: Swift.Comparable</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class LessThanOrEqualToComparator&lt;Property, PropertyType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt; where Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType.UnwrappedType: Swift.Comparable, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> LessThanOrEqualToComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> LessThanOrEqualToComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Property.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Value.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType.UnwrappedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NotEqualToComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NotEqualToComparator</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class NotEqualToComparator&lt;Property, Value, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, Value, ComparatorMappingType&gt; where Value: AppIntents._IntentValueType, Value: Swift.Equatable</td></tr>
+<tr><th>To</th><td>AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType, ComparatorMappingType&gt;</td><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+final public class NotEqualToComparator&lt;Property, PropertyType, ComparatorMappingType&gt;: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType, ComparatorMappingType&gt; where Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue, PropertyType: Swift.Equatable</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NotEqualToComparator.init(mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init(mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NotEqualToComparator.init(withResolvers:mappingTransform:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Property.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)
+public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;Value.ProjectedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Spec&gt;(@AppIntents.ResolverSpecificationBuilder&lt;PropertyType.UnwrappedType&gt;
+withResolvers: @escaping () -&gt; Spec, mappingTransform: @escaping () -&gt; ComparatorMappingType)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">OpenEntityIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> OpenEntityIntent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">OpenIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> OpenIntent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryBuilder</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum ParameterSummaryBuilder</td></tr>
+<tr><th>To</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum ParameterSummaryBuilder&lt;Intent&gt; where Intent: AppIntents.AppIntent</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryBuilder.buildBlock(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildBlock&lt;ParameterSummaryType&gt;(_: ParameterSummaryType) -&gt; ParameterSummaryType where ParameterSummaryType: AppIntents.ParameterSummary</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildBlock&lt;Summary&gt;(_: Summary) -&gt; Summary where Intent == Summary.Intent, Summary: AppIntents.ParameterSummary</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ParameterSummaryBuilder.buildExpression(_:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryCaseBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryCaseBuilder</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum ParameterSummaryCaseBuilder</td></tr>
+<tr><th>To</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum ParameterSummaryCaseBuilder&lt;Intent, Value&gt; where Intent: AppIntents.AppIntent, Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ParameterSummaryCaseBuilder.buildExpression(_:) /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryCaseCondition</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryCaseCondition</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents._Case</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryCaseCondition&lt;ValueType, ParameterSummaryType&gt;: AppIntents._Case where ParameterSummaryType: AppIntents.ParameterSummary</td></tr>
+<tr><th>To</th><td>AppIntents._ParameterSummarySwitchCase</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryCaseCondition&lt;Intent, Value, Summary&gt;: AppIntents._ParameterSummarySwitchCase where Intent: AppIntents.AppIntent, Summary: AppIntents.ParameterSummary, Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryDefaultCaseCondition</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryDefaultCaseCondition</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td><em>none</em></td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryDefaultCaseCondition&lt;ParameterSummaryType&gt; where ParameterSummaryType: AppIntents.ParameterSummary</td></tr>
+<tr><th>To</th><td>AppIntents._ParameterSummarySwitchCase</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryDefaultCaseCondition&lt;Intent, Value, Summary&gt;: AppIntents._ParameterSummarySwitchCase where Intent: AppIntents.AppIntent, Summary: AppIntents.ParameterSummary, Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> ParameterSummaryDefaultCaseCondition.ValueType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryString</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryString</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryString&lt;IntentType&gt;: Swift.ExpressibleByStringInterpolation where IntentType: AppIntents.AppIntent</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryString&lt;Intent&gt;: Swift.ExpressibleByStringInterpolation where Intent: AppIntents.AppIntent</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryString.init(stringInterpolation:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(stringInterpolation: AppIntents.ParameterSummaryString&lt;IntentType&gt;.StringInterpolation)</td></tr>
+<tr><th>To</th><td class="declaration">public init(stringInterpolation: AppIntents.ParameterSummaryString&lt;Intent&gt;.StringInterpolation)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryString.StringInterpolation.appendInterpolation(_:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">mutating public func appendInterpolation&lt;ValueType, Subject&gt;(_: Subject) where Subject: Swift.KeyPath&lt;IntentType, AppIntents.IntentParameter&lt;ValueType&gt;&gt;, ValueType: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">mutating public func appendInterpolation&lt;ValueType, Subject&gt;(_: Subject) where Subject: Swift.KeyPath&lt;Intent, AppIntents.IntentParameter&lt;ValueType&gt;&gt;, ValueType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummarySwitchCondition</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummarySwitchCondition</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummarySwitchCondition&lt;IntentType, ValueType, ParameterSummaryCaseCondition&gt;: AppIntents.ParameterSummary where IntentType: AppIntents.AppIntent, ParameterSummaryCaseCondition: AppIntents._Case, ValueType: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummarySwitchCondition&lt;Intent, Value, CaseCondition&gt;: AppIntents.ParameterSummary where CaseCondition: AppIntents._ParameterSummarySwitchCase, Intent: AppIntents.AppIntent, Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryTupleCaseCondition</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryTupleCaseCondition</div>
+<table>
+<tr><th></th><th>Protocols</th><th>Replacement</th></tr>
+<tr><th>From</th><td>AppIntents._Case</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryTupleCaseCondition&lt;T&gt;: AppIntents._Case</td></tr>
+<tr><th>To</th><td>AppIntents._ParameterSummarySwitchCase</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryTupleCaseCondition&lt;Intent, Value, T&gt;: AppIntents._ParameterSummarySwitchCase where Intent: AppIntents.AppIntent, Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> ParameterSummaryTupleCaseCondition.ParameterSummaryType</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ParameterSummaryTupleCaseCondition.Summary</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> ParameterSummaryTupleCaseCondition.ValueType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryWhenCondition</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryWhenCondition</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryWhenCondition&lt;ParameterSummaryWhenCondition, Otherwise&gt;: AppIntents.ParameterSummary where Otherwise: AppIntents.ParameterSummary, ParameterSummaryWhenCondition: AppIntents.ParameterSummary</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryWhenCondition&lt;Intent, ParameterSummaryWhenCondition, Otherwise&gt;: AppIntents.ParameterSummary where Intent: AppIntents.AppIntent, Otherwise: AppIntents.ParameterSummary, ParameterSummaryWhenCondition: AppIntents.ParameterSummary</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RangeComparableProperty</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RangeComparableProperty</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RangeComparablePropertyType</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> RangeComparablePropertyType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RawRepresentableStringQuery</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> RawRepresentableStringQuery.DefaultValue</div>
+<div class="difference"><span class="status added">Added</span> RawRepresentableStringQuery.Result</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ResolverSpecificationBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ResolverSpecificationBuilder</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum ResolverSpecificationBuilder&lt;Property&gt; where Property: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@_functionBuilder
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public enum ResolverSpecificationBuilder&lt;Property&gt; where Property: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StaticDisplayRepresentable</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> StaticDisplayRepresentable</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td>AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td><em>none</em></td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StringFromIntResolver</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> StringFromIntResolver</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct StringFromIntResolver&lt;Input, Output&gt;: AppIntents.Resolver where Input: AppIntents._IntentValueType, Output.ValueType == Swift.String, Output: AppIntents._IntentValueType</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct StringFromIntResolver&lt;Input, Output&gt;: AppIntents.Resolver where Input: AppIntents._IntentValue, Output.ValueType == Swift.String, Output: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StringInputOptions</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.init(keyboardType:capitalizationType:multiline:autocorrect:smartQuotes:smartDashes:)</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.autocorrect</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.capitalizationType</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.keyboardType</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.multiline</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.smartDashes</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.smartQuotes</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.CapitalizationType</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.CapitalizationType.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.CapitalizationType.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.CapitalizationType.hash(into:)</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.KeyboardType</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.KeyboardType.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.KeyboardType.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> StringInputOptions.KeyboardType.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SystemIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SystemIntent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TransientEntity</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TransientEntity</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TupleIntentPrediction</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TupleIntentPrediction</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct TupleIntentPrediction&lt;IntentType, T&gt;: AppIntents.IntentPredictionConfiguration where IntentType: AppIntents.AppIntent</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct TupleIntentPrediction&lt;Intent, T&gt;: AppIntents.IntentPredictionConfiguration where Intent: AppIntents.AppIntent</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>AVKit macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AVKit macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVKitDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def AVKIT_ONLY_API_DEPRECATED_WITH_REPLACEMENT</div>
+<div class="difference"><span class="status added">Added</span> #def AVKIT_INIT_UNAVAILABLE</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlaybackSpeed.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed</div>
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed.systemDefaultSpeeds</div>
+<div class="difference"><span class="status added">Added</span> -[AVPlaybackSpeed initWithRate:localizedName:]</div>
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed.rate</div>
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed.localizedName</div>
+<div class="difference"><span class="status added">Added</span> AVPlaybackSpeed.localizedNumericName</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVPlayerView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVPlayerView.speeds</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerView.selectedSpeed</div>
+<div class="difference"><span class="status added">Added</span> -[AVPlayerView selectSpeed:]</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerView.allowsVideoFrameAnalysis</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerView.allowsMagnification</div>
+<div class="difference"><span class="status added">Added</span> AVPlayerView.magnification</div>
+<div class="difference"><span class="status added">Added</span> -[AVPlayerView setMagnification:centeredAtPoint:]</div>
+</div>
+
+</div>
+</body>
+</html>

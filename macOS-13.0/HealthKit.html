@@ -1,0 +1,1973 @@
+<html>
+<head>
+<title>HealthKit macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>HealthKit macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">HKActivitySummary.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKActivitySummary</div>
+<div class="difference"><span class="status added">Added</span> -[HKActivitySummary dateComponentsForCalendar:]</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.activityMoveMode</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.activeEnergyBurned</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.appleMoveTime</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.appleExerciseTime</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.appleStandHours</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.activeEnergyBurnedGoal</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.appleMoveTimeGoal</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.appleExerciseTimeGoal</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.exerciseTimeGoal</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.appleStandHoursGoal</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummary.standHoursGoal</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathDateComponents</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKActivitySummaryQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKActivitySummaryQuery</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummaryQuery.updateHandler</div>
+<div class="difference"><span class="status added">Added</span> -[HKActivitySummaryQuery initWithPredicate:resultsHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKAnchoredObjectQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def HKAnchoredObjectQueryNoAnchor</div>
+<div class="difference"><span class="status added">Added</span> HKAnchoredObjectQuery</div>
+<div class="difference"><span class="status added">Added</span> HKAnchoredObjectQuery.updateHandler</div>
+<div class="difference"><span class="status added">Added</span> -[HKAnchoredObjectQuery initWithType:predicate:anchor:limit:resultsHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKAnchoredObjectQuery initWithType:predicate:anchor:limit:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKAnchoredObjectQuery initWithQueryDescriptors:anchor:limit:resultsHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKAppleWalkingSteadinessClassification.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKAppleWalkingSteadinessClassification</div>
+<div class="difference"><span class="status added">Added</span> HKAppleWalkingSteadinessClassificationOK</div>
+<div class="difference"><span class="status added">Added</span> HKAppleWalkingSteadinessClassificationLow</div>
+<div class="difference"><span class="status added">Added</span> HKAppleWalkingSteadinessClassificationVeryLow</div>
+<div class="difference"><span class="status added">Added</span> HKAppleWalkingSteadinessClassificationForQuantity()</div>
+<div class="difference"><span class="status added">Added</span> HKAppleWalkingSteadinessMinimumQuantityForClassification()</div>
+<div class="difference"><span class="status added">Added</span> HKAppleWalkingSteadinessMaximumQuantityForClassification()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKAttachment.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKAttachment</div>
+<div class="difference"><span class="status added">Added</span> HKAttachment.identifier</div>
+<div class="difference"><span class="status added">Added</span> HKAttachment.name</div>
+<div class="difference"><span class="status added">Added</span> HKAttachment.contentType</div>
+<div class="difference"><span class="status added">Added</span> HKAttachment.size</div>
+<div class="difference"><span class="status added">Added</span> HKAttachment.creationDate</div>
+<div class="difference"><span class="status added">Added</span> HKAttachment.metadata</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKAttachmentStore.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKAttachmentStore</div>
+<div class="difference"><span class="status added">Added</span> -[HKAttachmentStore initWithHealthStore:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKAttachmentStore addAttachmentToObject:name:contentType:URL:metadata:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKAttachmentStore removeAttachment:fromObject:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKAttachmentStore getAttachmentsForObject:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKAttachmentStore getDataForAttachment:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKAttachmentStore streamDataForAttachment:dataHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKAudiogramSample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKAudiogramSample</div>
+<div class="difference"><span class="status added">Added</span> HKAudiogramSample.sensitivityPoints</div>
+<div class="difference"><span class="status added">Added</span> +[HKAudiogramSample audiogramSampleWithSensitivityPoints:startDate:endDate:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> HKAudiogramSensitivityPoint</div>
+<div class="difference"><span class="status added">Added</span> HKAudiogramSensitivityPoint.frequency</div>
+<div class="difference"><span class="status added">Added</span> HKAudiogramSensitivityPoint.leftEarSensitivity</div>
+<div class="difference"><span class="status added">Added</span> HKAudiogramSensitivityPoint.rightEarSensitivity</div>
+<div class="difference"><span class="status added">Added</span> +[HKAudiogramSensitivityPoint sensitivityPointWithFrequency:leftEarSensitivity:rightEarSensitivity:error:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKCategorySample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKCategorySample</div>
+<div class="difference"><span class="status added">Added</span> HKCategorySample.categoryType</div>
+<div class="difference"><span class="status added">Added</span> HKCategorySample.value</div>
+<div class="difference"><span class="status added">Added</span> +[HKCategorySample categorySampleWithType:value:startDate:endDate:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKCategorySample categorySampleWithType:value:startDate:endDate:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKCategorySample categorySampleWithType:value:startDate:endDate:device:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathCategoryValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKCDADocumentSample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKCDADocumentSample</div>
+<div class="difference"><span class="status added">Added</span> HKCDADocumentSample.document</div>
+<div class="difference"><span class="status added">Added</span> +[HKCDADocumentSample CDADocumentSampleWithData:startDate:endDate:metadata:validationError:]</div>
+<div class="difference"><span class="status added">Added</span> HKCDADocument</div>
+<div class="difference"><span class="status added">Added</span> HKCDADocument.documentData</div>
+<div class="difference"><span class="status added">Added</span> HKCDADocument.title</div>
+<div class="difference"><span class="status added">Added</span> HKCDADocument.patientName</div>
+<div class="difference"><span class="status added">Added</span> HKCDADocument.authorName</div>
+<div class="difference"><span class="status added">Added</span> HKCDADocument.custodianName</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathCDATitle</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathCDAPatientName</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathCDAAuthorName</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathCDACustodianName</div>
+<div class="difference"><span class="status added">Added</span> HKDetailedCDAValidationErrorKey</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKCharacteristicObjects.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKBiologicalSexObject</div>
+<div class="difference"><span class="status added">Added</span> HKBiologicalSexObject.biologicalSex</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeObject</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeObject.bloodType</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeObject</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeObject.skinType</div>
+<div class="difference"><span class="status added">Added</span> HKWheelchairUseObject</div>
+<div class="difference"><span class="status added">Added</span> HKWheelchairUseObject.wheelchairUse</div>
+<div class="difference"><span class="status added">Added</span> HKActivityMoveModeObject</div>
+<div class="difference"><span class="status added">Added</span> HKActivityMoveModeObject.activityMoveMode</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKClinicalRecord.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathClinicalRecordFHIRResourceType</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalRecord</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalRecord.clinicalType</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalRecord.displayName</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalRecord.FHIRResource</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKClinicalType.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifierAllergyRecord</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifierConditionRecord</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifierImmunizationRecord</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifierLabResultRecord</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifierMedicationRecord</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifierProcedureRecord</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifierVitalSignRecord</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalTypeIdentifierCoverageRecord</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType clinicalTypeForIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> HKClinicalType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKContactsLensSpecification.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKContactsLensSpecification</div>
+<div class="difference"><span class="status added">Added</span> HKContactsLensSpecification.baseCurve</div>
+<div class="difference"><span class="status added">Added</span> HKContactsLensSpecification.diameter</div>
+<div class="difference"><span class="status added">Added</span> -[HKContactsLensSpecification initWithSphere:cylinder:axis:addPower:baseCurve:diameter:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKContactsPrescription.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKContactsPrescription</div>
+<div class="difference"><span class="status added">Added</span> HKContactsPrescription.rightEye</div>
+<div class="difference"><span class="status added">Added</span> HKContactsPrescription.leftEye</div>
+<div class="difference"><span class="status added">Added</span> HKContactsPrescription.brand</div>
+<div class="difference"><span class="status added">Added</span> +[HKContactsPrescription prescriptionWithRightEyeSpecification:leftEyeSpecification:brand:dateIssued:expirationDate:device:metadata:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKCorrelation.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKCorrelation</div>
+<div class="difference"><span class="status added">Added</span> HKCorrelation.correlationType</div>
+<div class="difference"><span class="status added">Added</span> HKCorrelation.objects</div>
+<div class="difference"><span class="status added">Added</span> +[HKCorrelation correlationWithType:startDate:endDate:objects:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKCorrelation correlationWithType:startDate:endDate:objects:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKCorrelation correlationWithType:startDate:endDate:objects:device:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKCorrelation objectsForType:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKCorrelationQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKCorrelationQuery</div>
+<div class="difference"><span class="status added">Added</span> HKCorrelationQuery.correlationType</div>
+<div class="difference"><span class="status added">Added</span> HKCorrelationQuery.samplePredicates</div>
+<div class="difference"><span class="status added">Added</span> -[HKCorrelationQuery initWithType:predicate:samplePredicates:completion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKCumulativeQuantitySample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKCumulativeQuantitySample</div>
+<div class="difference"><span class="status added">Added</span> HKCumulativeQuantitySample.sumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathSum</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKCumulativeQuantitySeriesSample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKCumulativeQuantitySeriesSample</div>
+<div class="difference"><span class="status added">Added</span> HKCumulativeQuantitySeriesSample.sum</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def HK_EXTERN</div>
+<div class="difference"><span class="status added">Added</span> HKErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> HKErrorCode</div>
+<div class="difference"><span class="status added">Added</span> HKNoError</div>
+<div class="difference"><span class="status added">Added</span> HKErrorHealthDataUnavailable</div>
+<div class="difference"><span class="status added">Added</span> HKErrorHealthDataRestricted</div>
+<div class="difference"><span class="status added">Added</span> HKErrorInvalidArgument</div>
+<div class="difference"><span class="status added">Added</span> HKErrorAuthorizationDenied</div>
+<div class="difference"><span class="status added">Added</span> HKErrorAuthorizationNotDetermined</div>
+<div class="difference"><span class="status added">Added</span> HKErrorDatabaseInaccessible</div>
+<div class="difference"><span class="status added">Added</span> HKErrorUserCanceled</div>
+<div class="difference"><span class="status added">Added</span> HKErrorAnotherWorkoutSessionStarted</div>
+<div class="difference"><span class="status added">Added</span> HKErrorUserExitedWorkoutSession</div>
+<div class="difference"><span class="status added">Added</span> HKErrorRequiredAuthorizationDenied</div>
+<div class="difference"><span class="status added">Added</span> HKErrorNoData</div>
+<div class="difference"><span class="status added">Added</span> HKUpdateFrequency</div>
+<div class="difference"><span class="status added">Added</span> HKUpdateFrequencyImmediate</div>
+<div class="difference"><span class="status added">Added</span> HKUpdateFrequencyHourly</div>
+<div class="difference"><span class="status added">Added</span> HKUpdateFrequencyDaily</div>
+<div class="difference"><span class="status added">Added</span> HKUpdateFrequencyWeekly</div>
+<div class="difference"><span class="status added">Added</span> HKAuthorizationStatus</div>
+<div class="difference"><span class="status added">Added</span> HKAuthorizationStatusNotDetermined</div>
+<div class="difference"><span class="status added">Added</span> HKAuthorizationStatusSharingDenied</div>
+<div class="difference"><span class="status added">Added</span> HKAuthorizationStatusSharingAuthorized</div>
+<div class="difference"><span class="status added">Added</span> HKAuthorizationRequestStatus</div>
+<div class="difference"><span class="status added">Added</span> HKAuthorizationRequestStatusUnknown</div>
+<div class="difference"><span class="status added">Added</span> HKAuthorizationRequestStatusShouldRequest</div>
+<div class="difference"><span class="status added">Added</span> HKAuthorizationRequestStatusUnnecessary</div>
+<div class="difference"><span class="status added">Added</span> HKBiologicalSex</div>
+<div class="difference"><span class="status added">Added</span> HKBiologicalSexNotSet</div>
+<div class="difference"><span class="status added">Added</span> HKBiologicalSexFemale</div>
+<div class="difference"><span class="status added">Added</span> HKBiologicalSexMale</div>
+<div class="difference"><span class="status added">Added</span> HKBiologicalSexOther</div>
+<div class="difference"><span class="status added">Added</span> HKBloodType</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeNotSet</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeAPositive</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeANegative</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeBPositive</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeBNegative</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeABPositive</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeABNegative</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeOPositive</div>
+<div class="difference"><span class="status added">Added</span> HKBloodTypeONegative</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysis</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysisInBed</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysisAsleepUnspecified</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysisAsleep</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysisAwake</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysisAsleepCore</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysisAsleepDeep</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysisAsleepREM</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSleepAnalysisAsleepValues()</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppleStandHour</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppleStandHourStood</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppleStandHourIdle</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinType</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeNotSet</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeI</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeII</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeIII</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeIV</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeV</div>
+<div class="difference"><span class="status added">Added</span> HKFitzpatrickSkinTypeVI</div>
+<div class="difference"><span class="status added">Added</span> HKWheelchairUse</div>
+<div class="difference"><span class="status added">Added</span> HKWheelchairUseNotSet</div>
+<div class="difference"><span class="status added">Added</span> HKWheelchairUseNo</div>
+<div class="difference"><span class="status added">Added</span> HKWheelchairUseYes</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueCervicalMucusQuality</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueCervicalMucusQualityDry</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueCervicalMucusQualitySticky</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueCervicalMucusQualityCreamy</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueCervicalMucusQualityWatery</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueCervicalMucusQualityEggWhite</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueOvulationTestResult</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueOvulationTestResultNegative</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueOvulationTestResultLuteinizingHormoneSurge</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueOvulationTestResultPositive</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueOvulationTestResultIndeterminate</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueOvulationTestResultEstrogenSurge</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValuePregnancyTestResult</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValuePregnancyTestResultNegative</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValuePregnancyTestResultPositive</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValuePregnancyTestResultIndeterminate</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueProgesteroneTestResult</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueProgesteroneTestResultNegative</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueProgesteroneTestResultPositive</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueProgesteroneTestResultIndeterminate</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueMenstrualFlow</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueMenstrualFlowUnspecified</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueMenstrualFlowLight</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueMenstrualFlowMedium</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueMenstrualFlowHeavy</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueMenstrualFlowNone</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValue</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueNotApplicable</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAudioExposureEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAudioExposureEventLoudEnvironment</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueEnvironmentalAudioExposureEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueEnvironmentalAudioExposureEventMomentaryLimit</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueContraceptive</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueContraceptiveUnspecified</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueContraceptiveImplant</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueContraceptiveInjection</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueContraceptiveIntrauterineDevice</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueContraceptiveIntravaginalRing</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueContraceptiveOral</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueContraceptivePatch</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSeverity</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSeverityUnspecified</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSeverityNotPresent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSeverityMild</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSeverityModerate</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueSeveritySevere</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppetiteChanges</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppetiteChangesUnspecified</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppetiteChangesNoChange</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppetiteChangesDecreased</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppetiteChangesIncreased</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValuePresence</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValuePresencePresent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValuePresenceNotPresent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueHeadphoneAudioExposureEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueHeadphoneAudioExposureEventSevenDayLimit</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueLowCardioFitnessEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueLowCardioFitnessEventLowFitness</div>
+<div class="difference"><span class="status added">Added</span> HKActivityMoveMode</div>
+<div class="difference"><span class="status added">Added</span> HKActivityMoveModeActiveEnergy</div>
+<div class="difference"><span class="status added">Added</span> HKActivityMoveModeAppleMoveTime</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppleWalkingSteadinessEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppleWalkingSteadinessEventInitialLow</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppleWalkingSteadinessEventInitialVeryLow</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppleWalkingSteadinessEventRepeatLow</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryValueAppleWalkingSteadinessEventRepeatVeryLow</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKDeletedObject.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKDeletedObject</div>
+<div class="difference"><span class="status added">Added</span> HKDeletedObject.UUID</div>
+<div class="difference"><span class="status added">Added</span> HKDeletedObject.metadata</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKDevicePropertyKeyName</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePropertyKeyManufacturer</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePropertyKeyModel</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePropertyKeyHardwareVersion</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePropertyKeyFirmwareVersion</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePropertyKeySoftwareVersion</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePropertyKeyLocalIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePropertyKeyUDIDeviceIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKDevice</div>
+<div class="difference"><span class="status added">Added</span> HKDevice.name</div>
+<div class="difference"><span class="status added">Added</span> HKDevice.manufacturer</div>
+<div class="difference"><span class="status added">Added</span> HKDevice.model</div>
+<div class="difference"><span class="status added">Added</span> HKDevice.hardwareVersion</div>
+<div class="difference"><span class="status added">Added</span> HKDevice.firmwareVersion</div>
+<div class="difference"><span class="status added">Added</span> HKDevice.softwareVersion</div>
+<div class="difference"><span class="status added">Added</span> HKDevice.localIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKDevice.UDIDeviceIdentifier</div>
+<div class="difference"><span class="status added">Added</span> -[HKDevice initWithName:manufacturer:model:hardwareVersion:firmwareVersion:softwareVersion:localIdentifier:UDIDeviceIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKDevice localDevice]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKDiscreteQuantitySample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKDiscreteQuantitySample</div>
+<div class="difference"><span class="status added">Added</span> HKDiscreteQuantitySample.minimumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKDiscreteQuantitySample.averageQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKDiscreteQuantitySample.maximumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKDiscreteQuantitySample.mostRecentQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKDiscreteQuantitySample.mostRecentQuantityDateInterval</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathMin</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathAverage</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathMax</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathMostRecent</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathMostRecentStartDate</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathMostRecentEndDate</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathMostRecentDuration</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKDocumentQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKDocumentQuery</div>
+<div class="difference"><span class="status added">Added</span> HKDocumentQuery.limit</div>
+<div class="difference"><span class="status added">Added</span> HKDocumentQuery.sortDescriptors</div>
+<div class="difference"><span class="status added">Added</span> HKDocumentQuery.includeDocumentData</div>
+<div class="difference"><span class="status added">Added</span> -[HKDocumentQuery initWithDocumentType:predicate:limit:sortDescriptors:includeDocumentData:resultsHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKDocumentSample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKDocumentSample</div>
+<div class="difference"><span class="status added">Added</span> HKDocumentSample.documentType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKElectrocardiogram.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramLead</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramLeadAppleWatchSimilarToLeadI</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassification</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassificationNotSet</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassificationSinusRhythm</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassificationAtrialFibrillation</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassificationInconclusiveLowHeartRate</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassificationInconclusiveHighHeartRate</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassificationInconclusivePoorReading</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassificationInconclusiveOther</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramClassificationUnrecognized</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramSymptomsStatus</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramSymptomsStatusNotSet</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramSymptomsStatusNone</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramSymptomsStatusPresent</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogram</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogram.numberOfVoltageMeasurements</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogram.samplingFrequency</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogram.classification</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogram.averageHeartRate</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogram.symptomsStatus</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathAverageHeartRate</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathECGClassification</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathECGSymptomsStatus</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKElectrocardiogramQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramVoltageMeasurement</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramVoltageMeasurement.timeSinceSampleStart</div>
+<div class="difference"><span class="status added">Added</span> -[HKElectrocardiogramVoltageMeasurement quantityForLead:]</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramQuery</div>
+<div class="difference"><span class="status added">Added</span> -[HKElectrocardiogramQuery initWithElectrocardiogram:dataHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKFHIRRelease.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKFHIRRelease</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRReleaseDSTU2</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRReleaseR4</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRReleaseUnknown</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKFHIRResource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceType</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeAllergyIntolerance</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeCondition</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeCoverage</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeImmunization</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeMedicationDispense</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeMedicationOrder</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeMedicationRequest</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeMedicationStatement</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeObservation</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResourceTypeProcedure</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResource</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResource.FHIRVersion</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResource.resourceType</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResource.identifier</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResource.data</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRResource.sourceURL</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKFHIRVersion.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKFHIRVersion</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRVersion.majorVersion</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRVersion.minorVersion</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRVersion.patchVersion</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRVersion.FHIRRelease</div>
+<div class="difference"><span class="status added">Added</span> HKFHIRVersion.stringRepresentation</div>
+<div class="difference"><span class="status added">Added</span> +[HKFHIRVersion versionFromVersionString:error:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKFHIRVersion primaryDSTU2Version]</div>
+<div class="difference"><span class="status added">Added</span> +[HKFHIRVersion primaryR4Version]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKGlassesLensSpecification.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKGlassesLensSpecification</div>
+<div class="difference"><span class="status added">Added</span> HKGlassesLensSpecification.vertexDistance</div>
+<div class="difference"><span class="status added">Added</span> HKGlassesLensSpecification.prism</div>
+<div class="difference"><span class="status added">Added</span> HKGlassesLensSpecification.farPupillaryDistance</div>
+<div class="difference"><span class="status added">Added</span> HKGlassesLensSpecification.nearPupillaryDistance</div>
+<div class="difference"><span class="status added">Added</span> -[HKGlassesLensSpecification initWithSphere:cylinder:axis:addPower:vertexDistance:prism:farPupillaryDistance:nearPupillaryDistance:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKGlassesPrescription.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKGlassesPrescription</div>
+<div class="difference"><span class="status added">Added</span> HKGlassesPrescription.glassesDescription</div>
+<div class="difference"><span class="status added">Added</span> HKGlassesPrescription.rightEye</div>
+<div class="difference"><span class="status added">Added</span> HKGlassesPrescription.leftEye</div>
+<div class="difference"><span class="status added">Added</span> +[HKGlassesPrescription prescriptionWithRightEyeSpecification:leftEyeSpecification:description:dateIssued:expirationDate:device:metadata:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKHealthStore.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKHealthStore</div>
+<div class="difference"><span class="status added">Added</span> +[HKHealthStore isHealthDataAvailable]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore supportsHealthRecords]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore authorizationStatusForType:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore requestAuthorizationToShareTypes:readTypes:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore requestPerObjectReadAuthorizationForType:predicate:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore getRequestStatusForAuthorizationToShareTypes:readTypes:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore handleAuthorizationForExtensionWithCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore earliestPermittedSampleDate]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore saveObject:withCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore saveObjects:withCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore deleteObject:withCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore deleteObjects:withCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore deleteObjectsOfType:predicate:withCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore executeQuery:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore stopQuery:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore splitTotalEnergy:startDate:endDate:resultsHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore dateOfBirthWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore dateOfBirthComponentsWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore biologicalSexWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore bloodTypeWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore fitzpatrickSkinTypeWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore wheelchairUseWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore activityMoveModeWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore addSamples:toWorkout:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore pauseWorkoutSession:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore resumeWorkoutSession:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore startWatchAppWithWorkoutConfiguration:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore enableBackgroundDeliveryForType:frequency:withCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore disableBackgroundDeliveryForType:withCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore disableAllBackgroundDeliveryWithCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> HKUserPreferencesDidChangeNotification</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore preferredUnitsForQuantityTypes:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHealthStore recalibrateEstimatesForSampleType:atDate:completion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKHeartbeatSeriesBuilder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKHeartbeatSeriesBuilder</div>
+<div class="difference"><span class="status added">Added</span> HKHeartbeatSeriesBuilder.maximumCount</div>
+<div class="difference"><span class="status added">Added</span> -[HKHeartbeatSeriesBuilder initWithHealthStore:device:startDate:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHeartbeatSeriesBuilder addHeartbeatWithTimeIntervalSinceSeriesStartDate:precededByGap:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHeartbeatSeriesBuilder addMetadata:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKHeartbeatSeriesBuilder finishSeriesWithCompletion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKHeartbeatSeriesQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKHeartbeatSeriesQuery</div>
+<div class="difference"><span class="status added">Added</span> -[HKHeartbeatSeriesQuery initWithHeartbeatSeries:dataHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKHeartbeatSeriesSample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKHeartbeatSeriesSample</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKLensSpecification.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKLensSpecification</div>
+<div class="difference"><span class="status added">Added</span> HKLensSpecification.sphere</div>
+<div class="difference"><span class="status added">Added</span> HKLensSpecification.cylinder</div>
+<div class="difference"><span class="status added">Added</span> HKLensSpecification.axis</div>
+<div class="difference"><span class="status added">Added</span> HKLensSpecification.addPower</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKLiveWorkoutBuilder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutBuilderDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[HKLiveWorkoutBuilderDelegate workoutBuilder:didCollectDataOfTypes:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKLiveWorkoutBuilderDelegate workoutBuilderDidCollectEvent:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKLiveWorkoutBuilderDelegate workoutBuilder:didBeginActivity:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKLiveWorkoutBuilderDelegate workoutBuilder:didEndActivity:]</div>
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutBuilder</div>
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutBuilder.delegate</div>
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutBuilder.workoutSession</div>
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutBuilder.shouldCollectWorkoutEvents</div>
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutBuilder.dataSource</div>
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutBuilder.elapsedTime</div>
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutBuilder.currentWorkoutActivity</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKLiveWorkoutDataSource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutDataSource</div>
+<div class="difference"><span class="status added">Added</span> HKLiveWorkoutDataSource.typesToCollect</div>
+<div class="difference"><span class="status added">Added</span> -[HKLiveWorkoutDataSource initWithHealthStore:workoutConfiguration:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKLiveWorkoutDataSource enableCollectionForType:predicate:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKLiveWorkoutDataSource disableCollectionForType:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKMetadata.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyDeviceSerialNumber</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyBodyTemperatureSensorLocation</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocation</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationOther</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationArmpit</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationBody</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationEar</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationFinger</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationGastroIntestinal</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationMouth</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationRectum</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationToe</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationEarDrum</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationTemporalArtery</div>
+<div class="difference"><span class="status added">Added</span> HKBodyTemperatureSensorLocationForehead</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyHeartRateSensorLocation</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateSensorLocation</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateSensorLocationOther</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateSensorLocationChest</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateSensorLocationWrist</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateSensorLocationFinger</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateSensorLocationHand</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateSensorLocationEarLobe</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateSensorLocationFoot</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyHeartRateMotionContext</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateMotionContext</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateMotionContextNotSet</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateMotionContextSedentary</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateMotionContextActive</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyUserMotionContext</div>
+<div class="difference"><span class="status added">Added</span> HKUserMotionContext</div>
+<div class="difference"><span class="status added">Added</span> HKUserMotionContextNotSet</div>
+<div class="difference"><span class="status added">Added</span> HKUserMotionContextStationary</div>
+<div class="difference"><span class="status added">Added</span> HKUserMotionContextActive</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeySessionEstimate</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateRecoveryTestType</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateRecoveryTestTypeMaxExercise</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateRecoveryTestTypePredictionSubMaxExercise</div>
+<div class="difference"><span class="status added">Added</span> HKHeartRateRecoveryTestTypePredictionNonExercise</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyHeartRateRecoveryTestType</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyHeartRateRecoveryActivityType</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyHeartRateRecoveryActivityDuration</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyHeartRateRecoveryMaxObservedRecoveryHeartRate</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyFoodType</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyUDIDeviceIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyUDIProductionIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyDigitalSignature</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyExternalUUID</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeySyncIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeySyncVersion</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyTimeZone</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyDeviceName</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyDeviceManufacturerName</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyWasTakenInLab</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyReferenceRangeLowerLimit</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyReferenceRangeUpperLimit</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyWasUserEntered</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyWorkoutBrandName</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyGroupFitness</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyIndoorWorkout</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyCoachedWorkout</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherCondition</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionNone</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionClear</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionFair</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionPartlyCloudy</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionMostlyCloudy</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionCloudy</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionFoggy</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionHaze</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionWindy</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionBlustery</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionSmoky</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionDust</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionSnow</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionHail</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionSleet</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionFreezingDrizzle</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionFreezingRain</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionMixedRainAndHail</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionMixedRainAndSnow</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionMixedRainAndSleet</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionMixedSnowAndSleet</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionDrizzle</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionScatteredShowers</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionShowers</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionThunderstorms</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionTropicalStorm</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionHurricane</div>
+<div class="difference"><span class="status added">Added</span> HKWeatherConditionTornado</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyWeatherCondition</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyWeatherTemperature</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyWeatherHumidity</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeySexualActivityProtectionUsed</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyMenstrualCycleStart</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyLapLength</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSwimmingLocationType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSwimmingLocationTypeUnknown</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSwimmingLocationTypePool</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSwimmingLocationTypeOpenWater</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeySwimmingLocationType</div>
+<div class="difference"><span class="status added">Added</span> HKSwimmingStrokeStyle</div>
+<div class="difference"><span class="status added">Added</span> HKSwimmingStrokeStyleUnknown</div>
+<div class="difference"><span class="status added">Added</span> HKSwimmingStrokeStyleMixed</div>
+<div class="difference"><span class="status added">Added</span> HKSwimmingStrokeStyleFreestyle</div>
+<div class="difference"><span class="status added">Added</span> HKSwimmingStrokeStyleBackstroke</div>
+<div class="difference"><span class="status added">Added</span> HKSwimmingStrokeStyleBreaststroke</div>
+<div class="difference"><span class="status added">Added</span> HKSwimmingStrokeStyleButterfly</div>
+<div class="difference"><span class="status added">Added</span> HKSwimmingStrokeStyleKickboard</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeySwimmingStrokeStyle</div>
+<div class="difference"><span class="status added">Added</span> HKInsulinDeliveryReason</div>
+<div class="difference"><span class="status added">Added</span> HKInsulinDeliveryReasonBasal</div>
+<div class="difference"><span class="status added">Added</span> HKInsulinDeliveryReasonBolus</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyInsulinDeliveryReason</div>
+<div class="difference"><span class="status added">Added</span> HKBloodGlucoseMealTime</div>
+<div class="difference"><span class="status added">Added</span> HKBloodGlucoseMealTimePreprandial</div>
+<div class="difference"><span class="status added">Added</span> HKBloodGlucoseMealTimePostprandial</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyBloodGlucoseMealTime</div>
+<div class="difference"><span class="status added">Added</span> HKVO2MaxTestType</div>
+<div class="difference"><span class="status added">Added</span> HKVO2MaxTestTypeMaxExercise</div>
+<div class="difference"><span class="status added">Added</span> HKVO2MaxTestTypePredictionSubMaxExercise</div>
+<div class="difference"><span class="status added">Added</span> HKVO2MaxTestTypePredictionNonExercise</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyVO2MaxTestType</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyAverageSpeed</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyMaximumSpeed</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyAlpineSlopeGrade</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyElevationAscended</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyElevationDescended</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyFitnessMachineDuration</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyIndoorBikeDistance</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyCrossTrainerDistance</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyHeartRateEventThreshold</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyAverageMETs</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyAudioExposureLevel</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyAudioExposureDuration</div>
+<div class="difference"><span class="status added">Added</span> HKAppleECGAlgorithmVersion</div>
+<div class="difference"><span class="status added">Added</span> HKAppleECGAlgorithmVersion1</div>
+<div class="difference"><span class="status added">Added</span> HKAppleECGAlgorithmVersion2</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyAppleECGAlgorithmVersion</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePlacementSide</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePlacementSideUnknown</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePlacementSideLeft</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePlacementSideRight</div>
+<div class="difference"><span class="status added">Added</span> HKDevicePlacementSideCentral</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyDevicePlacementSide</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyBarometricPressure</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyAppleDeviceCalibrated</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyVO2MaxValue</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyLowCardioFitnessEventThreshold</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyDateOfEarliestDataUsedForEstimate</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyAlgorithmVersion</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeySWOLFScore</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyQuantityClampedToLowerBound</div>
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyQuantityClampedToUpperBound</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKObject.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKObject</div>
+<div class="difference"><span class="status added">Added</span> HKObject.UUID</div>
+<div class="difference"><span class="status added">Added</span> HKObject.source</div>
+<div class="difference"><span class="status added">Added</span> HKObject.sourceRevision</div>
+<div class="difference"><span class="status added">Added</span> HKObject.device</div>
+<div class="difference"><span class="status added">Added</span> HKObject.metadata</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathUUID</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathSource</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathMetadata</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathCorrelation</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkout</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathDevice</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathSourceRevision</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKObjectType.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKObjectType</div>
+<div class="difference"><span class="status added">Added</span> HKObjectType.identifier</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType quantityTypeForIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType categoryTypeForIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType characteristicTypeForIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType correlationTypeForIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType documentTypeForIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType seriesTypeForIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType workoutType]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType activitySummaryType]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType audiogramSampleType]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType electrocardiogramType]</div>
+<div class="difference"><span class="status added">Added</span> +[HKObjectType visionPrescriptionType]</div>
+<div class="difference"><span class="status added">Added</span> -[HKObjectType requiresPerObjectAuthorization]</div>
+<div class="difference"><span class="status added">Added</span> HKCharacteristicType</div>
+<div class="difference"><span class="status added">Added</span> HKSampleType</div>
+<div class="difference"><span class="status added">Added</span> HKSampleType.isMaximumDurationRestricted</div>
+<div class="difference"><span class="status added">Added</span> HKSampleType.maximumAllowedDuration</div>
+<div class="difference"><span class="status added">Added</span> HKSampleType.isMinimumDurationRestricted</div>
+<div class="difference"><span class="status added">Added</span> HKSampleType.minimumAllowedDuration</div>
+<div class="difference"><span class="status added">Added</span> HKSampleType.allowsRecalibrationForEstimates</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryType</div>
+<div class="difference"><span class="status added">Added</span> HKCorrelationType</div>
+<div class="difference"><span class="status added">Added</span> HKDocumentType</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityType</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityType.aggregationStyle</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantityType isCompatibleWithUnit:]</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutType</div>
+<div class="difference"><span class="status added">Added</span> HKSeriesType</div>
+<div class="difference"><span class="status added">Added</span> +[HKSeriesType workoutRouteType]</div>
+<div class="difference"><span class="status added">Added</span> +[HKSeriesType heartbeatSeriesType]</div>
+<div class="difference"><span class="status added">Added</span> HKActivitySummaryType</div>
+<div class="difference"><span class="status added">Added</span> HKAudiogramSampleType</div>
+<div class="difference"><span class="status added">Added</span> HKElectrocardiogramType</div>
+<div class="difference"><span class="status added">Added</span> HKPrescriptionType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKObserverQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKObserverQueryCompletionHandler</div>
+<div class="difference"><span class="status added">Added</span> HKObserverQuery</div>
+<div class="difference"><span class="status added">Added</span> -[HKObserverQuery initWithSampleType:predicate:updateHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKObserverQuery initWithQueryDescriptors:updateHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKQuantity.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQuantity</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuantity quantityWithUnit:doubleValue:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantity isCompatibleWithUnit:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantity doubleValueForUnit:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantity compare:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKQuantityAggregationStyle.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQuantityAggregationStyle</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityAggregationStyleCumulative</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityAggregationStyleDiscreteArithmetic</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityAggregationStyleDiscrete</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityAggregationStyleDiscreteTemporallyWeighted</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityAggregationStyleDiscreteEquivalentContinuousLevel</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKQuantitySample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQuantitySample</div>
+<div class="difference"><span class="status added">Added</span> HKQuantitySample.quantityType</div>
+<div class="difference"><span class="status added">Added</span> HKQuantitySample.quantity</div>
+<div class="difference"><span class="status added">Added</span> HKQuantitySample.count</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuantitySample quantitySampleWithType:quantity:startDate:endDate:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuantitySample quantitySampleWithType:quantity:startDate:endDate:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuantitySample quantitySampleWithType:quantity:startDate:endDate:device:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathCount</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKQuantitySeriesSampleBuilder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQuantitySeriesSampleBuilder</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantitySeriesSampleBuilder initWithHealthStore:quantityType:startDate:device:]</div>
+<div class="difference"><span class="status added">Added</span> HKQuantitySeriesSampleBuilder.quantityType</div>
+<div class="difference"><span class="status added">Added</span> HKQuantitySeriesSampleBuilder.startDate</div>
+<div class="difference"><span class="status added">Added</span> HKQuantitySeriesSampleBuilder.device</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantitySeriesSampleBuilder insertQuantity:dateInterval:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantitySeriesSampleBuilder insertQuantity:date:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantitySeriesSampleBuilder finishSeriesWithMetadata:endDate:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantitySeriesSampleBuilder finishSeriesWithMetadata:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantitySeriesSampleBuilder discard]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKQuantitySeriesSampleQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQuantitySeriesSampleQuery</div>
+<div class="difference"><span class="status added">Added</span> HKQuantitySeriesSampleQuery.includeSample</div>
+<div class="difference"><span class="status added">Added</span> HKQuantitySeriesSampleQuery.orderByQuantitySampleStartDate</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantitySeriesSampleQuery initWithQuantityType:predicate:quantityHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKQuantitySeriesSampleQuery initWithSample:quantityHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQuery</div>
+<div class="difference"><span class="status added">Added</span> HKQuery.objectType</div>
+<div class="difference"><span class="status added">Added</span> HKQuery.sampleType</div>
+<div class="difference"><span class="status added">Added</span> HKQuery.predicate</div>
+<div class="difference"><span class="status added">Added</span> HKQueryOptions</div>
+<div class="difference"><span class="status added">Added</span> HKQueryOptionNone</div>
+<div class="difference"><span class="status added">Added</span> HKQueryOptionStrictStartDate</div>
+<div class="difference"><span class="status added">Added</span> HKQueryOptionStrictEndDate</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsWithMetadataKey:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsWithMetadataKey:allowedValues:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsWithMetadataKey:operatorType:value:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsFromSource:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsFromSources:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsFromSourceRevisions:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsFromDevices:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsWithDeviceProperty:allowedValues:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectWithUUID:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsWithUUIDs:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsWithNoCorrelation]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsFromWorkout:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForObjectsAssociatedWithElectrocardiogram:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForSamplesWithStartDate:endDate:options:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForQuantitySamplesWithOperatorType:quantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForCategorySamplesWithOperatorType:value:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForCategorySamplesEqualToValues:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithWorkoutActivityType:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:duration:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:totalEnergyBurned:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:totalDistance:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:totalSwimmingStrokeCount:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:totalFlightsClimbed:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:quantityType:sumQuantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:quantityType:minimumQuantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:quantityType:maximumQuantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithOperatorType:quantityType:averageQuantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutActivitiesWithWorkoutActivityType:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutActivitiesWithOperatorType:duration:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutActivitiesWithStartDate:endDate:options:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutActivitiesWithOperatorType:quantityType:sumQuantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutActivitiesWithOperatorType:quantityType:minimumQuantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutActivitiesWithOperatorType:quantityType:maximumQuantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutActivitiesWithOperatorType:quantityType:averageQuantity:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForWorkoutsWithActivityPredicate:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForActivitySummaryWithDateComponents:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForActivitySummariesBetweenStartDateComponents:endDateComponents:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForClinicalRecordsWithFHIRResourceType:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForClinicalRecordsFromSource:FHIRResourceType:identifier:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForElectrocardiogramsWithClassification:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForElectrocardiogramsWithSymptomsStatus:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKQuery predicateForVerifiableClinicalRecordsWithRelevantDateWithinDateInterval:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKQueryAnchor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQueryAnchor</div>
+<div class="difference"><span class="status added">Added</span> +[HKQueryAnchor anchorFromValue:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKQueryDescriptor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQueryDescriptor</div>
+<div class="difference"><span class="status added">Added</span> HKQueryDescriptor.sampleType</div>
+<div class="difference"><span class="status added">Added</span> HKQueryDescriptor.predicate</div>
+<div class="difference"><span class="status added">Added</span> -[HKQueryDescriptor initWithSampleType:predicate:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKSample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKSample</div>
+<div class="difference"><span class="status added">Added</span> HKSample.sampleType</div>
+<div class="difference"><span class="status added">Added</span> HKSample.startDate</div>
+<div class="difference"><span class="status added">Added</span> HKSample.endDate</div>
+<div class="difference"><span class="status added">Added</span> HKSample.hasUndeterminedDuration</div>
+<div class="difference"><span class="status added">Added</span> HKSampleSortIdentifierStartDate</div>
+<div class="difference"><span class="status added">Added</span> HKSampleSortIdentifierEndDate</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathStartDate</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathEndDate</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKSampleQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKObjectQueryNoLimit</div>
+<div class="difference"><span class="status added">Added</span> HKSampleQuery</div>
+<div class="difference"><span class="status added">Added</span> HKSampleQuery.limit</div>
+<div class="difference"><span class="status added">Added</span> HKSampleQuery.sortDescriptors</div>
+<div class="difference"><span class="status added">Added</span> -[HKSampleQuery initWithSampleType:predicate:limit:sortDescriptors:resultsHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKSampleQuery initWithQueryDescriptors:limit:resultsHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKSampleQuery initWithQueryDescriptors:limit:sortDescriptors:resultsHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKSeriesBuilder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKSeriesBuilder</div>
+<div class="difference"><span class="status added">Added</span> -[HKSeriesBuilder discard]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKSeriesSample.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKSeriesSample</div>
+<div class="difference"><span class="status added">Added</span> HKSeriesSample.count</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKSource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKSource</div>
+<div class="difference"><span class="status added">Added</span> HKSource.name</div>
+<div class="difference"><span class="status added">Added</span> HKSource.bundleIdentifier</div>
+<div class="difference"><span class="status added">Added</span> +[HKSource defaultSource]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKSourceQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKSourceQuery</div>
+<div class="difference"><span class="status added">Added</span> -[HKSourceQuery initWithSampleType:samplePredicate:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKSourceRevision.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKSourceRevision</div>
+<div class="difference"><span class="status added">Added</span> HKSourceRevision.source</div>
+<div class="difference"><span class="status added">Added</span> HKSourceRevision.version</div>
+<div class="difference"><span class="status added">Added</span> HKSourceRevision.productType</div>
+<div class="difference"><span class="status added">Added</span> HKSourceRevision.operatingSystemVersion</div>
+<div class="difference"><span class="status added">Added</span> -[HKSourceRevision initWithSource:version:productType:operatingSystemVersion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKSourceRevision initWithSource:version:]</div>
+<div class="difference"><span class="status added">Added</span> HKSourceRevisionAnyVersion</div>
+<div class="difference"><span class="status added">Added</span> HKSourceRevisionAnyProductType</div>
+<div class="difference"><span class="status added">Added</span> HKSourceRevisionAnyOperatingSystem</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKStatistics.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptions</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionNone</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionSeparateBySource</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionDiscreteAverage</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionDiscreteMin</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionDiscreteMax</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionCumulativeSum</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionMostRecent</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionDiscreteMostRecent</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsOptionDuration</div>
+<div class="difference"><span class="status added">Added</span> HKStatistics</div>
+<div class="difference"><span class="status added">Added</span> HKStatistics.quantityType</div>
+<div class="difference"><span class="status added">Added</span> HKStatistics.startDate</div>
+<div class="difference"><span class="status added">Added</span> HKStatistics.endDate</div>
+<div class="difference"><span class="status added">Added</span> HKStatistics.sources</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics averageQuantityForSource:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics averageQuantity]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics minimumQuantityForSource:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics minimumQuantity]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics maximumQuantityForSource:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics maximumQuantity]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics mostRecentQuantityForSource:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics mostRecentQuantity]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics mostRecentQuantityDateIntervalForSource:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics mostRecentQuantityDateInterval]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics sumQuantityForSource:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics sumQuantity]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics duration]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatistics durationForSource:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKStatisticsCollectionQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKStatisticsCollection</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatisticsCollection statisticsForDate:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatisticsCollection enumerateStatisticsFromDate:toDate:withBlock:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatisticsCollection statistics]</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatisticsCollection sources]</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsCollectionQuery</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsCollectionQuery.anchorDate</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsCollectionQuery.options</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsCollectionQuery.intervalComponents</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsCollectionQuery.initialResultsHandler</div>
+<div class="difference"><span class="status added">Added</span> HKStatisticsCollectionQuery.statisticsUpdateHandler</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatisticsCollectionQuery initWithQuantityType:quantitySamplePredicate:options:anchorDate:intervalComponents:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKStatisticsQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKStatisticsQuery</div>
+<div class="difference"><span class="status added">Added</span> -[HKStatisticsQuery initWithQuantityType:quantitySamplePredicate:options:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKTypeIdentifiers.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBodyMassIndex</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBodyFatPercentage</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierHeight</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBodyMass</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierLeanBodyMass</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierWaistCircumference</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierStepCount</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDistanceWalkingRunning</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDistanceCycling</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDistanceWheelchair</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBasalEnergyBurned</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierActiveEnergyBurned</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierFlightsClimbed</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierNikeFuel</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierAppleExerciseTime</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierPushCount</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDistanceSwimming</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierSwimmingStrokeCount</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierVO2Max</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDistanceDownhillSnowSports</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierAppleStandTime</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierWalkingSpeed</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierWalkingDoubleSupportPercentage</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierWalkingAsymmetryPercentage</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierWalkingStepLength</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierSixMinuteWalkTestDistance</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierStairAscentSpeed</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierStairDescentSpeed</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierAppleMoveTime</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierAppleWalkingSteadiness</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierRunningStrideLength</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierRunningVerticalOscillation</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierRunningGroundContactTime</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierRunningPower</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierRunningSpeed</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierHeartRate</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBodyTemperature</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBasalBodyTemperature</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBloodPressureSystolic</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBloodPressureDiastolic</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierRespiratoryRate</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierRestingHeartRate</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierWalkingHeartRateAverage</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierHeartRateVariabilitySDNN</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierHeartRateRecoveryOneMinute</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierOxygenSaturation</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierPeripheralPerfusionIndex</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBloodGlucose</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierNumberOfTimesFallen</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierElectrodermalActivity</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierInhalerUsage</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierInsulinDelivery</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierBloodAlcoholContent</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierForcedVitalCapacity</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierForcedExpiratoryVolume1</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierPeakExpiratoryFlowRate</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierEnvironmentalAudioExposure</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierHeadphoneAudioExposure</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierNumberOfAlcoholicBeverages</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryFatTotal</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryFatPolyunsaturated</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryFatMonounsaturated</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryFatSaturated</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryCholesterol</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietarySodium</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryCarbohydrates</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryFiber</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietarySugar</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryEnergyConsumed</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryProtein</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryVitaminA</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryVitaminB6</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryVitaminB12</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryVitaminC</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryVitaminD</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryVitaminE</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryVitaminK</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryCalcium</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryIron</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryThiamin</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryRiboflavin</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryNiacin</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryFolate</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryBiotin</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryPantothenicAcid</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryPhosphorus</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryIodine</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryMagnesium</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryZinc</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietarySelenium</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryCopper</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryManganese</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryChromium</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryMolybdenum</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryChloride</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryPotassium</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryCaffeine</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierDietaryWater</div>
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierUVExposure</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierSleepAnalysis</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierAppleStandHour</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierCervicalMucusQuality</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierOvulationTestResult</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierPregnancyTestResult</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierProgesteroneTestResult</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierMenstrualFlow</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierIntermenstrualBleeding</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierSexualActivity</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierMindfulSession</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierHighHeartRateEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierLowHeartRateEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierIrregularHeartRhythmEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierAudioExposureEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierToothbrushingEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierPregnancy</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierLactation</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierContraceptive</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierEnvironmentalAudioExposureEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierHeadphoneAudioExposureEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierHandwashingEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierLowCardioFitnessEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierAppleWalkingSteadinessEvent</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierAbdominalCramps</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierAcne</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierAppetiteChanges</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierBladderIncontinence</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierBloating</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierBreastPain</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierChestTightnessOrPain</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierChills</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierConstipation</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierCoughing</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierDiarrhea</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierDizziness</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierDrySkin</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierFainting</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierFatigue</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierFever</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierGeneralizedBodyAche</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierHairLoss</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierHeadache</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierHeartburn</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierHotFlashes</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierLossOfSmell</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierLossOfTaste</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierLowerBackPain</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierMemoryLapse</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierMoodChanges</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierNausea</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierNightSweats</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierPelvicPain</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierRapidPoundingOrFlutteringHeartbeat</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierRunnyNose</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierShortnessOfBreath</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierSinusCongestion</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierSkippedHeartbeat</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierSleepChanges</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierSoreThroat</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierVaginalDryness</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierVomiting</div>
+<div class="difference"><span class="status added">Added</span> HKCategoryTypeIdentifierWheezing</div>
+<div class="difference"><span class="status added">Added</span> HKCharacteristicTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKCharacteristicTypeIdentifierBiologicalSex</div>
+<div class="difference"><span class="status added">Added</span> HKCharacteristicTypeIdentifierBloodType</div>
+<div class="difference"><span class="status added">Added</span> HKCharacteristicTypeIdentifierDateOfBirth</div>
+<div class="difference"><span class="status added">Added</span> HKCharacteristicTypeIdentifierFitzpatrickSkinType</div>
+<div class="difference"><span class="status added">Added</span> HKCharacteristicTypeIdentifierWheelchairUse</div>
+<div class="difference"><span class="status added">Added</span> HKCharacteristicTypeIdentifierActivityMoveMode</div>
+<div class="difference"><span class="status added">Added</span> HKCorrelationTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKCorrelationTypeIdentifierBloodPressure</div>
+<div class="difference"><span class="status added">Added</span> HKCorrelationTypeIdentifierFood</div>
+<div class="difference"><span class="status added">Added</span> HKDocumentTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKDocumentTypeIdentifierCDA</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutRouteTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKDataTypeIdentifierHeartbeatSeries</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrescriptionTypeIdentifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKUnit.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKUnit</div>
+<div class="difference"><span class="status added">Added</span> HKUnit.unitString</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit unitFromString:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit unitFromMassFormatterUnit:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit massFormatterUnitFromUnit:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit unitFromLengthFormatterUnit:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit lengthFormatterUnitFromUnit:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit unitFromEnergyFormatterUnit:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit energyFormatterUnitFromUnit:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKUnit isNull]</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefix</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixNone</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixFemto</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixPico</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixNano</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixMicro</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixMilli</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixCenti</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixDeci</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixDeca</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixHecto</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixKilo</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixMega</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixGiga</div>
+<div class="difference"><span class="status added">Added</span> HKMetricPrefixTera</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit gramUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit gramUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit ounceUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit poundUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit stoneUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit moleUnitWithMetricPrefix:molarMass:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit moleUnitWithMolarMass:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit meterUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit meterUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit inchUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit footUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit yardUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit mileUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit literUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit literUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit fluidOunceUSUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit fluidOunceImperialUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit pintUSUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit pintImperialUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit cupUSUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit cupImperialUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit pascalUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit pascalUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit millimeterOfMercuryUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit centimeterOfWaterUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit atmosphereUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit decibelAWeightedSoundPressureLevelUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit inchesOfMercuryUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit secondUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit secondUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit minuteUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit hourUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit dayUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit jouleUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit jouleUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit kilocalorieUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit smallCalorieUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit largeCalorieUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit calorieUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit degreeCelsiusUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit degreeFahrenheitUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit kelvinUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit siemenUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit siemenUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit internationalUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit countUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit percentUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit decibelHearingLevelUnit]</div>
+<div class="difference"><span class="status added">Added</span> -[HKUnit unitMultipliedByUnit:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKUnit unitDividedByUnit:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKUnit unitRaisedToPower:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKUnit reciprocalUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit hertzUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit hertzUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit voltUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit voltUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit wattUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit wattUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit diopterUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit prismDiopterUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit radianAngleUnitWithMetricPrefix:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit radianAngleUnit]</div>
+<div class="difference"><span class="status added">Added</span> +[HKUnit degreeAngleUnit]</div>
+<div class="difference"><span class="status added">Added</span> #def HKUnitMolarMassBloodGlucose</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKVerifiableClinicalRecord.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordSourceType</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordSourceTypeSMARTHealthCard</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordSourceTypeEUDigitalCOVIDCertificate</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordCredentialType</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordCredentialTypeCOVID19</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordCredentialTypeImmunization</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordCredentialTypeLaboratory</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordCredentialTypeRecovery</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.recordTypes</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.issuerIdentifier</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.subject</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.issuedDate</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.relevantDate</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.expirationDate</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.itemNames</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.sourceType</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.dataRepresentation</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecord.JWSRepresentation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKVerifiableClinicalRecordQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordQuery</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordQuery.recordTypes</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordQuery.sourceTypes</div>
+<div class="difference"><span class="status added">Added</span> -[HKVerifiableClinicalRecordQuery initWithRecordTypes:predicate:resultsHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKVerifiableClinicalRecordQuery initWithRecordTypes:sourceTypes:predicate:resultsHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKVerifiableClinicalRecordSubject.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordSubject</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordSubject.fullName</div>
+<div class="difference"><span class="status added">Added</span> HKVerifiableClinicalRecordSubject.dateOfBirthComponents</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKVisionPrescription.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKVisionPrescriptionType</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrescriptionTypeGlasses</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrescriptionTypeContacts</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrescription</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrescription.prescriptionType</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrescription.dateIssued</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrescription.expirationDate</div>
+<div class="difference"><span class="status added">Added</span> +[HKVisionPrescription prescriptionWithType:dateIssued:expirationDate:device:metadata:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKVisionPrism.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKPrismBase</div>
+<div class="difference"><span class="status added">Added</span> HKPrismBaseNone</div>
+<div class="difference"><span class="status added">Added</span> HKPrismBaseUp</div>
+<div class="difference"><span class="status added">Added</span> HKPrismBaseDown</div>
+<div class="difference"><span class="status added">Added</span> HKPrismBaseIn</div>
+<div class="difference"><span class="status added">Added</span> HKPrismBaseOut</div>
+<div class="difference"><span class="status added">Added</span> HKVisionEye</div>
+<div class="difference"><span class="status added">Added</span> HKVisionEyeLeft</div>
+<div class="difference"><span class="status added">Added</span> HKVisionEyeRight</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrism</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrism.amount</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrism.angle</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrism.verticalAmount</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrism.horizontalAmount</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrism.verticalBase</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrism.horizontalBase</div>
+<div class="difference"><span class="status added">Added</span> HKVisionPrism.eye</div>
+<div class="difference"><span class="status added">Added</span> -[HKVisionPrism initWithAmount:angle:eye:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKVisionPrism initWithVerticalAmount:verticalBase:horizontalAmount:horizontalBase:eye:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKWorkout.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeAmericanFootball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeArchery</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeAustralianFootball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeBadminton</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeBaseball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeBasketball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeBowling</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeBoxing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeClimbing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeCricket</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeCrossTraining</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeCurling</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeCycling</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeDance</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeDanceInspiredTraining</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeElliptical</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeEquestrianSports</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeFencing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeFishing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeFunctionalStrengthTraining</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeGolf</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeGymnastics</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeHandball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeHiking</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeHockey</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeHunting</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeLacrosse</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeMartialArts</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeMindAndBody</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeMixedMetabolicCardioTraining</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypePaddleSports</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypePlay</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypePreparationAndRecovery</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeRacquetball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeRowing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeRugby</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeRunning</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSailing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSkatingSports</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSnowSports</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSoccer</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSoftball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSquash</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeStairClimbing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSurfingSports</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSwimming</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeTableTennis</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeTennis</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeTrackAndField</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeTraditionalStrengthTraining</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeVolleyball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeWalking</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeWaterFitness</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeWaterPolo</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeWaterSports</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeWrestling</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeYoga</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeBarre</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeCoreTraining</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeCrossCountrySkiing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeDownhillSkiing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeFlexibility</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeHighIntensityIntervalTraining</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeJumpRope</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeKickboxing</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypePilates</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSnowboarding</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeStairs</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeStepTraining</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeWheelchairWalkPace</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeWheelchairRunPace</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeTaiChi</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeMixedCardio</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeHandCycling</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeDiscSports</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeFitnessGaming</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeCardioDance</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSocialDance</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypePickleball</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeCooldown</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeSwimBikeRun</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeTransition</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivityTypeOther</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventTypePause</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventTypeResume</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventTypeLap</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventTypeMarker</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventTypeMotionPaused</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventTypeMotionResumed</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventTypeSegment</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEventTypePauseOrResumeRequest</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEvent</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEvent.type</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEvent.date</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEvent.dateInterval</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutEvent.metadata</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkoutEvent workoutEventWithType:date:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkoutEvent workoutEventWithType:date:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkoutEvent workoutEventWithType:dateInterval:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.workoutActivityType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.workoutEvents</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.workoutActivities</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.duration</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.totalEnergyBurned</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.totalDistance</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.totalSwimmingStrokeCount</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.totalFlightsClimbed</div>
+<div class="difference"><span class="status added">Added</span> HKWorkout.allStatistics</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkout statisticsForType:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkout workoutWithActivityType:startDate:endDate:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkout workoutWithActivityType:startDate:endDate:workoutEvents:totalEnergyBurned:totalDistance:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkout workoutWithActivityType:startDate:endDate:workoutEvents:totalEnergyBurned:totalDistance:device:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkout workoutWithActivityType:startDate:endDate:duration:totalEnergyBurned:totalDistance:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkout workoutWithActivityType:startDate:endDate:duration:totalEnergyBurned:totalDistance:device:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkout workoutWithActivityType:startDate:endDate:workoutEvents:totalEnergyBurned:totalDistance:totalSwimmingStrokeCount:device:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> +[HKWorkout workoutWithActivityType:startDate:endDate:workoutEvents:totalEnergyBurned:totalDistance:totalFlightsClimbed:device:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutDuration</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutTotalDistance</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutTotalEnergyBurned</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutType</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutTotalSwimmingStrokeCount</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutTotalFlightsClimbed</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutSumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutMinimumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutMaximumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutAverageQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivity</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSortIdentifierDuration</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSortIdentifierTotalDistance</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSortIdentifierTotalEnergyBurned</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSortIdentifierTotalSwimmingStrokeCount</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSortIdentifierTotalFlightsClimbed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKWorkoutActivity.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity.UUID</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity.workoutConfiguration</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity.startDate</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity.endDate</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity.metadata</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity.duration</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity.workoutEvents</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutActivity.allStatistics</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutActivity statisticsForType:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutActivity initWithWorkoutConfiguration:startDate:endDate:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivityType</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivityDuration</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivityStartDate</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivityEndDate</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivitySumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivityMinimumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivityMaximumQuantity</div>
+<div class="difference"><span class="status added">Added</span> HKPredicateKeyPathWorkoutActivityAverageQuantity</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKWorkoutBuilder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder.device</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder.startDate</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder.endDate</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder.workoutConfiguration</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder.metadata</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder.workoutEvents</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder.workoutActivities</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutBuilder.allStatistics</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder initWithHealthStore:configuration:device:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder beginCollectionWithStartDate:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder addSamples:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder addWorkoutEvents:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder addMetadata:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder addWorkoutActivity:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder updateActivityWithUUID:endDate:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder updateActivityWithUUID:addMedatata:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder endCollectionWithEndDate:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder finishWorkoutWithCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder discardWorkout]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder elapsedTimeAtDate:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder statisticsForType:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutBuilder seriesBuilderForType:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKWorkoutConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionLocationType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionLocationTypeUnknown</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionLocationTypeIndoor</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionLocationTypeOutdoor</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutConfiguration</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutConfiguration.activityType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutConfiguration.locationType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutConfiguration.swimmingLocationType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutConfiguration.lapLength</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKWorkoutRoute.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKWorkoutRoute</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKWorkoutRouteBuilder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKWorkoutRouteBuilder</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutRouteBuilder initWithHealthStore:device:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutRouteBuilder insertRouteData:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutRouteBuilder addMetadata:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutRouteBuilder finishRouteWithWorkout:metadata:completion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKWorkoutRouteQuery.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKWorkoutRouteQuery</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutRouteQuery initWithRoute:dataHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutRouteQuery initWithRoute:dateInterval:dataHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKWorkoutSession.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionState</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionStateNotStarted</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionStateRunning</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionStateEnded</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionStatePaused</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionStatePrepared</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionStateStopped</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession.activityType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession.locationType</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession.workoutConfiguration</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession.delegate</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession.state</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession.startDate</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession.endDate</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSession.currentActivity</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession initWithActivityType:locationType:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession initWithConfiguration:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession initWithHealthStore:configuration:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession prepare]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession startActivityWithDate:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession stopActivityWithDate:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession end]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession pause]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession resume]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession associatedWorkoutBuilder]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession beginNewActivityWithConfiguration:date:metadata:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSession endCurrentActivityOnDate:]</div>
+<div class="difference"><span class="status added">Added</span> HKWorkoutSessionDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSessionDelegate workoutSession:didChangeToState:fromState:date:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSessionDelegate workoutSession:didFailWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSessionDelegate workoutSession:didGenerateEvent:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSessionDelegate workoutSession:didBeginActivityWithConfiguration:date:]</div>
+<div class="difference"><span class="status added">Added</span> -[HKWorkoutSessionDelegate workoutSession:didEndActivityWithConfiguration:date:]</div>
+</div>
+
+</div>
+</body>
+</html>

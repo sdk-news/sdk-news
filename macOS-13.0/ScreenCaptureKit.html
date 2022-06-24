@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>ScreenCaptureKit macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ScreenCaptureKit macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">SCError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SCStreamErrorUserStopped</div>
+<div class="difference"><span class="status added">Added</span> SCStreamErrorFailedToStartAudio</div>
+<div class="difference"><span class="status added">Added</span> SCStreamErrorFailedToStopAudio</div>
+<div class="difference"><span class="status added">Added</span> SCStreamErrorFailedToStartAudioCapture</div>
+<div class="difference"><span class="status added">Added</span> SCStreamErrorFailedToStopAudioCapture</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SCStream.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> -[SCStreamConfiguration init]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SCStreamOutputTypeAudio</div>
+<div class="difference"><span class="status added">Added</span> SCStreamConfiguration.capturesAudio</div>
+<div class="difference"><span class="status added">Added</span> SCStreamConfiguration.sampleRate</div>
+<div class="difference"><span class="status added">Added</span> SCStreamConfiguration.channelCount</div>
+<div class="difference"><span class="status added">Added</span> SCStreamConfiguration.excludesCurrentProcessAudio</div>
+<div class="difference"><span class="status added">Added</span> SCStream.synchronizationClock</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>MapKit tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>MapKit tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">MKDirectionsRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKDirectionsRoutePreference</div>
+<div class="difference"><span class="status added">Added</span> MKDirectionsRoutePreferenceAny</div>
+<div class="difference"><span class="status added">Added</span> MKDirectionsRoutePreferenceAvoid</div>
+<div class="difference"><span class="status added">Added</span> MKDirectionsRequest.tollPreference</div>
+<div class="difference"><span class="status added">Added</span> MKDirectionsRequest.highwayPreference</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKDirectionsResponse.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKRoute.hasTolls</div>
+<div class="difference"><span class="status added">Added</span> MKRoute.hasHighways</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKHybridMapConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKHybridMapConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[MKHybridMapConfiguration init]</div>
+<div class="difference"><span class="status added">Added</span> -[MKHybridMapConfiguration initWithElevationStyle:]</div>
+<div class="difference"><span class="status added">Added</span> MKHybridMapConfiguration.pointOfInterestFilter</div>
+<div class="difference"><span class="status added">Added</span> MKHybridMapConfiguration.showsTraffic</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKImageryMapConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKImageryMapConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[MKImageryMapConfiguration init]</div>
+<div class="difference"><span class="status added">Added</span> -[MKImageryMapConfiguration initWithElevationStyle:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKLookAroundViewController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKLookAroundBadgePosition</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKMapCamera.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[MKMapCamera cameraLookingAtMapItem:forViewSize:allowPitch:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKMapConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKMapElevationStyle</div>
+<div class="difference"><span class="status added">Added</span> MKMapElevationStyleFlat</div>
+<div class="difference"><span class="status added">Added</span> MKMapElevationStyleRealistic</div>
+<div class="difference"><span class="status added">Added</span> MKMapConfiguration</div>
+<div class="difference"><span class="status added">Added</span> MKMapConfiguration.elevationStyle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKMapFeatureAnnotation.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKMapFeatureType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKMapView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKMapView.preferredConfiguration</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MKMapView.mapType</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MKMapView.pointOfInterestFilter</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MKMapView.showsBuildings</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>None</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MKMapView.showsTraffic</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKOverlayRenderer.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKOverlayRenderer.blendMode</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MKStandardMapConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MKStandardMapEmphasisStyle</div>
+<div class="difference"><span class="status added">Added</span> MKStandardMapEmphasisStyleDefault</div>
+<div class="difference"><span class="status added">Added</span> MKStandardMapEmphasisStyleMuted</div>
+<div class="difference"><span class="status added">Added</span> MKStandardMapConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[MKStandardMapConfiguration init]</div>
+<div class="difference"><span class="status added">Added</span> -[MKStandardMapConfiguration initWithElevationStyle:]</div>
+<div class="difference"><span class="status added">Added</span> -[MKStandardMapConfiguration initWithElevationStyle:emphasisStyle:]</div>
+<div class="difference"><span class="status added">Added</span> -[MKStandardMapConfiguration initWithEmphasisStyle:]</div>
+<div class="difference"><span class="status added">Added</span> MKStandardMapConfiguration.emphasisStyle</div>
+<div class="difference"><span class="status added">Added</span> MKStandardMapConfiguration.pointOfInterestFilter</div>
+<div class="difference"><span class="status added">Added</span> MKStandardMapConfiguration.showsTraffic</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>SharedWithYouCore tvOS 15.4 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>SharedWithYouCore tvOS 15.4 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">SharedWithYouCore.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SharedWithYouCoreVersionNumber</div>
+<div class="difference"><span class="status added">Added</span> SharedWithYouCoreVersionString</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWAction</div>
+<div class="difference"><span class="status added">Added</span> SWAction.uuid</div>
+<div class="difference"><span class="status added">Added</span> SWAction.complete</div>
+<div class="difference"><span class="status added">Added</span> -[SWAction fulfill]</div>
+<div class="difference"><span class="status added">Added</span> -[SWAction fail]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWCollaborationActionHandler.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWCollaborationActionHandler</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationActionHandler collaborationCoordinator:handleStartCollaborationAction:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationActionHandler collaborationCoordinator:handleUpdateCollaborationParticipantsAction:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWCollaborationCoordinator.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWCollaborationCoordinator</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationCoordinator.sharedCoordinator</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationCoordinator.actionHandler</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWCollaborationMetadata.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWCollaborationIdentifier</div>
+<div class="difference"><span class="status added">Added</span> SWLocalCollaborationIdentifier</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata.collaborationIdentifier</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata.localIdentifier</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata.title</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata.defaultShareOptions</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata.userSelectedShareOptions</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata.initiatorHandle</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationMetadata.initiatorNameComponents</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationMetadata initWithLocalIdentifier:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWCollaborationOption.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWCollaborationOption</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOption.title</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOption.identifier</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOption.subtitle</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOption.selected</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOption.requiredOptionsIdentifiers</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationOption initWithTitle:identifier:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationOption initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> +[SWCollaborationOption optionWithTitle:identifier:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWCollaborationOptionsGroup.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> UTCollaborationOptionsTypeIdentifier</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOptionsGroup</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOptionsGroup.title</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOptionsGroup.identifier</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOptionsGroup.footer</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationOptionsGroup.options</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationOptionsGroup initWithIdentifier:options:]</div>
+<div class="difference"><span class="status added">Added</span> +[SWCollaborationOptionsGroup optionsGroupWithIdentifier:options:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWCollaborationShareOptions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWCollaborationShareOptions</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationShareOptions.optionsGroups</div>
+<div class="difference"><span class="status added">Added</span> SWCollaborationShareOptions.summary</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationShareOptions initWithOptionsGroups:summary:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationShareOptions initWithOptionsGroups:]</div>
+<div class="difference"><span class="status added">Added</span> +[SWCollaborationShareOptions shareOptionsWithOptionsGroups:summary:]</div>
+<div class="difference"><span class="status added">Added</span> +[SWCollaborationShareOptions shareOptionsWithOptionsGroups:]</div>
+<div class="difference"><span class="status added">Added</span> -[SWCollaborationShareOptions initWithCoder:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def SW_EXTERN</div>
+<div class="difference"><span class="status added">Added</span> #def SW_HIDDEN</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWPerson.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWPerson</div>
+<div class="difference"><span class="status added">Added</span> -[SWPerson initWithHandle:identity:displayName:thumbnailImageData:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWPersonIdentity.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWPersonIdentity</div>
+<div class="difference"><span class="status added">Added</span> SWPersonIdentity.rootHash</div>
+<div class="difference"><span class="status added">Added</span> -[SWPersonIdentity initWithRootHash:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWPersonIdentityProof.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWPersonIdentityProof</div>
+<div class="difference"><span class="status added">Added</span> SWPersonIdentityProof.inclusionHashes</div>
+<div class="difference"><span class="status added">Added</span> SWPersonIdentityProof.publicKey</div>
+<div class="difference"><span class="status added">Added</span> SWPersonIdentityProof.publicKeyIndex</div>
+<div class="difference"><span class="status added">Added</span> SWSignedPersonIdentityProof</div>
+<div class="difference"><span class="status added">Added</span> -[SWSignedPersonIdentityProof initWithPersonIdentityProof:signatureData:]</div>
+<div class="difference"><span class="status added">Added</span> SWSignedPersonIdentityProof.signatureData</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWStartCollaborationAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWStartCollaborationAction</div>
+<div class="difference"><span class="status added">Added</span> SWStartCollaborationAction.collaborationMetadata</div>
+<div class="difference"><span class="status added">Added</span> -[SWStartCollaborationAction fulfillUsingURL:collaborationIdentifier:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SWUpdateCollaborationParticipantsAction.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> SWUpdateCollaborationParticipantsAction</div>
+<div class="difference"><span class="status added">Added</span> SWUpdateCollaborationParticipantsAction.collaborationMetadata</div>
+<div class="difference"><span class="status added">Added</span> SWUpdateCollaborationParticipantsAction.addedIdentities</div>
+<div class="difference"><span class="status added">Added</span> SWUpdateCollaborationParticipantsAction.removedIdentities</div>
+</div>
+
+</div>
+</body>
+</html>

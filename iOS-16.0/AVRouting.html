@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>AVRouting iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AVRouting iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVCustomDeviceRoute.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVCustomDeviceRoute</div>
+<div class="difference"><span class="status added">Added</span> AVCustomDeviceRoute.networkEndpoint</div>
+<div class="difference"><span class="status added">Added</span> AVCustomDeviceRoute.bluetoothIdentifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCustomRoutingActionItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingActionItem</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingActionItem.type</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingActionItem.overrideTitle</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCustomRoutingController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingControllerAuthorizedRoutesDidChangeNotification</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingController</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingController.delegate</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingController.authorizedRoutes</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingController.customActionItems</div>
+<div class="difference"><span class="status added">Added</span> -[AVCustomRoutingController invalidateAuthorizationForRoute:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVCustomRoutingController setActive:forRoute:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVCustomRoutingController isRouteActive:]</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingControllerDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[AVCustomRoutingControllerDelegate customRoutingController:handleEvent:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVCustomRoutingControllerDelegate customRoutingController:eventDidTimeOut:]</div>
+<div class="difference"><span class="status added">Added</span> -[AVCustomRoutingControllerDelegate customRoutingController:didSelectItem:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCustomRoutingEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingEventReason</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingEventReasonActivate</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingEventReasonDeactivate</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingEventReasonReactivate</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingEvent</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingEvent.reason</div>
+<div class="difference"><span class="status added">Added</span> AVCustomRoutingEvent.route</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVRoutingDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def AVROUTING_EXTERN</div>
+</div>
+
+</div>
+</body>
+</html>

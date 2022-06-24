@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>BackgroundAssets iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>BackgroundAssets iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">BAApplicationExtensionInfo.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BAApplicationExtensionInfo</div>
+<div class="difference"><span class="status added">Added</span> BAApplicationExtensionInfo.applicationIdentifier</div>
+<div class="difference"><span class="status added">Added</span> BAApplicationExtensionInfo.lastPeriodicCheckTime</div>
+<div class="difference"><span class="status added">Added</span> BAApplicationExtensionInfo.lastApplicationLaunchTime</div>
+<div class="difference"><span class="status added">Added</span> BAApplicationExtensionInfo.downloadSizeRestricted</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BABase.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def BA_EXPORT</div>
+<div class="difference"><span class="status added">Added</span> #def BA_HIDDEN</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BADownload.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BADownload</div>
+<div class="difference"><span class="status added">Added</span> BADownload.state</div>
+<div class="difference"><span class="status added">Added</span> BADownload.identifier</div>
+<div class="difference"><span class="status added">Added</span> BADownload.uniqueIdentifier</div>
+<div class="difference"><span class="status added">Added</span> BADownload.priority</div>
+<div class="difference"><span class="status added">Added</span> BADownload.error</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BADownloaderExtension.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BADownloaderExtension</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloaderExtension applicationDidInstallWithMetadata:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloaderExtension applicationDidUpdateWithMetadata:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloaderExtension checkForUpdatesWithMetadata:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloaderExtension receivedAuthenticationChallenge:download:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloaderExtension backgroundDownloadDidFail:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloaderExtension backgroundDownloadDidFinish:fileURL:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloaderExtension extensionWillTerminate]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BADownloadManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BADownloadManagerDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManagerDelegate downloadDidBegin:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManagerDelegate downloadDidPause:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManagerDelegate download:didWriteBytes:totalBytesWritten:totalBytesExpectedToWrite:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManagerDelegate download:didReceiveChallenge:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManagerDelegate download:failedWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManagerDelegate download:finishedWithFileURL:]</div>
+<div class="difference"><span class="status added">Added</span> BADownloadManager</div>
+<div class="difference"><span class="status added">Added</span> BADownloadManager.sharedManager</div>
+<div class="difference"><span class="status added">Added</span> BADownloadManager.delegate</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManager fetchCurrentDownloadsWithCompletionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManager scheduleDownload:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManager performWithExclusiveControl:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManager performWithExclusiveControlBeforeDate:completion:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManager startForegroundDownload:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[BADownloadManager cancelDownload:error:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BATypes.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BADownloadState</div>
+<div class="difference"><span class="status added">Added</span> BADownloadStateFailed</div>
+<div class="difference"><span class="status added">Added</span> BADownloadStateCreated</div>
+<div class="difference"><span class="status added">Added</span> BADownloadStateWaiting</div>
+<div class="difference"><span class="status added">Added</span> BADownloadStateDownloading</div>
+<div class="difference"><span class="status added">Added</span> BADownloadStateFinished</div>
+<div class="difference"><span class="status added">Added</span> BADownloaderPriority</div>
+<div class="difference"><span class="status added">Added</span> BADownloaderPriorityMin</div>
+<div class="difference"><span class="status added">Added</span> BADownloaderPriorityDefault</div>
+<div class="difference"><span class="status added">Added</span> BADownloaderPriorityMax</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">BAURLDownload.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> BAURLDownload</div>
+<div class="difference"><span class="status added">Added</span> -[BAURLDownload initWithIdentifier:request:applicationGroupIdentifier:]</div>
+<div class="difference"><span class="status added">Added</span> -[BAURLDownload initWithIdentifier:request:applicationGroupIdentifier:priority:]</div>
+</div>
+
+</div>
+</body>
+</html>

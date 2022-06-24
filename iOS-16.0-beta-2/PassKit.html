@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>PassKit iOS 16.0 20A5283m to 20A5303f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PassKit iOS 16.0 20A5283m to 20A5303f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PKConstants.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKPaymentNetworkBancomat</div>
+<div class="difference"><span class="status added">Added</span> PKPaymentNetworkBancontact</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityAuthorizationController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> -[PKIdentityAuthorizationController init]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityDocument.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityDocument.rawElements</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocument.encryptedData</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readonly, strong, nonnull) NSData *encryptedData</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSData *encryptedData</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityDocumentAgeThreshold.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentAgeThreshold</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentAgeThreshold.years</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentAgeThreshold.atLeastYearsOld</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityDocumentDescriptor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentDescriptor.elements</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readonly, nonnull) NSArray&lt;PKIdentityElement *&gt; *elements</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSArray&lt;PKIdentityElement *&gt; *elements</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityDocumentIssuingAuthority.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentIssuingAuthority</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentIssuingAuthority.name</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentIssuingAuthority.jurisdiction</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentIssuingAuthority.ISOCountryCode</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityDocumentRawElements.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.name</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.address</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.issuingAuthority</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.documentExpirationDate</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.documentNumber</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.age</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.ageThreshold</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.dateOfBirth</div>
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.portraitImageData</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.givenNameElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *givenNameElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *givenNameElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.familyNameElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *familyNameElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *familyNameElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.portraitElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *portraitElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *portraitElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.addressElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *addressElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *addressElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.issuingAuthorityElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *issuingAuthorityElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *issuingAuthorityElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.documentExpirationDateElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *documentExpirationDateElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *documentExpirationDateElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.documentNumberElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *documentNumberElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *documentNumberElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.drivingPrivilegesElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *drivingPrivilegesElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *drivingPrivilegesElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.ageElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *ageElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *ageElement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityElement.dateOfBirthElement</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityElement *dateOfBirthElement</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityElement *dateOfBirthElement</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityErrorNotSupported</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityIntentToStore.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKIdentityIntentToStore.willNotStoreIntent</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityIntentToStore *willNotStoreIntent</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityIntentToStore *willNotStoreIntent</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityIntentToStore.mayStoreIntent</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (class, readonly, nonnull) PKIdentityIntentToStore *mayStoreIntent</td></tr>
+<tr><th>To</th><td class="declaration">@property (class, nonatomic, readonly, nonnull) PKIdentityIntentToStore *mayStoreIntent</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKIdentityRequest.descriptor</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readwrite, strong, nullable) id&lt;PKIdentityDocumentDescriptor&gt; descriptor</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, nullable) id&lt;PKIdentityDocumentDescriptor&gt; descriptor</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityRequest.nonce</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readwrite, copy, nullable) NSData *nonce</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nullable) NSData *nonce</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityRequest.merchantIdentifier</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readwrite, copy, nullable) NSString *merchantIdentifier</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, copy, nullable) NSString *merchantIdentifier</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Foundation macOS 13.0 22A5266o to 22A5286g API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Foundation macOS 13.0 22A5266o to 22A5286g API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">NSObjCRuntime.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def NS_FALLTHROUGH</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName"></div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> NSASCIIStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSISO2022JPStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSISOLatin1StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSISOLatin2StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSJapaneseEUCStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSMacOSRomanStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSNEXTSTEPStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSNonLossyASCIIStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSShiftJISStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSSymbolStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSUTF16BigEndianStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSUTF16LittleEndianStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSUTF16StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSUTF32BigEndianStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSUTF32LittleEndianStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSUTF32StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSUTF8StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSUnicodeStringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSWindowsCP1250StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSWindowsCP1251StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSWindowsCP1252StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSWindowsCP1253StringEncoding</div>
+<div class="difference"><span class="status removed">Removed</span> NSWindowsCP1254StringEncoding</div>
+
+<div class="headerFile">
+<div class="headerName">Calendar</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> Calendar.compare(_:to:toUnitGranularity:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.components(_:from:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.components(_:from:to:options:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.components(in:from:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.date(byAdding:to:options:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.date(byAdding:value:to:options:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.date(bySettingHour:minute:second:of:options:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.date(bySettingUnit:value:of:options:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.date(era:year:month:day:hour:minute:second:nanosecond:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.date(era:yearForWeekOfYear:weekOfYear:weekday:hour:minute:second:nanosecond:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.enumerateDates(startingAfter:matching:options:using:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.getEra(_:year:month:day:from:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.getEra(_:yearForWeekOfYear:weekOfYear:weekday:from:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.getHour(_:minute:second:nanosecond:from:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.isDate(_:equalTo:toUnitGranularity:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.nextDate(after:matching:options:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.nextDate(after:matchingHour:minute:second:options:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.nextWeekendStart(_:interval:options:after:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.range(of:in:for:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.range(of:start:interval:for:)</div>
+<div class="difference"><span class="status removed">Removed</span> Calendar.range(ofWeekendStart:interval:containing:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CharacterSet</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> CharacterSet.punctuation /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Data</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> Data.bytes</div>
+<div class="difference"><span class="status removed">Removed</span> Data.mutableBytes</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Locale</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> Locale.availableLocaleIdentifiers /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.isoCountryCodes /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.system /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.canonicalLocaleIdentifier(from:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.components(fromLocaleIdentifier:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.localeIdentifier(fromComponents:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.localeIdentifier(fromWindowsLocaleCode:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.windowsLocaleCode(fromLocaleIdentifier:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.init(localeIdentifier:)</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.countryCode</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.localeIdentifier</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.localizedString(forCountryCode:)</div>
+<div class="difference"><span class="status removed">Removed</span> Locale.localizedString(forLocaleIdentifier:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSCocoaError</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> NSCocoaError</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSStringEncoding</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> NSStringEncoding</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TimeZone</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> TimeZone.init(forSecondsFromGMT:)</div>
+<div class="difference"><span class="status removed">Removed</span> TimeZone.data</div>
+<div class="difference"><span class="status removed">Removed</span> TimeZone.name</div>
+<div class="difference"><span class="status removed">Removed</span> TimeZone.localizedName(_:locale:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">URL</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> URL.parameterString</div>
+<div class="difference"><span class="status removed">Removed</span> URL.resourceSpecifier</div>
+<div class="difference"><span class="status removed">Removed</span> URL.getResourceValue(_:forKey:)</div>
+<div class="difference"><span class="status removed">Removed</span> URL.setResourceValue(_:forKey:)</div>
+<div class="difference"><span class="status removed">Removed</span> URL.setResourceValues(_:)</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<html>
+<head>
+<title>FileProvider iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>FileProvider iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V3_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V3_1_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V4_0_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V5_0</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V5_0_IOS</div>
+<div class="difference"><span class="status added">Added</span> #def FILEPROVIDER_API_AVAILABILITY_V2_V5</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderDomain.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomainVersion</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderDomainVersion next]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderDomainVersion compare:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomainTestingModes</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderDomain initWithIdentifier:displayName:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomain.userEnabled</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomain.replicated</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomain.testingModes</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomain.backingStoreIdentity</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomainDidChange</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderEnumerating.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderEnumerationObserver.suggestedPageSize</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderChangeObserver.suggestedBatchSize</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorDeletionRejected</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorDirectoryNotEmpty</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorProviderNotFound</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorCannotSynchronize</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorNonEvictableChildren</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorUnsyncedEdits</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorNonEvictable</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorExcludedFromSync</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderErrorDomainDisabled</div>
+<div class="difference"><span class="status added">Added</span> +[NSError fileProviderErrorForRejectedDeletionOfItem:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderTrashContainerItemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemVersion.beforeFirstSyncComponent</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderItemVersion initWithContentVersion:metadataVersion:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemVersion.contentVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemVersion.metadataVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemCapabilitiesAllowsEvicting</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemContents</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemFilename</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemParentItemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemLastUsedDate</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemTagData</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemFavoriteRank</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemCreationDate</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemContentModificationDate</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemFileSystemFlags</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemExtendedAttributes</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemTypeAndCreator</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderFileSystemFlags</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTypeAndCreator</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderContentPolicy</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderContentPolicyInherited</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderContentPolicyDownloadLazilyAndEvictOnRemoteUpdate</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItem.typeAndCreator</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItem.fileSystemFlags</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItem.extendedAttributes</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItem.itemVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItem.symlinkTargetPath</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItem.contentPolicy</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderItemDecoration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemDecorationIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemDecorating</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderItemDecorating.decorations</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderManager.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomainRemovalModeRemoveAll</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager getUserVisibleURLForItemIdentifier:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSFileProviderManager getIdentifierForUserVisibleFileAtURL:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager temporaryDirectoryURLWithError:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSFileProviderManager removeDomain:mode:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager signalErrorResolved:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager globalProgressForKind:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderMaterializedSetDidChange</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager enumeratorForMaterializedItems]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderPendingSetDidChange</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderPendingSetEnumerator</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderPendingSetEnumerator.domainVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderPendingSetEnumerator.refreshInterval</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager enumeratorForPendingItems]</div>
+<div class="difference"><span class="status added">Added</span> +[NSFileProviderManager importDomain:fromDirectoryAtURL:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager reimportItemsBelowItemWithIdentifier:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager requestModificationOfFields:forItemWithIdentifier:options:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager evictItemWithIdentifier:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager waitForChangesOnItemsBelowItemWithIdentifier:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager waitForStabilizationWithCompletionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderModifyItemOptions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderModifyItemMayAlreadyExist</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderReplicatedExtension.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderCreateItemMayAlreadyExist</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderCreateItemDeletionConflicted</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDeleteItemRecursive</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderEnumerating</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderEnumerating enumeratorForContainerItemIdentifier:request:error:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderReplicatedExtension</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension initWithDomain:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension invalidate]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension itemForIdentifier:request:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension fetchContentsForItemWithIdentifier:version:request:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension createItemBasedOnTemplate:fields:contents:options:request:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension modifyItem:baseVersion:changedFields:contents:options:request:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension deleteItemWithIdentifier:baseVersion:options:request:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension importDidFinishWithCompletionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension materializedItemsDidChangeWithCompletionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderReplicatedExtension pendingItemsDidChangeWithCompletionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderIncrementalContentFetching</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderIncrementalContentFetching fetchContentsForItemWithIdentifier:version:usingExistingContentsAtURL:existingVersion:request:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderServicing</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderServicing supportedServiceSourcesForItemIdentifier:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderThumbnailing</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderThumbnailing fetchThumbnailsForItemIdentifiers:requestedSize:perThumbnailCompletionHandler:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderCustomAction</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderCustomAction performActionWithIdentifier:onItemsWithIdentifiers:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomainState</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomainState.domainVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderDomainState.userInfo</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderRequest.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderRequest</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderRequest.isSystemRequest</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderRequest.isFileViewerRequest</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderRequest.domainVersion</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderService.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderServiceSource.restricted</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager getServiceWithName:itemIdentifier:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSFileProviderTesting.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationTypeIngestion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationTypeLookup</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationTypeCreation</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationTypeModification</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationTypeDeletion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationTypeContentFetch</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationTypeChildrenEnumeration</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationTypeCollisionResolution</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperation</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperation.type</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderTestingOperation asIngestion]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderTestingOperation asLookup]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderTestingOperation asCreation]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderTestingOperation asModification]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderTestingOperation asDeletion]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderTestingOperation asContentFetch]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderTestingOperation asChildrenEnumeration]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderTestingOperation asCollisionResolution]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager listAvailableTestingOperationsWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSFileProviderManager runTestingOperations:error:]</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationSideDisk</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingOperationSideFileProvider</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingIngestion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingIngestion.side</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingIngestion.itemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingIngestion.item</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingLookup</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingLookup.side</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingLookup.itemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingCreation</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingCreation.targetSide</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingCreation.sourceItem</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingCreation.domainVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingModification</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingModification.targetSide</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingModification.sourceItem</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingModification.targetItemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingModification.targetItemBaseVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingModification.changedFields</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingModification.domainVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingDeletion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingDeletion.targetSide</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingDeletion.sourceItemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingDeletion.targetItemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingDeletion.targetItemBaseVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingDeletion.domainVersion</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingContentFetch</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingContentFetch.side</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingContentFetch.itemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingChildrenEnumeration</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingChildrenEnumeration.side</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingChildrenEnumeration.itemIdentifier</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingCollisionResolution</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingCollisionResolution.side</div>
+<div class="difference"><span class="status added">Added</span> NSFileProviderTestingCollisionResolution.renamedItem</div>
+</div>
+
+</div>
+</body>
+</html>

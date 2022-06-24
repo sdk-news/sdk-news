@@ -1,0 +1,656 @@
+<html>
+<head>
+<title>GameController macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>GameController macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">GCAxisElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCAxisElement</div>
+<div class="difference"><span class="status added">Added</span> GCAxisElement.absoluteInput</div>
+<div class="difference"><span class="status added">Added</span> GCAxisElement.relativeInput</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCAxisInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCAxisInput</div>
+<div class="difference"><span class="status added">Added</span> GCAxisInput.valueDidChangeHandler</div>
+<div class="difference"><span class="status added">Added</span> GCAxisInput.value</div>
+<div class="difference"><span class="status added">Added</span> GCAxisInput.analog</div>
+<div class="difference"><span class="status added">Added</span> GCAxisInput.canWrap</div>
+<div class="difference"><span class="status added">Added</span> GCAxisInput.lastValueTimestamp</div>
+<div class="difference"><span class="status added">Added</span> GCAxisInput.lastValueLatency</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCButtonElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCButtonElement</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElement.pressedInput</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElement.touchedInput</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCController.physicalInputProfile</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GCDevice.physicalInputProfile</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use the physicalInputProfile property on GCController instead.  For GCKeyboard, use the keyboardInput property.  For GCMouse, use the mouseInput property.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCDevicePhysicalInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInput</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInput.device</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInput.elementValueDidChangeHandler</div>
+<div class="difference"><span class="status added">Added</span> -[GCDevicePhysicalInput capture]</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInput.inputStateAvailableHandler</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInput.inputStateQueueDepth</div>
+<div class="difference"><span class="status added">Added</span> -[GCDevicePhysicalInput nextInputState]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCDevicePhysicalInputState.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState.device</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState.lastEventTimestamp</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState.lastEventLatency</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState.elements</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState.buttons</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState.axes</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState.switches</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputState.dpads</div>
+<div class="difference"><span class="status added">Added</span> -[GCDevicePhysicalInputState objectForKeyedSubscript:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCDevicePhysicalInputStateDiff.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputElementChange</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputElementUnknownChange</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputElementNoChange</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputElementChanged</div>
+<div class="difference"><span class="status added">Added</span> GCDevicePhysicalInputStateDiff</div>
+<div class="difference"><span class="status added">Added</span> -[GCDevicePhysicalInputStateDiff changeForElement:]</div>
+<div class="difference"><span class="status added">Added</span> -[GCDevicePhysicalInputStateDiff changedElements]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCDirectionPadElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElement</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElement.xAxis</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElement.yAxis</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElement.up</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElement.down</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElement.left</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElement.right</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCGearShifterElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCGearShifterElement</div>
+<div class="difference"><span class="status added">Added</span> GCGearShifterElement.patternInput</div>
+<div class="difference"><span class="status added">Added</span> GCGearShifterElement.sequentialInput</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCInputNames.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementName</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName</div>
+<div class="difference"><span class="status added">Added</span> GCAxisElementName</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchElementName</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElementName</div>
+<div class="difference"><span class="status added">Added</span> GCInputElementName</div>
+<div class="difference"><span class="status added">Added</span> GCInputButtonName</div>
+<div class="difference"><span class="status added">Added</span> GCInputAxisName</div>
+<div class="difference"><span class="status added">Added</span> GCInputSwitchName</div>
+<div class="difference"><span class="status added">Added</span> GCInputDirectionPadName</div>
+<div class="difference"><span class="status added">Added</span> GCInputSteeringWheel</div>
+<div class="difference"><span class="status added">Added</span> GCInputShifter</div>
+<div class="difference"><span class="status added">Added</span> GCInputPedalAccelerator</div>
+<div class="difference"><span class="status added">Added</span> GCInputPedalBrake</div>
+<div class="difference"><span class="status added">Added</span> GCInputPedalClutch</div>
+<div class="difference"><span class="status added">Added</span> GCInputLeftPaddle</div>
+<div class="difference"><span class="status added">Added</span> GCInputRightPaddle</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> GCInputButtonA</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputButtonA</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputButtonA</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputButtonB</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputButtonB</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputButtonB</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputButtonX</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputButtonX</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputButtonX</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputButtonY</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputButtonY</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputButtonY</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputDirectionPad</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputDirectionPad</td></tr>
+<tr><th>To</th><td class="declaration">GCInputDirectionPadName GCInputDirectionPad</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputLeftThumbstick</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputLeftThumbstick</td></tr>
+<tr><th>To</th><td class="declaration">GCInputDirectionPadName GCInputLeftThumbstick</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputRightThumbstick</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputRightThumbstick</td></tr>
+<tr><th>To</th><td class="declaration">GCInputDirectionPadName GCInputRightThumbstick</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputLeftShoulder</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputLeftShoulder</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputLeftShoulder</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputRightShoulder</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputRightShoulder</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputRightShoulder</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputLeftTrigger</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputLeftTrigger</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputLeftTrigger</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputRightTrigger</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputRightTrigger</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputRightTrigger</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputLeftThumbstickButton</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputLeftThumbstickButton</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputLeftThumbstickButton</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputRightThumbstickButton</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputRightThumbstickButton</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputRightThumbstickButton</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputButtonHome</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputButtonHome</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputButtonHome</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputButtonMenu</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputButtonMenu</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputButtonMenu</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputButtonOptions</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputButtonOptions</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputButtonOptions</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputButtonShare</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputButtonShare</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputButtonShare</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputXboxPaddleOne</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputXboxPaddleOne</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputXboxPaddleOne</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputXboxPaddleTwo</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputXboxPaddleTwo</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputXboxPaddleTwo</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputXboxPaddleThree</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputXboxPaddleThree</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputXboxPaddleThree</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputXboxPaddleFour</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputXboxPaddleFour</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputXboxPaddleFour</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputDualShockTouchpadOne</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputDualShockTouchpadOne</td></tr>
+<tr><th>To</th><td class="declaration">GCInputDirectionPadName GCInputDualShockTouchpadOne</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputDualShockTouchpadTwo</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputDualShockTouchpadTwo</td></tr>
+<tr><th>To</th><td class="declaration">GCInputDirectionPadName GCInputDualShockTouchpadTwo</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> GCInputDualShockTouchpadButton</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSString *const GCInputDualShockTouchpadButton</td></tr>
+<tr><th>To</th><td class="declaration">GCInputButtonName GCInputDualShockTouchpadButton</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCLinearInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCLinearInput</div>
+<div class="difference"><span class="status added">Added</span> GCLinearInput.valueDidChangeHandler</div>
+<div class="difference"><span class="status added">Added</span> GCLinearInput.value</div>
+<div class="difference"><span class="status added">Added</span> GCLinearInput.analog</div>
+<div class="difference"><span class="status added">Added</span> GCLinearInput.canWrap</div>
+<div class="difference"><span class="status added">Added</span> GCLinearInput.lastValueTimestamp</div>
+<div class="difference"><span class="status added">Added</span> GCLinearInput.lastValueLatency</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCPhysicalInputElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElement</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElement.sfSymbolsName</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElement.localizedName</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElement.aliases</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.count</div>
+<div class="difference"><span class="status added">Added</span> -[GCPhysicalInputElementCollection elementForAlias:]</div>
+<div class="difference"><span class="status added">Added</span> -[GCPhysicalInputElementCollection objectForKeyedSubscript:]</div>
+<div class="difference"><span class="status added">Added</span> -[GCPhysicalInputElementCollection elementEnumerator]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCPhysicalInputProfile.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputProfile.valueDidChangeHandler</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCPressedStateInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCPressedStateInput</div>
+<div class="difference"><span class="status added">Added</span> GCPressedStateInput.pressedDidChangeHandler</div>
+<div class="difference"><span class="status added">Added</span> GCPressedStateInput.pressed</div>
+<div class="difference"><span class="status added">Added</span> GCPressedStateInput.lastPressedStateTimestamp</div>
+<div class="difference"><span class="status added">Added</span> GCPressedStateInput.lastPressedStateLatency</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCProductCategories.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCProductCategoryHID</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCRacingWheel.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCRacingWheelDidConnectNotification</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheelDidDisconnectNotification</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheel</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheel.connectedRacingWheels</div>
+<div class="difference"><span class="status added">Added</span> -[GCRacingWheel acquireDeviceWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[GCRacingWheel relinquishDevice]</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheel.acquired</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheel.wheelInput</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheel.snapshot</div>
+<div class="difference"><span class="status added">Added</span> -[GCRacingWheel capture]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCRacingWheelInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCRacingWheelInputState</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheelInputState.wheel</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheelInputState.acceleratorPedal</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheelInputState.brakePedal</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheelInputState.clutchPedal</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheelInputState.shifter</div>
+<div class="difference"><span class="status added">Added</span> GCRacingWheelInput</div>
+<div class="difference"><span class="status added">Added</span> -[GCRacingWheelInput capture]</div>
+<div class="difference"><span class="status added">Added</span> -[GCRacingWheelInput nextInputState]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCRelativeInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCRelativeInput</div>
+<div class="difference"><span class="status added">Added</span> GCRelativeInput.deltaDidChangeHandler</div>
+<div class="difference"><span class="status added">Added</span> GCRelativeInput.delta</div>
+<div class="difference"><span class="status added">Added</span> GCRelativeInput.analog</div>
+<div class="difference"><span class="status added">Added</span> GCRelativeInput.lastDeltaTimestamp</div>
+<div class="difference"><span class="status added">Added</span> GCRelativeInput.lastDeltaLatency</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCSteeringWheelElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCSteeringWheelElement</div>
+<div class="difference"><span class="status added">Added</span> GCSteeringWheelElement.maximumDegreesOfRotation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCSwitchElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCSwitchElement</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchElement.positionInput</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCSwitchPositionInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCSwitchPositionInput</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchPositionInput.positionDidChangeHandler</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchPositionInput.position</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchPositionInput.positionRange</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchPositionInput.sequential</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchPositionInput.canWrap</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchPositionInput.lastPositionTimestamp</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchPositionInput.lastPositionLatency</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCSyntheticDeviceKeys.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def kIOHIDGCSyntheticDeviceKey</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCTouchedStateInput.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCTouchedStateInput</div>
+<div class="difference"><span class="status added">Added</span> GCTouchedStateInput.touchedDidChangeHandler</div>
+<div class="difference"><span class="status added">Added</span> GCTouchedStateInput.touched</div>
+<div class="difference"><span class="status added">Added</span> GCTouchedStateInput.lastTouchedStateTimestamp</div>
+<div class="difference"><span class="status added">Added</span> GCTouchedStateInput.lastTouchedStateLatency</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName"></div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCInputButtonA</div>
+<div class="difference"><span class="status added">Added</span> GCInputButtonB</div>
+<div class="difference"><span class="status added">Added</span> GCInputButtonHome</div>
+<div class="difference"><span class="status added">Added</span> GCInputButtonMenu</div>
+<div class="difference"><span class="status added">Added</span> GCInputButtonOptions</div>
+<div class="difference"><span class="status added">Added</span> GCInputButtonShare</div>
+<div class="difference"><span class="status added">Added</span> GCInputButtonX</div>
+<div class="difference"><span class="status added">Added</span> GCInputButtonY</div>
+<div class="difference"><span class="status added">Added</span> GCInputDirectionPad</div>
+<div class="difference"><span class="status added">Added</span> GCInputDualShockTouchpadButton</div>
+<div class="difference"><span class="status added">Added</span> GCInputDualShockTouchpadOne</div>
+<div class="difference"><span class="status added">Added</span> GCInputDualShockTouchpadTwo</div>
+<div class="difference"><span class="status added">Added</span> GCInputLeftPaddle</div>
+<div class="difference"><span class="status added">Added</span> GCInputLeftShoulder</div>
+<div class="difference"><span class="status added">Added</span> GCInputLeftThumbstick</div>
+<div class="difference"><span class="status added">Added</span> GCInputLeftThumbstickButton</div>
+<div class="difference"><span class="status added">Added</span> GCInputLeftTrigger</div>
+<div class="difference"><span class="status added">Added</span> GCInputPedalAccelerator</div>
+<div class="difference"><span class="status added">Added</span> GCInputPedalBrake</div>
+<div class="difference"><span class="status added">Added</span> GCInputPedalClutch</div>
+<div class="difference"><span class="status added">Added</span> GCInputRightPaddle</div>
+<div class="difference"><span class="status added">Added</span> GCInputRightShoulder</div>
+<div class="difference"><span class="status added">Added</span> GCInputRightThumbstick</div>
+<div class="difference"><span class="status added">Added</span> GCInputRightThumbstickButton</div>
+<div class="difference"><span class="status added">Added</span> GCInputRightTrigger</div>
+<div class="difference"><span class="status added">Added</span> GCInputShifter</div>
+<div class="difference"><span class="status added">Added</span> GCInputSteeringWheel</div>
+<div class="difference"><span class="status added">Added</span> GCInputXboxPaddleFour</div>
+<div class="difference"><span class="status added">Added</span> GCInputXboxPaddleOne</div>
+<div class="difference"><span class="status added">Added</span> GCInputXboxPaddleThree</div>
+<div class="difference"><span class="status added">Added</span> GCInputXboxPaddleTwo</div>
+
+<div class="headerFile">
+<div class="headerName">GCAxisElementName</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCAxisElementName</div>
+<div class="difference"><span class="status added">Added</span> GCAxisElementName.steeringWheel /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCAxisElementName.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> GCAxisElementName.rawValue</div>
+<div class="difference"><span class="status added">Added</span> GCAxisElementName.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCButtonElementName</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCButtonElementName</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.a /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.b /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.home /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.leftPaddle /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.leftShoulder /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.leftThumbstickButton /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.leftTrigger /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.menu /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.options /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.pedalAccelerator /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.pedalBrake /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.pedalClutch /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.rightPaddle /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.rightShoulder /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.rightThumbstickButton /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.rightTrigger /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.share /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.x /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.y /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.rawValue</div>
+<div class="difference"><span class="status added">Added</span> GCButtonElementName.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCDirectionPadElementName</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElementName</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElementName.directionPad /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElementName.leftThumbstick /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElementName.rightThumbstick /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElementName.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElementName.rawValue</div>
+<div class="difference"><span class="status added">Added</span> GCDirectionPadElementName.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCPhysicalInputElementCollection</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.endIndex</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.startIndex</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.subscript(elementName:)</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.subscript(position:)</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.index(after:)</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.Element</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.Index</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.Index.<(lhs:rhs:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.Index.==(lhs:rhs:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.Indices</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.Iterator</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementCollection.SubSequence</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCPhysicalInputElementName</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementName</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementName.shifter /* static */</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementName.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementName.rawValue</div>
+<div class="difference"><span class="status added">Added</span> GCPhysicalInputElementName.RawValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">GCSwitchElementName</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> GCSwitchElementName</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchElementName.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchElementName.rawValue</div>
+<div class="difference"><span class="status added">Added</span> GCSwitchElementName.RawValue</div>
+</div>
+
+</div>
+</body>
+</html>

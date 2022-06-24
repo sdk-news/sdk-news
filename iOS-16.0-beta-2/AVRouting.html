@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>AVRouting iOS 16.0 20A5283m to 20A5303f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AVRouting iOS 16.0 20A5283m to 20A5303f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AVCustomDeviceRoute.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVCustomDeviceRoute.networkEndpoint</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nullable) nw_endpoint_t networkEndpoint</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) nw_endpoint_t networkEndpoint</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVCustomDeviceRoute.bluetoothIdentifier</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nullable) NSUUID *bluetoothIdentifier</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSUUID *bluetoothIdentifier</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCustomRoutingController.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVCustomRoutingController.delegate</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, weak, nullable) id&lt;AVCustomRoutingControllerDelegate&gt; delegate</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, weak, nullable) id&lt;AVCustomRoutingControllerDelegate&gt; delegate</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> AVCustomRoutingController.authorizedRoutes</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSArray&lt;AVCustomDeviceRoute *&gt; *authorizedRoutes</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nonnull) NSArray&lt;AVCustomDeviceRoute *&gt; *authorizedRoutes</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AVCustomRoutingEvent.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AVCustomRoutingEvent.route</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, nonnull) AVCustomDeviceRoute *route</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nonnull) AVCustomDeviceRoute *route</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

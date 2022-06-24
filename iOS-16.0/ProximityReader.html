@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>ProximityReader iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>ProximityReader iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PaymentCardReadResult</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReadResult</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PaymentCardReader</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReader.id</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(*, deprecated, message: &quot;Use ObjectIdentifier instead&quot;)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReader.Options</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReader.Token</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReader.UpdateEvent</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PaymentCardReaderError</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReaderError</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PaymentCardReaderSession</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReaderSession.id</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(*, deprecated, message: &quot;Use ObjectIdentifier instead&quot;)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReaderSession.Event</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PaymentCardReaderSession.PINToken</div>
+<div class="difference"><span class="status added">Added</span> PaymentCardReaderSession.PINToken.init(rawValue:)</div>
+<div class="difference"><span class="status added">Added</span> PaymentCardReaderSession.PINToken.rawValue</div>
+<div class="difference"><span class="status added">Added</span> PaymentCardReaderSession.PINToken.RawValue</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PaymentCardReaderSession.ReadError</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PaymentCardTransactionRequest</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PaymentCardTransactionRequest</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>@unchecked Swift.Sendable</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PaymentCardTransactionRequest.TransactionType</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PaymentCardVerificationRequest</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PaymentCardVerificationRequest</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PaymentCardVerificationRequest.Reason</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VASReadResult</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> VASReadResult</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> VASReadResult.init(id:entries:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@available(*, deprecated, message: &quot;Not meant to be created&quot;)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> VASReadResult.ReadEntry</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>@unchecked Swift.Sendable</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> VASReadResult.ReadEntry.Status</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VASRequest</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> VASRequest.Merchant</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>@unchecked Swift.Sendable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

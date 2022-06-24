@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>LocalAuthentication watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>LocalAuthentication watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">LABase.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def LA_EXPORT</div>
+<div class="difference"><span class="status added">Added</span> #def LA_EXTERN</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LAContext.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LAPolicy</div>
+<div class="difference"><span class="status added">Added</span> LAPolicyDeviceOwnerAuthentication</div>
+<div class="difference"><span class="status added">Added</span> LAPolicyDeviceOwnerAuthenticationWithWristDetection</div>
+<div class="difference"><span class="status added">Added</span> LAContext</div>
+<div class="difference"><span class="status added">Added</span> -[LAContext canEvaluatePolicy:error:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAContext evaluatePolicy:localizedReason:reply:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAContext invalidate]</div>
+<div class="difference"><span class="status added">Added</span> LACredentialType</div>
+<div class="difference"><span class="status added">Added</span> LACredentialTypeApplicationPassword</div>
+<div class="difference"><span class="status added">Added</span> LACredentialTypeSmartCardPIN</div>
+<div class="difference"><span class="status added">Added</span> -[LAContext setCredential:type:]</div>
+<div class="difference"><span class="status added">Added</span> -[LAContext isCredentialSet:]</div>
+<div class="difference"><span class="status added">Added</span> LAAccessControlOperation</div>
+<div class="difference"><span class="status added">Added</span> LAAccessControlOperationCreateItem</div>
+<div class="difference"><span class="status added">Added</span> LAAccessControlOperationUseItem</div>
+<div class="difference"><span class="status added">Added</span> LAAccessControlOperationCreateKey</div>
+<div class="difference"><span class="status added">Added</span> LAAccessControlOperationUseKeySign</div>
+<div class="difference"><span class="status added">Added</span> LAAccessControlOperationUseKeyDecrypt</div>
+<div class="difference"><span class="status added">Added</span> LAAccessControlOperationUseKeyKeyExchange</div>
+<div class="difference"><span class="status added">Added</span> -[LAContext evaluateAccessControl:operation:localizedReason:reply:]</div>
+<div class="difference"><span class="status added">Added</span> LAContext.interactionNotAllowed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LAError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> LAErrorDomain</div>
+<div class="difference"><span class="status added">Added</span> LAError</div>
+<div class="difference"><span class="status added">Added</span> LAErrorAuthenticationFailed</div>
+<div class="difference"><span class="status added">Added</span> LAErrorUserCancel</div>
+<div class="difference"><span class="status added">Added</span> LAErrorUserFallback</div>
+<div class="difference"><span class="status added">Added</span> LAErrorSystemCancel</div>
+<div class="difference"><span class="status added">Added</span> LAErrorPasscodeNotSet</div>
+<div class="difference"><span class="status added">Added</span> LAErrorTouchIDNotAvailable</div>
+<div class="difference"><span class="status added">Added</span> LAErrorTouchIDNotEnrolled</div>
+<div class="difference"><span class="status added">Added</span> LAErrorTouchIDLockout</div>
+<div class="difference"><span class="status added">Added</span> LAErrorAppCancel</div>
+<div class="difference"><span class="status added">Added</span> LAErrorInvalidContext</div>
+<div class="difference"><span class="status added">Added</span> LAErrorNotInteractive</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LAPublicDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> #def kLAPolicyDeviceOwnerAuthenticationWithBiometrics</div>
+<div class="difference"><span class="status added">Added</span> #def kLAPolicyDeviceOwnerAuthentication</div>
+<div class="difference"><span class="status added">Added</span> #def kLAPolicyDeviceOwnerAuthenticationWithWatch</div>
+<div class="difference"><span class="status added">Added</span> #def kLAPolicyDeviceOwnerAuthenticationWithBiometricsOrWatch</div>
+<div class="difference"><span class="status added">Added</span> #def kLAPolicyDeviceOwnerAuthenticationWithWristDetection</div>
+<div class="difference"><span class="status added">Added</span> #def kLACredentialTypeApplicationPassword</div>
+<div class="difference"><span class="status added">Added</span> #def kLACredentialSmartCardPIN</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorAuthenticationFailed</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorUserCancel</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorUserFallback</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorSystemCancel</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorPasscodeNotSet</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorTouchIDNotAvailable</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorTouchIDNotEnrolled</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorTouchIDLockout</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorAppCancel</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorInvalidContext</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorWatchNotAvailable</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorNotInteractive</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorBiometryNotAvailable</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorBiometryNotEnrolled</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorBiometryLockout</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorBiometryNotPaired</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorBiometryDisconnected</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorInvalidDimensions</div>
+<div class="difference"><span class="status added">Added</span> #def kLAErrorDomain</div>
+</div>
+
+</div>
+</body>
+</html>

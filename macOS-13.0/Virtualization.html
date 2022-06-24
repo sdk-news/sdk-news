@@ -1,0 +1,267 @@
+<html>
+<head>
+<title>Virtualization macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Virtualization macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">VZConsoleDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZConsoleDevice</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZConsoleDeviceConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZConsoleDeviceConfiguration</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZConsolePortConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZConsolePortConfiguration</div>
+<div class="difference"><span class="status added">Added</span> VZConsolePortConfiguration.attachment</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZEFIBootLoader.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZEFIBootLoader</div>
+<div class="difference"><span class="status added">Added</span> -[VZEFIBootLoader init]</div>
+<div class="difference"><span class="status added">Added</span> VZEFIBootLoader.variableStore</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZEFIVariableStore.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZEFIVariableStoreInitializationOptions</div>
+<div class="difference"><span class="status added">Added</span> VZEFIVariableStoreInitializationOptionAllowOverwrite</div>
+<div class="difference"><span class="status added">Added</span> VZEFIVariableStore</div>
+<div class="difference"><span class="status added">Added</span> -[VZEFIVariableStore initWithURL:]</div>
+<div class="difference"><span class="status added">Added</span> -[VZEFIVariableStore initCreatingVariableStoreAtURL:options:error:]</div>
+<div class="difference"><span class="status added">Added</span> VZEFIVariableStore.URL</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZErrorNetworkError</div>
+<div class="difference"><span class="status added">Added</span> VZErrorOutOfDiskSpace</div>
+<div class="difference"><span class="status added">Added</span> VZErrorUserCanceled</div>
+<div class="difference"><span class="status added">Added</span> VZErrorNotSupported</div>
+<div class="difference"><span class="status added">Added</span> VZErrorRestoreImageCatalogLoadFailed</div>
+<div class="difference"><span class="status added">Added</span> VZErrorInvalidRestoreImageCatalog</div>
+<div class="difference"><span class="status added">Added</span> VZErrorNoSupportedRestoreImagesInCatalog</div>
+<div class="difference"><span class="status added">Added</span> VZErrorRestoreImageLoadFailed</div>
+<div class="difference"><span class="status added">Added</span> VZErrorInvalidRestoreImage</div>
+<div class="difference"><span class="status added">Added</span> VZErrorInstallationRequiresUpdate</div>
+<div class="difference"><span class="status added">Added</span> VZErrorInstallationCanceled</div>
+<div class="difference"><span class="status added">Added</span> VZErrorInstallationFailed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZFileHandleNetworkDeviceAttachment.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZFileHandleNetworkDeviceAttachment.maximumTransmissionUnit</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZGenericMachineIdentifier.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZGenericMachineIdentifier</div>
+<div class="difference"><span class="status added">Added</span> -[VZGenericMachineIdentifier init]</div>
+<div class="difference"><span class="status added">Added</span> -[VZGenericMachineIdentifier initWithDataRepresentation:]</div>
+<div class="difference"><span class="status added">Added</span> VZGenericMachineIdentifier.dataRepresentation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZGenericPlatformConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZGenericPlatformConfiguration.machineIdentifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZSpiceAgentPortAttachment.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZSpiceAgentPortAttachment</div>
+<div class="difference"><span class="status added">Added</span> -[VZSpiceAgentPortAttachment init]</div>
+<div class="difference"><span class="status added">Added</span> VZSpiceAgentPortAttachment.sharesClipboard</div>
+<div class="difference"><span class="status added">Added</span> VZSpiceAgentPortAttachment.spiceAgentPortName</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZUSBMassStorageDeviceConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZUSBMassStorageDeviceConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[VZUSBMassStorageDeviceConfiguration initWithAttachment:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioConsoleDevice.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioConsoleDeviceDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioConsoleDeviceDelegate consoleDevice:didOpenPort:]</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioConsoleDeviceDelegate consoleDevice:didClosePort:]</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsoleDevice</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsoleDevice.delegate</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsoleDevice.ports</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioConsoleDeviceConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioConsoleDeviceConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioConsoleDeviceConfiguration init]</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsoleDeviceConfiguration.ports</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioConsolePort.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePort</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePort.name</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePort.attachment</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioConsolePortArray.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePortArray</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioConsolePortArray objectAtIndexedSubscript:]</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePortArray.maximumPortCount</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioConsolePortConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePortConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioConsolePortConfiguration init]</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePortConfiguration.name</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePortConfiguration.isConsole</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioConsolePortConfigurationArray.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePortConfigurationArray</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioConsolePortConfigurationArray.maximumPortCount</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioConsolePortConfigurationArray objectAtIndexedSubscript:]</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioConsolePortConfigurationArray setObject:atIndexedSubscript:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioFileSystemDeviceConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioFileSystemDeviceConfiguration.macOSGuestAutomountTag</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioGraphicsDeviceConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioGraphicsDeviceConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioGraphicsDeviceConfiguration init]</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioGraphicsDeviceConfiguration.scanouts</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtioGraphicsScanoutConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtioGraphicsScanoutConfiguration</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtioGraphicsScanoutConfiguration initWithWidthInPixels:heightInPixels:]</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioGraphicsScanoutConfiguration.widthInPixels</div>
+<div class="difference"><span class="status added">Added</span> VZVirtioGraphicsScanoutConfiguration.heightInPixels</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtualMachine.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtualMachine.consoleDevices</div>
+<div class="difference"><span class="status added">Added</span> -[VZVirtualMachine startWithOptions:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtualMachineConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtualMachineConfiguration.consoleDevices</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">VZVirtualMachineStartOptions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> VZVirtualMachineStartOptions</div>
+</div>
+
+</div>
+</body>
+</html>

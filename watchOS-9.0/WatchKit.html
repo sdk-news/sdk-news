@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>WatchKit watchOS 8.5 to 9.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>WatchKit watchOS 8.5 to 9.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">WKApplication.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WKApplication</div>
+<div class="difference"><span class="status added">Added</span> +[WKApplication sharedApplication]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplication openSystemURL:]</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.delegate</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.rootInterfaceController</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.visibleInterfaceController</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.applicationState</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.isApplicationRunningInDock</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.autorotating</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.autorotated</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplication registerForRemoteNotifications]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplication unregisterForRemoteNotifications]</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.registeredForRemoteNotifications</div>
+<div class="difference"><span class="status added">Added</span> WKApplication.globalTintColor</div>
+<div class="difference"><span class="status added">Added</span> WKApplicationDelegate</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate applicationDidFinishLaunching]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate applicationDidBecomeActive]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate applicationWillResignActive]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate applicationWillEnterForeground]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate applicationDidEnterBackground]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate handleWorkoutConfiguration:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate handleActiveWorkoutRecovery]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate handleExtendedRuntimeSession:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate handleRemoteNowPlayingActivity]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate handleUserActivity:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate handleActivity:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate handleIntent:completionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate handleBackgroundTasks:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate deviceOrientationDidChange]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate didRegisterForRemoteNotificationsWithDeviceToken:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate didFailToRegisterForRemoteNotificationsWithError:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate didReceiveRemoteNotification:fetchCompletionHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplicationDelegate userDidAcceptCloudKitShareWithMetadata:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WKApplicationMain.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WKApplicationMain()</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WKBackgroundTask.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WKBluetoothAlertRefreshBackgroundTask</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplication scheduleBackgroundRefreshWithPreferredDate:userInfo:scheduledCompletion:]</div>
+<div class="difference"><span class="status added">Added</span> -[WKApplication scheduleSnapshotRefreshWithPreferredDate:userInfo:scheduledCompletion:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WKDefines.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> #def WK_CLASS_AVAILABLE_IOS</div>
+<div class="difference"><span class="status removed">Removed</span> #def WK_AVAILABLE_IOS_ONLY</div>
+<div class="difference"><span class="status removed">Removed</span> #def WK_AVAILABLE_WATCHOS_IOS</div>
+<div class="difference"><span class="status removed">Removed</span> #def WK_DEPRECATED_WATCHOS_IOS</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WKError.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> WatchKitErrorDomain</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NS_AVAILABLE_IOS(8_2) NSString *const WatchKitErrorDomain</td></tr>
+<tr><th>To</th><td class="declaration">NSString *const _Nonnull WatchKitErrorDomain</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

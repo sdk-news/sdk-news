@@ -1,0 +1,421 @@
+<html>
+<head>
+<title>AppKit macOS 12.3 to 13.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AppKit macOS 12.3 to 13.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">NSColorWell.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSColorWellStyle</div>
+<div class="difference"><span class="status added">Added</span> NSColorWellStyleDefault</div>
+<div class="difference"><span class="status added">Added</span> NSColorWellStyleMinimal</div>
+<div class="difference"><span class="status added">Added</span> NSColorWellStyleExpanded</div>
+<div class="difference"><span class="status added">Added</span> +[NSColorWell colorWellWithStyle:]</div>
+<div class="difference"><span class="status added">Added</span> NSColorWell.colorWellStyle</div>
+<div class="difference"><span class="status added">Added</span> NSColorWell.image</div>
+<div class="difference"><span class="status added">Added</span> NSColorWell.pulldownTarget</div>
+<div class="difference"><span class="status added">Added</span> NSColorWell.pulldownAction</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSColorWell.bordered</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>This property will be deprecated in a future release.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSComboButton.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSComboButtonStyle</div>
+<div class="difference"><span class="status added">Added</span> NSComboButtonStyleSplit</div>
+<div class="difference"><span class="status added">Added</span> NSComboButtonStyleUnified</div>
+<div class="difference"><span class="status added">Added</span> NSComboButton</div>
+<div class="difference"><span class="status added">Added</span> +[NSComboButton comboButtonWithTitle:menu:target:action:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSComboButton comboButtonWithImage:menu:target:action:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSComboButton comboButtonWithTitle:image:menu:target:action:]</div>
+<div class="difference"><span class="status added">Added</span> NSComboButton.title</div>
+<div class="difference"><span class="status added">Added</span> NSComboButton.image</div>
+<div class="difference"><span class="status added">Added</span> NSComboButton.imageScaling</div>
+<div class="difference"><span class="status added">Added</span> NSComboButton.menu</div>
+<div class="difference"><span class="status added">Added</span> NSComboButton.style</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSDiffableDataSource.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> -[NSDiffableDataSourceSnapshot appendSectionsWithIdentifiers:]</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">- (void)appendSectionsWithIdentifiers:(nonnull NSArray *)sectionIdentifiers</td></tr>
+<tr><th>To</th><td class="declaration">- (void)appendSectionsWithIdentifiers:(nonnull NSArray&lt;SectionIdentifierType&gt; *)sectionIdentifiers</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSImage.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[NSImage imageWithSymbolName:variableValue:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSImage imageWithSystemSymbolName:variableValue:accessibilityDescription:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSImage</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td>NSCopying, NSPasteboardReading, NSPasteboardWriting, NSSecureCoding</td></tr>
+<tr><th>To</th><td>NSCopying, NSItemProviderReading, NSItemProviderWriting, NSPasteboardReading, NSPasteboardWriting, NSSecureCoding</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[NSImage lockFocus]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>This method is incompatible with resolution-independent drawing and should not be used. Instead, use +[NSImage imageWithSize:flipped:drawingHandler:] to create a block-based image describing the desired image drawing, or use +[NSGraphicsContext graphicsContextWithBitmapImageRep:] to manipulate specific bitmap image representations.</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[NSImage lockFocusFlipped:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>This method is incompatible with resolution-independent drawing and should not be used. Instead, use +[NSImage imageWithSize:flipped:drawingHandler:] to create a block-based image describing the desired image drawing, or use +[NSGraphicsContext graphicsContextWithBitmapImageRep:] to manipulate specific bitmap image representations.</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> -[NSImage unlockFocus]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>This method is incompatible with resolution-independent drawing and should not be used. Instead, use +[NSImage imageWithSize:flipped:drawingHandler:] to create a block-based image describing the desired image drawing, or use +[NSGraphicsContext graphicsContextWithBitmapImageRep:] to manipulate specific bitmap image representations.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSPreviewRepresentingActivityItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSPreviewRepresentableActivityItem</div>
+<div class="difference"><span class="status added">Added</span> NSPreviewRepresentableActivityItem.item</div>
+<div class="difference"><span class="status added">Added</span> NSPreviewRepresentableActivityItem.title</div>
+<div class="difference"><span class="status added">Added</span> NSPreviewRepresentableActivityItem.imageProvider</div>
+<div class="difference"><span class="status added">Added</span> NSPreviewRepresentableActivityItem.iconProvider</div>
+<div class="difference"><span class="status added">Added</span> NSPreviewRepresentingActivityItem</div>
+<div class="difference"><span class="status added">Added</span> -[NSPreviewRepresentingActivityItem initWithItem:title:image:icon:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSPreviewRepresentingActivityItem initWithItem:title:imageProvider:iconProvider:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSSharingService.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSSharingServicePicker.standardShareMenuItem</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> +[NSSharingService sharingServicesForItems:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use -[NSSharingServicePicker standardShareMenuItem] instead.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSTextElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSTextElement.childElements</div>
+<div class="difference"><span class="status added">Added</span> NSTextElement.parentElement</div>
+<div class="difference"><span class="status added">Added</span> NSTextElement.isRepresentedElement</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSTextList.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> -[NSTextList initWithMarkerFormat:options:startingItemNumber:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSTextList initWithCoder:]</div>
+<div class="difference"><span class="status added">Added</span> NSTextList.ordered</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerBox</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerBox</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerBox</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerCheck</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerCheck</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerCheck</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerCircle</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerCircle</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerCircle</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerDiamond</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerDiamond</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerDiamond</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerDisc</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerDisc</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerDisc</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerHyphen</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerHyphen</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerHyphen</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerSquare</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerSquare</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerSquare</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerLowercaseHexadecimal</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerLowercaseHexadecimal</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerLowercaseHexadecimal</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerUppercaseHexadecimal</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerUppercaseHexadecimal</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerUppercaseHexadecimal</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerOctal</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerOctal</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerOctal</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerLowercaseAlpha</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerLowercaseAlpha</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerLowercaseAlpha</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerUppercaseAlpha</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerUppercaseAlpha</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerUppercaseAlpha</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerLowercaseLatin</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerLowercaseLatin</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerLowercaseLatin</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerUppercaseLatin</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerUppercaseLatin</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerUppercaseLatin</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerLowercaseRoman</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerLowercaseRoman</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerLowercaseRoman</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerUppercaseRoman</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerUppercaseRoman</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerUppercaseRoman</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextListMarkerDecimal</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">API_AVAILABLE(macos(10.13)) const NSTextListMarkerFormat NSTextListMarkerDecimal</td></tr>
+<tr><th>To</th><td class="declaration">API_UNAVAILABLE(watchos) const NSTextListMarkerFormat NSTextListMarkerDecimal</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextList.markerFormat</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (readonly, copy, nonnull) NSTextListMarkerFormat markerFormat</td></tr>
+<tr><th>To</th><td class="declaration">@property (readonly, strong, nonnull) NSTextListMarkerFormat markerFormat</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSTextListElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSTextListElement</div>
+<div class="difference"><span class="status added">Added</span> -[NSTextListElement initWithParentElement:textList:contents:markerAttributes:childElements:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSTextListElement textListElementWithContents:markerAttributes:textList:childElements:]</div>
+<div class="difference"><span class="status added">Added</span> +[NSTextListElement textListElementWithChildElements:textList:nestingLevel:]</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.textList</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.contents</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.markerAttributes</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.attributedString</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.childElements</div>
+<div class="difference"><span class="status added">Added</span> NSTextListElement.parentElement</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSTextView.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSTextViewWillSwitchToNSLayoutManagerNotification</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSNotificationName _Nonnull NSTextViewWillSwitchToNSLayoutManagerNotification</td></tr>
+<tr><th>To</th><td class="declaration">API_AVAILABLE(macos(12.0)) NSNotificationName NSTextViewWillSwitchToNSLayoutManagerNotification</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSTextViewDidSwitchToNSLayoutManagerNotification</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">NSNotificationName _Nonnull NSTextViewDidSwitchToNSLayoutManagerNotification</td></tr>
+<tr><th>To</th><td class="declaration">API_AVAILABLE(macos(12.0)) NSNotificationName NSTextViewDidSwitchToNSLayoutManagerNotification</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSToolbar.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSToolbarUserInfoKey</div>
+<div class="difference"><span class="status added">Added</span> NSToolbarItemKey</div>
+<div class="difference"><span class="status added">Added</span> NSToolbar.centeredItemIdentifiers</div>
+<div class="difference"><span class="status added">Added</span> -[NSToolbarDelegate toolbarImmovableItemIdentifiers:]</div>
+<div class="difference"><span class="status added">Added</span> -[NSToolbarDelegate toolbar:itemIdentifier:canBeInsertedAtIndex:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSToolbarSizeModeDefault</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>NSToolbarSizeMode is no longer recommended and will be ignored in the future</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSToolbarSizeModeRegular</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>NSToolbarSizeMode is no longer recommended and will be ignored in the future</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSToolbarSizeModeSmall</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>NSToolbarSizeMode is no longer recommended and will be ignored in the future</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSToolbar.sizeMode</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>NSToolbarSizeMode is no longer recommended and will be ignored in the future</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSToolbar.centeredItemIdentifier</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (copy, nullable) NSToolbarItemIdentifier centeredItemIdentifier</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (copy, nullable) NSToolbarItemIdentifier centeredItemIdentifier</td><td>Deprecated</td><td>Use the centeredItemIdentifiers property instead</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSToolbarItem.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> NSToolbarItem.possibleLabels</div>
+<div class="difference"><span class="status added">Added</span> NSToolbarItem.visible</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSWindow.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSWindow.showsToolbarButton</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>This property has no effect</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>CoreML iOS 15.5 to 16.0 API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CoreML iOS 15.5 to 16.0 API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">MLModel.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[MLModel loadModelAsset:configuration:completionHandler:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MLModel+MLModelCompilation.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[MLModel compileModelAtURL:completionHandler:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> +[MLModel compileModelAtURL:error:]</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use the asynchronous interface compileModelAtURL:completionHandler:error: instead.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MLModelAsset.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MLModelAsset</div>
+<div class="difference"><span class="status added">Added</span> +[MLModelAsset modelAssetWithSpecificationData:error:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MLModelConfiguration.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MLComputeUnitsCPUAndNeuralEngine</div>
+<div class="difference"><span class="status added">Added</span> MLModelConfiguration.modelDisplayName</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MLMultiArray.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MLMultiArrayDataTypeFloat16</div>
+<div class="difference"><span class="status added">Added</span> MLMultiArray.pixelBuffer</div>
+<div class="difference"><span class="status added">Added</span> -[MLMultiArray initWithPixelBuffer:shape:]</div>
+<div class="difference"><span class="status added">Added</span> -[MLMultiArray getBytesWithHandler:]</div>
+<div class="difference"><span class="status added">Added</span> -[MLMultiArray getMutableBytesWithHandler:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MLMultiArray.dataPointer</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Use getBytesWithHandler or getMutableBytesWithHandler instead. For Swift, use withUnsafeBytes or withUnsafeMutableBytes.</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MLPredictionOptions.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MLPredictionOptions.outputBackings</div>
+</div>
+
+</div>
+</body>
+</html>
