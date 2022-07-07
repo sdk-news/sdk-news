@@ -27,6 +27,31 @@
 </div>
 
 <div class="headerFile">
+<div class="headerName">AppDependency</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AppDependency</div>
+<div class="difference"><span class="status added">Added</span> AppDependency.init(key:manager:)</div>
+<div class="difference"><span class="status added">Added</span> AppDependency.init(key:manager:default:)</div>
+<div class="difference"><span class="status added">Added</span> AppDependency.projectedValue</div>
+<div class="difference"><span class="status added">Added</span> AppDependency.wrappedValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppDependencyManager</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AppDependencyManager</div>
+<div class="difference"><span class="status added">Added</span> AppDependencyManager.shared /* static */</div>
+<div class="difference"><span class="status added">Added</span> AppDependencyManager.init()</div>
+<div class="difference"><span class="status added">Added</span> AppDependencyManager.add(key:dependency:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
 <div class="headerName">AppEntity</div>
 
 <div class="differenceGroup">
@@ -40,6 +65,19 @@
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> AppEnum</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppEnumOptionsProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider</div>
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider.init(supportedValues:)</div>
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider.results()</div>
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider.DefaultValue</div>
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider.Result</div>
 </div>
 
 </div>
@@ -99,15 +137,6 @@
 <div class="difference"><span class="status added">Added</span> AppShortcutPhraseToken.==(a:b:) /* static */</div>
 <div class="difference"><span class="status added">Added</span> AppShortcutPhraseToken.hashValue</div>
 <div class="difference"><span class="status added">Added</span> AppShortcutPhraseToken.hash(into:)</div>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">AppShortcutProviding</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> AppShortcutProviding</div>
 </div>
 
 </div>
@@ -281,6 +310,15 @@
 </div>
 
 <div class="headerFile">
+<div class="headerName">DefaultResultProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DefaultResultProvider</div>
+</div>
+
+</div>
+
+<div class="headerFile">
 <div class="headerName">DeleteIntent</div>
 
 <div class="differenceGroup">
@@ -359,61 +397,10 @@
 </div>
 
 <div class="headerFile">
-<div class="headerName">DynamicOptionsItem</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> DynamicOptionsItem</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsItem.description</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsItem.indentationLevel</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsItem.value</div>
-</div>
-
-</div>
-
-<div class="headerFile">
 <div class="headerName">DynamicOptionsProvider</div>
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> DynamicOptionsProvider</div>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">DynamicOptionsResult</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.emptyResult /* static */</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.init(promptLabel:usesIndexedCollation:items:)</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.init(promptLabel:usesIndexedCollation:sections:)</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.init(promptLabel:usesIndexedCollation:sectionsBuilder:)</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.allResults</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.promptLabel</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.sections</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResult.usesIndexedCollation</div>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">DynamicOptionsResultProtocol</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> DynamicOptionsResultProtocol</div>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">DynamicOptionsSection</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> DynamicOptionsSection</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsSection.init(items:)</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsSection.init(title:items:)</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsSection.description</div>
-<div class="difference"><span class="status added">Added</span> DynamicOptionsSection.items</div>
 </div>
 
 </div>
@@ -448,7 +435,6 @@
 <div class="difference"><span class="status added">Added</span> EntityIdentifier.entityType</div>
 <div class="difference"><span class="status added">Added</span> EntityIdentifier.hashValue</div>
 <div class="difference"><span class="status added">Added</span> EntityIdentifier.identifier</div>
-<div class="difference"><span class="status added">Added</span> EntityIdentifier.interactionId</div>
 <div class="difference"><span class="status added">Added</span> EntityIdentifier.hash(into:)</div>
 </div>
 
@@ -468,8 +454,6 @@
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> EntityProperty</div>
-<div class="difference"><span class="status added">Added</span> EntityProperty.fullyQualifiedIdentifier</div>
-<div class="difference"><span class="status added">Added</span> EntityProperty.identifier</div>
 <div class="difference"><span class="status added">Added</span> EntityProperty.isOptional</div>
 <div class="difference"><span class="status added">Added</span> EntityProperty.projectedValue</div>
 <div class="difference"><span class="status added">Added</span> EntityProperty.title</div>
@@ -818,31 +802,6 @@
 </div>
 
 <div class="headerFile">
-<div class="headerName">IntentDependency</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> IntentDependency</div>
-<div class="difference"><span class="status added">Added</span> IntentDependency.init(key:manager:)</div>
-<div class="difference"><span class="status added">Added</span> IntentDependency.init(key:manager:default:)</div>
-<div class="difference"><span class="status added">Added</span> IntentDependency.projectedValue</div>
-<div class="difference"><span class="status added">Added</span> IntentDependency.wrappedValue</div>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">IntentDependencyManager</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> IntentDependencyManager</div>
-<div class="difference"><span class="status added">Added</span> IntentDependencyManager.shared /* static */</div>
-<div class="difference"><span class="status added">Added</span> IntentDependencyManager.init()</div>
-<div class="difference"><span class="status added">Added</span> IntentDependencyManager.add(key:dependency:)</div>
-</div>
-
-</div>
-
-<div class="headerFile">
 <div class="headerName">IntentDescription</div>
 
 <div class="differenceGroup">
@@ -894,6 +853,7 @@
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> IntentDonationManager</div>
 <div class="difference"><span class="status added">Added</span> IntentDonationManager.shared /* static */</div>
+<div class="difference"><span class="status added">Added</span> IntentDonationManager.donate(intent:)</div>
 <div class="difference"><span class="status added">Added</span> IntentDonationManager.donate(intent:result:)</div>
 </div>
 
@@ -907,18 +867,6 @@
 <div class="difference"><span class="status added">Added</span> IntentDonationMatchingPredicate.donationIdentifier(_:) /* static */</div>
 <div class="difference"><span class="status added">Added</span> IntentDonationMatchingPredicate.entityIdentifier(_:) /* static */</div>
 <div class="difference"><span class="status added">Added</span> IntentDonationMatchingPredicate.intentType(_:entityIdentifier:) /* static */</div>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">IntentError</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> IntentError</div>
-<div class="difference"><span class="status added">Added</span> IntentError.==(a:b:) /* static */</div>
-<div class="difference"><span class="status added">Added</span> IntentError.hashValue</div>
-<div class="difference"><span class="status added">Added</span> IntentError.hash(into:)</div>
 </div>
 
 </div>
@@ -948,12 +896,52 @@
 </div>
 
 <div class="headerFile">
+<div class="headerName">IntentItem</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentItem</div>
+<div class="difference"><span class="status added">Added</span> IntentItem.description</div>
+<div class="difference"><span class="status added">Added</span> IntentItem.value</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentItemCollection</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentItemCollection</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.emptyResult /* static */</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.init(promptLabel:usesIndexedCollation:items:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.init(promptLabel:usesIndexedCollation:sections:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.init(promptLabel:usesIndexedCollation:sectionsBuilder:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.allResults</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.promptLabel</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.sections</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.usesIndexedCollation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentItemSection</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentItemSection</div>
+<div class="difference"><span class="status added">Added</span> IntentItemSection.init(items:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemSection.init(title:items:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemSection.description</div>
+<div class="difference"><span class="status added">Added</span> IntentItemSection.items</div>
+</div>
+
+</div>
+
+<div class="headerFile">
 <div class="headerName">IntentParameter</div>
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> IntentParameter</div>
 <div class="difference"><span class="status added">Added</span> IntentParameter.defaultValue</div>
-<div class="difference"><span class="status added">Added</span> IntentParameter.identifier</div>
 <div class="difference"><span class="status added">Added</span> IntentParameter.isOptional</div>
 <div class="difference"><span class="status added">Added</span> IntentParameter.projectedValue</div>
 <div class="difference"><span class="status added">Added</span> IntentParameter.title</div>
@@ -995,15 +983,6 @@
 <div class="difference"><span class="status added">Added</span> IntentPaymentMethod.identificationHint</div>
 <div class="difference"><span class="status added">Added</span> IntentPaymentMethod.name</div>
 <div class="difference"><span class="status added">Added</span> IntentPaymentMethod.paymentType</div>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">IntentPerformResult</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> IntentPerformResult</div>
 </div>
 
 </div>
@@ -1055,12 +1034,13 @@
 </div>
 
 <div class="headerFile">
-<div class="headerName">IntentResult</div>
+<div class="headerName">IntentResultContainer</div>
 
 <div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> IntentResult</div>
-<div class="difference"><span class="status added">Added</span> IntentResult.dialog</div>
-<div class="difference"><span class="status added">Added</span> IntentResult.value</div>
+<div class="difference"><span class="status added">Added</span> IntentResultContainer</div>
+<div class="difference"><span class="status added">Added</span> IntentResultContainer.dialog</div>
+<div class="difference"><span class="status added">Added</span> IntentResultContainer.opensIntent</div>
+<div class="difference"><span class="status added">Added</span> IntentResultContainer.value</div>
 </div>
 
 </div>
@@ -1115,6 +1095,15 @@
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> OpenIntent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">OpensIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> OpensIntent</div>
 </div>
 
 </div>
@@ -1215,10 +1204,28 @@
 </div>
 
 <div class="headerFile">
+<div class="headerName">PersistentlyIdentifiable</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PersistentlyIdentifiable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
 <div class="headerName">PredictableIntent</div>
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> PredictableIntent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ProvidesDialog</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ProvidesDialog</div>
 </div>
 
 </div>
@@ -1237,18 +1244,6 @@
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> RangeComparableProperty</div>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">RawRepresentableStringQuery</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> RawRepresentableStringQuery</div>
-<div class="difference"><span class="status added">Added</span> RawRepresentableStringQuery.init()</div>
-<div class="difference"><span class="status added">Added</span> RawRepresentableStringQuery.DefaultValue</div>
-<div class="difference"><span class="status added">Added</span> RawRepresentableStringQuery.Result</div>
 </div>
 
 </div>
@@ -1314,10 +1309,31 @@
 </div>
 
 <div class="headerFile">
+<div class="headerName">ShowsSnippetView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ShowsSnippetView</div>
+</div>
+
+</div>
+
+<div class="headerFile">
 <div class="headerName">StaticDisplayRepresentable</div>
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> StaticDisplayRepresentable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StringComparisonOperator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> StringComparisonOperator</div>
+<div class="difference"><span class="status added">Added</span> StringComparisonOperator.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> StringComparisonOperator.hashValue</div>
+<div class="difference"><span class="status added">Added</span> StringComparisonOperator.hash(into:)</div>
 </div>
 
 </div>
@@ -1380,6 +1396,22 @@
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> TypeDisplayRepresentable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TypeDisplayRepresentation</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.init(name:numericFormat:)</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.init(stringLiteral:)</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.name</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.numericFormat</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.ExtendedGraphemeClusterLiteralType</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.StringLiteralType</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.UnicodeScalarLiteralType</div>
 </div>
 
 </div>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>CoreAudioKit iOS 16.0 20A5303f to 20A5312e API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CoreAudioKit iOS 16.0 20A5303f to 20A5312e API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AUDistortionView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AUDistortionView.parameterDataSource</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public var parameterDataSource: CoreAudioKit.CAAUViewParameterDataSource!</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public var parameterDataSource: (_: some CoreAudioKit.CAAUViewParameterDataSource)!</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CAAUFilterControl</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CAAUFilterControl.dataSource</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@objc
+final public let dataSource: CoreAudioKit.CAAUViewParameterDataSource</td></tr>
+<tr><th>To</th><td class="declaration">@objc
+final public let dataSource: some CoreAudioKit.CAAUViewParameterDataSource</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<html>
+<head>
+<title>AppIntents iOS 16.0 20A5303f to 20A5312e API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>AppIntents iOS 16.0 20A5303f to 20A5312e API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AppDependency</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AppDependency</div>
+<div class="difference"><span class="status added">Added</span> AppDependency.init(key:manager:)</div>
+<div class="difference"><span class="status added">Added</span> AppDependency.init(key:manager:default:)</div>
+<div class="difference"><span class="status added">Added</span> AppDependency.projectedValue</div>
+<div class="difference"><span class="status added">Added</span> AppDependency.wrappedValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppDependencyManager</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AppDependencyManager</div>
+<div class="difference"><span class="status added">Added</span> AppDependencyManager.shared /* static */</div>
+<div class="difference"><span class="status added">Added</span> AppDependencyManager.init()</div>
+<div class="difference"><span class="status added">Added</span> AppDependencyManager.add(key:dependency:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppEnum</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AppEnum</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public protocol AppEnum: AppIntents.AppValue, AppIntents.StaticDisplayRepresentable, Swift.RawRepresentable where Self.RawValue == Swift.String</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public protocol AppEnum: AppIntents.AppValue, AppIntents.StaticDisplayRepresentable, Swift.RawRepresentable where Self.RawValue: Swift.LosslessStringConvertible</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppEnumOptionsProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider</div>
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider.init(supportedValues:)</div>
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider.results()</div>
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider.DefaultValue</div>
+<div class="difference"><span class="status added">Added</span> AppEnumOptionsProvider.Result</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AppIntent</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>AppIntents.PersistentlyIdentifiable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppShortcutProviding</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AppShortcutProviding</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppShortcutsProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AppShortcutsProvider</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">typealias</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public typealias AppShortcutsProvider = AppIntents.AppShortcutProviding</td></tr>
+<tr><th>To</th><td class="declaration">protocol</td><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public protocol AppShortcutsProvider</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AppValue</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AppValue</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>AppIntents.PersistentlyIdentifiable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DefaultResultProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> DefaultResultProvider</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicOptionsItem</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsItem</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsItem.description</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsItem.indentationLevel</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsItem.value</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicOptionsProvider</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DynamicOptionsProvider</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>AppIntents.DefaultResultProvider</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicOptionsResult</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult.emptyResult /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult.init(promptLabel:usesIndexedCollation:items:)</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult.init(promptLabel:usesIndexedCollation:sections:)</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult.init(promptLabel:usesIndexedCollation:sectionsBuilder:)</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult.allResults</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult.promptLabel</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult.sections</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResult.usesIndexedCollation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicOptionsResultProtocol</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsResultProtocol</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DynamicOptionsSection</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsSection</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsSection.init(items:)</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsSection.init(title:items:)</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsSection.description</div>
+<div class="difference"><span class="status removed">Removed</span> DynamicOptionsSection.items</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EmptyResolverSpecification</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EmptyResolverSpecification</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct EmptyResolverSpecification&lt;T&gt;: AppIntents.ResolverSpecification where T: AppIntents._IntentValue</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct EmptyResolverSpecification&lt;Value&gt;: AppIntents.ResolverSpecification where Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EmptyResolverSpecification.==(a:b:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func ==(a: AppIntents.EmptyResolverSpecification&lt;T&gt;, b: AppIntents.EmptyResolverSpecification&lt;T&gt;) -&gt; Swift.Bool</td></tr>
+<tr><th>To</th><td class="declaration">public static func ==(a: AppIntents.EmptyResolverSpecification&lt;Value&gt;, b: AppIntents.EmptyResolverSpecification&lt;Value&gt;) -&gt; Swift.Bool</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EmptyResolverSpecification.makeIterator()</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func makeIterator() -&gt; Swift.IndexingIterator&lt;[AppIntents.Resolver]&gt;</td></tr>
+<tr><th>To</th><td class="declaration">public func makeIterator() -&gt; Swift.IndexingIterator&lt;[some AppIntents.Resolver]&gt;</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EmptyResolverSpecification.Element</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias Element = Swift.IndexingIterator&lt;[AppIntents.Resolver]&gt;.Element</td></tr>
+<tr><th>To</th><td class="declaration">public typealias Element = Swift.IndexingIterator&lt;[some AppIntents.Resolver]&gt;.Element</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EmptyResolverSpecification.Iterator</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias Iterator = Swift.IndexingIterator&lt;[AppIntents.Resolver]&gt;</td></tr>
+<tr><th>To</th><td class="declaration">public typealias Iterator = Swift.IndexingIterator&lt;[some AppIntents.Resolver]&gt;</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EmptyResolverSpecification.Output</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias Output = T</td></tr>
+<tr><th>To</th><td class="declaration">public typealias Output = Value</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityIdentifier</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityIdentifier.init(for:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;T&gt;(for: T)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Entity&gt;(for: Entity)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EntityIdentifier.init(for:identifier:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init&lt;T&gt;(for: T.Type, identifier: T.ID)</td></tr>
+<tr><th>To</th><td class="declaration">public init&lt;Entity&gt;(for: Entity.Type, identifier: Entity.ID)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> EntityIdentifier.entityType</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public let entityType: AppIntents.AppEntity.Type</td></tr>
+<tr><th>To</th><td class="declaration">public let entityType: some AppIntents.AppEntity.Type</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> EntityIdentifier.interactionId</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityProperty</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> EntityProperty.fullyQualifiedIdentifier</div>
+<div class="difference"><span class="status removed">Removed</span> EntityProperty.identifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQuery</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQuery</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>AppIntents.DefaultResultProvider, AppIntents.PersistentlyIdentifiable</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQueryComparator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQueryComparator</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public class EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt; where ComparatorMappingType: Swift.Sendable, InputType: AppIntents._IntentValue, Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue</td></tr>
+<tr><th>To</th><td class="declaration">@_hasMissingDesignatedInitializers
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public class EntityQueryComparator&lt;Property, PropertyType, InputType, ComparatorMappingType&gt; where InputType: AppIntents._IntentValue, Property: AppIntents.EntityProperty&lt;PropertyType&gt;, PropertyType: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQueryComparatorMode</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQueryComparatorMode</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@frozen</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQueryComparatorsBuilder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQueryComparatorsBuilder.buildExpression(_:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func buildExpression(_: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt;) -&gt; AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt; where ComparatorMappingType: Swift.Sendable, PropertyType: Swift.ExpressibleByNilLiteral</td></tr>
+<tr><th>To</th><td class="declaration">public static func buildExpression(_: AppIntents.EntityQueryComparator&lt;Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType&gt;) -&gt; AppIntents.AnyEntityQueryComparator&lt;Entity, Subject, Property, PropertyType, ComparatorMappingType&gt; where PropertyType: Swift.ExpressibleByNilLiteral</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">EntityQuerySort</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> EntityQuerySort.Ordering</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration"><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@frozen</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentDependency</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> IntentDependency</div>
+<div class="difference"><span class="status removed">Removed</span> IntentDependency.init(key:manager:)</div>
+<div class="difference"><span class="status removed">Removed</span> IntentDependency.init(key:manager:default:)</div>
+<div class="difference"><span class="status removed">Removed</span> IntentDependency.projectedValue</div>
+<div class="difference"><span class="status removed">Removed</span> IntentDependency.wrappedValue</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentDependencyManager</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> IntentDependencyManager</div>
+<div class="difference"><span class="status removed">Removed</span> IntentDependencyManager.shared /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> IntentDependencyManager.init()</div>
+<div class="difference"><span class="status removed">Removed</span> IntentDependencyManager.add(key:dependency:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentDonationIdentifier</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentDonationIdentifier.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> IntentDonationIdentifier.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentDonationManager</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentDonationManager.donate(intent:)</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentDonationManager.donate(intent:result:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@discardableResult
+public func donate&lt;Intent, IntentPerformResultType&gt;(intent: Intent, result: IntentPerformResultType? = nil) -&gt; AppIntents.IntentDonationIdentifier where Intent: AppIntents.AppIntent, IntentPerformResultType: AppIntents.IntentPerformResult</td></tr>
+<tr><th>To</th><td class="declaration">@discardableResult
+public func donate(intent: some AppIntent, result: some IntentResult) -&gt; AppIntents.IntentDonationIdentifier</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentDonationMatchingPredicate</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntentDonationMatchingPredicate.intentType(_:entityIdentifier:) /* static */</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public static func intentType(_: AppIntents.AppIntent.Type, entityIdentifier: AppIntents.EntityIdentifier? = nil) -&gt; AppIntents.IntentDonationMatchingPredicate</td></tr>
+<tr><th>To</th><td class="declaration">public static func intentType(_: some AppIntents.AppIntent.Type, entityIdentifier: AppIntents.EntityIdentifier? = nil) -&gt; AppIntents.IntentDonationMatchingPredicate</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentError</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> IntentError</div>
+<div class="difference"><span class="status removed">Removed</span> IntentError.==(a:b:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> IntentError.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> IntentError.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentItem</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentItem</div>
+<div class="difference"><span class="status added">Added</span> IntentItem.description</div>
+<div class="difference"><span class="status added">Added</span> IntentItem.value</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentItemCollection</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentItemCollection</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.emptyResult /* static */</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.init(promptLabel:usesIndexedCollation:items:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.init(promptLabel:usesIndexedCollation:sections:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.init(promptLabel:usesIndexedCollation:sectionsBuilder:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.allResults</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.promptLabel</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.sections</div>
+<div class="difference"><span class="status added">Added</span> IntentItemCollection.usesIndexedCollation</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentItemSection</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentItemSection</div>
+<div class="difference"><span class="status added">Added</span> IntentItemSection.init(items:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemSection.init(title:items:)</div>
+<div class="difference"><span class="status added">Added</span> IntentItemSection.description</div>
+<div class="difference"><span class="status added">Added</span> IntentItemSection.items</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentParameter</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> IntentParameter.identifier</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentPerformResult</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> IntentPerformResult</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentResult</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> IntentResult</div>
+<div class="difference"><span class="status removed">Removed</span> IntentResult.dialog</div>
+<div class="difference"><span class="status removed">Removed</span> IntentResult.value</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntentResultContainer</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> IntentResultContainer</div>
+<div class="difference"><span class="status added">Added</span> IntentResultContainer.dialog</div>
+<div class="difference"><span class="status added">Added</span> IntentResultContainer.opensIntent</div>
+<div class="difference"><span class="status added">Added</span> IntentResultContainer.value</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">OpensIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> OpensIntent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryTupleCaseCondition</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryTupleCaseCondition</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryTupleCaseCondition&lt;Intent, Value, T&gt;: AppIntents._ParameterSummarySwitchCase where Intent: AppIntents.AppIntent, Value: AppIntents._IntentValue</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryTupleCaseCondition&lt;Intent, Value, ValueType&gt;: AppIntents._ParameterSummarySwitchCase where Intent: AppIntents.AppIntent, Value: AppIntents._IntentValue</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ParameterSummaryWhenCondition</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ParameterSummaryWhenCondition</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryWhenCondition&lt;Intent, ParameterSummaryWhenCondition, Otherwise&gt;: AppIntents.ParameterSummary where Intent: AppIntents.AppIntent, Otherwise: AppIntents.ParameterSummary, ParameterSummaryWhenCondition: AppIntents.ParameterSummary</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public struct ParameterSummaryWhenCondition&lt;Intent, WhenCondition, Otherwise&gt;: AppIntents.ParameterSummary where Intent: AppIntents.AppIntent, Otherwise: AppIntents.ParameterSummary, WhenCondition: AppIntents.ParameterSummary</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PersistentlyIdentifiable</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PersistentlyIdentifiable</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ProvidesDialog</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ProvidesDialog</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">RawRepresentableStringQuery</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> RawRepresentableStringQuery</div>
+<div class="difference"><span class="status removed">Removed</span> RawRepresentableStringQuery.init()</div>
+<div class="difference"><span class="status removed">Removed</span> RawRepresentableStringQuery.DefaultValue</div>
+<div class="difference"><span class="status removed">Removed</span> RawRepresentableStringQuery.Result</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ResolverSpecification</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ResolverSpecification</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public protocol ResolverSpecification: Swift.Hashable, Swift.Sendable, Swift.Sequence where Self.Element == AppIntents.Resolver</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+public protocol ResolverSpecification: Swift.Hashable, Swift.Sendable, Swift.Sequence where Self.Element == some AppIntents.Resolver</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ShowsSnippetView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ShowsSnippetView</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StringComparisonOperator</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> StringComparisonOperator</div>
+<div class="difference"><span class="status added">Added</span> StringComparisonOperator.==(a:b:) /* static */</div>
+<div class="difference"><span class="status added">Added</span> StringComparisonOperator.hashValue</div>
+<div class="difference"><span class="status added">Added</span> StringComparisonOperator.hash(into:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TypeDisplayRepresentation</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.init(name:numericFormat:)</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.init(stringLiteral:)</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.name</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.numericFormat</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.ExtendedGraphemeClusterLiteralType</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.StringLiteralType</div>
+<div class="difference"><span class="status added">Added</span> TypeDisplayRepresentation.UnicodeScalarLiteralType</div>
+</div>
+
+</div>
+</body>
+</html>

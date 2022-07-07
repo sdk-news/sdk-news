@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>HealthKit macOS 13.0 22A5286g to 22A5295f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>HealthKit macOS 13.0 22A5286g to 22A5295f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">HKGlassesPrescription.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> HKGlassesPrescription.glassesDescription</div>
+<div class="difference"><span class="status removed">Removed</span> +[HKGlassesPrescription prescriptionWithRightEyeSpecification:leftEyeSpecification:description:dateIssued:expirationDate:device:metadata:]</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> +[HKGlassesPrescription prescriptionWithRightEyeSpecification:leftEyeSpecification:dateIssued:expirationDate:device:metadata:]</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKMetadata.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKMetadataKeyGlassesPrescriptionDescription</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">HKTypeIdentifiers.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> HKQuantityTypeIdentifierAtrialFibrillationBurden</div>
+</div>
+
+</div>
+</body>
+</html>

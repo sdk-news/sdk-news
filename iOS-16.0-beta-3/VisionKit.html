@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>VisionKit iOS 16.0 20A5303f to 20A5312e API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>VisionKit iOS 16.0 20A5303f to 20A5312e API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">DataScannerViewController</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DataScannerViewController.delegate</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor
+public weak var delegate: VisionKit.DataScannerViewControllerDelegate?</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor
+public weak var delegate: (_: some VisionKit.DataScannerViewControllerDelegate)?</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ImageAnalysis</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ImageAnalysis.transcript</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>CoreTelephony iOS 16.0 20A5303f to 20A5312e API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>CoreTelephony iOS 16.0 20A5303f to 20A5312e API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">CTCarrier.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CTCarrier</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Deprecated with no replacement</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CTCarrier.carrierName</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, retain, nullable) NSString *carrierName</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, retain, nullable) NSString *carrierName</td><td>Deprecated</td><td>Deprecated; returns &apos;--&apos; at some point in the future</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CTCarrier.mobileCountryCode</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, retain, nullable) NSString *mobileCountryCode</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, retain, nullable) NSString *mobileCountryCode</td><td>Deprecated</td><td>Deprecated; returns &apos;65535&apos; at some point in the future</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CTCarrier.mobileNetworkCode</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, retain, nullable) NSString *mobileNetworkCode</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, retain, nullable) NSString *mobileNetworkCode</td><td>Deprecated</td><td>Deprecated; returns &apos;65535&apos; at some point in the future</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CTCarrier.isoCountryCode</div>
+<table>
+<tr><th></th><th>Declaration</th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, retain, nullable) NSString *isoCountryCode</td><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, retain, nullable) NSString *isoCountryCode</td><td>Deprecated</td><td>Deprecated; returns &apos;--&apos; at some point in the future</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CTCarrier.allowsVOIP</div>
+<table>
+<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
+<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
+<tr><th>To</th><td>Deprecated</td><td>Deprecated; returns YES at some point in the future</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CTCellularPlanProvisioning.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CTCellularPlanProvisioning.supportsEmbeddedSIM</div>
+</div>
+
+</div>
+</body>
+</html>

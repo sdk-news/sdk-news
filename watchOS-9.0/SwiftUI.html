@@ -202,6 +202,21 @@ content: @escaping () -&gt; Content)</td></tr>
 </div>
 
 <div class="headerFile">
+<div class="headerName">AsyncImagePhase</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AsyncImagePhase.error</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var error: Swift.Error? { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var error: (_: some Swift.Error)? { get }</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
 <div class="headerName">AutomaticDisclosureGroupStyle</div>
 
 <div class="differenceGroup">
@@ -231,7 +246,7 @@ content: @escaping () -&gt; Content)</td></tr>
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle</div>
 <div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle.init()</div>
-<div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle.body(configuration:)</div>
+<div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle.makeBody(configuration:)</div>
 <div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle.Body</div>
 </div>
 
@@ -609,6 +624,15 @@ public static func buildBlock&lt;C&gt;(_: C) -&gt; C where C: SwiftUI.Commands</
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> CustomPresentationDetent</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CustomizableToolbarEdits</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CustomizableToolbarEdits</div>
 </div>
 
 </div>
@@ -1038,6 +1062,20 @@ public init(top: CoreFoundation.CGFloat, leading: CoreFoundation.CGFloat, bottom
 <tr><th>To</th><td class="declaration">public init&lt;T&gt;()</td></tr>
 </table>
 <br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FocusedObject</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> FocusedObject</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.init()</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.projectedValue</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.wrappedValue</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.Wrapper</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.Wrapper.subscript(dynamicMember:)</div>
 </div>
 
 </div>
@@ -2974,6 +3012,7 @@ public init(minLength: CoreFoundation.CGFloat? = nil)</td></tr>
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> TableHeaderRowContent</div>
+<div class="difference"><span class="status added">Added</span> TableHeaderRowContent.tableRowBody</div>
 <div class="difference"><span class="status added">Added</span> TableHeaderRowContent.TableRowBody</div>
 <div class="difference"><span class="status added">Added</span> TableHeaderRowContent.TableRowValue</div>
 </div>
@@ -3128,6 +3167,7 @@ public static func buildBlock&lt;C&gt;(_: C) -&gt; C where C: SwiftUI.TableRowCo
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> Toggle.init(isOn:label:)</div>
+<div class="difference"><span class="status added">Added</span> Toggle.init(sources:isOn:label:)</div>
 </div>
 
 </div>
@@ -3137,6 +3177,19 @@ public static func buildBlock&lt;C&gt;(_: C) -&gt; C where C: SwiftUI.TableRowCo
 
 <div class="differenceGroup">
 <div class="difference"><span class="status added">Added</span> ToggleStyleConfiguration.isMixed</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToolbarCustomizationPriority</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority</div>
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority.`default` /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority.high /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority.low /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority.medium /* static */</div>
 </div>
 
 </div>
@@ -3186,6 +3239,18 @@ public static func buildBlock&lt;C&gt;(_: C) -&gt; C where C: SwiftUI.TableRowCo
 <div class="difference"><span class="status added">Added</span> ToolbarTitleActions.init()</div>
 <div class="difference"><span class="status added">Added</span> ToolbarTitleActions.init(actions:)</div>
 <div class="difference"><span class="status added">Added</span> ToolbarTitleActions.Body</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToolbarTitleMenu</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ToolbarTitleMenu</div>
+<div class="difference"><span class="status added">Added</span> ToolbarTitleMenu.init()</div>
+<div class="difference"><span class="status added">Added</span> ToolbarTitleMenu.init(content:)</div>
+<div class="difference"><span class="status added">Added</span> ToolbarTitleMenu.Body</div>
 </div>
 
 </div>

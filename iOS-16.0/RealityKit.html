@@ -48,5 +48,27 @@ public init(frame: CoreFoundation.CGRect, cameraMode: RealityKit.ARView.CameraMo
 </div>
 
 </div>
+
+<div class="headerFile">
+<div class="headerName">MultipeerConnectivityService</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MultipeerConnectivityService.giveOwnership(of:toPeer:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func giveOwnership(of: RealityFoundation.Entity, toPeer: RealityFoundation.SynchronizationPeerID) -&gt; Swift.Bool</td></tr>
+<tr><th>To</th><td class="declaration">public func giveOwnership(of: RealityFoundation.Entity, toPeer: some RealityFoundation.SynchronizationPeerID) -&gt; Swift.Bool</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MultipeerConnectivityService.owner(of:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func owner(of: RealityFoundation.Entity) -&gt; RealityFoundation.SynchronizationPeerID?</td></tr>
+<tr><th>To</th><td class="declaration">public func owner(of: RealityFoundation.Entity) -&gt; (_: some RealityFoundation.SynchronizationPeerID)?</td></tr>
+</table>
+<br>
+</div>
+
+</div>
 </body>
 </html>

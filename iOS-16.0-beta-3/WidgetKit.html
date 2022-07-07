@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>WidgetKit iOS 16.0 20A5303f to 20A5312e API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>WidgetKit iOS 16.0 20A5303f to 20A5312e API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">TimelineEntryRelevance</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TimelineEntryRelevance.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> TimelineEntryRelevance.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetCenter</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> WidgetCenter.getCurrentConfigurations(_:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func getCurrentConfigurations(_: @escaping () -&gt; Swift.Void)</td></tr>
+<tr><th>To</th><td class="declaration">public func getCurrentConfigurations(_: @escaping () -&gt; Swift.Void)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">WidgetRenderingMode</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> WidgetRenderingMode</div>
+<table>
+<tr><th></th><th>Protocols</th></tr>
+<tr><th>From</th><td><em>none</em></td></tr>
+<tr><th>To</th><td>Swift.CustomStringConvertible</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> WidgetRenderingMode.description</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -24,8 +24,6 @@
 <div class="difference"><span class="status added">Added</span> MTLBindingTypeInstanceAccelerationStructure</div>
 <div class="difference"><span class="status added">Added</span> MTLBindingTypeIntersectionFunctionTable</div>
 <div class="difference"><span class="status added">Added</span> MTLBindingTypeObjectPayload</div>
-<div class="difference"><span class="status added">Added</span> MTLArgument.objectPayloadAlignment</div>
-<div class="difference"><span class="status added">Added</span> MTLArgument.objectPayloadDataSize</div>
 <div class="difference"><span class="status added">Added</span> MTLBinding</div>
 <div class="difference"><span class="status added">Added</span> MTLBinding.name</div>
 <div class="difference"><span class="status added">Added</span> MTLBinding.type</div>
@@ -47,9 +45,6 @@
 <div class="difference"><span class="status added">Added</span> MTLTextureBinding.textureDataType</div>
 <div class="difference"><span class="status added">Added</span> MTLTextureBinding.depthTexture</div>
 <div class="difference"><span class="status added">Added</span> MTLTextureBinding.arrayLength</div>
-<div class="difference"><span class="status added">Added</span> MTLObjectPayloadBinding</div>
-<div class="difference"><span class="status added">Added</span> MTLObjectPayloadBinding.objectPayloadAlignment</div>
-<div class="difference"><span class="status added">Added</span> MTLObjectPayloadBinding.objectPayloadDataSize</div>
 </div>
 
 
@@ -101,21 +96,6 @@
 <tr><th></th><th>Availability</th></tr>
 <tr><th>From</th><td>Available</td></tr>
 <tr><th>To</th><td>Deprecated</td></tr>
-</table>
-<br>
-</div>
-
-</div>
-
-<div class="headerFile">
-<div class="headerName">MTLArgumentEncoder.h</div>
-
-<div class="differenceGroup">
-<div class="difference"><span class="status modified">Modified</span> MTLArgumentEncoder</div>
-<table>
-<tr><th></th><th>Availability</th><th>Deprecation Message</th></tr>
-<tr><th>From</th><td>Available</td><td><em>none</em></td></tr>
-<tr><th>To</th><td>Deprecated</td><td>Use &apos;gpuAddress&apos; or &apos;gpuHandle&apos; instead</td></tr>
 </table>
 <br>
 </div>
@@ -382,7 +362,8 @@
 <div class="difference"><span class="status added">Added</span> MTLIOCompressionStatus</div>
 <div class="difference"><span class="status added">Added</span> MTLIOCompressionStatusComplete</div>
 <div class="difference"><span class="status added">Added</span> MTLIOCompressionStatusError</div>
-<div class="difference"><span class="status added">Added</span> kMTLIOCompressionContextDefaultChunkSize</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionContext</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionContextDefaultChunkSize()</div>
 <div class="difference"><span class="status added">Added</span> MTLIOCreateCompressionContext()</div>
 <div class="difference"><span class="status added">Added</span> MTLIOCompressionContextAppendData()</div>
 <div class="difference"><span class="status added">Added</span> MTLIOFlushAndDestroyCompressionContext()</div>
@@ -476,6 +457,13 @@
 <tr><th>To</th><td>Deprecated</td></tr>
 </table>
 <br>
+<div class="difference"><span class="status modified">Modified</span> MTLRenderPipelineReflection.tileArguments</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
 <div class="difference"><span class="status modified">Modified</span> MTLRenderPipelineDescriptor.sampleCount</div>
 <table>
 <tr><th></th><th>Availability</th></tr>
@@ -531,7 +519,6 @@
 <div class="headerName">MTLTypes.h</div>
 
 <div class="differenceGroup">
-<div class="difference"><span class="status added">Added</span> MTLGPUHandle</div>
 <div class="difference"><span class="status added">Added</span> MTLResourceID</div>
 </div>
 

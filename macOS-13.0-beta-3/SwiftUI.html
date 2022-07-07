@@ -1,0 +1,223 @@
+<html>
+<head>
+<title>SwiftUI macOS 13.0 22A5286g to 22A5295f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>SwiftUI macOS 13.0 22A5286g to 22A5295f API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">AsyncImagePhase</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> AsyncImagePhase.error</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var error: Swift.Error? { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var error: (_: some Swift.Error)? { get }</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">AutomaticLabeledContentStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AutomaticLabeledContentStyle.body(configuration:)</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> AutomaticLabeledContentStyle.makeBody(configuration:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CustomizableToolbarEdits</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> CustomizableToolbarEdits</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FocusedObject</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> FocusedObject</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.init()</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.projectedValue</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.wrappedValue</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.Wrapper</div>
+<div class="difference"><span class="status added">Added</span> FocusedObject.Wrapper.subscript(dynamicMember:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NSHostingView</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSHostingView.accessibilityChildrenInNavigationOrder()</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override func accessibilityChildrenInNavigationOrder() -&gt; [AppKit.NSAccessibilityElementProtocol]?</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+dynamic open override func accessibilityChildrenInNavigationOrder() -&gt; [some AppKit.NSAccessibilityElementProtocol]?</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NSHostingView.validateUserInterfaceItem(_:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func validateUserInterfaceItem(_: AppKit.NSValidatedUserInterfaceItem) -&gt; Swift.Bool</td></tr>
+<tr><th>To</th><td class="declaration">@_Concurrency.MainActor(unsafe)
+@objc
+public func validateUserInterfaceItem(_: some AppKit.NSValidatedUserInterfaceItem) -&gt; Swift.Bool</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationPath</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NavigationPath.CodableRepresentation.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NavigationPath.CodableRepresentation.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NavigationSplitViewVisibility</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NavigationSplitViewVisibility.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NavigationSplitViewVisibility.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">TableHeaderRowContent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> TableHeaderRowContent.tableRowBody</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> TableHeaderRowContent.TableRowBody</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public typealias TableRowBody = Swift.Never</td></tr>
+<tr><th>To</th><td class="declaration">public typealias TableRowBody = &lt;UNKNOWN&gt;</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">Toggle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> Toggle.init(isOn:label:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 16.0, deprecated: 16.0, message: &quot;Use Toggle.init(sources:isOn:label:).&quot;)
+@available(macOS, introduced: 13.0, deprecated: 13.0, message: &quot;Use Toggle.init(sources:isOn:label:).&quot;)
+@available(tvOS, introduced: 16.0, deprecated: 16.0, message: &quot;Use Toggle.init(sources:isOn:label:).&quot;)
+@available(watchOS, introduced: 9.0, deprecated: 9.0, message: &quot;Use Toggle.init(sources:isOn:label:).&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> Toggle.init(sources:isOn:label:)</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToolbarCustomizationPriority</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority</div>
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority.`default` /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority.high /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority.low /* static */</div>
+<div class="difference"><span class="status added">Added</span> ToolbarCustomizationPriority.medium /* static */</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToolbarTitleActions</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ToolbarTitleActions</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(iOS 16.0, macOS 13.0, watchOS 9.0, tvOS 16.0, *)</td></tr>
+<tr><th>To</th><td class="declaration">@available(iOS, introduced: 16.0, deprecated: 16.0, renamed: &quot;ToolbarTitleMenu&quot;)
+@available(macOS, introduced: 13.0, deprecated: 13.0, renamed: &quot;ToolbarTitleMenu&quot;)
+@available(tvOS, introduced: 16.0, deprecated: 16.0, renamed: &quot;ToolbarTitleMenu&quot;)
+@available(watchOS, introduced: 9.0, deprecated: 9.0, renamed: &quot;ToolbarTitleMenu&quot;)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ToolbarTitleMenu</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> ToolbarTitleMenu</div>
+<div class="difference"><span class="status added">Added</span> ToolbarTitleMenu.init()</div>
+<div class="difference"><span class="status added">Added</span> ToolbarTitleMenu.init(content:)</div>
+<div class="difference"><span class="status added">Added</span> ToolbarTitleMenu.Body</div>
+</div>
+
+</div>
+</body>
+</html>

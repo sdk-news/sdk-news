@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>PassKit iOS 16.0 20A5303f to 20A5312e API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>PassKit iOS 16.0 20A5303f to 20A5312e API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityDocumentIssuingAuthority.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentIssuingAuthority.name</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSString *name</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSString *name</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentIssuingAuthority.jurisdiction</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSString *jurisdiction</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSString *jurisdiction</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentIssuingAuthority.ISOCountryCode</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSString *ISOCountryCode</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSString *ISOCountryCode</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityDocumentRawElements.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityDocumentRawElements.documentIssueDate</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.name</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSPersonNameComponents *name</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSPersonNameComponents *name</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.address</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) CNPostalAddress *address</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) CNPostalAddress *address</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.issuingAuthority</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) PKIdentityDocumentIssuingAuthority *issuingAuthority</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) PKIdentityDocumentIssuingAuthority *issuingAuthority</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.documentExpirationDate</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSDateComponents *documentExpirationDate</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSDateComponents *documentExpirationDate</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.documentNumber</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSString *documentNumber</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSString *documentNumber</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.age</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSNumber *age</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSNumber *age</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.ageThreshold</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) PKIdentityDocumentAgeThreshold *ageThreshold</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) PKIdentityDocumentAgeThreshold *ageThreshold</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.dateOfBirth</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSDateComponents *dateOfBirth</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSDateComponents *dateOfBirth</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PKIdentityDocumentRawElements.portraitImageData</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">@property (nonatomic, readonly, copy, nullable) NSData *portraitImageData</td></tr>
+<tr><th>To</th><td class="declaration">@property (nonatomic, readonly, nullable) NSData *portraitImageData</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PKIdentityElement.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> PKIdentityElement.documentIssueDateElement</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Metal tvOS 16.0 20J5319f to 20J5328e API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Metal tvOS 16.0 20J5319f to 20J5328e API Differences</h1>
+
+<div class="headerFile">
+<div class="headerName">MTLArgument.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> MTLArgument.objectPayloadAlignment</div>
+<div class="difference"><span class="status removed">Removed</span> MTLArgument.objectPayloadDataSize</div>
+<div class="difference"><span class="status removed">Removed</span> MTLObjectPayloadBinding</div>
+<div class="difference"><span class="status removed">Removed</span> MTLObjectPayloadBinding.objectPayloadAlignment</div>
+<div class="difference"><span class="status removed">Removed</span> MTLObjectPayloadBinding.objectPayloadDataSize</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLArgumentEncoder.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLArgumentEncoder</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Deprecated</td></tr>
+<tr><th>To</th><td>Available</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLIOCompressor.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> kMTLIOCompressionContextDefaultChunkSize</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionContext</div>
+<div class="difference"><span class="status added">Added</span> MTLIOCompressionContextDefaultChunkSize()</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLIOCreateCompressionContext()</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">void *MTLIOCreateCompressionContext(const char *path, MTLIOCompressionMethod type, size_t chunkSize)</td></tr>
+<tr><th>To</th><td class="declaration">MTLIOCompressionContext _Nullable MTLIOCreateCompressionContext(const char * _Nonnull path, MTLIOCompressionMethod type, size_t chunkSize)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLIOCompressionContextAppendData()</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">void MTLIOCompressionContextAppendData(void *context, const void *data, size_t size)</td></tr>
+<tr><th>To</th><td class="declaration">void MTLIOCompressionContextAppendData(MTLIOCompressionContext _Nonnull context, const void * _Nonnull data, size_t size)</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MTLIOFlushAndDestroyCompressionContext()</div>
+<table>
+<tr><th></th><th>Declaration</th></tr>
+<tr><th>From</th><td class="declaration">MTLIOCompressionStatus MTLIOFlushAndDestroyCompressionContext(void *context)</td></tr>
+<tr><th>To</th><td class="declaration">MTLIOCompressionStatus MTLIOFlushAndDestroyCompressionContext(MTLIOCompressionContext _Nonnull context)</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLRenderPipeline.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MTLRenderPipelineReflection.tileArguments</div>
+<table>
+<tr><th></th><th>Availability</th></tr>
+<tr><th>From</th><td>Available</td></tr>
+<tr><th>To</th><td>Deprecated</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MTLTypes.h</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> MTLGPUHandle</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,650 @@
+<html>
+<head>
+<title>Foundation macOS 13.0 22A5286g to 22A5295f API Differences</title>
+<link rel="stylesheet" href="apidiff.css" type="text/css" />
+<meta charset="utf-8" />
+</head>
+<body>
+
+<h1>Foundation macOS 13.0 22A5286g to 22A5295f API Differences</h1>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NSLog(_:_:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func NSLog(_: Swift.String, _: Swift.CVarArg...)</td></tr>
+<tr><th>To</th><td class="declaration">public func NSLog(_: Swift.String, _: some Swift.CVarArg...)</td></tr>
+</table>
+<br>
+
+<div class="headerFile">
+<div class="headerName">AffineTransform</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> AffineTransform</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.identity /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.==(lhs:rhs:) /* static */</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.init()</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.init(m11:m12:m21:m22:tX:tY:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.init(rotationByDegrees:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.init(rotationByRadians:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.init(scale:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.init(scaleByX:byY:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.init(translationByX:byY:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.debugDescription</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.description</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.hashValue</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.m11</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.m12</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.m21</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.m22</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.tX</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.tY</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.append(_:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.hash(into:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.invert()</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.inverted()</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.prepend(_:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.rotate(byDegrees:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.rotate(byRadians:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.scale(_:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.scale(x:y:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.transform(_:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.translate(x:y:)</div>
+<div class="difference"><span class="status removed">Removed</span> AffineTransform.ReferenceType</div>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ByteCountFormatStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ByteCountFormatStyle.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ByteCountFormatStyle.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ByteCountFormatStyle.Attributed.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ByteCountFormatStyle.Attributed.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CodableConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CodableConfiguration.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CodableConfiguration.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">CurrencyFormatStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> CurrencyFormatStyleConfiguration.Presentation.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CurrencyFormatStyleConfiguration.Presentation.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CurrencyFormatStyleConfiguration.SignDisplayStrategy.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> CurrencyFormatStyleConfiguration.SignDisplayStrategy.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DateInterval</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DateInterval.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DateInterval.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">DescriptiveNumberFormatConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> DescriptiveNumberFormatConfiguration.Presentation.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> DescriptiveNumberFormatConfiguration.Presentation.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FloatingPointFormatStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> FloatingPointFormatStyle.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> FloatingPointFormatStyle.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FloatingPointParseStrategy</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> FloatingPointParseStrategy.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> FloatingPointParseStrategy.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">FormatStyleCapitalizationContext</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> FormatStyleCapitalizationContext.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> FormatStyleCapitalizationContext.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntegerFormatStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntegerFormatStyle.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> IntegerFormatStyle.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">IntegerParseStrategy</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> IntegerParseStrategy.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> IntegerParseStrategy.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">ListFormatStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> ListFormatStyle.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> ListFormatStyle.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">LocalizedStringResource</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> LocalizedStringResource.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> LocalizedStringResource.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">MeasurementFormatUnitUsage</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> MeasurementFormatUnitUsage.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> MeasurementFormatUnitUsage.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">NumberFormatStyleConfiguration</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.Grouping.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.Grouping.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.Notation.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.Notation.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.Precision.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.Precision.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.SignDisplayStrategy.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> NumberFormatStyleConfiguration.SignDisplayStrategy.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">PresentationIntent</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> PresentationIntent.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PresentationIntent.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PresentationIntent.IntentType.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PresentationIntent.IntentType.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PresentationIntent.Kind.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PresentationIntent.Kind.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PresentationIntent.TableColumn.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> PresentationIntent.TableColumn.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SortDescriptor</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> SortDescriptor.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SortDescriptor.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">SortOrder</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> SortOrder.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> SortOrder.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">StringStyle</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> StringStyle.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> StringStyle.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">URLResource</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> URLResource.init(from:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public init(from: Swift.Decoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public init(from: some Swift.Decoder) throws</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> URLResource.encode(to:)</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public func encode(to: Swift.Encoder) throws</td></tr>
+<tr><th>To</th><td class="declaration">public func encode(to: some Swift.Encoder) throws</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+
+<div class="headerFile">
+<div class="headerName">URLResourceValues</div>
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> URLResourceValues.applicationIsScriptable</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> URLResourceValues.fileResourceIdentifier</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var fileResourceIdentifier: (_: Foundation.NSCopying &amp; Foundation.NSSecureCoding &amp; ObjectiveC.NSObjectProtocol)? { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var fileResourceIdentifier: (_: some Foundation.NSCopying &amp; Foundation.NSSecureCoding &amp; ObjectiveC.NSObjectProtocol)? { get }</td></tr>
+</table>
+<br>
+<div class="difference"><span class="status modified">Modified</span> URLResourceValues.generationIdentifier</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">@available(macOS 10.10, iOS 8.0, *)
+public var generationIdentifier: (_: Foundation.NSCopying &amp; Foundation.NSSecureCoding &amp; ObjectiveC.NSObjectProtocol)? { get }</td></tr>
+<tr><th>To</th><td class="declaration">@available(macOS 10.10, iOS 8.0, *)
+public var generationIdentifier: (_: some Foundation.NSCopying &amp; Foundation.NSSecureCoding &amp; ObjectiveC.NSObjectProtocol)? { get }</td></tr>
+</table>
+<br>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status removed">Removed</span> URLResourceValues.tagNames</div>
+</div>
+
+
+<div class="differenceGroup">
+<div class="difference"><span class="status modified">Modified</span> URLResourceValues.volumeIdentifier</div>
+<table>
+<tr><th></th><th>Replacement</th></tr>
+<tr><th>From</th><td class="declaration">public var volumeIdentifier: (_: Foundation.NSCopying &amp; Foundation.NSSecureCoding &amp; ObjectiveC.NSObjectProtocol)? { get }</td></tr>
+<tr><th>To</th><td class="declaration">public var volumeIdentifier: (_: some Foundation.NSCopying &amp; Foundation.NSSecureCoding &amp; ObjectiveC.NSObjectProtocol)? { get }</td></tr>
+</table>
+<br>
+</div>
+
+</div>
+</body>
+</html>
